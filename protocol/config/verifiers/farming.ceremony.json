@@ -1,0 +1,12 @@
+{
+  "circuitName": "farming",
+  "ceremonyId": "aegis-mpc-farming-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "d613440ee5ea5dd5cc728d3dbbd85a5d779328dbee80b465344766c1561dd2f1",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028494,
+  "isProduction": true,
+  "beaconHash": "0x607fc2f77e5a73c3ea639e3c879a6f35cdb5aa4533d131094a6ddd86d156477c",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-52Z_farming",
+  "source": "run-factory-mpc-local.mjs"
+}

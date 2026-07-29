@@ -1,0 +1,12 @@
+{
+  "circuitName": "transfer-to-pool",
+  "ceremonyId": "aegis-mpc-transfer-to-pool-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "3c9e3311f2c3c194163efa4e6e6296ecfac3a3474bdee8751ecb8b9e2a554e07",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783029082,
+  "isProduction": true,
+  "beaconHash": "0x0456f46992ae6c093f5e83a0b89f09d385f0e2a2e7ce761888b71697e77e723d",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-52Z_transfer-to-pool",
+  "source": "run-factory-mpc-local.mjs"
+}

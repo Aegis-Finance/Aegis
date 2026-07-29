@@ -1,0 +1,20 @@
+{
+"manifest": "arweave/paths",
+"version": "0.1.0",
+"paths": {
+"index.html":{"id":"as2Z16GslT6ay8cgT_OG6vNVgAf8RTV1PphylQmiLfs"},
+"assets/index-g3PojORn.css":{"id":"v8ztKCdTWXShjRG2x0sdi1vBs6xVEGFicp_8mHdCtCM"},
+"circuits/auction/.gitkeep":{"id":"ikWUoOerGEnN9fFwO7jxafJ-yPTMQQi_drSjzeQ8zO0"},
+"circuits/auction-claim/.gitkeep":{"id":"_d-BUygQgptlgGf5bV4WyB1hHlq1t_hWdfVzb9IhKsI"},
+"assets/prover-BVY6nORC.js":{"id":"GDdebcCdGNgNnkPXLKAH7SLWY19PPnhxXST6GK6uJ2E"},
+"assets/index-BxunGgc6.js":{"id":"mQgmx8zGvSjMpxsomKoxUdQRV_O6xOtxqsK1BE2U-SU"},
+"circuits/README.md":{"id":"2bOeCOgjcEB-DvGFzZIo2wNyICcuzb59NhOQEELKahw"},
+"sw.js":{"id":"5S0F5j2jcUJWdAL6n8VaAW8cYK7RGNVDhOk9xWv9EgU"},
+"circuits/auction-claim/claim_final.zkey":{"id":"p7yoO5Fqimu5gLvU-Wuc99Y8K7gapf3FRBInbfnwPIE"},
+"tokenlists/aegis.tokenlist.json":{"id":"cSoUjVh-k7hLDTxXb9k4Xd5A5A90GmvzzBzSVh9wuP8"},
+"circuits/auction/auction_final.zkey":{"id":"B22oY69jJUKad4DizvxVU0aVAZUUJzwAdhdxClM5Ie8"},
+"circuits/auction-claim/claim.wasm":{"id":"9CcMW-UFBfvNDXTkQkyllUJwlD7MbRpS5xlWU1I0Hes"},
+"circuits/auction/auction.wasm":{"id":"lNaQnUrAl9dTjnDdqqTp7yygcGtZ_ibr4xGrAt0tgiw"}
+},
+"index":{"path":"index.html"}
+}

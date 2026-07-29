@@ -1,0 +1,33 @@
+[package]
+name = "aegis-desktop"
+version = "0.3.0"
+description = "Aegis native app — private finance on Sonic"
+authors = ["Rashnu"]
+edition = "2021"
+
+[lib]
+name = "aegis_desktop_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "fs"] }
+axum = { version = "0.7", features = ["json"] }
+tower-http = { version = "0.6", features = ["fs", "trace", "set-header"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"
+sha2 = "0.10"
+hex = "0.4"
+url = "2"
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1

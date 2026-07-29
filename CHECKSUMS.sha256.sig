@@ -1,0 +1,6 @@
+AEGIS-MANIFEST-SIG-1
+algorithm=ed25519
+public-key=RELEASE_SIGNING_KEY.pem
+manifest=CHECKSUMS.sha256
+
+HR/9wUBD1VeHBvICUtMZX+k5+sz+Qc3PvabgfzF61PlcMmfTumA3/5gHlg94Nb32RG4WYCNsJf16dsr1ySwvBg==

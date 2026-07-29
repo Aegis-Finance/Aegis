@@ -1,0 +1,38 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+!RELEASE_SIGNING_KEY.pem
+secrets/
+private-keys/
+.secrets/
+
+# Dependencies and build output
+node_modules/
+dist/
+artifacts/
+cache/
+coverage/
+target/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Ceremony / operator-local (never publish)
+*_0001.zkey
+config/verifiers/*.verifying_key.json
+config/verifiers/proposal-secrets.json
+upload-manifest*.json
+ardrive-wallet.json
+
+# OS
+Thumbs.db
+
+# Internal bootstrap (monorepo only — not copied here)
+scripts/bootstrap-public-release.mjs

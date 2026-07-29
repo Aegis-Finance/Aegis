@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Build app
+        run: |
+          npm ci
+          npm run build
+
+      - name: Package release bundle
+        run: |
+          mkdir -p release
+          cp -r dist release/dist
+          cp -r public release/public
+          cp README.md package.json package-lock.json release/
+          (cd release && find . -type f -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS)
+          (cd release && zip -r "../${{ github.event.repository.name }}-${{ github.ref_name }}.zip" .)
+          sha256sum "${{ github.event.repository.name }}-${{ github.ref_name }}.zip" > "${{ github.event.repository.name }}-${{ github.ref_name }}.zip.sha256"
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ github.event.repository.name }}-${{ github.ref_name }}.zip
+            ${{ github.event.repository.name }}-${{ github.ref_name }}.zip.sha256

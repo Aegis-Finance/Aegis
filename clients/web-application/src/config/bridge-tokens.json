@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "dutchAuctionDisplay": {
+      "presaleOnly": true,
+      "scope": "Pre-sale Dutch auction only: `referenceUsdPerUnit` and related UI copy apply **only** during the TGE auction window. After the sale ends they have **no** intended use for AGS valuation, routing, oracles, or treasury math — post-sale pricing is **market-driven** (pools, DEX, external feeds). On-chain optional ERC-20 pay-in uses separate fixed pegs in `AutomatedDutchAuction` (see docs/tokendistribution/DUTCH_AUCTION_S_PRICING.md).",
+      "referenceUsdPerUnit": {
+        "S": 0.02,
+        "wS": 0.02,
+        "USDC": 0.98,
+        "USDT": 0.98,
+        "EURC": 0.98,
+        "WETH": 1000
+      },
+      "note": "Pre-sale / Dutch auction messaging only. Not an on-chain oracle and **not** for use after the auction ends."
+    }
+  },
+  "sonicTestnet": [
+    {
+      "tokenSymbol": "AGS",
+      "tokenAddress": "0xD9808CB8Dd2B9D51De7AEe6340500d606fbe43E1",
+      "enabled": true,
+      "description": "Canonical PrivateTokenContract (0xD9808CB8Dd2B9D51De7AEe6340500d606fbe43E1) — synced from deployments/sonicTestnet/latest.json"
+    },
+    {
+      "tokenSymbol": "wS",
+      "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "enabled": true,
+      "settlementRail": "sonic-gateway-native",
+      "description": "Wrapped S — Sonic testnet tab (Sonic docs)"
+    },
+    {
+      "tokenSymbol": "USDC",
+      "tokenAddress": "0x0BA304580ee7c9a980CF72e55f5Ed2E9fd30Bc51",
+      "enabled": true,
+      "settlementRail": "circle-cctp-v2",
+      "description": "USD Coin — Sonic Gateway documents USDC via Circle CCTP V2; bridge at gateway.soniclabs.com, then convert here."
+    },
+    {
+      "tokenSymbol": "USDT",
+      "tokenAddress": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+      "enabled": true,
+      "settlementRail": "sonic-gateway-native",
+      "description": "Tether USD (bridged) — re-verify on testnet explorer"
+    },
+    {
+      "tokenSymbol": "WETH",
+      "tokenAddress": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "enabled": true,
+      "settlementRail": "sonic-gateway-native",
+      "description": "Wrapped Ether — confirm on explorer"
+    }
+  ],
+  "sonic": [
+    {
+      "tokenSymbol": "AGS",
+      "tokenAddress": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+      "enabled": true,
+      "description": "Canonical PrivateTokenContract (0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d) — synced from deployments/sonic/latest.json. Retired deploy #1: 0xE38c9797cBfc61C403AC32F29aC8c197b53108C2"
+    },
+    {
+      "tokenSymbol": "wS",
+      "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "enabled": true,
+      "settlementRail": "sonic-gateway-native",
+      "description": "Wrapped S — Sonic mainnet official token list"
+    },
+    {
+      "tokenSymbol": "USDC",
+      "tokenAddress": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "enabled": true,
+      "settlementRail": "circle-cctp-v2",
+      "description": "USD Coin — Sonic Gateway documents USDC via Circle CCTP V2; bridge at gateway.soniclabs.com, then convert here."
+    },
+    {
+      "tokenSymbol": "EURC",
+      "tokenAddress": "0xe715cbA7B5cCb33790ceBFF1436809d36cb17E57",
+      "enabled": true,
+      "settlementRail": "sonic-gateway-native",
+      "description": "EURC (Bridged) — Sonic mainnet official token list"
+    },
+    {
+      "tokenSymbol": "USDT",
+      "tokenAddress": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+      "enabled": true,
+      "settlementRail": "sonic-gateway-native",
+      "description": "USDT (Bridged) — Sonic mainnet official token list"
+    },
+    {
+      "tokenSymbol": "WETH",
+      "tokenAddress": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "enabled": true,
+      "settlementRail": "sonic-gateway-native",
+      "description": "Wrapped Ether — Sonic mainnet official token list"
+    }
+  ]
+}

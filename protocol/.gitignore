@@ -1,0 +1,594 @@
+# Aegis Project .gitignore
+# Professional .gitignore for multi-language blockchain project
+
+# ================================
+# Environment & Secrets
+# ================================
+.env
+.env.local
+scripts/frontend-env.supplement.json
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example.local
+*.key
+*.pem
+secrets/
+private-keys/
+.secrets/
+
+# SnarkJS-exported Groth16 verification keys (operator-local; regenerate via npm run circuits:export-lending-vkeys / ops:dev-export-token-rail-vks — never treat dev exports as mainnet ceremony artifacts)
+config/verifiers/*.verifying_key.json
+
+# ================================
+# Node.js & NPM
+# ================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+app/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# Article PDF / Mermaid pipeline output (regenerate: `node scripts/build-article-pdf.js`)
+docs/articles/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ================================
+# Hardhat & Solidity
+# ================================
+# Build outputs and artifacts
+build/
+cache/
+artifacts/
+ceremony/
+cache
+artifacts
+typechain/
+typechain-types/
+typechain
+typechain-types
+
+# Hardhat files
+.hardhat_contract_sizer_output.json
+.openzeppelin/
+contract-sizes.txt
+
+# Coverage reports
+coverage.json
+coverage/
+
+# Gas reports
+gas-report.txt
+
+# Test results
+test-results.json
+
+# Deployment artifacts
+deployments/
+.deployments/
+deploy/
+
+# Verification artifacts
+.verification/
+
+# Circuit build outputs
+*.r1cs
+*.wasm
+*.sym
+*.zkey
+*.ptau
+*.dat
+
+# ZK ceremony files
+/ceremony/
+/keys/
+/powers/
+/contributions/
+
+# Circuit compilation outputs
+circuits/build/
+circuits/dist/
+
+# Proof generation outputs
+proofs/
+witnesses/
+
+# Development keys (NEVER commit production keys)
+dev-keys/
+test-keys/
+
+# ================================
+# IDE & Editors
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.vim/
+*.tmp
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ================================
+# Operating System
+# ================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================
+# Data & Logs
+# ================================
+*.log
+logs/
+data/cache/
+data/temp/
+data/raw/
+data/processed/
+*.csv
+*.json.bak
+*.db
+*.sqlite
+*.sqlite3
+
+# Machine Learning Models
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+models/trained/
+models/checkpoints/
+models/cache/
+
+# Predictions & Results
+predictions/
+results/
+outputs/
+reports/
+
+# ================================
+# Temporary & Build Files
+# ================================
+tmp/
+# Staged capital Merkle builder scratch files (often created at repo root)
+tmp-staged-merkle-*.json
+tmp-tree-out.json
+staged-capital-investor-tree.json
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ================================
+# Security & Analysis Tools
+# ================================
+# Slither
+.slither/
+slither-report.json
+slither-report.*.json
+slither-summary.txt
+slither-smoke.json
+
+# Mythril
+mythril-report.json
+
+# Echidna
+echidna-corpus/
+
+# Security audit reports
+audit-reports/
+security-reports/
+
+# ================================
+# Blockchain & Crypto
+# ================================
+# Private keys and wallets
+*.keystore
+keystore/
+wallets/
+mnemonic.txt
+seed.txt
+
+# Network configurations
+networks.json
+networks.local.json
+
+# ================================
+# Documentation
+# ================================
+# Auto-generated docs
+docs/build/
+docs/dist/
+site/
+
+# ================================
+# Monitoring & Analytics
+# ================================
+# Performance monitoring
+performance/
+metrics/
+monitoring/
+
+# Error tracking
+errors/
+crashes/
+
+# ================================
+# Testing
+# ================================
+# Test artifacts
+test-results/
+test-reports/
+.nyc_output/
+
+# Benchmark results
+benchmarks/
+benchmark-results/
+
+# ================================
+# Package Managers
+# ================================
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# pnpm
+.pnpm-store/
+
+# ================================
+# Miscellaneous
+# ================================
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local configuration
+config.local.js
+config.local.json
+local.json
+
+# Runtime configuration
+runtime/
+.runtime/
+
+# ================================
+# Aegis Project Security
+# ================================
+# CRITICAL: Anonymous deployment protection
+# Never commit these files to maintain founder anonymity
+
+# Deployment sensitive information
+deployment-config.json
+deployer-wallet.json
+private-deployment-config.js
+deployment-secrets.json
+deployment-private/
+
+# Multi-sig sensitive data
+multisig-config.json
+signer-details.json
+multisig-private-info.json
+multisig-private/
+
+# Personal identity information - CRITICAL
+founder-identity/
+personal-info/
+identity-docs/
+kyc-documents/
+personal-notes/
+founder-notes/
+
+# Financial and legal documents
+financial-records/
+legal-documents/
+audit-private-notes/
+internal-communications/
+business-plans/
+investor-materials/
+fundraising-docs/
+partnerships-private/
+
+# Private documentation and strategy
+PRIVATE_NOTES.md
+INTERNAL_ROADMAP.md
+FOUNDER_NOTES.md
+STRATEGY_PRIVATE.md
+private-docs/
+internal-docs/
+
+# Security audit private files
+audit-private/
+security-private/
+vulnerability-reports-private/
+penetration-test-results/
+
+# Analytics and tracking data
+analytics-private/
+user-data/
+tracking-data/
+metrics-private/
+
+# Regulatory and compliance (keep private until DAO)
+regulatory-docs/
+compliance-private/
+legal-analysis-private/
+regulatory-analysis/
+
+# Emergency procedures (keep private until DAO transition)
+emergency-procedures-private.md
+disaster-recovery-private.md
+incident-response-private.md
+emergency-contacts-private.json
+
+# Anonymous operation files
+anonymous-operations/
+opsec-docs/
+communication-logs/
+encrypted-backups/
+
+# Wallet and key management
+wallet-backups/
+key-derivation/
+seed-backups/
+hardware-wallet-configs/
+
+# Development environment secrets
+dev-secrets/
+staging-secrets/
+production-secrets/
+environment-configs/
+
+# Custom ignores for Aegis project
+# Add any project-specific files or directories here

@@ -1,0 +1,12 @@
+{
+  "circuitName": "aggregator",
+  "ceremonyId": "aegis-mpc-aggregator-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "7d7e393304a1360054a824f9540eb09531a4e72e73389e1a979dc5f239a1667c",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028304,
+  "isProduction": true,
+  "beaconHash": "0xb882dd8fcc4186dba1a68f26de07aac99c9e49c4ada71fdf92cc6197393b5883",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_aggregator",
+  "source": "run-factory-mpc-local.mjs"
+}

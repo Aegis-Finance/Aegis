@@ -1,0 +1,12 @@
+{
+  "circuitName": "refund",
+  "ceremonyId": "aegis-mpc-refund-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "97bed3edfdf0f28e740d27105a6efb8e498abd1880e13231a95bf41598aeac52",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027967,
+  "isProduction": true,
+  "beaconHash": "0xec5e9998e072cc300f8d876737000c1d3e32a14277086c63ba024be0e07a8aa4",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_refund",
+  "source": "run-factory-mpc-local.mjs"
+}

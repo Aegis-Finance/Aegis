@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-terminal-accent px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-terminal-accent/25 transition hover:bg-terminal-accent-dim hover:shadow-terminal-accent/30;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-terminal-border bg-terminal-surface px-6 py-2.5 text-sm font-semibold text-terminal-text transition hover:border-terminal-accent/50 hover:shadow-aegis;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-terminal-text-dim transition hover:bg-terminal-surface hover:text-terminal-text;
+  }
+  .btn-link {
+    @apply text-sm font-medium text-terminal-accent hover:underline;
+  }
+  .card {
+    @apply rounded-2xl border border-terminal-border bg-terminal-surface p-6 shadow-aegis transition hover:border-terminal-accent/25 hover:shadow-md;
+  }
+  .card-flat {
+    @apply rounded-2xl border border-terminal-border bg-terminal-surface/80 p-6 backdrop-blur-sm;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider;
+  }
+  .badge-live {
+    @apply badge border-emerald-500/35 bg-emerald-500/10 text-emerald-700;
+  }
+  .badge-ready {
+    @apply badge border-sky-500/35 bg-sky-500/10 text-sky-800;
+  }
+  .badge-progress {
+    @apply badge border-amber-500/35 bg-amber-500/10 text-amber-800;
+  }
+  .badge-soon {
+    @apply badge border-terminal-border bg-terminal-bg text-terminal-text-dim;
+  }
+  .section-label {
+    @apply text-[11px] font-bold uppercase tracking-[0.22em] text-terminal-accent;
+  }
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-terminal-text sm:text-4xl;
+  }
+  .alert-banner {
+    @apply border-b border-amber-500/30 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent;
+  }
+  .hero-glow {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -20%, rgba(0, 122, 255, 0.12), transparent),
+      radial-gradient(ellipse 50% 40% at 100% 0%, rgba(0, 122, 255, 0.06), transparent);
+  }
+  .grid-dots {
+    background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.06) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}

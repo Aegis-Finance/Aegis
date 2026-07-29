@@ -1,0 +1,14 @@
+{
+  "circuitName": "governance-sonic-mainnet",
+  "ceremonyId": "0xed0779fd53dda2db8af57e8b58b1f266fb376128d1fd651817ff52b22291f23a",
+  "participantCount": "4",
+  "transcriptHash": "0x4a73752bc407ab95d805d56b718d3a3d37c128d6155f77e1a242fe584c809318",
+  "setupTimestamp": "1731448800",
+  "isProduction": true,
+  "powersOfTauHash": "0x690e928aa331068dc7a73c3ba981609a43c8301b421d4263146392a75ad3c5f1",
+  "verifyingKeyHash": "0xd06f582f06e53c3ce4641dbb2249ed3401bc94cc871e5d6eb62a0d5ad2a8178c",
+  "seed": "your-deterministic-seed",
+  "generatedAt": "2025-11-12T11:26:06.015Z",
+  "generatedBy": "scripts/governance/tools/generate-dev-ceremony.js",
+  "isMock": false
+}

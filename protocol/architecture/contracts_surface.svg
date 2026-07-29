@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="794pt" height="852pt"
+ viewBox="0.00 0.00 794.00 852.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 833.8)">
+<title>ContractsSurface</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-833.8 776.08,-833.8 776.08,18 -18,18"/>
+<text xml:space="preserve" text-anchor="middle" x="379.04" y="-799.2" font-family="Helvetica,sans-Serif" font-size="14.00">Aegis Solidity surface · contracts/ tree (production + libraries)</text>
+<g id="clust1" class="cluster">
+<title>cluster_gov</title>
+<polygon fill="#fdf2f8" stroke="#fce7f3" points="286.5,-581 286.5,-694 442.05,-694 442.05,-581 286.5,-581"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-677.4" font-family="Helvetica,sans-Serif" font-size="14.00">governance/</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_privacy</title>
+<polygon fill="#ecfdf5" stroke="#d1fae5" points="305.75,-492 305.75,-573 422.8,-573 422.8,-492 305.75,-492"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-556.4" font-family="Helvetica,sans-Serif" font-size="14.00">privacy/</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_tokendist</title>
+<polygon fill="#fffbeb" stroke="#fef3c7" points="256.73,-371 256.73,-484 471.81,-484 471.81,-371 256.73,-371"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-467.4" font-family="Helvetica,sans-Serif" font-size="14.00">tokendistribution/</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_crowd</title>
+<polygon fill="#ecfeff" stroke="#cffafe" points="267.98,-286 267.98,-363 460.57,-363 460.57,-286 267.98,-286"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-346.4" font-family="Helvetica,sans-Serif" font-size="14.00">crowdfunding/</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_dex</title>
+<polygon fill="#ecfeff" stroke="#e0f7fa" points="29.51,-8 29.51,-111 173.58,-111 173.58,-8 29.51,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-94.4" font-family="Helvetica,sans-Serif" font-size="14.00">dex/</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_defi</title>
+<polygon fill="#f0fdf4" stroke="#dcfce7" points="285.25,-111 285.25,-278 443.29,-278 443.29,-111 285.25,-111"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-261.4" font-family="Helvetica,sans-Serif" font-size="14.00">Root DeFi / analytics</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_treasury</title>
+<polygon fill="#fefce8" stroke="#fef9c3" points="25.77,-119 25.77,-211 178.33,-211 178.33,-119 25.77,-119"/>
+<text xml:space="preserve" text-anchor="middle" x="102.05" y="-194.4" font-family="Helvetica,sans-Serif" font-size="14.00">treasury/ + incentives/</text>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_liq</title>
+<polygon fill="#fff7ed" stroke="#ffedd5" points="517.49,-143 517.49,-246 750.08,-246 750.08,-143 517.49,-143"/>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-229.4" font-family="Helvetica,sans-Serif" font-size="14.00">liquidity/ + oracles/</text>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_wrappers</title>
+<polygon fill="#faf5ff" stroke="#f5f3ff" points="294.5,-702 294.5,-783 434.05,-783 434.05,-702 294.5,-702"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-766.4" font-family="Helvetica,sans-Serif" font-size="14.00">wrappers/</text>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_timelock</title>
+<polygon fill="#f8fafc" stroke="#f1f5f9" points="569.02,-599 569.02,-676 698.55,-676 698.55,-599 569.02,-599"/>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-659.4" font-family="Helvetica,sans-Serif" font-size="14.00">timelock/</text>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_feem</title>
+<polygon fill="#fffbeb" stroke="#fff7ed" points="8,-219 8,-296 195.09,-296 195.09,-219 8,-219"/>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-279.4" font-family="Helvetica,sans-Serif" font-size="14.00">feem/</text>
+</g>
+<g id="node1" class="node">
+<title>Kernel</title>
+<path fill="#e0f2fe" stroke="black" d="M150.57,-514.2C150.57,-514.2 52.52,-514.2 52.52,-514.2 46.52,-514.2 40.52,-508.2 40.52,-502.2 40.52,-502.2 40.52,-431.8 40.52,-431.8 40.52,-425.8 46.52,-419.8 52.52,-419.8 52.52,-419.8 150.57,-419.8 150.57,-419.8 156.57,-419.8 162.57,-425.8 162.57,-431.8 162.57,-431.8 162.57,-502.2 162.57,-502.2 162.57,-508.2 156.57,-514.2 150.57,-514.2"/>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-502.1" font-family="Helvetica,sans-Serif" font-size="9.00">Core</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-491.3" font-family="Helvetica,sans-Serif" font-size="9.00">────────</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-480.5" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateTokenContract</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-469.7" font-family="Helvetica,sans-Serif" font-size="9.00">VerifierFactory</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-458.9" font-family="Helvetica,sans-Serif" font-size="9.00">Groth16Verifier</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-448.1" font-family="Helvetica,sans-Serif" font-size="9.00">CeremonyVerifier</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-437.3" font-family="Helvetica,sans-Serif" font-size="9.00">RecursiveProofAggregator</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-426.5" font-family="Helvetica,sans-Serif" font-size="9.00">TokenAllocation</text>
+</g>
+<g id="node2" class="node">
+<title>Gov</title>
+<path fill="#fbcfe8" stroke="black" d="M422.05,-661.4C422.05,-661.4 306.5,-661.4 306.5,-661.4 300.5,-661.4 294.5,-655.4 294.5,-649.4 294.5,-649.4 294.5,-600.6 294.5,-600.6 294.5,-594.6 300.5,-588.6 306.5,-588.6 306.5,-588.6 422.05,-588.6 422.05,-588.6 428.05,-588.6 434.05,-594.6 434.05,-600.6 434.05,-600.6 434.05,-649.4 434.05,-649.4 434.05,-655.4 428.05,-661.4 422.05,-661.4"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-649.3" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceCore</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-638.5" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceDelegation</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-627.7" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceTreasury</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-616.9" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceProofValidator</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-606.1" font-family="Helvetica,sans-Serif" font-size="9.00">EmergencyKeyRotation</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-595.3" font-family="Helvetica,sans-Serif" font-size="9.00">EnumerableTimelockController</text>
+</g>
+<g id="edge1" class="edge">
+<title>Kernel&#45;&gt;Gov</title>
+<path fill="none" stroke="#64748b" d="M162.97,-514.3C190.7,-534.89 224.51,-558.49 256.73,-577 265.38,-581.97 274.65,-586.81 283.97,-591.37"/>
+<polygon fill="#64748b" stroke="#64748b" points="282.18,-594.4 292.71,-595.56 285.2,-588.08 282.18,-594.4"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-579.69" font-family="Helvetica,sans-Serif" font-size="7.00">governance</text>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-571.29" font-family="Helvetica,sans-Serif" font-size="7.00">facade</text>
+</g>
+<g id="node3" class="node">
+<title>Priv</title>
+<path fill="#bbf7d0" stroke="black" d="M402.8,-540.2C402.8,-540.2 325.75,-540.2 325.75,-540.2 319.75,-540.2 313.75,-534.2 313.75,-528.2 313.75,-528.2 313.75,-511.8 313.75,-511.8 313.75,-505.8 319.75,-499.8 325.75,-499.8 325.75,-499.8 402.8,-499.8 402.8,-499.8 408.8,-499.8 414.8,-505.8 414.8,-511.8 414.8,-511.8 414.8,-528.2 414.8,-528.2 414.8,-534.2 408.8,-540.2 402.8,-540.2"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-528.1" font-family="Helvetica,sans-Serif" font-size="9.00">PrivacyEntryRouter</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-517.3" font-family="Helvetica,sans-Serif" font-size="9.00">AegisExecutionRelay</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-506.5" font-family="Helvetica,sans-Serif" font-size="9.00">(gasless allowlist)</text>
+</g>
+<g id="edge2" class="edge">
+<title>Kernel&#45;&gt;Priv</title>
+<path fill="none" stroke="#64748b" d="M163.02,-479.29C204.91,-487.81 260.47,-499.1 302.44,-507.63"/>
+<polygon fill="#64748b" stroke="#64748b" points="301.64,-511.04 312.13,-509.6 303.03,-504.18 301.64,-511.04"/>
+</g>
+<g id="node4" class="node">
+<title>TD</title>
+<path fill="#fde68a" stroke="black" d="M451.81,-451.4C451.81,-451.4 276.73,-451.4 276.73,-451.4 270.73,-451.4 264.73,-445.4 264.73,-439.4 264.73,-439.4 264.73,-390.6 264.73,-390.6 264.73,-384.6 270.73,-378.6 276.73,-378.6 276.73,-378.6 451.81,-378.6 451.81,-378.6 457.81,-378.6 463.81,-384.6 463.81,-390.6 463.81,-390.6 463.81,-439.4 463.81,-439.4 463.81,-445.4 457.81,-451.4 451.81,-451.4"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-439.3" font-family="Helvetica,sans-Serif" font-size="9.00">AutomatedDutchAuction</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-428.5" font-family="Helvetica,sans-Serif" font-size="9.00">TokenDistributionSale</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-417.7" font-family="Helvetica,sans-Serif" font-size="9.00">TimeLockPurchaseLimits</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-406.9" font-family="Helvetica,sans-Serif" font-size="9.00">AutomatedBondingCurve</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-396.1" font-family="Helvetica,sans-Serif" font-size="9.00">AutomatedLiquidityDeployer</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-385.3" font-family="Helvetica,sans-Serif" font-size="9.00">AuctionPriceLib · TokenDistributionVerifierLib</text>
+</g>
+<g id="edge4" class="edge">
+<title>Kernel&#45;&gt;TD</title>
+<path fill="none" stroke="#64748b" d="M163.02,-454.94C189.81,-449.6 222.2,-443.14 253.05,-436.98"/>
+<polygon fill="#64748b" stroke="#64748b" points="253.72,-440.42 262.85,-435.03 252.36,-433.55 253.72,-440.42"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-456.16" font-family="Helvetica,sans-Serif" font-size="7.00">TGE +</text>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-447.76" font-family="Helvetica,sans-Serif" font-size="7.00">sale</text>
+</g>
+<g id="node5" class="node">
+<title>CF</title>
+<path fill="#a5f3fc" stroke="black" d="M440.57,-330C440.57,-330 287.98,-330 287.98,-330 281.98,-330 275.98,-324 275.98,-318 275.98,-318 275.98,-306 275.98,-306 275.98,-300 281.98,-294 287.98,-294 287.98,-294 440.57,-294 440.57,-294 446.57,-294 452.57,-300 452.57,-306 452.57,-306 452.57,-318 452.57,-318 452.57,-324 446.57,-330 440.57,-330"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-314.7" font-family="Helvetica,sans-Serif" font-size="9.00">AegisCrowdShield · StagedCapitalVault</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-303.9" font-family="Helvetica,sans-Serif" font-size="9.00">+ verifiers · escrow · reputation</text>
+</g>
+<g id="edge5" class="edge">
+<title>Kernel&#45;&gt;CF</title>
+<path fill="none" stroke="#64748b" d="M162.83,-425.93C190.96,-407.28 225.14,-385.34 256.73,-367 275.48,-356.12 296.6,-344.99 315.07,-335.61"/>
+<polygon fill="#64748b" stroke="#64748b" points="316.6,-338.76 323.96,-331.13 313.45,-332.51 316.6,-338.76"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-406.36" font-family="Helvetica,sans-Serif" font-size="7.00">crowdfunding</text>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-397.96" font-family="Helvetica,sans-Serif" font-size="7.00">ZK</text>
+</g>
+<g id="node7" class="node">
+<title>DeFi</title>
+<path fill="#bbf7d0" stroke="black" d="M423.29,-245.4C423.29,-245.4 305.25,-245.4 305.25,-245.4 299.25,-245.4 293.25,-239.4 293.25,-233.4 293.25,-233.4 293.25,-130.6 293.25,-130.6 293.25,-124.6 299.25,-118.6 305.25,-118.6 305.25,-118.6 423.29,-118.6 423.29,-118.6 429.29,-118.6 435.29,-124.6 435.29,-130.6 435.29,-130.6 435.29,-233.4 435.29,-233.4 435.29,-239.4 429.29,-245.4 423.29,-245.4"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-233.3" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateStakingContract</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-222.5" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateYieldFarming</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-211.7" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateAMMContract</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-200.9" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateLendingContract</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-190.1" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateDerivatives (live options)</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-179.3" font-family="Helvetica,sans-Serif" font-size="9.00">DecentralizedInsurance</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-168.5" font-family="Helvetica,sans-Serif" font-size="9.00">DecentralizedPrivacyRewards</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-157.7" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateAnalytics</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-146.9" font-family="Helvetica,sans-Serif" font-size="9.00">OnChainPrivacyLeaderboard</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-136.1" font-family="Helvetica,sans-Serif" font-size="9.00">HyperOptimizedAggregator</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-125.3" font-family="Helvetica,sans-Serif" font-size="9.00">CrossChainPrivacyBridge</text>
+</g>
+<g id="edge3" class="edge">
+<title>Kernel&#45;&gt;DeFi</title>
+<path fill="none" stroke="#64748b" d="M139.36,-419.66C169.69,-381.45 214.43,-326.87 256.73,-282 265.63,-272.55 275.24,-262.89 284.9,-253.47"/>
+<polygon fill="#64748b" stroke="#64748b" points="287.17,-256.14 291.93,-246.68 282.31,-251.11 287.17,-256.14"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-346.7" font-family="Helvetica,sans-Serif" font-size="7.00">AGS +</text>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-338.3" font-family="Helvetica,sans-Serif" font-size="7.00">verifyProof</text>
+</g>
+<g id="node10" class="node">
+<title>Wrap</title>
+<path fill="#e9d5ff" stroke="black" d="M414.05,-750.2C414.05,-750.2 314.5,-750.2 314.5,-750.2 308.5,-750.2 302.5,-744.2 302.5,-738.2 302.5,-738.2 302.5,-721.8 302.5,-721.8 302.5,-715.8 308.5,-709.8 314.5,-709.8 314.5,-709.8 414.05,-709.8 414.05,-709.8 420.05,-709.8 426.05,-715.8 426.05,-721.8 426.05,-721.8 426.05,-738.2 426.05,-738.2 426.05,-744.2 420.05,-750.2 414.05,-750.2"/>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-738.1" font-family="Helvetica,sans-Serif" font-size="9.00">SonicGatewayWrapper</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-727.3" font-family="Helvetica,sans-Serif" font-size="9.00">MessagingAdapterAllowlist</text>
+<text xml:space="preserve" text-anchor="middle" x="364.27" y="-716.5" font-family="Helvetica,sans-Serif" font-size="9.00">*VerifierWrapper.sol</text>
+</g>
+<g id="edge6" class="edge">
+<title>Kernel&#45;&gt;Wrap</title>
+<path fill="none" stroke="#64748b" d="M122.24,-514.45C146.38,-566.9 192.19,-650.25 256.73,-698 267,-705.6 279.07,-711.4 291.33,-715.84"/>
+<polygon fill="#64748b" stroke="#64748b" points="290.08,-719.11 300.67,-718.92 292.27,-712.46 290.08,-719.11"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-690.9" font-family="Helvetica,sans-Serif" font-size="7.00">interop</text>
+</g>
+<g id="node11" class="node">
+<title>TL</title>
+<path fill="#e2e8f0" stroke="black" d="M678.55,-643C678.55,-643 589.02,-643 589.02,-643 583.02,-643 577.02,-637 577.02,-631 577.02,-631 577.02,-619 577.02,-619 577.02,-613 583.02,-607 589.02,-607 589.02,-607 678.55,-607 678.55,-607 684.55,-607 690.55,-613 690.55,-619 690.55,-619 690.55,-631 690.55,-631 690.55,-637 684.55,-643 678.55,-643"/>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-622.3" font-family="Helvetica,sans-Serif" font-size="9.00">AegisTimelockController</text>
+</g>
+<g id="edge7" class="edge">
+<title>Gov&#45;&gt;TL</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M434.51,-625C474.81,-625 525.38,-625 565.36,-625"/>
+<polygon fill="#64748b" stroke="#64748b" points="565.36,-628.5 575.36,-625 565.36,-621.5 565.36,-628.5"/>
+<text xml:space="preserve" text-anchor="middle" x="494.65" y="-635.5" font-family="Helvetica,sans-Serif" font-size="7.00">timelock</text>
+<text xml:space="preserve" text-anchor="middle" x="494.65" y="-627.1" font-family="Helvetica,sans-Serif" font-size="7.00">ops</text>
+</g>
+<g id="node9" class="node">
+<title>Liq</title>
+<path fill="#fed7aa" stroke="black" d="M730.08,-213C730.08,-213 537.49,-213 537.49,-213 531.49,-213 525.49,-207 525.49,-201 525.49,-201 525.49,-163 525.49,-163 525.49,-157 531.49,-151 537.49,-151 537.49,-151 730.08,-151 730.08,-151 736.08,-151 742.08,-157 742.08,-163 742.08,-163 742.08,-201 742.08,-201 742.08,-207 736.08,-213 730.08,-213"/>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-200.9" font-family="Helvetica,sans-Serif" font-size="9.00">PublicLiquidityPool</text>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-190.1" font-family="Helvetica,sans-Serif" font-size="9.00">TreasuryLiquidityAllocator</text>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-179.3" font-family="Helvetica,sans-Serif" font-size="9.00">PoolPriceValidator (+Enhanced)</text>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-168.5" font-family="Helvetica,sans-Serif" font-size="9.00">MultiOracleAggregator</text>
+<text xml:space="preserve" text-anchor="middle" x="633.78" y="-157.7" font-family="Helvetica,sans-Serif" font-size="9.00">Chainlink · Pyth · API3 · Band · Stork · Supra …</text>
+</g>
+<g id="edge13" class="edge">
+<title>TD&#45;&gt;Liq</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M455,-378.12C460.86,-374.64 466.52,-370.93 471.81,-367 526.86,-326.1 576.37,-263.42 605.51,-222.57"/>
+<polygon fill="#64748b" stroke="#64748b" points="608.35,-224.61 611.25,-214.42 602.63,-220.58 608.35,-224.61"/>
+<text xml:space="preserve" text-anchor="middle" x="494.65" y="-369.45" font-family="Helvetica,sans-Serif" font-size="7.00">liquidity</text>
+<text xml:space="preserve" text-anchor="middle" x="494.65" y="-361.05" font-family="Helvetica,sans-Serif" font-size="7.00">deploy</text>
+</g>
+<g id="node6" class="node">
+<title>DX</title>
+<path fill="#bae6fd" stroke="black" d="M153.58,-78C153.58,-78 49.51,-78 49.51,-78 43.51,-78 37.51,-72 37.51,-66 37.51,-66 37.51,-28 37.51,-28 37.51,-22 43.51,-16 49.51,-16 49.51,-16 153.58,-16 153.58,-16 159.58,-16 165.58,-22 165.58,-28 165.58,-28 165.58,-66 165.58,-66 165.58,-72 159.58,-78 153.58,-78"/>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-65.9" font-family="Helvetica,sans-Serif" font-size="9.00">AegisPublicPoolRouter</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-55.1" font-family="Helvetica,sans-Serif" font-size="9.00">AegisCanonicalSwapRouter</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-44.3" font-family="Helvetica,sans-Serif" font-size="9.00">RFQIntentSettlement</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-33.5" font-family="Helvetica,sans-Serif" font-size="9.00">SignedLimitOrderRegistry</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-22.7" font-family="Helvetica,sans-Serif" font-size="9.00">TransparentEscrowOrders</text>
+</g>
+<g id="edge11" class="edge">
+<title>DX&#45;&gt;DeFi</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M163.35,-78.48C198.98,-96.93 244.43,-120.47 282.98,-140.43"/>
+<polygon fill="#64748b" stroke="#64748b" points="281.31,-143.5 291.8,-144.99 284.53,-137.29 281.31,-143.5"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-129.05" font-family="Helvetica,sans-Serif" font-size="7.00">transparent</text>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-120.65" font-family="Helvetica,sans-Serif" font-size="7.00">legs</text>
+</g>
+<g id="edge8" class="edge">
+<title>DeFi&#45;&gt;Liq</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M435.56,-182C459.53,-182 487.05,-182 513.77,-182"/>
+<polygon fill="#64748b" stroke="#64748b" points="513.65,-185.5 523.65,-182 513.65,-178.5 513.65,-185.5"/>
+<text xml:space="preserve" text-anchor="middle" x="494.65" y="-192.5" font-family="Helvetica,sans-Serif" font-size="7.00">pools /</text>
+<text xml:space="preserve" text-anchor="middle" x="494.65" y="-184.1" font-family="Helvetica,sans-Serif" font-size="7.00">price</text>
+</g>
+<g id="node8" class="node">
+<title>TR</title>
+<path fill="#fef08a" stroke="black" d="M154.82,-178.6C154.82,-178.6 48.27,-178.6 48.27,-178.6 42.27,-178.6 36.27,-172.6 36.27,-166.6 36.27,-166.6 36.27,-139.4 36.27,-139.4 36.27,-133.4 42.27,-127.4 48.27,-127.4 48.27,-127.4 154.82,-127.4 154.82,-127.4 160.82,-127.4 166.82,-133.4 166.82,-139.4 166.82,-139.4 166.82,-166.6 166.82,-166.6 166.82,-172.6 160.82,-178.6 154.82,-178.6"/>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-166.5" font-family="Helvetica,sans-Serif" font-size="9.00">DaoDynamicRevenueRouter</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-155.7" font-family="Helvetica,sans-Serif" font-size="9.00">TreasuryBondAuction</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-144.9" font-family="Helvetica,sans-Serif" font-size="9.00">LiquidityMiningGauge</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-134.1" font-family="Helvetica,sans-Serif" font-size="9.00">(per&#45;pool USDC + SONIC)</text>
+</g>
+<g id="edge9" class="edge">
+<title>TR&#45;&gt;DeFi</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M167,-160.17C201.71,-164.03 244.88,-168.83 281.89,-172.95"/>
+<polygon fill="#64748b" stroke="#64748b" points="281.33,-176.41 291.66,-174.03 282.11,-169.45 281.33,-176.41"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-178.87" font-family="Helvetica,sans-Serif" font-size="7.00">rewards /</text>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-170.47" font-family="Helvetica,sans-Serif" font-size="7.00">tokens</text>
+</g>
+<g id="edge10" class="edge">
+<title>TR&#45;&gt;Liq</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M167.25,-129.15C194.47,-120.31 226.74,-111.38 256.73,-107 351.32,-93.19 378.48,-86.32 471.81,-107 506.01,-114.58 541.56,-130.2 570.52,-145.23"/>
+<polygon fill="#64748b" stroke="#64748b" points="568.66,-148.21 579.14,-149.8 571.94,-142.03 568.66,-148.21"/>
+</g>
+<g id="node12" class="node">
+<title>FeeM</title>
+<path fill="#ffedd5" stroke="black" d="M175.09,-263C175.09,-263 28,-263 28,-263 22,-263 16,-257 16,-251 16,-251 16,-239 16,-239 16,-233 22,-227 28,-227 28,-227 175.09,-227 175.09,-227 181.09,-227 187.09,-233 187.09,-239 187.09,-239 187.09,-251 187.09,-251 187.09,-257 181.09,-263 175.09,-263"/>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-247.7" font-family="Helvetica,sans-Serif" font-size="9.00">AGSFeeMonetization</text>
+<text xml:space="preserve" text-anchor="middle" x="101.55" y="-236.9" font-family="Helvetica,sans-Serif" font-size="9.00">FeeMonetizationGovernanceExtension</text>
+</g>
+<g id="edge12" class="edge">
+<title>FeeM&#45;&gt;DeFi</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M179.01,-226.52C211.41,-218.69 249.2,-209.56 282.1,-201.61"/>
+<polygon fill="#64748b" stroke="#64748b" points="282.68,-205.07 291.58,-199.32 281.03,-198.27 282.68,-205.07"/>
+<text xml:space="preserve" text-anchor="middle" x="225.91" y="-221.24" font-family="Helvetica,sans-Serif" font-size="7.00">S rewards</text>
+</g>
+</g>
+</svg>

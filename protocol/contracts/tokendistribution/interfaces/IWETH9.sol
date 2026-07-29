@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.26;
+
+/// @notice Minimal wrapped native (e.g. wS / WETH9 on Sonic).
+interface IWETH9 {
+    function deposit() external payable;
+    function withdraw(uint256 amount) external;
+    function balanceOf(address account) external view returns (uint256);
+    function approve(address spender, uint256 amount) external returns (bool);
+    function transfer(address to, uint256 amount) external returns (bool);
+}

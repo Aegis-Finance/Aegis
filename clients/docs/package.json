@@ -1,0 +1,14 @@
+{
+  "name": "aegis-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs && node -e \"require('fs').cpSync('docs/.vitepress/dist','dist',{recursive:true})\"",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

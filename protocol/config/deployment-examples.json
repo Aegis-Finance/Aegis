@@ -1,0 +1,307 @@
+{
+  "development": {
+    "description": "Development deployment configuration for testing and iteration",
+    "network": "sonicTestnet",
+    "options": {
+      "requireCeremony": false,
+      "requireMultiSig": false,
+      "autoVerify": true,
+      "runTests": true,
+      "createBackups": false,
+      "enableMonitoring": false,
+      "enableRollback": false
+    },
+    "contracts": [
+      {
+        "name": "TransferVerifier",
+        "args": []
+      },
+      {
+        "name": "MintVerifier", 
+        "args": []
+      },
+      {
+        "name": "SimplifiedVerifierFactory",
+        "args": []
+      },
+      {
+        "name": "PrivateTokenContract",
+        "args": ["{{SimplifiedVerifierFactory}}", "1000000000000000000000000"],
+        "dependencies": ["SimplifiedVerifierFactory"]
+      }
+    ],
+    "gasSettings": {
+      "gasPrice": "1000000000",
+      "gasLimit": "8000000"
+    }
+  },
+
+  "staging": {
+    "description": "Staging deployment configuration for pre-production testing",
+    "network": "sonicTestnet",
+    "options": {
+      "requireCeremony": true,
+      "requireMultiSig": true,
+      "autoVerify": true,
+      "runTests": true,
+      "createBackups": true,
+      "enableMonitoring": true,
+      "enableRollback": true
+    },
+    "contracts": [
+      {
+        "name": "TransferVerifier",
+        "args": []
+      },
+      {
+        "name": "MintVerifier",
+        "args": []
+      },
+      {
+        "name": "BurnVerifier",
+        "args": []
+      },
+      {
+        "name": "GovernanceVerifier",
+        "args": []
+      },
+      {
+        "name": "BridgeVerifier",
+        "args": []
+      },
+      {
+        "name": "DerivativeVerifier",
+        "args": []
+      },
+      {
+        "name": "SimplifiedVerifierFactory",
+        "args": []
+      },
+      {
+        "name": "PrivateTokenContract",
+        "args": ["{{SimplifiedVerifierFactory}}", "21000000000000000000000000"],
+        "dependencies": ["SimplifiedVerifierFactory"]
+      },
+      {
+        "name": "AegisGovernance",
+        "args": ["{{PrivateTokenContract}}"],
+        "dependencies": ["PrivateTokenContract"]
+      },
+      {
+        "name": "AegisTreasury",
+        "args": ["{{PrivateTokenContract}}", "{{AegisGovernance}}"],
+        "dependencies": ["PrivateTokenContract", "AegisGovernance"]
+      }
+    ],
+    "multiSig": {
+      "threshold": 2,
+      "owners": [
+        "0x1234567890123456789012345678901234567890",
+        "0x2345678901234567890123456789012345678901",
+        "0x3456789012345678901234567890123456789012"
+      ],
+      "timelock": 86400
+    },
+    "gasSettings": {
+      "gasPrice": "1500000000",
+      "gasLimit": "8000000"
+    }
+  },
+
+  "production": {
+    "description": "Production deployment configuration for mainnet deployment",
+    "network": "sonic",
+    "options": {
+      "requireCeremony": true,
+      "requireMultiSig": true,
+      "autoVerify": true,
+      "runTests": true,
+      "createBackups": true,
+      "enableMonitoring": true,
+      "enableRollback": true
+    },
+    "contracts": [
+      {
+        "name": "TransferVerifier",
+        "args": []
+      },
+      {
+        "name": "MintVerifier",
+        "args": []
+      },
+      {
+        "name": "BurnVerifier",
+        "args": []
+      },
+      {
+        "name": "GovernanceVerifier",
+        "args": []
+      },
+      {
+        "name": "BridgeVerifier",
+        "args": []
+      },
+      {
+        "name": "DerivativeVerifier",
+        "args": []
+      },
+      {
+        "name": "SimplifiedVerifierFactory",
+        "args": []
+      },
+      {
+        "name": "PrivateTokenContract",
+        "args": ["{{SimplifiedVerifierFactory}}", "21000000000000000000000000"],
+        "dependencies": ["SimplifiedVerifierFactory"]
+      },
+      {
+        "name": "AegisGovernance",
+        "args": ["{{PrivateTokenContract}}"],
+        "dependencies": ["PrivateTokenContract"]
+      },
+      {
+        "name": "AegisTreasury",
+        "args": ["{{PrivateTokenContract}}", "{{AegisGovernance}}"],
+        "dependencies": ["PrivateTokenContract", "AegisGovernance"]
+      }
+    ],
+    "multiSig": {
+      "threshold": 4,
+      "owners": [
+        "0x1234567890123456789012345678901234567890",
+        "0x2345678901234567890123456789012345678901", 
+        "0x3456789012345678901234567890123456789012",
+        "0x4567890123456789012345678901234567890123",
+        "0x5678901234567890123456789012345678901234",
+        "0x6789012345678901234567890123456789012345",
+        "0x7890123456789012345678901234567890123456"
+      ],
+      "timelock": 172800
+    },
+    "ceremony": {
+      "participants": 10,
+      "threshold": 7,
+      "coordinatorAddress": "0x8901234567890123456789012345678901234567",
+      "ceremonyDuration": 604800
+    },
+    "gasSettings": {
+      "gasPrice": "2000000000",
+      "gasLimit": "8000000"
+    },
+    "monitoring": {
+      "alerting": true,
+      "healthChecks": true,
+      "performanceTracking": true,
+      "securityMonitoring": true
+    }
+  },
+
+  "multichain": {
+    "description": "Multi-chain deployment configuration for cross-chain deployment",
+    "networks": ["sonic", "ethereum", "polygon", "arbitrum"],
+    "options": {
+      "requireCeremony": true,
+      "requireMultiSig": true,
+      "autoVerify": true,
+      "runTests": true,
+      "createBackups": true,
+      "enableMonitoring": true,
+      "enableRollback": true,
+      "crossChainValidation": true
+    },
+    "networkSpecific": {
+      "sonic": {
+        "gasPrice": "2000000000",
+        "confirmations": 3
+      },
+      "ethereum": {
+        "gasPrice": "20000000000",
+        "confirmations": 12
+      },
+      "polygon": {
+        "gasPrice": "30000000000",
+        "confirmations": 20
+      },
+      "arbitrum": {
+        "gasPrice": "100000000",
+        "confirmations": 1
+      }
+    },
+    "contracts": [
+      {
+        "name": "TransferVerifier",
+        "args": [],
+        "networks": ["sonic", "ethereum", "polygon", "arbitrum"]
+      },
+      {
+        "name": "MintVerifier",
+        "args": [],
+        "networks": ["sonic", "ethereum", "polygon", "arbitrum"]
+      },
+      {
+        "name": "BurnVerifier",
+        "args": [],
+        "networks": ["sonic", "ethereum", "polygon", "arbitrum"]
+      },
+      {
+        "name": "GovernanceVerifier",
+        "args": [],
+        "networks": ["sonic", "ethereum"]
+      },
+      {
+        "name": "BridgeVerifier",
+        "args": [],
+        "networks": ["sonic", "ethereum", "polygon", "arbitrum"]
+      },
+      {
+        "name": "SimplifiedVerifierFactory",
+        "args": [],
+        "networks": ["sonic", "ethereum", "polygon", "arbitrum"]
+      },
+      {
+        "name": "PrivateTokenContract",
+        "args": ["{{SimplifiedVerifierFactory}}", "21000000000000000000000000"],
+        "dependencies": ["SimplifiedVerifierFactory"],
+        "networks": ["sonic"]
+      }
+    ]
+  },
+
+  "emergency": {
+    "description": "Emergency deployment configuration for rapid response",
+    "network": "sonic",
+    "options": {
+      "requireCeremony": false,
+      "requireMultiSig": true,
+      "autoVerify": true,
+      "runTests": false,
+      "createBackups": true,
+      "enableMonitoring": true,
+      "enableRollback": true,
+      "emergencyMode": true
+    },
+    "contracts": [
+      {
+        "name": "EmergencyVerifier",
+        "args": []
+      },
+      {
+        "name": "EmergencyFactory",
+        "args": []
+      }
+    ],
+    "multiSig": {
+      "threshold": 2,
+      "owners": [
+        "0x1234567890123456789012345678901234567890",
+        "0x2345678901234567890123456789012345678901",
+        "0x3456789012345678901234567890123456789012"
+      ],
+      "timelock": 0
+    },
+    "gasSettings": {
+      "gasPrice": "5000000000",
+      "gasLimit": "10000000"
+    }
+  }
+}

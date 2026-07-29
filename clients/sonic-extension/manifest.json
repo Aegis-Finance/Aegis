@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Sonic .sonic Resolver",
+  "version": "0.1.0",
+  "omnibox": {
+    "keyword": "sonic"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sonic Resolver"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://rpc.soniclabs.com/*",
+    "https://rpc.soniclabs.com/mainnet/*",
+    "https://rpc.blaze.soniclabs.com/*",
+    "https://rpc.testnet.soniclabs.com/*",
+    "https://arweave.net/*",
+    "https://ar-io.net/*",
+    "https://arweave.live/*",
+    "https://gateway.arweave.net/*",
+    "https://arweave.dev/*",
+    "https://gateway.irys.xyz/*",
+    "https://arweave-search.goldsky.com/*",
+    "https://arweave.news/*",
+    "https://ar-io.dev/*",
+    "https://arweave.cache.holaplex.com/*"
+  ]
+}

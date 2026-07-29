@@ -1,0 +1,46 @@
+{
+  "sonic": {
+    "comment": "Governance seeding targets via TreasuryLiquidityAllocator.seedPublicPools. Adjust before --execute.",
+    "minSharesBps": 9900,
+    "lpRecipient": "0x0000000000000000000000000000000000000000",
+    "allocations": [
+      {
+        "poolKey": "PublicLiquidityPool_USDC",
+        "agsAmount": "250000",
+        "quoteAmount": "15000",
+        "quoteDecimals": 6,
+        "gaugeRewardAgs": "400000"
+      },
+      {
+        "poolKey": "PublicLiquidityPool_SONIC",
+        "agsAmount": "150000",
+        "quoteAmount": "50000",
+        "quoteDecimals": 18,
+        "quoteIsNative": true,
+        "gaugeRewardAgs": "150000"
+      },
+      {
+        "poolKey": "PublicLiquidityPool_USDT",
+        "agsAmount": "100000",
+        "quoteAmount": "10000",
+        "quoteDecimals": 6
+      },
+      {
+        "poolKey": "PublicLiquidityPool_WETH",
+        "agsAmount": "75000",
+        "quoteAmount": "5",
+        "quoteDecimals": 18
+      }
+    ],
+    "gauge": {
+      "rewardAgs": "500000",
+      "durationDays": 30
+    },
+    "staking": {
+      "rewardAgs": "200000"
+    },
+    "insurance": {
+      "poolAgs": "300000"
+    }
+  }
+}

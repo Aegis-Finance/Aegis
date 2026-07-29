@@ -1,0 +1,12 @@
+{
+  "circuitName": "auction-claim",
+  "ceremonyId": "aegis-mpc-auction-claim-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "72a2e6a2e6850afc3b9bafc0b32c636d730a7ccfb92c2afcd29f046c49ec8c09",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028069,
+  "isProduction": true,
+  "beaconHash": "0x6230018a35dad144f2923fb403c30ca7e7c91c2d6b6ed576ce87ab57239b1bc0",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_auction-claim",
+  "source": "run-factory-mpc-local.mjs"
+}

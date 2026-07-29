@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="4574pt" height="1698pt"
+ viewBox="0.00 0.00 4574.00 1698.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1694.2)">
+<title>ContractInteractions</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1694.2 4569.86,-1694.2 4569.86,4 -4,4"/>
+<g id="node1" class="node">
+<title>PrivateTokenContract</title>
+<polygon fill="#e3f2fd" stroke="black" points="1631.67,-901.3 1631.67,-1051.7 1990.04,-1051.7 1990.04,-901.3 1631.67,-901.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1683.19" y="-973.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateTokenContract</text>
+<polyline fill="none" stroke="black" points="1734.71,-901.3 1734.71,-1051.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-1039.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ shield(mint&#45;optimized proof)</text>
+<polyline fill="none" stroke="black" points="1734.71,-1032.9 1990.04,-1032.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-1020.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ unshield(transfer&#45;unshield proof)</text>
+<polyline fill="none" stroke="black" points="1734.71,-1014.1 1990.04,-1014.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-1002" font-family="Helvetica,sans-Serif" font-size="9.00">+ shieldedTransfer(shielded&#45;transfer proof)</text>
+<polyline fill="none" stroke="black" points="1734.71,-995.3 1990.04,-995.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-983.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ transfer / transferFrom (transparent ERC&#45;20)</text>
+<polyline fill="none" stroke="black" points="1734.71,-976.5 1990.04,-976.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-964.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ transferToPool / commitment&#45;internal / commitment&#45;action</text>
+<polyline fill="none" stroke="black" points="1734.71,-957.7 1990.04,-957.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-945.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ approve / allowance / balanceOf</text>
+<polyline fill="none" stroke="black" points="1734.71,-938.9 1990.04,-938.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-926.8" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; commitments / nullifiers / transparentBalances</text>
+<polyline fill="none" stroke="black" points="1734.71,-920.1 1990.04,-920.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1862.37" y="-908" font-family="Helvetica,sans-Serif" font-size="9.00">+ publicEntryEnabled / authorizeContract (governance)</text>
+</g>
+<g id="node11" class="node">
+<title>AGSFeeMonetization</title>
+<polygon fill="#fff4d6" stroke="black" points="2102.06,-1233.5 2102.06,-1327.5 2520.49,-1327.5 2520.49,-1233.5 2102.06,-1233.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2152.83" y="-1277.8" font-family="Helvetica,sans-Serif" font-size="9.00">AGSFeeMonetization</text>
+<polyline fill="none" stroke="black" points="2203.6,-1233.5 2203.6,-1327.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2362.05" y="-1315.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ claimFromFeeM()</text>
+<polyline fill="none" stroke="black" points="2203.6,-1308.7 2520.49,-1308.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2362.05" y="-1296.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ updateRewardContracts(staking, farming, rewards, governance, treasury)</text>
+<polyline fill="none" stroke="black" points="2203.6,-1289.9 2520.49,-1289.9"/>
+<text xml:space="preserve" text-anchor="middle" x="2362.05" y="-1277.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ registerWithFeeM()</text>
+<polyline fill="none" stroke="black" points="2203.6,-1271.1 2520.49,-1271.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2362.05" y="-1259" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; sToken: IERC20</text>
+<polyline fill="none" stroke="black" points="2203.6,-1252.3 2520.49,-1252.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2362.05" y="-1240.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; rewardConfig</text>
+</g>
+<g id="edge69" class="edge">
+<title>PrivateTokenContract&#45;&gt;AGSFeeMonetization</title>
+<path fill="none" stroke="#ea580c" d="M1853.32,-1052.08C1887.56,-1107.17 1941.29,-1179 2008.04,-1219.5 2033.41,-1234.9 2061.97,-1246.48 2091.14,-1255.19"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="2089.88,-1258.47 2100.46,-1257.85 2091.81,-1251.74 2089.88,-1258.47"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-1252.93" font-family="Helvetica,sans-Serif" font-size="8.00">route fees</text>
+</g>
+<g id="node14" class="node">
+<title>PrivateAMM</title>
+<polygon fill="#dcfce7" stroke="black" points="3358.81,-734.5 3358.81,-922.5 3653.68,-922.5 3653.68,-734.5 3358.81,-734.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3408.32" y="-825.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateAMMContract</text>
+<polyline fill="none" stroke="black" points="3457.83,-734.5 3457.83,-922.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-910.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ createPool(tokenB, proof, publicInputs)</text>
+<polyline fill="none" stroke="black" points="3457.83,-903.7 3653.68,-903.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-891.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ addLiquidity(poolId, proof, publicInputs)</text>
+<polyline fill="none" stroke="black" points="3457.83,-884.9 3653.68,-884.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-872.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ removeLiquidity(poolId, proof, publicInputs)</text>
+<polyline fill="none" stroke="black" points="3457.83,-866.1 3653.68,-866.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-854" font-family="Helvetica,sans-Serif" font-size="9.00">+ swap(poolId, proof, publicInputs)</text>
+<polyline fill="none" stroke="black" points="3457.83,-847.3 3653.68,-847.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-835.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; pools: mapping</text>
+<polyline fill="none" stroke="black" points="3457.83,-828.5 3653.68,-828.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-816.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; flashLoanData: mapping</text>
+<polyline fill="none" stroke="black" points="3457.83,-809.7 3653.68,-809.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-797.6" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; ammNullifiers: mapping</text>
+<polyline fill="none" stroke="black" points="3457.83,-790.9 3653.68,-790.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-778.8" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; liquidityCommitments: mapping</text>
+<polyline fill="none" stroke="black" points="3457.83,-772.1 3653.68,-772.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-760" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; swapCommitments: mapping</text>
+<polyline fill="none" stroke="black" points="3457.83,-753.3 3653.68,-753.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3555.76" y="-741.2" font-family="Helvetica,sans-Serif" font-size="9.00">Verified (25+ rules)</text>
+</g>
+<g id="edge9" class="edge">
+<title>PrivateTokenContract&#45;&gt;PrivateAMM</title>
+<path fill="none" stroke="#16a34a" d="M1939.73,-900.87C1988.7,-876.68 2046.23,-853.76 2102.06,-844.5 2548.47,-770.5 3085.76,-795.46 3347.05,-814.73"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="3346.78,-818.22 3357.01,-815.47 3347.3,-811.24 3346.78,-818.22"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-802.95" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node15" class="node">
+<title>PrivateLending</title>
+<polygon fill="#dcfce7" stroke="black" points="3108.71,-539.9 3108.71,-615.1 3339.56,-615.1 3339.56,-539.9 3108.71,-539.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3163.74" y="-574.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateLendingContract</text>
+<polyline fill="none" stroke="black" points="3218.76,-539.9 3218.76,-615.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3279.16" y="-603" font-family="Helvetica,sans-Serif" font-size="9.00">+ deposit(proof, amount)</text>
+<polyline fill="none" stroke="black" points="3218.76,-596.3 3339.56,-596.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3279.16" y="-584.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ withdraw(proof, amount)</text>
+<polyline fill="none" stroke="black" points="3218.76,-577.5 3339.56,-577.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3279.16" y="-565.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ borrow(proof, collateral)</text>
+<polyline fill="none" stroke="black" points="3218.76,-558.7 3339.56,-558.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3279.16" y="-546.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ liquidate(proof, target)</text>
+</g>
+<g id="edge10" class="edge">
+<title>PrivateTokenContract&#45;&gt;PrivateLending</title>
+<path fill="none" stroke="#16a34a" d="M1908.78,-901.11C1938.62,-873.57 1969.09,-840.32 1990.04,-804.5 2006.03,-777.14 1986.75,-758.98 2008.04,-735.5 2032.22,-708.83 2057.68,-732.01 2084.06,-707.5 2098.22,-694.34 2086.36,-679.18 2102.06,-667.9 2181.24,-611.04 2441.35,-631.7 2538.49,-623.5 2643.36,-614.65 2929.61,-596.1 3096.91,-585.46"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="3096.98,-588.96 3106.74,-584.84 3096.54,-581.98 3096.98,-588.96"/>
+<text xml:space="preserve" text-anchor="middle" x="2311.28" y="-670.3" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node16" class="node">
+<title>PrivateDerivatives</title>
+<polygon fill="#dcfce7" stroke="black" points="3388.59,-1100.3 3388.59,-1250.7 3623.91,-1250.7 3623.91,-1100.3 3388.59,-1100.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3432.85" y="-1172.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateDerivatives</text>
+<polyline fill="none" stroke="black" points="3477.11,-1100.3 3477.11,-1250.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1238.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ createContract(params + ZK)</text>
+<polyline fill="none" stroke="black" points="3477.11,-1231.9 3623.91,-1231.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1219.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ exerciseOption(params + ZK)</text>
+<polyline fill="none" stroke="black" points="3477.11,-1213.1 3623.91,-1213.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1201" font-family="Helvetica,sans-Serif" font-size="9.00">+ settleExpiredContract(id)</text>
+<polyline fill="none" stroke="black" points="3477.11,-1194.3 3623.91,-1194.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1182.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ syncPriceFromPool(asset)</text>
+<polyline fill="none" stroke="black" points="3477.11,-1175.5 3623.91,-1175.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1163.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ updatePriceFromOracle(asset)</text>
+<polyline fill="none" stroke="black" points="3477.11,-1156.7 3623.91,-1156.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1144.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ setMultiOracleAggregator</text>
+<polyline fill="none" stroke="black" points="3477.11,-1137.9 3623.91,-1137.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1125.8" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; assetPrices / priceSourcePools</text>
+<polyline fill="none" stroke="black" points="3477.11,-1119.1 3623.91,-1119.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3550.51" y="-1107" font-family="Helvetica,sans-Serif" font-size="9.00">circuit: derivative (6 pubs)</text>
+</g>
+<g id="edge11" class="edge">
+<title>PrivateTokenContract&#45;&gt;PrivateDerivatives</title>
+<path fill="none" stroke="#16a34a" d="M1990.51,-939.95C1996.42,-939.08 2002.27,-938.25 2008.04,-937.5 2049.56,-932.07 2060.21,-932.83 2102.06,-931.5 2415.51,-921.51 2499.49,-893.17 2807.37,-952.9 3011.48,-992.5 3239.52,-1072.31 3377.68,-1124.82"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="3376.29,-1128.03 3386.88,-1128.32 3378.78,-1121.49 3376.29,-1128.03"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-955.3" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node19" class="node">
+<title>PrivateYieldFarming</title>
+<polygon fill="#dcfce7" stroke="black" points="2851.87,-1208.5 2851.87,-1302.5 3064.2,-1302.5 3064.2,-1208.5 2851.87,-1208.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2900.39" y="-1252.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateYieldFarming</text>
+<polyline fill="none" stroke="black" points="2948.9,-1208.5 2948.9,-1302.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3006.55" y="-1290.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ deposit(proof, poolId)</text>
+<polyline fill="none" stroke="black" points="2948.9,-1283.7 3064.2,-1283.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3006.55" y="-1271.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ withdraw(proof, poolId)</text>
+<polyline fill="none" stroke="black" points="2948.9,-1264.9 3064.2,-1264.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3006.55" y="-1252.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ claimRewards(proof)</text>
+<polyline fill="none" stroke="black" points="2948.9,-1246.1 3064.2,-1246.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3006.55" y="-1234" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; pools: mapping</text>
+<polyline fill="none" stroke="black" points="2948.9,-1227.3 3064.2,-1227.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3006.55" y="-1215.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; epochConfig</text>
+</g>
+<g id="edge12" class="edge">
+<title>PrivateTokenContract&#45;&gt;PrivateYieldFarming</title>
+<path fill="none" stroke="#16a34a" d="M1894.99,-1052.08C1949.68,-1097.06 2025.15,-1150.65 2102.06,-1178.5 2277.58,-1242.06 2334.57,-1198.17 2520.49,-1214.9 2628.89,-1224.66 2752.38,-1236.18 2840.29,-1244.45"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="2839.85,-1247.93 2850.14,-1245.38 2840.51,-1240.96 2839.85,-1247.93"/>
+<text xml:space="preserve" text-anchor="middle" x="2311.28" y="-1217.3" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node23" class="node">
+<title>PrivateStaking</title>
+<polygon fill="#dcfce7" stroke="black" points="3393.82,-941.5 3393.82,-1035.5 3618.67,-1035.5 3618.67,-941.5 3393.82,-941.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3447.85" y="-985.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateStakingContract</text>
+<polyline fill="none" stroke="black" points="3501.87,-941.5 3501.87,-1035.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3560.27" y="-1023.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ stake(proof, amount)</text>
+<polyline fill="none" stroke="black" points="3501.87,-1016.7 3618.67,-1016.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3560.27" y="-1004.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ unstake(proof, amount)</text>
+<polyline fill="none" stroke="black" points="3501.87,-997.9 3618.67,-997.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3560.27" y="-985.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ harvest(proof)</text>
+<polyline fill="none" stroke="black" points="3501.87,-979.1 3618.67,-979.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3560.27" y="-967" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; stakingEpochs</text>
+<polyline fill="none" stroke="black" points="3501.87,-960.3 3618.67,-960.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3560.27" y="-948.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; rewardVault</text>
+</g>
+<g id="edge13" class="edge">
+<title>PrivateTokenContract&#45;&gt;PrivateStaking</title>
+<path fill="none" stroke="#16a34a" d="M1975.4,-900.83C1986.3,-897.55 1997.24,-894.71 2008.04,-892.5 2479.46,-795.82 2610.91,-871.21 3090.71,-908.5 3201.53,-917.11 3230.85,-910.29 3339.56,-933.5 3353.61,-936.5 3368.15,-940.28 3382.5,-944.44"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="3381.39,-947.76 3391.97,-947.26 3383.39,-941.05 3381.39,-947.76"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-881.58" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node24" class="node">
+<title>DecentralizedPrivacyRewards</title>
+<polygon fill="#dcfce7" stroke="black" points="2825.37,-1133.3 2825.37,-1189.7 3090.71,-1189.7 3090.71,-1133.3 2825.37,-1133.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2893.39" y="-1158.8" font-family="Helvetica,sans-Serif" font-size="9.00">DecentralizedPrivacyRewards</text>
+<polyline fill="none" stroke="black" points="2961.41,-1133.3 2961.41,-1189.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3026.06" y="-1177.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ submitRewardProof(proof)</text>
+<polyline fill="none" stroke="black" points="2961.41,-1170.9 3090.71,-1170.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3026.06" y="-1158.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ fundPool(amount)</text>
+<polyline fill="none" stroke="black" points="2961.41,-1152.1 3090.71,-1152.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3026.06" y="-1140" font-family="Helvetica,sans-Serif" font-size="9.00">+ adjustEpoch(params)</text>
+</g>
+<g id="edge14" class="edge">
+<title>PrivateTokenContract&#45;&gt;DecentralizedPrivacyRewards</title>
+<path fill="none" stroke="#16a34a" d="M1990.26,-950.04C2134.91,-934.01 2343.14,-923.28 2520.49,-961.9 2666.62,-993.72 2822.39,-1079.01 2902.48,-1127.17"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="2900.21,-1129.89 2910.57,-1132.07 2903.83,-1123.9 2900.21,-1129.89"/>
+<text xml:space="preserve" text-anchor="middle" x="2311.28" y="-964.3" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node25" class="node">
+<title>DecentralizedInsurance</title>
+<polygon fill="#dcfce7" stroke="black" points="2187.1,-520.3 2187.1,-576.7 2435.45,-576.7 2435.45,-520.3 2187.1,-520.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2242.38" y="-545.8" font-family="Helvetica,sans-Serif" font-size="9.00">DecentralizedInsurance</text>
+<polyline fill="none" stroke="black" points="2297.66,-520.3 2297.66,-576.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2366.55" y="-564.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ underwrite(proof, risk)</text>
+<polyline fill="none" stroke="black" points="2297.66,-557.9 2435.45,-557.9"/>
+<text xml:space="preserve" text-anchor="middle" x="2366.55" y="-545.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ claim(proof, policyId)</text>
+<polyline fill="none" stroke="black" points="2297.66,-539.1 2435.45,-539.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2366.55" y="-527" font-family="Helvetica,sans-Serif" font-size="9.00">+ resolveClaim(proof, policyId)</text>
+</g>
+<g id="edge15" class="edge">
+<title>PrivateTokenContract&#45;&gt;DecentralizedInsurance</title>
+<path fill="none" stroke="#16a34a" d="M1912.03,-900.85C1941.54,-873.63 1970.99,-840.63 1990.04,-804.5 2012.44,-762 1980.91,-737.56 2008.04,-697.9 2030.25,-665.42 2051.95,-675.26 2084.06,-652.5 2092.56,-646.48 2093.18,-642.94 2102.06,-637.5 2138.15,-615.41 2180.69,-596.16 2217.89,-581.27"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="2218.81,-584.67 2226.82,-577.74 2216.24,-578.16 2218.81,-584.67"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-700.3" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node26" class="node">
+<title>AegisCrowdShield</title>
+<polygon fill="#cffafe" stroke="black" points="2113.57,-255.9 2113.57,-425.1 2508.99,-425.1 2508.99,-255.9 2113.57,-255.9"/>
+<text xml:space="preserve" text-anchor="middle" x="2158.34" y="-337.8" font-family="Helvetica,sans-Serif" font-size="9.00">AegisCrowdShield</text>
+<polyline fill="none" stroke="black" points="2203.1,-255.9 2203.1,-425.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-413" font-family="Helvetica,sans-Serif" font-size="9.00">+ createCampaign(target, duration, token, commitment, isPrivate, config)</text>
+<polyline fill="none" stroke="black" points="2203.1,-406.3 2508.99,-406.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-394.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ contribute(campaignId, amount, nullifier)</text>
+<polyline fill="none" stroke="black" points="2203.1,-387.5 2508.99,-387.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-375.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ withdrawFunds(campaignId)</text>
+<polyline fill="none" stroke="black" points="2203.1,-368.7 2508.99,-368.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-356.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ disputeCampaign(campaignId, stake)</text>
+<polyline fill="none" stroke="black" points="2203.1,-349.9 2508.99,-349.9"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-337.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ resolveDispute(disputeId, ruling)</text>
+<polyline fill="none" stroke="black" points="2203.1,-331.1 2508.99,-331.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-319" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; campaigns: mapping</text>
+<polyline fill="none" stroke="black" points="2203.1,-312.3 2508.99,-312.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-300.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; contributions: mapping</text>
+<polyline fill="none" stroke="black" points="2203.1,-293.5 2508.99,-293.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-281.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; disputes: mapping</text>
+<polyline fill="none" stroke="black" points="2203.1,-274.7 2508.99,-274.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2356.05" y="-262.6" font-family="Helvetica,sans-Serif" font-size="9.00">Verified (9 rules)</text>
+</g>
+<g id="edge16" class="edge">
+<title>PrivateTokenContract&#45;&gt;AegisCrowdShield</title>
+<path fill="none" stroke="#16a34a" d="M1846.77,-901.15C1894.6,-803.35 1987.76,-630.98 2102.06,-510.5 2127.78,-483.38 2157.79,-456.59 2186.89,-432.58"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="2188.78,-435.56 2194.3,-426.51 2184.35,-430.14 2188.78,-435.56"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-617.03" font-family="Helvetica,sans-Serif" font-size="8.00">shielded AGS</text>
+</g>
+<g id="node29" class="node">
+<title>OnChainPrivacyLeaderboard</title>
+<polygon fill="#e0f2fe" stroke="black" points="2538.49,-625.3 2538.49,-681.7 2807.37,-681.7 2807.37,-625.3 2538.49,-625.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2604.53" y="-650.8" font-family="Helvetica,sans-Serif" font-size="9.00">OnChainPrivacyLeaderboard</text>
+<polyline fill="none" stroke="black" points="2670.56,-625.3 2670.56,-681.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2738.96" y="-669.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ submitAchievement(proof)</text>
+<polyline fill="none" stroke="black" points="2670.56,-662.9 2807.37,-662.9"/>
+<text xml:space="preserve" text-anchor="middle" x="2738.96" y="-650.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ updateLibertyCycle(params)</text>
+<polyline fill="none" stroke="black" points="2670.56,-644.1 2807.37,-644.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2738.96" y="-632" font-family="Helvetica,sans-Serif" font-size="9.00">+ claimBadge(proof)</text>
+</g>
+<g id="edge79" class="edge">
+<title>PrivateTokenContract&#45;&gt;OnChainPrivacyLeaderboard</title>
+<path fill="none" stroke="#0ea5e9" d="M1881.92,-901.03C1916.83,-867.59 1961.47,-830.55 2008.04,-806.9 2097.57,-761.43 2360.33,-708.8 2527.18,-678.51"/>
+<polygon fill="#0ea5e9" stroke="#0ea5e9" points="2527.32,-682.04 2536.54,-676.82 2526.08,-675.15 2527.32,-682.04"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-809.3" font-family="Helvetica,sans-Serif" font-size="8.00">balances</text>
+</g>
+<g id="node32" class="node">
+<title>RFQIntentSettlement</title>
+<polygon fill="#e0f7fa" stroke="black" points="2217.99,-980.7 2217.99,-1018.3 2404.57,-1018.3 2404.57,-980.7 2217.99,-980.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2268.25" y="-996.8" font-family="Helvetica,sans-Serif" font-size="9.00">RFQIntentSettlement</text>
+<polyline fill="none" stroke="black" points="2318.52,-980.7 2318.52,-1018.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2361.54" y="-1006.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ fillIntent(...)</text>
+<polyline fill="none" stroke="black" points="2318.52,-999.5 2404.57,-999.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2361.54" y="-987.4" font-family="Helvetica,sans-Serif" font-size="9.00">EIP&#45;712 one&#45;shot</text>
+</g>
+<g id="edge53" class="edge">
+<title>PrivateTokenContract&#45;&gt;RFQIntentSettlement</title>
+<path fill="none" stroke="#0d9488" d="M1990.39,-984.74C2062.83,-988.08 2143.97,-991.83 2206.4,-994.71"/>
+<polygon fill="#0d9488" stroke="#0d9488" points="2206.17,-998.2 2216.32,-995.16 2206.49,-991.21 2206.17,-998.2"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-991.09" font-family="Helvetica,sans-Serif" font-size="8.00">allowance fills</text>
+</g>
+<g id="node33" class="node">
+<title>SignedLimitOrderRegistry</title>
+<polygon fill="#e0f7fa" stroke="black" points="2199.62,-1112.3 2199.62,-1168.7 2422.93,-1168.7 2422.93,-1112.3 2199.62,-1112.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2259.14" y="-1137.8" font-family="Helvetica,sans-Serif" font-size="9.00">SignedLimitOrderRegistry</text>
+<polyline fill="none" stroke="black" points="2318.66,-1112.3 2318.66,-1168.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2370.8" y="-1156.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ createLimitOrder(...)</text>
+<polyline fill="none" stroke="black" points="2318.66,-1149.9 2422.93,-1149.9"/>
+<text xml:space="preserve" text-anchor="middle" x="2370.8" y="-1137.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ fillOrder(...)</text>
+<polyline fill="none" stroke="black" points="2318.66,-1131.1 2422.93,-1131.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2370.8" y="-1119" font-family="Helvetica,sans-Serif" font-size="9.00">resting ERC20 limits</text>
+</g>
+<g id="edge54" class="edge">
+<title>PrivateTokenContract&#45;&gt;SignedLimitOrderRegistry</title>
+<path fill="none" stroke="#0d9488" d="M1966.31,-1052.15C2009.47,-1071.06 2056.93,-1089.83 2102.06,-1103.5 2129.43,-1111.79 2159.43,-1118.47 2187.92,-1123.74"/>
+<polygon fill="#0d9488" stroke="#0d9488" points="2187.22,-1127.17 2197.69,-1125.49 2188.46,-1120.28 2187.22,-1127.17"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-1098.09" font-family="Helvetica,sans-Serif" font-size="8.00">limit escrows</text>
+</g>
+<g id="node34" class="node">
+<title>TransparentEscrowOrders</title>
+<polygon fill="#e0f7fa" stroke="black" points="2196.49,-1037.3 2196.49,-1093.7 2426.06,-1093.7 2426.06,-1037.3 2196.49,-1037.3"/>
+<text xml:space="preserve" text-anchor="middle" x="2257.26" y="-1062.8" font-family="Helvetica,sans-Serif" font-size="9.00">TransparentEscrowOrders</text>
+<polyline fill="none" stroke="black" points="2318.02,-1037.3 2318.02,-1093.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2372.04" y="-1081.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ createSellOrder(...)</text>
+<polyline fill="none" stroke="black" points="2318.02,-1074.9 2426.06,-1074.9"/>
+<text xml:space="preserve" text-anchor="middle" x="2372.04" y="-1062.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ fillSellOrder(id)</text>
+<polyline fill="none" stroke="black" points="2318.02,-1056.1 2426.06,-1056.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2372.04" y="-1044" font-family="Helvetica,sans-Serif" font-size="9.00">fixed AGS↔quote OTC</text>
+</g>
+<g id="edge52" class="edge">
+<title>PrivateTokenContract&#45;&gt;TransparentEscrowOrders</title>
+<path fill="none" stroke="#0d9488" d="M1990.39,-1008.38C2054.81,-1019.88 2126.1,-1032.61 2185.01,-1043.13"/>
+<polygon fill="#0d9488" stroke="#0d9488" points="2184.28,-1046.56 2194.74,-1044.87 2185.51,-1039.67 2184.28,-1046.56"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-1026.07" font-family="Helvetica,sans-Serif" font-size="8.00">AGS escrow</text>
+</g>
+<g id="node2" class="node">
+<title>VerifierFactory</title>
+<polygon fill="#fef9c3" stroke="black" points="4287.23,-519.5 4287.23,-613.5 4523.56,-613.5 4523.56,-519.5 4287.23,-519.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4324.49" y="-563.8" font-family="Helvetica,sans-Serif" font-size="9.00">VerifierFactory</text>
+<polyline fill="none" stroke="black" points="4361.75,-519.5 4361.75,-613.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4442.65" y="-601.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ registerCircuit(id, verifier)</text>
+<polyline fill="none" stroke="black" points="4361.75,-594.7 4523.56,-594.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4442.65" y="-582.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ verifierFor(id)</text>
+<polyline fill="none" stroke="black" points="4361.75,-575.9 4523.56,-575.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4442.65" y="-563.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ setVerifierImplementation(id, addr)</text>
+<polyline fill="none" stroke="black" points="4361.75,-557.1 4523.56,-557.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4442.65" y="-545" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; verifiers: mapping</text>
+<polyline fill="none" stroke="black" points="4361.75,-538.3 4523.56,-538.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4442.65" y="-526.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; circuitCatalog: enum</text>
+</g>
+<g id="node3" class="node">
+<title>RecursiveProofAggregator</title>
+<polygon fill="#fef9c3" stroke="black" points="3830.64,-396.3 3830.64,-452.7 4071,-452.7 4071,-396.3 3830.64,-396.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3891.67" y="-421.8" font-family="Helvetica,sans-Serif" font-size="9.00">RecursiveProofAggregator</text>
+<polyline fill="none" stroke="black" points="3952.69,-396.3 3952.69,-452.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4011.84" y="-440.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ aggregate(batch)</text>
+<polyline fill="none" stroke="black" points="3952.69,-433.9 4071,-433.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4011.84" y="-421.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ verifyAggregated(proof)</text>
+<polyline fill="none" stroke="black" points="3952.69,-415.1 4071,-415.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4011.84" y="-403" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; batchQueue: mapping</text>
+</g>
+<g id="edge1" class="edge">
+<title>RecursiveProofAggregator&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4071.47,-427.89C4120.7,-432.12 4177.63,-440.74 4226.93,-457.9 4264.03,-470.81 4301.64,-492.35 4332.62,-512.86"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4330.51,-515.66 4340.76,-518.34 4334.42,-509.85 4330.51,-515.66"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-460.3" font-family="Helvetica,sans-Serif" font-size="8.00">aggregate()</text>
+</g>
+<g id="node4" class="node">
+<title>ProofLibraries</title>
+<polygon fill="#f1f5f9" stroke="black" points="3807.65,-785.9 3807.65,-861.1 4093.98,-861.1 4093.98,-785.9 3807.65,-785.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3874.17" y="-820.8" font-family="Helvetica,sans-Serif" font-size="9.00">Proof / Commitment Libraries</text>
+<polyline fill="none" stroke="black" points="3940.69,-785.9 3940.69,-861.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4017.34" y="-849" font-family="Helvetica,sans-Serif" font-size="9.00">+ verifyZKProof(ProofLib.ZKProof)</text>
+<polyline fill="none" stroke="black" points="3940.69,-842.3 4093.98,-842.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4017.34" y="-830.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ extractPublicInputs(data)</text>
+<polyline fill="none" stroke="black" points="3940.69,-823.5 4093.98,-823.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4017.34" y="-811.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ generateCommitment(secret)</text>
+<polyline fill="none" stroke="black" points="3940.69,-804.7 4093.98,-804.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4017.34" y="-792.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ consumeNullifier(nullifier)</text>
+</g>
+<g id="edge2" class="edge">
+<title>ProofLibraries&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4094.22,-813.64C4138.92,-805.92 4186.98,-792.54 4226.93,-769.5 4288.2,-734.17 4338.97,-669.83 4370.28,-623.03"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4373.07,-625.16 4375.64,-614.89 4367.22,-621.32 4373.07,-625.16"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-803.59" font-family="Helvetica,sans-Serif" font-size="8.00">verifier adapters</text>
+</g>
+<g id="node5" class="node">
+<title>PrivateGovernance</title>
+<polygon fill="#fde2e4" stroke="black" points="400.29,-718.1 400.29,-830.9 652.66,-830.9 652.66,-718.1 400.29,-718.1"/>
+<text xml:space="preserve" text-anchor="middle" x="446.81" y="-771.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateGovernance</text>
+<polyline fill="none" stroke="black" points="493.33,-718.1 493.33,-830.9"/>
+<text xml:space="preserve" text-anchor="middle" x="572.99" y="-818.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ createProposal(Proposal calldata)</text>
+<polyline fill="none" stroke="black" points="493.33,-812.1 652.66,-812.1"/>
+<text xml:space="preserve" text-anchor="middle" x="572.99" y="-800" font-family="Helvetica,sans-Serif" font-size="9.00">+ vote(VoteProof)</text>
+<polyline fill="none" stroke="black" points="493.33,-793.3 652.66,-793.3"/>
+<text xml:space="preserve" text-anchor="middle" x="572.99" y="-781.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ executeProposal(id)</text>
+<polyline fill="none" stroke="black" points="493.33,-774.5 652.66,-774.5"/>
+<text xml:space="preserve" text-anchor="middle" x="572.99" y="-762.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ registerModule(id, addr)</text>
+<polyline fill="none" stroke="black" points="493.33,-755.7 652.66,-755.7"/>
+<text xml:space="preserve" text-anchor="middle" x="572.99" y="-743.6" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; proposals: mapping</text>
+<polyline fill="none" stroke="black" points="493.33,-736.9 652.66,-736.9"/>
+<text xml:space="preserve" text-anchor="middle" x="572.99" y="-724.8" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; governanceState</text>
+</g>
+<g id="edge84" class="edge">
+<title>PrivateGovernance&#45;&gt;ProofLibraries</title>
+<path fill="none" stroke="#94a3b8" stroke-dasharray="5,2" d="M561.62,-717.7C617.35,-633.02 736.46,-483.5 882.77,-483.5 882.77,-483.5 882.77,-483.5 1573.76,-483.5 1770.03,-483.5 3186.48,-407.67 3339.56,-530.5 3365.29,-551.14 3332.55,-580.99 3357.56,-602.5 3425.31,-660.76 3693.63,-578.37 3757.86,-640.5 3802.95,-684.12 3734.11,-733.68 3775.86,-780.5 3782.26,-787.68 3789.65,-793.75 3797.69,-798.87"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" points="3795.7,-801.76 3806.11,-803.71 3799.19,-795.69 3795.7,-801.76"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-472.84" font-family="Helvetica,sans-Serif" font-size="8.00">zk helpers</text>
+</g>
+<g id="node6" class="node">
+<title>GovernanceCore</title>
+<polygon fill="#fde2e4" stroke="black" points="769.35,-1027.9 769.35,-1103.1 998.2,-1103.1 998.2,-1027.9 769.35,-1027.9"/>
+<text xml:space="preserve" text-anchor="middle" x="811.62" y="-1062.8" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceCore</text>
+<polyline fill="none" stroke="black" points="853.89,-1027.9 853.89,-1103.1"/>
+<text xml:space="preserve" text-anchor="middle" x="926.04" y="-1091" font-family="Helvetica,sans-Serif" font-size="9.00">+ registerService(bytes32, addr)</text>
+<polyline fill="none" stroke="black" points="853.89,-1084.3 998.2,-1084.3"/>
+<text xml:space="preserve" text-anchor="middle" x="926.04" y="-1072.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ setTreasury(addr)</text>
+<polyline fill="none" stroke="black" points="853.89,-1065.5 998.2,-1065.5"/>
+<text xml:space="preserve" text-anchor="middle" x="926.04" y="-1053.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ routeCall(target, data)</text>
+<polyline fill="none" stroke="black" points="853.89,-1046.7 998.2,-1046.7"/>
+<text xml:space="preserve" text-anchor="middle" x="926.04" y="-1034.6" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; registry: mapping</text>
+</g>
+<g id="edge25" class="edge">
+<title>PrivateGovernance&#45;&gt;GovernanceCore</title>
+<path fill="none" stroke="#b91c1c" d="M596.82,-831.3C664.29,-886.55 765.45,-969.41 827.62,-1020.33"/>
+<polygon fill="#b91c1c" stroke="#b91c1c" points="825.37,-1023.01 835.33,-1026.64 829.81,-1017.6 825.37,-1023.01"/>
+<text xml:space="preserve" text-anchor="middle" x="687.11" y="-913.67" font-family="Helvetica,sans-Serif" font-size="8.00">executes</text>
+</g>
+<g id="node7" class="node">
+<title>GovernanceDelegation</title>
+<polygon fill="#fde2e4" stroke="black" points="742.06,-304.9 742.06,-380.1 1025.48,-380.1 1025.48,-304.9 742.06,-304.9"/>
+<text xml:space="preserve" text-anchor="middle" x="796.09" y="-339.8" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceDelegation</text>
+<polyline fill="none" stroke="black" points="850.12,-304.9 850.12,-380.1"/>
+<text xml:space="preserve" text-anchor="middle" x="937.8" y="-368" font-family="Helvetica,sans-Serif" font-size="9.00">+ delegateVotingPower(proof, delegate)</text>
+<polyline fill="none" stroke="black" points="850.12,-361.3 1025.48,-361.3"/>
+<text xml:space="preserve" text-anchor="middle" x="937.8" y="-349.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ revokeDelegation(proof)</text>
+<polyline fill="none" stroke="black" points="850.12,-342.5 1025.48,-342.5"/>
+<text xml:space="preserve" text-anchor="middle" x="937.8" y="-330.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ votingPowerOf(commitment)</text>
+<polyline fill="none" stroke="black" points="850.12,-323.7 1025.48,-323.7"/>
+<text xml:space="preserve" text-anchor="middle" x="937.8" y="-311.6" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; delegations: mapping</text>
+</g>
+<g id="edge26" class="edge">
+<title>PrivateGovernance&#45;&gt;GovernanceDelegation</title>
+<path fill="none" stroke="#b91c1c" d="M531.4,-717.74C540.52,-632.01 570.75,-470.42 670.66,-384.9 687.94,-370.1 708.93,-359.94 730.89,-353.04"/>
+<polygon fill="#b91c1c" stroke="#b91c1c" points="731.65,-356.46 740.29,-350.32 729.71,-349.74 731.65,-356.46"/>
+<text xml:space="preserve" text-anchor="middle" x="687.11" y="-387.3" font-family="Helvetica,sans-Serif" font-size="8.00">manages</text>
+</g>
+<g id="node8" class="node">
+<title>GovernanceTreasury</title>
+<polygon fill="#fde2e4" stroke="black" points="2831.61,-1321.5 2831.61,-1415.5 3084.46,-1415.5 3084.46,-1321.5 2831.61,-1321.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2881.88" y="-1365.8" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceTreasury</text>
+<polyline fill="none" stroke="black" points="2932.15,-1321.5 2932.15,-1415.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3008.31" y="-1403.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ configureTreasury(token, wallet)</text>
+<polyline fill="none" stroke="black" points="2932.15,-1396.7 3084.46,-1396.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3008.31" y="-1384.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ queueDisbursement(request)</text>
+<polyline fill="none" stroke="black" points="2932.15,-1377.9 3084.46,-1377.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3008.31" y="-1365.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ executeTreasuryProposal(id)</text>
+<polyline fill="none" stroke="black" points="2932.15,-1359.1 3084.46,-1359.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3008.31" y="-1347" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; treasuryState</text>
+<polyline fill="none" stroke="black" points="2932.15,-1340.3 3084.46,-1340.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3008.31" y="-1328.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; disbursements: mapping</text>
+</g>
+<g id="edge27" class="edge">
+<title>PrivateGovernance&#45;&gt;GovernanceTreasury</title>
+<path fill="none" stroke="#b91c1c" d="M532.98,-831.16C551.28,-984.22 624.42,-1394.5 882.77,-1394.5 882.77,-1394.5 882.77,-1394.5 2047.05,-1394.5 2321.31,-1394.5 2641.87,-1382.55 2819.95,-1374.86"/>
+<polygon fill="#b91c1c" stroke="#b91c1c" points="2819.86,-1378.36 2829.7,-1374.43 2819.56,-1371.37 2819.86,-1378.36"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-1396.9" font-family="Helvetica,sans-Serif" font-size="8.00">proposals</text>
+</g>
+<g id="node10" class="node">
+<title>TimelockController</title>
+<polygon fill="#f3e8ff" stroke="black" points="1646.4,-1460.9 1646.4,-1536.1 1975.3,-1536.1 1975.3,-1460.9 1646.4,-1460.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1691.91" y="-1495.8" font-family="Helvetica,sans-Serif" font-size="9.00">TimelockController</text>
+<polyline fill="none" stroke="black" points="1737.42,-1460.9 1737.42,-1536.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1856.36" y="-1524" font-family="Helvetica,sans-Serif" font-size="9.00">+ schedule(target, value, data, predecessor, salt, delay)</text>
+<polyline fill="none" stroke="black" points="1737.42,-1517.3 1975.3,-1517.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1856.36" y="-1505.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ execute(target, value, data, predecessor, salt)</text>
+<polyline fill="none" stroke="black" points="1737.42,-1498.5 1975.3,-1498.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1856.36" y="-1486.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ updateDelay(newDelay)</text>
+<polyline fill="none" stroke="black" points="1737.42,-1479.7 1975.3,-1479.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1856.36" y="-1467.6" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; queuedOperations: mapping</text>
+</g>
+<g id="edge28" class="edge">
+<title>PrivateGovernance&#45;&gt;TimelockController</title>
+<path fill="none" stroke="#7c3aed" d="M531.87,-831.2C544.05,-972.22 583.28,-1332.82 670.66,-1408.5 944.82,-1645.95 1408.37,-1590.16 1651,-1538.86"/>
+<polygon fill="#7c3aed" stroke="#7c3aed" points="1651.5,-1542.33 1660.54,-1536.81 1650.03,-1535.48 1651.5,-1542.33"/>
+<text xml:space="preserve" text-anchor="middle" x="1108.22" y="-1582.6" font-family="Helvetica,sans-Serif" font-size="8.00">schedule/execute</text>
+</g>
+<g id="edge29" class="edge">
+<title>PrivateGovernance&#45;&gt;AegisCrowdShield</title>
+<path fill="none" stroke="#b91c1c" d="M539.1,-717.72C556.11,-649.01 594.42,-534.49 670.66,-469.5 745.31,-405.86 784.68,-408.5 882.77,-408.5 882.77,-408.5 882.77,-408.5 1811.85,-408.5 1907.64,-408.5 2012.85,-396.02 2101.81,-381.75"/>
+<polygon fill="#b91c1c" stroke="#b91c1c" points="2102.33,-385.21 2111.64,-380.15 2101.21,-378.3 2102.33,-385.21"/>
+<text xml:space="preserve" text-anchor="middle" x="1342.15" y="-410.9" font-family="Helvetica,sans-Serif" font-size="8.00">governance control</text>
+</g>
+<g id="edge30" class="edge">
+<title>GovernanceCore&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#b91c1c" d="M998.6,-1066.19C1124.96,-1065.67 1334.74,-1060.95 1513.84,-1038.5 1548.55,-1034.15 1585.23,-1027.87 1620.51,-1020.95"/>
+<polygon fill="#b91c1c" stroke="#b91c1c" points="1620.8,-1024.46 1629.93,-1019.08 1619.44,-1017.6 1620.8,-1024.46"/>
+<text xml:space="preserve" text-anchor="middle" x="1342.15" y="-1065.44" font-family="Helvetica,sans-Serif" font-size="8.00">module registry</text>
+</g>
+<g id="node9" class="node">
+<title>GovernanceControlledEmergency</title>
+<polygon fill="#fde2e4" stroke="black" points="1209.21,-1219.3 1209.21,-1275.7 1475.09,-1275.7 1475.09,-1219.3 1209.21,-1219.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1284.99" y="-1244.8" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceControlledEmergency</text>
+<polyline fill="none" stroke="black" points="1360.78,-1219.3 1360.78,-1275.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1417.94" y="-1263.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ schedulePause(target)</text>
+<polyline fill="none" stroke="black" points="1360.78,-1256.9 1475.09,-1256.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1417.94" y="-1244.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ executePause(target)</text>
+<polyline fill="none" stroke="black" points="1360.78,-1238.1 1475.09,-1238.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1417.94" y="-1226" font-family="Helvetica,sans-Serif" font-size="9.00">+ resume(target)</text>
+</g>
+<g id="edge31" class="edge">
+<title>GovernanceCore&#45;&gt;GovernanceControlledEmergency</title>
+<path fill="none" stroke="#b91c1c" d="M958.97,-1103.47C1015.89,-1131.69 1096.92,-1169.91 1170.46,-1197.5 1187.41,-1203.86 1205.56,-1209.93 1223.47,-1215.51"/>
+<polygon fill="#b91c1c" stroke="#b91c1c" points="1222.23,-1218.8 1232.82,-1218.39 1224.29,-1212.11 1222.23,-1218.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1108.22" y="-1190.72" font-family="Helvetica,sans-Serif" font-size="8.00">appoints</text>
+</g>
+<g id="edge38" class="edge">
+<title>GovernanceTreasury&#45;&gt;AGSFeeMonetization</title>
+<path fill="none" stroke="#6366f1" d="M2839.18,-1321.08C2834.44,-1318.32 2829.81,-1315.46 2825.37,-1312.5 2816.06,-1306.29 2817.67,-1299.27 2807.37,-1294.9 2758.3,-1274.06 2640.63,-1270.03 2532.32,-1271.41"/>
+<polygon fill="#6366f1" stroke="#6366f1" points="2532.32,-1267.91 2522.37,-1271.56 2532.42,-1274.91 2532.32,-1267.91"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-1297.3" font-family="Helvetica,sans-Serif" font-size="8.00">fund sink</text>
+</g>
+<g id="node20" class="node">
+<title>TreasuryLiquidityAllocator</title>
+<polygon fill="#dcfce7" stroke="black" points="3357.56,-1436.3 3357.56,-1586.7 3654.94,-1586.7 3654.94,-1436.3 3357.56,-1436.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3417.33" y="-1508.8" font-family="Helvetica,sans-Serif" font-size="9.00">TreasuryLiquidityAllocator</text>
+<polyline fill="none" stroke="black" points="3477.1,-1436.3 3477.1,-1586.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1574.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ seedPublicPools(allocations[])</text>
+<polyline fill="none" stroke="black" points="3477.1,-1567.9 3654.94,-1567.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1555.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ wrapNative(amount)</text>
+<polyline fill="none" stroke="black" points="3477.1,-1549.1 3654.94,-1549.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1537" font-family="Helvetica,sans-Serif" font-size="9.00">+ unwrapNative(amount, recipient)</text>
+<polyline fill="none" stroke="black" points="3477.1,-1530.3 3654.94,-1530.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1518.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ rescueToken(token, recipient, amount)</text>
+<polyline fill="none" stroke="black" points="3477.1,-1511.5 3654.94,-1511.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1499.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ rescueNative(recipient, amount)</text>
+<polyline fill="none" stroke="black" points="3477.1,-1492.7 3654.94,-1492.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1480.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ setPriceValidator(validator)</text>
+<polyline fill="none" stroke="black" points="3477.1,-1473.9 3654.94,-1473.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1461.8" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; priceValidator: PoolPriceValidator</text>
+<polyline fill="none" stroke="black" points="3477.1,-1455.1 3654.94,-1455.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3566.02" y="-1443" font-family="Helvetica,sans-Serif" font-size="9.00">Verified (14 checks)</text>
+</g>
+<g id="edge39" class="edge">
+<title>GovernanceTreasury&#45;&gt;TreasuryLiquidityAllocator</title>
+<path fill="none" stroke="#22c55e" d="M3008.51,-1415.74C3035.85,-1438.86 3071.71,-1464.64 3108.71,-1478.5 3183.62,-1506.56 3271.91,-1515.99 3346.13,-1517.9"/>
+<polygon fill="#22c55e" stroke="#22c55e" points="3345.87,-1521.39 3355.94,-1518.1 3346.01,-1514.39 3345.87,-1521.39"/>
+<text xml:space="preserve" text-anchor="middle" x="3224.13" y="-1519.77" font-family="Helvetica,sans-Serif" font-size="8.00">fund liquidity</text>
+</g>
+<g id="edge37" class="edge">
+<title>GovernanceTreasury&#45;&gt;PrivateStaking</title>
+<path fill="none" stroke="#6366f1" d="M3076.9,-1321.09C3081.64,-1318.33 3086.27,-1315.47 3090.71,-1312.5 3228.89,-1220.14 3219.16,-1142.54 3357.56,-1050.5 3365.72,-1045.07 3374.43,-1039.97 3383.39,-1035.19"/>
+<polygon fill="#6366f1" stroke="#6366f1" points="3384.95,-1038.33 3392.24,-1030.64 3381.75,-1032.1 3384.95,-1038.33"/>
+<text xml:space="preserve" text-anchor="middle" x="3224.13" y="-1298.43" font-family="Helvetica,sans-Serif" font-size="8.00">seed rewards</text>
+</g>
+<g id="edge32" class="edge">
+<title>GovernanceControlledEmergency&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#ef4444" d="M1459.84,-1218.87C1478.29,-1212.78 1496.87,-1205.66 1513.84,-1197.5 1588.32,-1161.68 1662.82,-1105.93 1718.44,-1059.39"/>
+<polygon fill="#ef4444" stroke="#ef4444" points="1720.66,-1062.1 1726.05,-1052.98 1716.15,-1056.75 1720.66,-1062.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-1186.29" font-family="Helvetica,sans-Serif" font-size="8.00">pause()</text>
+</g>
+<g id="edge33" class="edge">
+<title>TimelockController&#45;&gt;GovernanceTreasury</title>
+<path fill="none" stroke="#7c3aed" d="M1975.73,-1482.06C2253.07,-1454.22 2787.04,-1400.49 2807.37,-1397.5 2811.66,-1396.87 2816.02,-1396.2 2820.42,-1395.5"/>
+<polygon fill="#7c3aed" stroke="#7c3aed" points="2820.62,-1399.01 2829.92,-1393.94 2819.49,-1392.1 2820.62,-1399.01"/>
+<text xml:space="preserve" text-anchor="middle" x="2311.28" y="-1471.16" font-family="Helvetica,sans-Serif" font-size="8.00">queued exec</text>
+</g>
+<g id="edge34" class="edge">
+<title>TimelockController&#45;&gt;AGSFeeMonetization</title>
+<path fill="none" stroke="#7c3aed" d="M1898.96,-1460.4C1980.02,-1424.95 2101.51,-1371.81 2191.45,-1332.47"/>
+<polygon fill="#7c3aed" stroke="#7c3aed" points="2192.84,-1335.69 2200.6,-1328.47 2190.03,-1329.27 2192.84,-1335.69"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-1411.43" font-family="Helvetica,sans-Serif" font-size="8.00">queued exec</text>
+</g>
+<g id="edge35" class="edge">
+<title>TimelockController&#45;&gt;TreasuryLiquidityAllocator</title>
+<path fill="none" stroke="#7c3aed" d="M1893.26,-1536.59C1950.3,-1561.11 2029.1,-1590.71 2102.06,-1603.5 2548.17,-1681.72 3084.63,-1598.25 3346.19,-1546.36"/>
+<polygon fill="#7c3aed" stroke="#7c3aed" points="3346.69,-1549.84 3355.81,-1544.45 3345.32,-1542.97 3346.69,-1549.84"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-1637.68" font-family="Helvetica,sans-Serif" font-size="8.00">queued exec</text>
+</g>
+<g id="node50" class="node">
+<title>TokenAllocation</title>
+<polygon fill="#ffffff" stroke="black" points="2271.26,-1557.5 2271.26,-1593.5 2351.29,-1593.5 2351.29,-1557.5 2271.26,-1557.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2311.28" y="-1572.9" font-family="Helvetica,sans-Serif" font-size="9.00">TokenAllocation</text>
+</g>
+<g id="edge36" class="edge">
+<title>TimelockController&#45;&gt;TokenAllocation</title>
+<path fill="none" stroke="#7c3aed" d="M1975.74,-1523.82C2074.38,-1539.06 2193.29,-1557.43 2259.48,-1567.65"/>
+<polygon fill="#7c3aed" stroke="#7c3aed" points="2258.9,-1571.1 2269.31,-1569.17 2259.97,-1564.19 2258.9,-1571.1"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-1541.71" font-family="Helvetica,sans-Serif" font-size="8.00">queued exec</text>
+</g>
+<g id="edge70" class="edge">
+<title>AGSFeeMonetization&#45;&gt;GovernanceTreasury</title>
+<path fill="none" stroke="#ea580c" d="M2520.89,-1302.64C2526.82,-1303.26 2532.7,-1303.89 2538.49,-1304.5 2657.99,-1317.15 2688.92,-1312.64 2807.37,-1332.9 2811.69,-1333.64 2816.07,-1334.43 2820.48,-1335.26"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="2819.55,-1338.64 2830.03,-1337.12 2820.89,-1331.77 2819.55,-1338.64"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-1335.3" font-family="Helvetica,sans-Serif" font-size="8.00">distribute S</text>
+</g>
+<g id="edge71" class="edge">
+<title>AGSFeeMonetization&#45;&gt;PrivateYieldFarming</title>
+<path fill="none" stroke="#ea580c" d="M2520.85,-1261.86C2526.8,-1261.51 2532.69,-1261.19 2538.49,-1260.9 2640.32,-1255.84 2756.25,-1254.7 2840.24,-1254.71"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="2840.1,-1258.21 2850.1,-1254.72 2840.1,-1251.21 2840.1,-1258.21"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-1263.3" font-family="Helvetica,sans-Serif" font-size="8.00">distribute S</text>
+</g>
+<g id="edge72" class="edge">
+<title>AGSFeeMonetization&#45;&gt;PrivateStaking</title>
+<path fill="none" stroke="#ea580c" d="M2516.45,-1233.1C2517.83,-1231.61 2519.18,-1230.08 2520.49,-1228.5 2563.16,-1177.12 2489.87,-974.29 2538.49,-928.5 2598.62,-871.87 3135.93,-937.51 3382.52,-971.09"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="3381.8,-974.53 3392.19,-972.41 3382.75,-967.59 3381.8,-974.53"/>
+<text xml:space="preserve" text-anchor="middle" x="2958.04" y="-936.51" font-family="Helvetica,sans-Serif" font-size="8.00">distribute S</text>
+</g>
+<g id="edge73" class="edge">
+<title>AGSFeeMonetization&#45;&gt;DecentralizedPrivacyRewards</title>
+<path fill="none" stroke="#ea580c" d="M2520.72,-1242.03C2616.59,-1224.33 2727.89,-1203.79 2814.09,-1187.88"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="2814.59,-1191.35 2823.78,-1186.09 2813.31,-1184.47 2814.59,-1191.35"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-1241.01" font-family="Helvetica,sans-Serif" font-size="8.00">distribute S</text>
+</g>
+<g id="node12" class="node">
+<title>FeeMonetizationGovernanceExtension</title>
+<polygon fill="#fff4d6" stroke="black" points="0,-736.9 0,-812.1 302.91,-812.1 302.91,-736.9 0,-736.9"/>
+<text xml:space="preserve" text-anchor="middle" x="85.55" y="-771.8" font-family="Helvetica,sans-Serif" font-size="9.00">FeeMonetizationGovernanceExtension</text>
+<polyline fill="none" stroke="black" points="171.09,-736.9 171.09,-812.1"/>
+<text xml:space="preserve" text-anchor="middle" x="237" y="-800" font-family="Helvetica,sans-Serif" font-size="9.00">+ submitClaimProposal()</text>
+<polyline fill="none" stroke="black" points="171.09,-793.3 302.91,-793.3"/>
+<text xml:space="preserve" text-anchor="middle" x="237" y="-781.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ syncFeeRecipients()</text>
+<polyline fill="none" stroke="black" points="171.09,-774.5 302.91,-774.5"/>
+<text xml:space="preserve" text-anchor="middle" x="237" y="-762.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ updateGovernanceHooks()</text>
+<polyline fill="none" stroke="black" points="171.09,-755.7 302.91,-755.7"/>
+<text xml:space="preserve" text-anchor="middle" x="237" y="-743.6" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; feeMRegistry: address</text>
+</g>
+<g id="edge74" class="edge">
+<title>FeeMonetizationGovernanceExtension&#45;&gt;PrivateGovernance</title>
+<path fill="none" stroke="#ea580c" d="M303.37,-774.5C331.52,-774.5 360.79,-774.5 388.5,-774.5"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="388.34,-778 398.34,-774.5 388.34,-771 388.34,-778"/>
+<text xml:space="preserve" text-anchor="middle" x="351.6" y="-776.9" font-family="Helvetica,sans-Serif" font-size="8.00">governance hook</text>
+</g>
+<g id="node13" class="node">
+<title>SonicGatewayWrapper</title>
+<polygon fill="#ffe4ff" stroke="black" points="4246.72,-1633.3 4246.72,-1689.7 4564.08,-1689.7 4564.08,-1633.3 4246.72,-1633.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4300.99" y="-1658.8" font-family="Helvetica,sans-Serif" font-size="9.00">SonicGatewayWrapper</text>
+<polyline fill="none" stroke="black" points="4355.26,-1633.3 4355.26,-1689.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4459.67" y="-1677.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ convertToPrivate(token, amount, commitment)</text>
+<polyline fill="none" stroke="black" points="4355.26,-1670.9 4564.08,-1670.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4459.67" y="-1658.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ addSupportedToken(token, rate)</text>
+<polyline fill="none" stroke="black" points="4355.26,-1652.1 4564.08,-1652.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4459.67" y="-1640" font-family="Helvetica,sans-Serif" font-size="9.00">+ setFeeRecipient(addr)</text>
+</g>
+<g id="edge75" class="edge">
+<title>SonicGatewayWrapper&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#db2777" d="M4246.5,-1658.26C4119.38,-1655.59 3936.12,-1651.58 3775.86,-1647.5 3589.93,-1642.76 3543.02,-1649.43 3357.56,-1635.5 3287.49,-1630.24 2166.68,-1510.1 2102.06,-1482.5 1933.46,-1410.48 1858.19,-1187.27 1828.56,-1062.73"/>
+<polygon fill="#db2777" stroke="#db2777" points="1832.02,-1062.15 1826.35,-1053.2 1825.2,-1063.73 1832.02,-1062.15"/>
+<text xml:space="preserve" text-anchor="middle" x="3224.13" y="-1636.16" font-family="Helvetica,sans-Serif" font-size="8.00">convertToPrivate → shield()</text>
+</g>
+<g id="edge83" class="edge">
+<title>SonicGatewayWrapper&#45;&gt;AGSFeeMonetization</title>
+<path fill="none" stroke="#f97316" d="M4246.69,-1648.89C4240.01,-1648.41 4233.41,-1647.95 4226.93,-1647.5 3840.79,-1620.95 3742.15,-1640.05 3357.56,-1596.5 3265.86,-1586.12 2613.31,-1512.53 2538.49,-1458.5 2524.63,-1448.49 2531.85,-1437.28 2520.49,-1424.5 2489.08,-1389.13 2447.27,-1358.05 2409.37,-1333.9"/>
+<polygon fill="#f97316" stroke="#f97316" points="2411.44,-1331.07 2401.11,-1328.72 2407.72,-1337 2411.44,-1331.07"/>
+<text xml:space="preserve" text-anchor="middle" x="3506.25" y="-1624.64" font-family="Helvetica,sans-Serif" font-size="8.00">deliver S</text>
+</g>
+<g id="edge17" class="edge">
+<title>PrivateAMM&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M3654.06,-791.59C3693.44,-782.58 3736.11,-773.61 3775.86,-766.9 3930.13,-740.84 3975.25,-771.16 4125.78,-728.5 4173.65,-714.93 4183.43,-704.66 4226.93,-680.5 4260.15,-662.05 4295.6,-639.83 4326.01,-619.92"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4327.58,-623.08 4334.01,-614.66 4323.73,-617.23 4327.58,-623.08"/>
+<text xml:space="preserve" text-anchor="middle" x="3950.82" y="-769.3" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge85" class="edge">
+<title>PrivateAMM&#45;&gt;ProofLibraries</title>
+<path fill="none" stroke="#94a3b8" stroke-dasharray="5,2" d="M3654,-826.84C3699.56,-826.33 3749.9,-825.76 3795.93,-825.24"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" points="3795.75,-828.74 3805.71,-825.13 3795.67,-821.74 3795.75,-828.74"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-828.99" font-family="Helvetica,sans-Serif" font-size="8.00">zk helpers</text>
+</g>
+<g id="edge18" class="edge">
+<title>PrivateLending&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M3280.6,-539.52C3303.4,-526.04 3330.72,-512.5 3357.56,-505.5 3522.76,-462.44 3956.21,-480.69 4125.78,-500.5 4175.37,-506.29 4228.94,-517.7 4275.73,-529.43"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4274.83,-532.81 4285.38,-531.88 4276.55,-526.02 4274.83,-532.81"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-482.04" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge86" class="edge">
+<title>PrivateLending&#45;&gt;ProofLibraries</title>
+<path fill="none" stroke="#94a3b8" stroke-dasharray="5,2" d="M3302.63,-615.54C3320.36,-623.08 3339.35,-630.27 3357.56,-635.5 3530.41,-685.12 3625.15,-573.14 3757.86,-694.5 3783.16,-717.63 3752.43,-744.48 3775.86,-769.5 3782.38,-776.47 3789.79,-782.54 3797.78,-787.84"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" points="3795.75,-790.7 3806.11,-792.92 3799.39,-784.72 3795.75,-790.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3506.25" y="-651.44" font-family="Helvetica,sans-Serif" font-size="8.00">zk helpers</text>
+</g>
+<g id="edge19" class="edge">
+<title>PrivateDerivatives&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M3624.36,-1120.76C3670.77,-1100.68 3725.08,-1079.17 3775.86,-1063.9 3927.53,-1018.3 3992.1,-1081.43 4125.78,-996.5 4266.03,-907.39 4349.95,-719.37 4385.07,-624.24"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4388.27,-625.68 4388.4,-615.09 4381.69,-623.29 4388.27,-625.68"/>
+<text xml:space="preserve" text-anchor="middle" x="3950.82" y="-1066.3" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge87" class="edge">
+<title>PrivateDerivatives&#45;&gt;ProofLibraries</title>
+<path fill="none" stroke="#94a3b8" stroke-dasharray="5,2" d="M3624.28,-1116.39C3635.63,-1107.46 3646.16,-1097.5 3654.94,-1086.5 3670.87,-1066.53 3656.49,-1051.46 3672.94,-1031.9 3700.48,-999.14 3722.48,-1010.58 3757.86,-986.5 3810.11,-950.94 3864.57,-903.57 3902.07,-869.06"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" points="3904.21,-871.85 3909.17,-862.48 3899.45,-866.71 3904.21,-871.85"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-1034.3" font-family="Helvetica,sans-Serif" font-size="8.00">zk helpers</text>
+</g>
+<g id="node17" class="node">
+<title>MultiOracleAggregator</title>
+<polygon fill="#ffedd5" stroke="black" points="3823.26,-1083.3 3823.26,-1139.7 4078.37,-1139.7 4078.37,-1083.3 3823.26,-1083.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3876.28" y="-1108.8" font-family="Helvetica,sans-Serif" font-size="9.00">MultiOracleAggregator</text>
+<polyline fill="none" stroke="black" points="3929.3,-1083.3 3929.3,-1139.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4003.84" y="-1127.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ updatePrice(asset)</text>
+<polyline fill="none" stroke="black" points="3929.3,-1120.9 4078.37,-1120.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4003.84" y="-1108.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ addOracle / removeOracle</text>
+<polyline fill="none" stroke="black" points="3929.3,-1102.1 4078.37,-1102.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4003.84" y="-1090" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; adapters[] · median · staleness</text>
+</g>
+<g id="edge50" class="edge">
+<title>PrivateDerivatives&#45;&gt;MultiOracleAggregator</title>
+<path fill="none" stroke="#db2777" stroke-dasharray="5,2" d="M3624.4,-1158.56C3682.02,-1150.23 3751.84,-1140.13 3812.01,-1131.43"/>
+<polygon fill="#db2777" stroke="#db2777" points="3812.23,-1134.93 3821.63,-1130.04 3811.23,-1128 3812.23,-1134.93"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-1153.51" font-family="Helvetica,sans-Serif" font-size="8.00">updatePriceFromOracle</text>
+</g>
+<g id="node21" class="node">
+<title>PublicLiquidityPool</title>
+<polygon fill="#dcfce7" stroke="black" points="3775.86,-1345.9 3775.86,-1515.1 4125.78,-1515.1 4125.78,-1345.9 3775.86,-1345.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3821.63" y="-1427.8" font-family="Helvetica,sans-Serif" font-size="9.00">PublicLiquidityPool</text>
+<polyline fill="none" stroke="black" points="3867.41,-1345.9 3867.41,-1515.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1503" font-family="Helvetica,sans-Serif" font-size="9.00">+ addLiquidity(ags, quote, minShares, recipient)</text>
+<polyline fill="none" stroke="black" points="3867.41,-1496.3 4125.78,-1496.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1484.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ removeLiquidity(shares, minAGS, minQuote, recipient)</text>
+<polyline fill="none" stroke="black" points="3867.41,-1477.5 4125.78,-1477.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1465.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ swapExactInput(agsToQuote, amountIn, minOut, recipient)</text>
+<polyline fill="none" stroke="black" points="3867.41,-1458.7 4125.78,-1458.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1446.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ quoteSwap(agsToQuote, amountIn)</text>
+<polyline fill="none" stroke="black" points="3867.41,-1439.9 4125.78,-1439.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1427.8" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; reserveAGS</text>
+<polyline fill="none" stroke="black" points="3867.41,-1421.1 4125.78,-1421.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1409" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; reserveQuote</text>
+<polyline fill="none" stroke="black" points="3867.41,-1402.3 4125.78,-1402.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1390.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; feeBps (0.3%)</text>
+<polyline fill="none" stroke="black" points="3867.41,-1383.5 4125.78,-1383.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1371.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; MAX_PRICE_IMPACT_BPS (50%)</text>
+<polyline fill="none" stroke="black" points="3867.41,-1364.7 4125.78,-1364.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3996.59" y="-1352.6" font-family="Helvetica,sans-Serif" font-size="9.00">Verified (15+ rules)</text>
+</g>
+<g id="edge49" class="edge">
+<title>PrivateDerivatives&#45;&gt;PublicLiquidityPool</title>
+<path fill="none" stroke="#db2777" stroke-dasharray="5,2" d="M3624.16,-1220.39C3667.27,-1238.64 3715.82,-1261.25 3757.86,-1285.9 3762.4,-1288.56 3793.21,-1311.61 3828.86,-1338.55"/>
+<polygon fill="#db2777" stroke="#db2777" points="3826.72,-1341.32 3836.81,-1344.56 3830.94,-1335.74 3826.72,-1341.32"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-1288.3" font-family="Helvetica,sans-Serif" font-size="8.00">syncPriceFromPool</text>
+</g>
+<g id="edge51" class="edge">
+<title>MultiOracleAggregator&#45;&gt;PrivateDerivatives</title>
+<path fill="none" stroke="#db2777" stroke-dasharray="5,2" d="M3822.99,-1111.75C3775.62,-1113.5 3721.55,-1117.48 3672.94,-1125.9 3660.58,-1128.04 3647.84,-1130.8 3635.18,-1133.92"/>
+<polygon fill="#db2777" stroke="#db2777" points="3634.38,-1130.52 3625.55,-1136.38 3636.11,-1137.3 3634.38,-1130.52"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-1128.3" font-family="Helvetica,sans-Serif" font-size="8.00">median spot</text>
+</g>
+<g id="node18" class="node">
+<title>AegisCanonicalSwapRouter</title>
+<polygon fill="#ecfeff" stroke="black" points="4279.08,-1312.7 4279.08,-1350.3 4531.71,-1350.3 4531.71,-1312.7 4279.08,-1312.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4343.12" y="-1328.8" font-family="Helvetica,sans-Serif" font-size="9.00">AegisCanonicalSwapRouter</text>
+<polyline fill="none" stroke="black" points="4407.15,-1312.7 4407.15,-1350.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4469.43" y="-1338.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ quote / swap (v3 + pools)</text>
+<polyline fill="none" stroke="black" points="4407.15,-1331.5 4531.71,-1331.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4469.43" y="-1319.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; canonical Sonic venues</text>
+</g>
+<g id="edge20" class="edge">
+<title>PrivateYieldFarming&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M3064.61,-1266.18C3353.37,-1294.28 4140.53,-1363.11 4226.93,-1287.5 4327.55,-1199.45 4381.63,-780.71 4398.52,-624.99"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4401.97,-625.63 4399.56,-615.31 4395.01,-624.88 4401.97,-625.63"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-1319.32" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge88" class="edge">
+<title>PrivateYieldFarming&#45;&gt;ProofLibraries</title>
+<path fill="none" stroke="#94a3b8" stroke-dasharray="5,2" d="M3064.39,-1210.87C3073.3,-1207.04 3082.16,-1203.21 3090.71,-1199.5 3209.73,-1147.74 3232.42,-1115.31 3357.56,-1080.9 3421.73,-1063.25 3603.89,-1088.2 3654.94,-1045.5 3675.97,-1027.91 3655.68,-1007.81 3672.94,-986.5 3700.09,-952.98 3730.37,-972.75 3757.86,-939.5 3774.25,-919.68 3757.86,-902.88 3775.86,-884.5 3782.46,-877.76 3789.84,-871.77 3797.74,-866.43"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" points="3799.35,-869.56 3805.96,-861.27 3795.63,-863.63 3799.35,-869.56"/>
+<text xml:space="preserve" text-anchor="middle" x="3506.25" y="-1083.3" font-family="Helvetica,sans-Serif" font-size="8.00">zk helpers</text>
+</g>
+<g id="edge40" class="edge">
+<title>PrivateYieldFarming&#45;&gt;TreasuryLiquidityAllocator</title>
+<path fill="none" stroke="#22c55e" d="M3064.47,-1290.52C3074.19,-1296.74 3083.2,-1304.01 3090.71,-1312.5 3109.44,-1333.67 3089.2,-1353.04 3108.71,-1373.5 3126.35,-1392.01 3243.73,-1431.67 3346.25,-1463.75"/>
+<polygon fill="#22c55e" stroke="#22c55e" points="3345.04,-1467.03 3355.62,-1466.67 3347.12,-1460.35 3345.04,-1467.03"/>
+<text xml:space="preserve" text-anchor="middle" x="3224.13" y="-1461.18" font-family="Helvetica,sans-Serif" font-size="8.00">routePenalty()</text>
+</g>
+<g id="edge42" class="edge">
+<title>TreasuryLiquidityAllocator&#45;&gt;PublicLiquidityPool</title>
+<path fill="none" stroke="#0ea5e9" d="M3655.23,-1484.42C3690.19,-1478.02 3727.9,-1471.12 3764.28,-1464.46"/>
+<polygon fill="#0ea5e9" stroke="#0ea5e9" points="3764.83,-1467.92 3774.03,-1462.67 3763.57,-1461.03 3764.83,-1467.92"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-1483.04" font-family="Helvetica,sans-Serif" font-size="8.00">seedPublicPools()</text>
+</g>
+<g id="node22" class="node">
+<title>PoolPriceValidatorEnhanced</title>
+<polygon fill="#dcfce7" stroke="black" points="4244.93,-1444.9 4244.93,-1614.1 4565.86,-1614.1 4565.86,-1444.9 4244.93,-1444.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4310.22" y="-1526.8" font-family="Helvetica,sans-Serif" font-size="9.00">PoolPriceValidatorEnhanced</text>
+<polyline fill="none" stroke="black" points="4375.51,-1444.9 4375.51,-1614.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1602" font-family="Helvetica,sans-Serif" font-size="9.00">+ configurePool(pool, oracles[], enabled, ...)</text>
+<polyline fill="none" stroke="black" points="4375.51,-1595.3 4565.86,-1595.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1583.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ validatePoolPrice(pool)</text>
+<polyline fill="none" stroke="black" points="4375.51,-1576.5 4565.86,-1576.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1564.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ validateSeedingPrice(pool, ags, quote)</text>
+<polyline fill="none" stroke="black" points="4375.51,-1557.7 4565.86,-1557.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1545.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ setValidationEnabled(pool, enabled)</text>
+<polyline fill="none" stroke="black" points="4375.51,-1538.9 4565.86,-1538.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1526.8" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; poolConfigs: mapping</text>
+<polyline fill="none" stroke="black" points="4375.51,-1520.1 4565.86,-1520.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1508" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; priceData: mapping</text>
+<polyline fill="none" stroke="black" points="4375.51,-1501.3 4565.86,-1501.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1489.2" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; observations: Observation[]</text>
+<polyline fill="none" stroke="black" points="4375.51,-1482.5 4565.86,-1482.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1470.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; flashLoanData: FlashLoanData</text>
+<polyline fill="none" stroke="black" points="4375.51,-1463.7 4565.86,-1463.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4470.68" y="-1451.6" font-family="Helvetica,sans-Serif" font-size="9.00">Verified (20+ rules)</text>
+</g>
+<g id="edge41" class="edge">
+<title>TreasuryLiquidityAllocator&#45;&gt;PoolPriceValidatorEnhanced</title>
+<path fill="none" stroke="#f59e0b" d="M3655.34,-1519.74C3694.51,-1521.63 3736.77,-1523.4 3775.86,-1524.5 3930.58,-1528.86 4106.81,-1529.92 4233.21,-1530"/>
+<polygon fill="#f59e0b" stroke="#f59e0b" points="4233.01,-1533.5 4243.01,-1530.01 4233.01,-1526.5 4233.01,-1533.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3950.82" y="-1532.06" font-family="Helvetica,sans-Serif" font-size="8.00">validateSeedingPrice()</text>
+</g>
+<g id="edge45" class="edge">
+<title>PublicLiquidityPool&#45;&gt;SonicGatewayWrapper</title>
+<path fill="none" stroke="#0ea5e9" d="M4115.37,-1515.48C4154.28,-1539.81 4194.01,-1568.38 4226.93,-1599.9 4236.46,-1609.02 4233.87,-1616.31 4244.93,-1623.5 4247.07,-1624.89 4249.24,-1626.22 4251.46,-1627.51"/>
+<polygon fill="#0ea5e9" stroke="#0ea5e9" points="4249.62,-1630.49 4260.09,-1632.13 4252.93,-1624.32 4249.62,-1630.49"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1602.3" font-family="Helvetica,sans-Serif" font-size="8.00">swap SONIC/AGS</text>
+</g>
+<g id="edge48" class="edge">
+<title>PublicLiquidityPool&#45;&gt;AegisCanonicalSwapRouter</title>
+<path fill="none" stroke="#0284c7" d="M4137.24,-1382.44C4139.43,-1381.92 4141.61,-1381.41 4143.78,-1380.9 4188.51,-1370.39 4199.82,-1368.23 4244.93,-1359.5 4256.55,-1357.25 4268.67,-1354.98 4280.79,-1352.77"/>
+<polygon fill="#0284c7" stroke="#0284c7" points="4136.58,-1379 4127.67,-1384.74 4138.21,-1385.81 4136.58,-1379"/>
+<polygon fill="#0284c7" stroke="#0284c7" points="4281.22,-1356.25 4290.43,-1351.02 4279.97,-1349.36 4281.22,-1356.25"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1383.3" font-family="Helvetica,sans-Serif" font-size="8.00">canonical quotes</text>
+</g>
+<g id="edge43" class="edge">
+<title>PublicLiquidityPool&#45;&gt;PoolPriceValidatorEnhanced</title>
+<path fill="none" stroke="#f59e0b" d="M4126.18,-1488.22C4132.1,-1489.73 4137.98,-1491.16 4143.78,-1492.5 4172.63,-1499.16 4203.57,-1504.81 4233.7,-1509.55"/>
+<polygon fill="#f59e0b" stroke="#f59e0b" points="4232.84,-1512.96 4243.26,-1511.02 4233.91,-1506.04 4232.84,-1512.96"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1510.04" font-family="Helvetica,sans-Serif" font-size="8.00">validatePoolPrice()</text>
+</g>
+<g id="node31" class="node">
+<title>AegisPublicPoolRouter</title>
+<polygon fill="#e0f7fa" stroke="black" points="4285.97,-1369.3 4285.97,-1425.7 4524.82,-1425.7 4524.82,-1369.3 4285.97,-1369.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4340" y="-1394.8" font-family="Helvetica,sans-Serif" font-size="9.00">AegisPublicPoolRouter</text>
+<polyline fill="none" stroke="black" points="4394.02,-1369.3 4394.02,-1425.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4459.42" y="-1413.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ bestQuote(...)</text>
+<polyline fill="none" stroke="black" points="4394.02,-1406.9 4524.82,-1406.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4459.42" y="-1394.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ swapExactInputOnBest(...)</text>
+<polyline fill="none" stroke="black" points="4394.02,-1388.1 4524.82,-1388.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4459.42" y="-1376" font-family="Helvetica,sans-Serif" font-size="9.00">+ poolCount()</text>
+</g>
+<g id="edge46" class="edge">
+<title>PublicLiquidityPool&#45;&gt;AegisPublicPoolRouter</title>
+<path fill="none" stroke="#0891b2" d="M4137.49,-1399.46C4139.59,-1399.26 4141.69,-1399.08 4143.78,-1398.9 4186.11,-1395.32 4232.45,-1394.18 4274.16,-1394.17"/>
+<polygon fill="#0891b2" stroke="#0891b2" points="4137.24,-1395.96 4127.64,-1400.44 4137.94,-1402.93 4137.24,-1395.96"/>
+<polygon fill="#0891b2" stroke="#0891b2" points="4273.99,-1397.67 4283.99,-1394.19 4274,-1390.67 4273.99,-1397.67"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1401.3" font-family="Helvetica,sans-Serif" font-size="8.00">router reads pools</text>
+</g>
+<g id="edge44" class="edge">
+<title>PoolPriceValidatorEnhanced&#45;&gt;PublicLiquidityPool</title>
+<path fill="none" stroke="#f59e0b" d="M4244.49,-1483.08C4238.58,-1481.63 4232.71,-1480.23 4226.93,-1478.9 4197.99,-1472.25 4167.16,-1466.01 4136.99,-1460.37"/>
+<polygon fill="#f59e0b" stroke="#f59e0b" points="4137.87,-1456.97 4127.4,-1458.59 4136.59,-1463.85 4137.87,-1456.97"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1481.3" font-family="Helvetica,sans-Serif" font-size="8.00">getReserves()</text>
+</g>
+<g id="edge21" class="edge">
+<title>PrivateStaking&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M3619.06,-992.27C3774.48,-991.39 4055.95,-966.79 4226.93,-814.5 4289.27,-758.97 4342.15,-677.76 4373.56,-623.57"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4376.49,-625.51 4378.42,-615.09 4370.41,-622.02 4376.49,-625.51"/>
+<text xml:space="preserve" text-anchor="middle" x="3950.82" y="-984.86" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge89" class="edge">
+<title>PrivateStaking&#45;&gt;ProofLibraries</title>
+<path fill="none" stroke="#94a3b8" stroke-dasharray="5,2" d="M3618.93,-946.86C3685.65,-921.99 3770.16,-890.48 3837.07,-865.54"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" points="3838.08,-868.89 3846.23,-862.12 3835.64,-862.33 3838.08,-868.89"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-928.03" font-family="Helvetica,sans-Serif" font-size="8.00">zk helpers</text>
+</g>
+<g id="edge22" class="edge">
+<title>DecentralizedPrivacyRewards&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M3062.17,-1190.15C3160.31,-1216.86 3301.13,-1253.6 3357.56,-1260.5 3488.75,-1276.55 3539.73,-1325.28 3654.94,-1260.5 3668.36,-1252.95 3661.24,-1240.91 3672.94,-1230.9 3710.53,-1198.74 3727.94,-1200.78 3775.86,-1188.5 3851.65,-1169.08 4060.94,-1193.3 4125.78,-1149.5 4309.04,-1025.71 4375.28,-746.84 4396.05,-625.15"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4399.49,-625.81 4397.67,-615.37 4392.58,-624.66 4399.49,-625.81"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-1233.3" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge23" class="edge">
+<title>DecentralizedInsurance&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M2435.71,-532.84C2767.05,-492.11 3657.74,-391.65 3757.86,-475.5 3792.81,-504.78 3740.9,-547.22 3775.86,-576.5 3813.09,-607.68 4102.42,-590.67 4275.28,-577.4"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4275.54,-580.89 4285.24,-576.63 4275,-573.91 4275.54,-580.89"/>
+<text xml:space="preserve" text-anchor="middle" x="3506.25" y="-450.21" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge24" class="edge">
+<title>AegisCrowdShield&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#16a34a" d="M2509.26,-309.35C2636.65,-291.86 2806.23,-273.5 2957.04,-273.5 2957.04,-273.5 2957.04,-273.5 3951.82,-273.5 4074.56,-273.5 4121.49,-234.68 4226.93,-297.5 4307.01,-345.21 4358.03,-444.76 4383.89,-508.46"/>
+<polygon fill="#16a34a" stroke="#16a34a" points="4380.62,-509.73 4387.57,-517.74 4387.13,-507.15 4380.62,-509.73"/>
+<text xml:space="preserve" text-anchor="middle" x="3506.25" y="-275.9" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="node27" class="node">
+<title>PrivateAnalytics</title>
+<polygon fill="#e0f2fe" stroke="black" points="3845.92,-662.3 3845.92,-718.7 4055.72,-718.7 4055.72,-662.3 3845.92,-662.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3885.93" y="-687.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateAnalytics</text>
+<polyline fill="none" stroke="black" points="3925.94,-662.3 3925.94,-718.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3990.83" y="-706.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ recordMetric(proof, metric)</text>
+<polyline fill="none" stroke="black" points="3925.94,-699.9 4055.72,-699.9"/>
+<text xml:space="preserve" text-anchor="middle" x="3990.83" y="-687.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ snapshotEpoch(epoch)</text>
+<polyline fill="none" stroke="black" points="3925.94,-681.1 4055.72,-681.1"/>
+<text xml:space="preserve" text-anchor="middle" x="3990.83" y="-669" font-family="Helvetica,sans-Serif" font-size="9.00">+ publishReport(id)</text>
+</g>
+<g id="edge77" class="edge">
+<title>PrivateAnalytics&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#0ea5e9" d="M4056.19,-680.99C4108.25,-674.54 4171.72,-664.07 4226.93,-647.5 4252.19,-639.92 4278.51,-629.45 4302.9,-618.56"/>
+<polygon fill="#0ea5e9" stroke="#0ea5e9" points="4304.19,-621.82 4311.84,-614.5 4301.29,-615.45 4304.19,-621.82"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-669.52" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="node28" class="node">
+<title>OffchainMetricsClients</title>
+<polygon fill="#f1f5f9" stroke="black" points="3400.61,-555.7 3400.61,-593.3 3611.89,-593.3 3611.89,-555.7 3400.61,-555.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3453.62" y="-571.8" font-family="Helvetica,sans-Serif" font-size="9.00">OffchainMetricsClients</text>
+<polyline fill="none" stroke="black" points="3506.63,-555.7 3506.63,-593.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3559.26" y="-581.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ submitMetric(metric)</text>
+<polyline fill="none" stroke="black" points="3506.63,-574.5 3611.89,-574.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3559.26" y="-562.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ batchProofs()</text>
+</g>
+<g id="edge76" class="edge">
+<title>OffchainMetricsClients&#45;&gt;PrivateAnalytics</title>
+<path fill="none" stroke="#0ea5e9" stroke-dasharray="5,2" d="M3612.26,-560.07C3661.1,-559 3717.23,-566.51 3757.86,-597.9 3776.42,-612.24 3758.42,-631.82 3775.86,-647.5 3792.38,-662.36 3813.23,-672.28 3834.7,-678.85"/>
+<polygon fill="#0ea5e9" stroke="#0ea5e9" points="3833.58,-682.17 3844.16,-681.49 3835.47,-675.43 3833.58,-682.17"/>
+<text xml:space="preserve" text-anchor="middle" x="3715.4" y="-600.3" font-family="Helvetica,sans-Serif" font-size="8.00">submitMetric()</text>
+</g>
+<g id="edge80" class="edge">
+<title>OnChainPrivacyLeaderboard&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#0ea5e9" d="M2807.81,-666.29C2978.96,-679.57 3262.42,-690.25 3339.56,-624.5 3369.81,-598.72 3326.76,-562.02 3357.56,-536.9 3392.09,-508.74 3724.42,-531.05 3757.86,-560.5 3775.27,-575.83 3756.83,-596.22 3775.86,-609.5 3858.06,-666.87 4127.4,-621.39 4226.93,-609.5 4242.79,-607.61 4259.28,-604.79 4275.53,-601.5"/>
+<polygon fill="#0ea5e9" stroke="#0ea5e9" points="4276.19,-604.93 4285.26,-599.45 4274.75,-598.08 4276.19,-604.93"/>
+<text xml:space="preserve" text-anchor="middle" x="3506.25" y="-539.3" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="node30" class="node">
+<title>HyperOptimizedAggregator</title>
+<polygon fill="#e0f2fe" stroke="black" points="3836.64,-510.3 3836.64,-566.7 4064.99,-566.7 4064.99,-510.3 3836.64,-510.3"/>
+<text xml:space="preserve" text-anchor="middle" x="3899.17" y="-535.8" font-family="Helvetica,sans-Serif" font-size="9.00">HyperOptimizedAggregator</text>
+<polyline fill="none" stroke="black" points="3961.69,-510.3 3961.69,-566.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4013.34" y="-554.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ enqueueJob(batch)</text>
+<polyline fill="none" stroke="black" points="3961.69,-547.9 4064.99,-547.9"/>
+<text xml:space="preserve" text-anchor="middle" x="4013.34" y="-535.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ processJob(jobId)</text>
+<polyline fill="none" stroke="black" points="3961.69,-529.1 4064.99,-529.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4013.34" y="-517" font-family="Helvetica,sans-Serif" font-size="9.00">+ publishResult(jobId)</text>
+</g>
+<g id="edge78" class="edge">
+<title>HyperOptimizedAggregator&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#0ea5e9" d="M4065.44,-545.53C4129.3,-549.48 4209.23,-554.43 4275.44,-558.52"/>
+<polygon fill="#0ea5e9" stroke="#0ea5e9" points="4275.07,-562.01 4285.27,-559.13 4275.51,-555.02 4275.07,-562.01"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-557.41" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof(..)</text>
+</g>
+<g id="edge47" class="edge">
+<title>AegisPublicPoolRouter&#45;&gt;PublicLiquidityPool</title>
+<path fill="none" stroke="#0891b2" d="M4285.5,-1406.17C4240.21,-1409.47 4187.46,-1413.32 4137.45,-1416.96"/>
+<polygon fill="#0891b2" stroke="#0891b2" points="4137.38,-1413.46 4127.66,-1417.68 4137.89,-1420.44 4137.38,-1413.46"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1418.38" font-family="Helvetica,sans-Serif" font-size="8.00">swapExactInputOnBest</text>
+</g>
+<g id="node35" class="node">
+<title>DaoDynamicRevenueRouter</title>
+<polygon fill="#fff8e1" stroke="black" points="1204.35,-1295.3 1204.35,-1351.7 1479.95,-1351.7 1479.95,-1295.3 1204.35,-1295.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1269.62" y="-1320.8" font-family="Helvetica,sans-Serif" font-size="9.00">DaoDynamicRevenueRouter</text>
+<polyline fill="none" stroke="black" points="1334.9,-1295.3 1334.9,-1351.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1407.43" y="-1339.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ payAndRoute(...)</text>
+<polyline fill="none" stroke="black" points="1334.9,-1332.9 1479.95,-1332.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1407.43" y="-1320.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ payAndRouteWithPermit(...)</text>
+<polyline fill="none" stroke="black" points="1334.9,-1314.1 1479.95,-1314.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1407.43" y="-1302" font-family="Helvetica,sans-Serif" font-size="9.00">DAO / insurance / flywheel sinks</text>
+</g>
+<g id="edge55" class="edge">
+<title>DaoDynamicRevenueRouter&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#f59e0b" stroke-dasharray="5,2" d="M1480.42,-1299.45C1491.99,-1295.49 1503.29,-1290.87 1513.84,-1285.5 1615.27,-1233.88 1701.31,-1133.38 1754.06,-1060.99"/>
+<polygon fill="#f59e0b" stroke="#f59e0b" points="1756.74,-1063.25 1759.75,-1053.09 1751.06,-1059.16 1756.74,-1063.25"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-1276.92" font-family="Helvetica,sans-Serif" font-size="8.00">payment token</text>
+</g>
+<g id="edge56" class="edge">
+<title>DaoDynamicRevenueRouter&#45;&gt;GovernanceTreasury</title>
+<path fill="none" stroke="#ea580c" d="M1480.4,-1327.33C1785.21,-1335.83 2515.62,-1356.19 2820.12,-1364.68"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="2819.61,-1368.17 2829.7,-1364.95 2819.8,-1361.17 2819.61,-1368.17"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-1346.33" font-family="Helvetica,sans-Serif" font-size="8.00">sink split</text>
+</g>
+<g id="node36" class="node">
+<title>LiquidityMiningGauge</title>
+<polygon fill="#e8f5e9" stroke="black" points="1170.46,-1093.5 1170.46,-1187.5 1513.84,-1187.5 1513.84,-1093.5 1170.46,-1093.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1221.73" y="-1137.8" font-family="Helvetica,sans-Serif" font-size="9.00">LiquidityMiningGauge</text>
+<polyline fill="none" stroke="black" points="1273.01,-1093.5 1273.01,-1187.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1393.43" y="-1175.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ stake(amount) / stakeFor(user, amount)</text>
+<polyline fill="none" stroke="black" points="1273.01,-1168.7 1513.84,-1168.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1393.43" y="-1156.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ getReward() / getRewardFor(user)</text>
+<polyline fill="none" stroke="black" points="1273.01,-1149.9 1513.84,-1149.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1393.43" y="-1137.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ withdrawFor(user, amount)</text>
+<polyline fill="none" stroke="black" points="1273.01,-1131.1 1513.84,-1131.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1393.43" y="-1119" font-family="Helvetica,sans-Serif" font-size="9.00">+ notifyRewardAmount(reward, duration)</text>
+<polyline fill="none" stroke="black" points="1273.01,-1112.3 1513.84,-1112.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1393.43" y="-1100.2" font-family="Helvetica,sans-Serif" font-size="9.00">per&#45;pool (USDC + SONIC LP) · community brings quote</text>
+</g>
+<g id="edge57" class="edge">
+<title>LiquidityMiningGauge&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#22c55e" d="M1514.32,-1109.03C1547.73,-1100.9 1582.15,-1091.1 1613.67,-1079.5 1631.25,-1073.03 1649.24,-1065.3 1666.84,-1057.01"/>
+<polygon fill="#22c55e" stroke="#22c55e" points="1668.29,-1060.2 1675.8,-1052.73 1665.26,-1053.89 1668.29,-1060.2"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-1116.15" font-family="Helvetica,sans-Serif" font-size="8.00">AGS rewards</text>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-1106.55" font-family="Helvetica,sans-Serif" font-size="8.00">(authorized gauge)</text>
+</g>
+<g id="edge58" class="edge">
+<title>LiquidityMiningGauge&#45;&gt;PublicLiquidityPool</title>
+<path fill="none" stroke="#22c55e" d="M1461.29,-1187.85C1478.93,-1195.04 1496.88,-1202.42 1513.84,-1209.5 1734.55,-1301.66 1773.89,-1373.74 2008.04,-1422.5 2030.43,-1427.16 3632.06,-1426.33 3654.94,-1426.5 3690.32,-1426.76 3728.08,-1427.17 3764.36,-1427.63"/>
+<polygon fill="#22c55e" stroke="#22c55e" points="3764.02,-1431.13 3774.06,-1427.76 3764.11,-1424.13 3764.02,-1431.13"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-1428.55" font-family="Helvetica,sans-Serif" font-size="8.00">stake LP ERC20</text>
+</g>
+<g id="node37" class="node">
+<title>AegisExecutionRelay</title>
+<polygon fill="#ecfdf5" stroke="black" points="732.96,-638.3 732.96,-694.7 1034.59,-694.7 1034.59,-638.3 732.96,-638.3"/>
+<text xml:space="preserve" text-anchor="middle" x="783.48" y="-663.8" font-family="Helvetica,sans-Serif" font-size="9.00">AegisExecutionRelay</text>
+<polyline fill="none" stroke="black" points="834.01,-638.3 834.01,-694.7"/>
+<text xml:space="preserve" text-anchor="middle" x="934.3" y="-682.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ forwardCall(target, data, sig)</text>
+<polyline fill="none" stroke="black" points="834.01,-675.9 1034.59,-675.9"/>
+<text xml:space="preserve" text-anchor="middle" x="934.3" y="-663.8" font-family="Helvetica,sans-Serif" font-size="9.00">allowlisted selectors only</text>
+<polyline fill="none" stroke="black" points="834.01,-657.1 1034.59,-657.1"/>
+<text xml:space="preserve" text-anchor="middle" x="934.3" y="-645" font-family="Helvetica,sans-Serif" font-size="9.00">stakeFor · getRewardFor · provideLiquidity …</text>
+</g>
+<g id="edge61" class="edge">
+<title>AegisExecutionRelay&#45;&gt;PrivateLending</title>
+<path fill="none" stroke="#059669" d="M1025.72,-637.83C1115.58,-622 1234.73,-605.5 1341.15,-605.5 1341.15,-605.5 1341.15,-605.5 2047.05,-605.5 2393.08,-605.5 2479.42,-593.42 2825.37,-585.5 2916.19,-583.42 3018.69,-581.37 3096.89,-579.86"/>
+<polygon fill="#059669" stroke="#059669" points="3096.8,-583.36 3106.73,-579.67 3096.67,-576.36 3096.8,-583.36"/>
+<text xml:space="preserve" text-anchor="middle" x="1810.85" y="-607.9" font-family="Helvetica,sans-Serif" font-size="8.00">provideLiquidity / repayLoan</text>
+</g>
+<g id="edge60" class="edge">
+<title>AegisExecutionRelay&#45;&gt;PrivateStaking</title>
+<path fill="none" stroke="#059669" d="M1020.81,-695.16C1067.99,-704.06 1121.36,-712.98 1170.46,-718.5 1894.11,-799.89 2085.14,-697.26 2807.37,-790.5 3047.36,-821.48 3139.54,-769.3 3339.56,-905.5 3351.48,-913.62 3346.28,-923.51 3357.56,-932.5 3365.51,-938.84 3374.26,-944.51 3383.41,-949.58"/>
+<polygon fill="#059669" stroke="#059669" points="3381.65,-952.61 3392.13,-954.15 3384.9,-946.41 3381.65,-952.61"/>
+<text xml:space="preserve" text-anchor="middle" x="2046.05" y="-752.14" font-family="Helvetica,sans-Serif" font-size="8.00">stake / claimRewards</text>
+</g>
+<g id="edge62" class="edge">
+<title>AegisExecutionRelay&#45;&gt;DecentralizedInsurance</title>
+<path fill="none" stroke="#059669" d="M938.78,-637.84C973.5,-620.96 1020.16,-601.09 1063.98,-591.5 1460.45,-504.74 1944.56,-521.99 2175.36,-537.44"/>
+<polygon fill="#059669" stroke="#059669" points="2175.11,-540.93 2185.32,-538.12 2175.58,-533.95 2175.11,-540.93"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-534.37" font-family="Helvetica,sans-Serif" font-size="8.00">createPolicy / fundPool</text>
+</g>
+<g id="edge59" class="edge">
+<title>AegisExecutionRelay&#45;&gt;LiquidityMiningGauge</title>
+<path fill="none" stroke="#059669" d="M940.19,-695.02C975.07,-712.17 1021.38,-733.5 1063.98,-748.5 1102.24,-761.97 1126.62,-739.63 1152.46,-770.9 1196.21,-823.86 1129.27,-1024.52 1170.46,-1079.5 1171.84,-1081.34 1173.28,-1083.13 1174.77,-1084.86"/>
+<polygon fill="#059669" stroke="#059669" points="1172.19,-1087.22 1181.65,-1091.99 1177.23,-1082.36 1172.19,-1087.22"/>
+<text xml:space="preserve" text-anchor="middle" x="1108.22" y="-773.3" font-family="Helvetica,sans-Serif" font-size="8.00">stakeFor / getRewardFor</text>
+</g>
+<g id="node38" class="node">
+<title>TreasuryBondAuction</title>
+<polygon fill="#e8f5e9" stroke="black" points="1248.11,-991.7 1248.11,-1029.3 1436.19,-1029.3 1436.19,-991.7 1248.11,-991.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1299.38" y="-1007.8" font-family="Helvetica,sans-Serif" font-size="9.00">TreasuryBondAuction</text>
+<polyline fill="none" stroke="black" points="1350.66,-991.7 1350.66,-1029.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1393.42" y="-1017.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ purchase(...)</text>
+<polyline fill="none" stroke="black" points="1350.66,-1010.5 1436.19,-1010.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1393.42" y="-998.4" font-family="Helvetica,sans-Serif" font-size="9.00">AGS Dutch notes</text>
+</g>
+<g id="edge63" class="edge">
+<title>TreasuryBondAuction&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#22c55e" d="M1436.47,-1003.7C1489.04,-999.87 1556.66,-994.95 1619.88,-990.34"/>
+<polygon fill="#22c55e" stroke="#22c55e" points="1619.99,-993.84 1629.71,-989.62 1619.48,-986.86 1619.99,-993.84"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-998.95" font-family="Helvetica,sans-Serif" font-size="8.00">AGS / quote</text>
+</g>
+<g id="node39" class="node">
+<title>MessagingAdapterAllowlist</title>
+<polygon fill="#ede7f6" stroke="black" points="721.57,-775.3 721.57,-831.7 1045.98,-831.7 1045.98,-775.3 721.57,-775.3"/>
+<text xml:space="preserve" text-anchor="middle" x="783.34" y="-800.8" font-family="Helvetica,sans-Serif" font-size="9.00">MessagingAdapterAllowlist</text>
+<polyline fill="none" stroke="black" points="845.12,-775.3 845.12,-831.7"/>
+<text xml:space="preserve" text-anchor="middle" x="945.55" y="-819.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ setMessagingAdapterAllowed(adapter, bool)</text>
+<polyline fill="none" stroke="black" points="845.12,-812.9 1045.98,-812.9"/>
+<text xml:space="preserve" text-anchor="middle" x="945.55" y="-800.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ isMessagingAdapterAllowed(addr)</text>
+<polyline fill="none" stroke="black" points="845.12,-794.1 1045.98,-794.1"/>
+<text xml:space="preserve" text-anchor="middle" x="945.55" y="-782" font-family="Helvetica,sans-Serif" font-size="9.00">gov / timelock gated</text>
+</g>
+<g id="node43" class="node">
+<title>CrossChainBridge</title>
+<polygon fill="#ffedd5" stroke="black" points="1225.23,-633.9 1225.23,-709.1 1459.07,-709.1 1459.07,-633.9 1225.23,-633.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1284.5" y="-668.8" font-family="Helvetica,sans-Serif" font-size="9.00">CrossChainPrivacyBridge</text>
+<polyline fill="none" stroke="black" points="1343.77,-633.9 1343.77,-709.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1401.42" y="-697" font-family="Helvetica,sans-Serif" font-size="9.00">+ bridgeOut(proof, dest)</text>
+<polyline fill="none" stroke="black" points="1343.77,-690.3 1459.07,-690.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1401.42" y="-678.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ bridgeIn(proof, src)</text>
+<polyline fill="none" stroke="black" points="1343.77,-671.5 1459.07,-671.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1401.42" y="-659.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ registerValidator(node)</text>
+<polyline fill="none" stroke="black" points="1343.77,-652.7 1459.07,-652.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1401.42" y="-640.6" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; validatorSet: mapping</text>
+</g>
+<g id="edge68" class="edge">
+<title>MessagingAdapterAllowlist&#45;&gt;CrossChainBridge</title>
+<path fill="none" stroke="#7c3aed" stroke-dasharray="5,2" d="M1046.42,-812.41C1083.09,-808.54 1120.59,-799.51 1152.46,-781.5 1164.38,-774.76 1160.02,-765.37 1170.46,-756.5 1189.38,-740.42 1211.87,-726.46 1234.21,-714.77"/>
+<polygon fill="#7c3aed" stroke="#7c3aed" points="1235.78,-717.9 1243.1,-710.24 1232.6,-711.66 1235.78,-717.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1108.22" y="-811.52" font-family="Helvetica,sans-Serif" font-size="8.00">future adapter policy</text>
+</g>
+<g id="node40" class="node">
+<title>PrivacyEntryRouter</title>
+<polygon fill="#ecfdf5" stroke="black" points="1187.96,-897.9 1187.96,-973.1 1496.34,-973.1 1496.34,-897.9 1187.96,-897.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1234.73" y="-932.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivacyEntryRouter</text>
+<polyline fill="none" stroke="black" points="1281.49,-897.9 1281.49,-973.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1388.91" y="-961" font-family="Helvetica,sans-Serif" font-size="9.00">+ relayShield(proof, …, sig)</text>
+<polyline fill="none" stroke="black" points="1281.49,-954.3 1496.34,-954.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1388.91" y="-942.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ relayUnshield(proof, …, sig)</text>
+<polyline fill="none" stroke="black" points="1281.49,-935.5 1496.34,-935.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1388.91" y="-923.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ relayShieldedTransfer(…, authorizedSigner, sig)</text>
+<polyline fill="none" stroke="black" points="1281.49,-916.7 1496.34,-916.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1388.91" y="-904.6" font-family="Helvetica,sans-Serif" font-size="9.00">EIP&#45;712 nonces + optional S relay fee</text>
+</g>
+<g id="edge64" class="edge">
+<title>PrivacyEntryRouter&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#059669" d="M1496.61,-948.98C1536.04,-952.45 1578.92,-956.21 1619.95,-959.82"/>
+<polygon fill="#059669" stroke="#059669" points="1619.41,-963.28 1629.67,-960.67 1620.02,-956.31 1619.41,-963.28"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-960.85" font-family="Helvetica,sans-Serif" font-size="8.00">relay → token entry</text>
+</g>
+<g id="node41" class="node">
+<title>AutomatedDutchAuction</title>
+<polygon fill="#fff9c4" stroke="black" points="1180.7,-766.1 1180.7,-878.9 1503.6,-878.9 1503.6,-766.1 1180.7,-766.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1237.23" y="-819.8" font-family="Helvetica,sans-Serif" font-size="9.00">AutomatedDutchAuction</text>
+<polyline fill="none" stroke="black" points="1293.76,-766.1 1293.76,-878.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1398.68" y="-866.8" font-family="Helvetica,sans-Serif" font-size="9.00">+ purchaseTokens(ZK proof, …) native S</text>
+<polyline fill="none" stroke="black" points="1293.76,-860.1 1503.6,-860.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1398.68" y="-848" font-family="Helvetica,sans-Serif" font-size="9.00">+ purchaseTokensLegacy()</text>
+<polyline fill="none" stroke="black" points="1293.76,-841.3 1503.6,-841.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1398.68" y="-829.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ purchaseTokensLegacyWithErc20() TGE pegs</text>
+<polyline fill="none" stroke="black" points="1293.76,-822.5 1503.6,-822.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1398.68" y="-810.4" font-family="Helvetica,sans-Serif" font-size="9.00">+ claim… (deferred)</text>
+<polyline fill="none" stroke="black" points="1293.76,-803.7 1503.6,-803.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1398.68" y="-791.6" font-family="Helvetica,sans-Serif" font-size="9.00">+ getCurrentPrice() linear Dutch</text>
+<polyline fill="none" stroke="black" points="1293.76,-784.9 1503.6,-784.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1398.68" y="-772.8" font-family="Helvetica,sans-Serif" font-size="9.00">VerifierFactory: auction + auction&#45;claim</text>
+</g>
+<g id="edge67" class="edge">
+<title>AutomatedDutchAuction&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#0d9488" d="M1504.09,-875.61C1541.55,-887.97 1581.78,-901.24 1620.35,-913.97"/>
+<polygon fill="#0d9488" stroke="#0d9488" points="1619.15,-917.26 1629.74,-917.07 1621.34,-910.61 1619.15,-917.26"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-911.12" font-family="Helvetica,sans-Serif" font-size="8.00">AGS transfers</text>
+</g>
+<g id="edge66" class="edge">
+<title>AutomatedDutchAuction&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#ca8a04" d="M1503.77,-821.61C1656.14,-811.17 1877.98,-769.03 1990.04,-619.5 2029.51,-566.83 1960.39,-517.92 2008.04,-472.5 2049.36,-433.1 2463.57,-438.97 2520.49,-434.5 3078.63,-390.69 3216.49,-353.63 3775.86,-330.5 3931.25,-324.07 3975.35,-291.04 4125.78,-330.5 4228.05,-357.33 4315.33,-449.39 4363.74,-510.28"/>
+<polygon fill="#ca8a04" stroke="#ca8a04" points="4360.74,-512.12 4369.66,-517.84 4366.25,-507.81 4360.74,-512.12"/>
+<text xml:space="preserve" text-anchor="middle" x="2958.04" y="-410.01" font-family="Helvetica,sans-Serif" font-size="8.00">auction + claim verify</text>
+</g>
+<g id="node42" class="node">
+<title>TokenDistributionSale</title>
+<polygon fill="#fff9c4" stroke="black" points="3841.9,-339.7 3841.9,-377.3 4059.73,-377.3 4059.73,-339.7 3841.9,-339.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3893.92" y="-355.8" font-family="Helvetica,sans-Serif" font-size="9.00">TokenDistributionSale</text>
+<polyline fill="none" stroke="black" points="3945.95,-339.7 3945.95,-377.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4002.84" y="-365.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ purchaseWithProof(...)</text>
+<polyline fill="none" stroke="black" points="3945.95,-358.5 4059.73,-358.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4002.84" y="-346.4" font-family="Helvetica,sans-Serif" font-size="9.00">ZK sale consumer</text>
+</g>
+<g id="edge65" class="edge">
+<title>TokenDistributionSale&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#ca8a04" d="M4060.15,-372.59C4082.04,-376.37 4104.77,-380.98 4125.78,-386.5 4172.14,-398.68 4185.23,-400.27 4226.93,-423.9 4269.71,-448.14 4312.81,-482.49 4345.82,-511.4"/>
+<polygon fill="#ca8a04" stroke="#ca8a04" points="4343.48,-514 4353.29,-518.01 4348.12,-508.76 4343.48,-514"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-426.3" font-family="Helvetica,sans-Serif" font-size="8.00">verifyProof</text>
+</g>
+<g id="edge81" class="edge">
+<title>CrossChainBridge&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#d946ef" d="M1426.79,-709.48C1455.02,-723.26 1486.34,-739.61 1513.84,-756.5 1581.31,-797.92 1652.65,-850.64 1708.39,-894.09"/>
+<polygon fill="#d946ef" stroke="#d946ef" points="1705.97,-896.65 1716.01,-900.05 1710.29,-891.13 1705.97,-896.65"/>
+<text xml:space="preserve" text-anchor="middle" x="1572.76" y="-820.59" font-family="Helvetica,sans-Serif" font-size="8.00">mint/burn</text>
+</g>
+<g id="edge82" class="edge">
+<title>CrossChainBridge&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#d946ef" d="M1388.93,-633.55C1501.4,-543.24 1803.91,-317.74 2102.06,-246.5 2216.88,-219.06 4125.11,-200.77 4226.93,-260.5 4318.76,-314.36 4367.6,-435.59 4389.56,-508.25"/>
+<polygon fill="#d946ef" stroke="#d946ef" points="4386.13,-508.99 4392.31,-517.59 4392.85,-507.01 4386.13,-508.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2958.04" y="-225.12" font-family="Helvetica,sans-Serif" font-size="8.00">bridge proofs</text>
+</g>
+<g id="edge90" class="edge">
+<title>CrossChainBridge&#45;&gt;ProofLibraries</title>
+<path fill="none" stroke="#94a3b8" stroke-dasharray="5,2" d="M1459.43,-664.91C1605.71,-658.36 1864.39,-652.49 2084.06,-677.5 2092.2,-678.43 2093.93,-680.49 2102.06,-681.5 2444.65,-724.03 3318.62,-647.6 3654.94,-725.5 3712.46,-738.82 3720.09,-761.11 3775.86,-780.5 3782.51,-782.81 3789.35,-785.05 3796.28,-787.22"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" points="3795.22,-790.55 3805.81,-790.11 3797.26,-783.85 3795.22,-790.55"/>
+<text xml:space="preserve" text-anchor="middle" x="2672.93" y="-697.3" font-family="Helvetica,sans-Serif" font-size="8.00">zk helpers</text>
+</g>
+<g id="node44" class="node">
+<title>GovernanceVerifierWrapper</title>
+<polygon fill="#f5f3ff" stroke="black" points="3844.03,-169.7 3844.03,-207.3 4057.6,-207.3 4057.6,-169.7 3844.03,-169.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3908.06" y="-185.8" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceVerifierWrapper</text>
+<polyline fill="none" stroke="black" points="3972.08,-169.7 3972.08,-207.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4014.84" y="-195.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ verify(proof)</text>
+<polyline fill="none" stroke="black" points="3972.08,-188.5 4057.6,-188.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4014.84" y="-176.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; verifier: address</text>
+</g>
+<g id="edge3" class="edge">
+<title>GovernanceVerifierWrapper&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4057.92,-174.09C4112.72,-172.12 4178.13,-178.81 4226.93,-211.9 4328.83,-280.99 4374.97,-426.6 4393.52,-508.1"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4390.06,-508.67 4395.63,-517.69 4396.9,-507.17 4390.06,-508.67"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-214.3" font-family="Helvetica,sans-Serif" font-size="8.00">uses</text>
+</g>
+<g id="node45" class="node">
+<title>PrivacyVerifierWrapper</title>
+<polygon fill="#f5f3ff" stroke="black" points="3853.8,-112.7 3853.8,-150.3 4047.84,-150.3 4047.84,-112.7 3853.8,-112.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3908.06" y="-128.8" font-family="Helvetica,sans-Serif" font-size="9.00">PrivacyVerifierWrapper</text>
+<polyline fill="none" stroke="black" points="3962.32,-112.7 3962.32,-150.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4005.08" y="-138.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ verify(proof)</text>
+<polyline fill="none" stroke="black" points="3962.32,-131.5 4047.84,-131.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4005.08" y="-119.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; verifier: address</text>
+</g>
+<g id="edge4" class="edge">
+<title>PrivacyVerifierWrapper&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4048.01,-121.2C4105.2,-120.13 4176.22,-128.22 4226.93,-165.9 4338.8,-249.03 4381.44,-418.36 4396.65,-507.93"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4393.18,-508.43 4398.25,-517.74 4400.09,-507.31 4393.18,-508.43"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-168.3" font-family="Helvetica,sans-Serif" font-size="8.00">uses</text>
+</g>
+<g id="node46" class="node">
+<title>BridgeVerifierWrapper</title>
+<polygon fill="#f5f3ff" stroke="black" points="3855.54,-55.7 3855.54,-93.3 4046.1,-93.3 4046.1,-55.7 3855.54,-55.7"/>
+<text xml:space="preserve" text-anchor="middle" x="3908.06" y="-71.8" font-family="Helvetica,sans-Serif" font-size="9.00">BridgeVerifierWrapper</text>
+<polyline fill="none" stroke="black" points="3960.57,-55.7 3960.57,-93.3"/>
+<text xml:space="preserve" text-anchor="middle" x="4003.33" y="-81.2" font-family="Helvetica,sans-Serif" font-size="9.00">+ verify(proof)</text>
+<polyline fill="none" stroke="black" points="3960.57,-74.5 4046.1,-74.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4003.33" y="-62.4" font-family="Helvetica,sans-Serif" font-size="9.00">&#45; verifier: address</text>
+</g>
+<g id="edge5" class="edge">
+<title>BridgeVerifierWrapper&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4046.54,-66.68C4104.41,-66.91 4176.71,-76.79 4226.93,-116.9 4349.65,-214.9 4387.78,-409.88 4399.42,-507.69"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4395.94,-508.07 4400.54,-517.61 4402.9,-507.28 4395.94,-508.07"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-119.3" font-family="Helvetica,sans-Serif" font-size="8.00">uses</text>
+</g>
+<g id="node47" class="node">
+<title>MintOptimizedVerifierWrapper</title>
+<polygon fill="#f5f3ff" stroke="black" points="3846.67,-0.5 3846.67,-36.5 4054.97,-36.5 4054.97,-0.5 3846.67,-0.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3914.93" y="-15.9" font-family="Helvetica,sans-Serif" font-size="9.00">MintOptimizedVerifierWrapper</text>
+<polyline fill="none" stroke="black" points="3983.2,-0.7 3983.2,-36.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4019.08" y="-15.9" font-family="Helvetica,sans-Serif" font-size="9.00">+ verify(proof)</text>
+</g>
+<g id="edge6" class="edge">
+<title>MintOptimizedVerifierWrapper&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4055.31,-11.59C4112.02,-13.29 4180.1,-25.02 4226.93,-64.9 4361.16,-179.19 4393.88,-401.84 4401.85,-507.77"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4398.35,-507.94 4402.54,-517.67 4405.33,-507.45 4398.35,-507.94"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-67.3" font-family="Helvetica,sans-Serif" font-size="8.00">uses</text>
+</g>
+<g id="node48" class="node">
+<title>TransferOptimizedVerifierWrapper</title>
+<polygon fill="#f5f3ff" stroke="black" points="3838.42,-1252.5 3838.42,-1288.5 4063.22,-1288.5 4063.22,-1252.5 3838.42,-1252.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3914.93" y="-1267.9" font-family="Helvetica,sans-Serif" font-size="9.00">TransferOptimizedVerifierWrapper</text>
+<polyline fill="none" stroke="black" points="3991.45,-1252.7 3991.45,-1288.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4027.34" y="-1267.9" font-family="Helvetica,sans-Serif" font-size="9.00">+ verify(proof)</text>
+</g>
+<g id="edge7" class="edge">
+<title>TransferOptimizedVerifierWrapper&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4063.43,-1283.11C4118.75,-1283.19 4182.96,-1273.12 4226.93,-1234.5 4319.53,-1153.18 4377.78,-772.33 4397.19,-624.95"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4400.61,-625.78 4398.43,-615.41 4393.67,-624.88 4400.61,-625.78"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1275.97" font-family="Helvetica,sans-Serif" font-size="8.00">uses</text>
+</g>
+<g id="node49" class="node">
+<title>DerivativeVerifierWrapper</title>
+<polygon fill="#f5f3ff" stroke="black" points="3855.42,-1197.5 3855.42,-1233.5 4046.22,-1233.5 4046.22,-1197.5 3855.42,-1197.5"/>
+<text xml:space="preserve" text-anchor="middle" x="3914.93" y="-1212.9" font-family="Helvetica,sans-Serif" font-size="9.00">DerivativeVerifierWrapper</text>
+<polyline fill="none" stroke="black" points="3974.45,-1197.7 3974.45,-1233.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4010.33" y="-1212.9" font-family="Helvetica,sans-Serif" font-size="9.00">+ verify(proof)</text>
+</g>
+<g id="edge8" class="edge">
+<title>DerivativeVerifierWrapper&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M4046.58,-1228.63C4105.03,-1231.32 4177.92,-1224.19 4226.93,-1182.5 4313.1,-1109.21 4374.32,-763.89 4395.88,-624.78"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4399.32,-625.46 4397.38,-615.04 4392.4,-624.4 4399.32,-625.46"/>
+<text xml:space="preserve" text-anchor="middle" x="4185.35" y="-1222.87" font-family="Helvetica,sans-Serif" font-size="8.00">uses</text>
+</g>
+</g>
+</svg>

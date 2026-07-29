@@ -1,0 +1,12 @@
+{
+  "circuitName": "tokendistribution",
+  "ceremonyId": "aegis-mpc-tokendistribution-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "482c77f477d1071023abaf730db9f09431e572f36ab5d88c0f0afa87070a2374",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028022,
+  "isProduction": true,
+  "beaconHash": "0x3443dafdaa66c9b994d3afda215a107d1ce49d9309bb082b966eb99cad4a47f8",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_tokendistribution",
+  "source": "run-factory-mpc-local.mjs"
+}

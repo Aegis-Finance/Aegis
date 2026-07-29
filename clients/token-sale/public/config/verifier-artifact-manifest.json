@@ -1,0 +1,713 @@
+{
+  "schemaVersion": 1,
+  "network": "sonic",
+  "chainId": 146,
+  "verifierFactoryAddress": "0x286D8927A7b5De5B23255288191907c74362Ca1C",
+  "latestDeploymentContracts": {
+    "ProofLib": "0xF94FeF1A9F406a6A691Ae8D2381DeE5928b20c14",
+    "TokenAllocation": "0x60466717612458218636A91149279B2555B8902c",
+    "CeremonyVerifier": "0x014ad25D920eFE343898B0F382a32F4739915964",
+    "VerifierFactory": "0x286D8927A7b5De5B23255288191907c74362Ca1C",
+    "PrivateTokenContract": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+    "GovernanceCore": "0xa9d879265eF247C7690183a135Bf397aF830B1b7",
+    "GovernanceDelegation": "0x6D31ba2A0Bb24Da07140D30Fa40CD9723698a67A",
+    "GovernanceTreasury": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
+    "PrivateGovernance": "0x2e3314e1f3438bE821Be3343322DA66C6925F43d",
+    "GovernanceControlledEmergency": "0xf857D1Dd65fb9ad915fc7f0aB2E0bFf02493F0e9",
+    "EmergencyKeyRotation": "0x71F1c16176532C16337d9E3ca30805859fb5f839",
+    "TimeLockPurchaseLimits": "0xCbf629c2Ee41Ccc987d5B9de5Afd216603313d88",
+    "DecentralizedInsurance": "0x1e44eCA8CfB17975B0A54458a7962Fd80399ae83",
+    "DecentralizedPrivacyRewards": "0xCCB6FFE720Ab310ECf11416E5698F2756770f670",
+    "PoolPriceValidatorEnhanced": "0x0A336a2e2a0D4e413B8C18A03414582dF43F28a2",
+    "PublicLiquidityPool_wS": "0xB70aC4bFB530050Dec33773dc4f9D4766BeEaf5e",
+    "AegisPublicPoolRouter": "0x424C60D77fa980111F957A4DE731871B0a32554e",
+    "TreasuryLiquidityAllocator": "0x87E2702C38C0E6a34Aa986Fa037c905e56b82c79",
+    "TransparentEscrowOrders": "0x9A767ADC596Da8c68e8cC0c18fDE547Cb2488fA3",
+    "DaoDynamicRevenueRouter": "0x95a5B961770A4883d856293B0E96f19b58c2d260",
+    "PrivateLendingContract": "0x0C63632373d61eCE27eebDA296785545b2Fe947F",
+    "PrivateAMMContract": "0xa9bA318a411Fcbdb5ED30Dc9a5b29BA9838ACeB6",
+    "PrivateStakingContract": "0x202c03378d10c4f329634a37ca94CE52cBC3aF80",
+    "PrivateYieldFarming": "0xDdB0810BC63304573c10022c7BcFf4Bce4B7DCC7",
+    "PrivateDerivatives": "0xBC32Fd48f06b36687539f5CCd49e81b633eFfe04",
+    "OnChainPrivacyLeaderboard": "0xe750F5A06D3C3C83c434c3ac20C2138cA6947Fb1",
+    "PrivateAnalytics": "0xAe599292201718Bfe86Bc17992EE2edD729148e9",
+    "HyperOptimizedAggregator": "0x43E1BB03B24dD05c893a2254421B2d980568bBfD",
+    "RecursiveProofAggregator": "0x4dedD84990B6eBf7329b0dCA5bc19C84e864A6d5",
+    "CrossChainPrivacyBridge": "0xF99299Ee549866becf4F480Fa691423b90E60fF9",
+    "SonicGatewayWrapper": "0xe2F157E44433F6d9F0699A823A85d4B00F6CB2F5",
+    "CrowdfundingVerifier": "0x312429A2E9DA72C664BF3598dD6d6170ba1515FD",
+    "MilestoneVerifier": "0x7BDA3242fb3c4455259Be5246A06D62c69d62743",
+    "AegisCrowdShield": "0x6f34d448C14B083911d77Df7eB4254c1E5FF465a",
+    "RefundVerifier": "0x85B3CA928ec8334Cd100Ce8180b94De9920949A7",
+    "VoluntaryCampaignManager": "0xD9AF90Fe3D5ED91B3d04Eb8E4E975B493a124Cf9",
+    "SoundMoneyEscrow": "0x641b2442185Ba011a8bB2BB0E741b251402B9e95",
+    "CreatorReputationTracker": "0x01B623D7405f7Aa82F39a76a33FbC3FD2b69D247",
+    "ProjectDisplayRegistry": "0xa4B02C275cff06F3A012456Ad53B0b3851c032eD",
+    "AustrianAnalytics": "0xD717B597399A7Cc1E904979fA6e180F7EB6010C0",
+    "PraxeologicalRewards": "0x6356D86f472C4700E9499F5E9dF81fDBdb319d8C",
+    "CrowdfundingCeremonyCoordinator": "0x689D481cBFD6A6Cdb135c4401993447aeC681b1a",
+    "BridgeVerifierWrapper": "0x150d9b09aC845B0720958F539484Ca2c0af0b273",
+    "DerivativeVerifierWrapper": "0xd46FF834065426da467B4082F09Ad99A423F3A61",
+    "GovernanceVerifierWrapper": "0x4d1F2566eF1DA9a898210b357Ac6B35455d6AbE7",
+    "LendingVerifierWrapper": "0x1c4978f7BC4D25FF0264d6d3E66A8D1302f3744B",
+    "MintOptimizedVerifierWrapper": "0x57B39Dd176a5A47C8Fd7d7928dd8ce178b067818",
+    "PrivacyVerifierWrapper": "0xb6e5a2C34BA7F7edE1fa8024a9a7089aF237EA99",
+    "StakingVerifierWrapper": "0x470B80084F39a447b25f774A3d0e373aAF82b85A",
+    "TransferOptimizedVerifierWrapper": "0xf255879aceb1600773a3c3dC2A71059b5DB1B8dA",
+    "MultiOracleAggregator": "0x07C822a75Dd462d3F11b3dc2331f66326b6d0A77",
+    "SignedLimitOrderRegistry": "0x593153F60078274abDDdA64bB255B4f6A1Ec54F9",
+    "RFQIntentSettlement": "0x6fb8aD8d63b5C5509Df382A20f35d3Dd4417d017",
+    "PrivacyEntryRouter": "0x1ddc44Cf9543F892F47e57BEdf6d7c6DE0507B2F",
+    "MessagingAdapterAllowlist": "0xcc4B1ED054B2e1D0000226d718659667863Af3D6",
+    "StagedCapitalVault": "0xb9CA41Ceb14a7e92587f6B93d78E87eb1770aBf1",
+    "AutomatedLiquidityDeployer": "0xDecbdFB10Fb30aB2517fa423444caCDd71B4059B",
+    "AutomatedDutchAuction": "0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc",
+    "AutomatedBondingCurve": "0xef7498643e91D56001C720b338FC7C7ab04e2c28",
+    "PublicSaleContract": "0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc",
+    "LiquidityMiningGauge": "0xd78C0086b84B9Bf67D924AB3c6bf3b9742eFD176",
+    "AegisExecutionRelay": "0xFe2F0EE9FAa04490C176730Da77905327383720f",
+    "LiquidityMiningGauge_USDC": "0x754df8b03Ddb0EDCAD0DCfCF030EB935cEb19954",
+    "LiquidityMiningGauge_SONIC": "0x47ca8423Cfd758363727f98723675faF00C25a50",
+    "TreasuryBondAuction": "0x37e3d8FFde6Ec15435E3748D435ec73E5a73fCA2",
+    "StealthAddressHub": "0x74b005cCA8129Aab39fDaC06277623CbBA8C4F02",
+    "RelayerMarketplace": "0x85a35B7C1884bc21085c0a1073b2D6102A448A3B",
+    "SelectiveDisclosureHub": "0x9569f53aAd642A58A0343D3fA67C6c730DdC9C5A",
+    "PrivacySavingsVault": "0x6621BdDd8a1bB7b563cC1284C9919d18c77Cea62",
+    "AnonymousPayroll": "0x7898F695C819132df9D4531c554714D31Fc280CC",
+    "ShieldedTreasuryManager": "0x53e88d1D1876eE372e6340bAD18E60f2A1B714B0",
+    "PrivateBondMarket": "0x01b1c8Ec88880936BD430Fa06Ca53F09F6045c39",
+    "PrivatePredictionMarket": "0x44E6888F53eC004D4abc1947917aE4B6Ed6bEa84",
+    "PrivateStableVault": "0x329a87DfaA3cE11296F0A05bA04C960007CE1dB4",
+    "PrivateCreditProfile": "0x7E7ADd994f0969d447Fb4Af9F5B7167D0b90D11d",
+    "ShieldedGovernanceTally": "0x4BF32b1ca9912f43B40eA60f5283cBe26ae9850f",
+    "ShieldedYieldVault": "0xBC52844D54Ffb08490CFbA7aFc3fAcde34414A6A",
+    "ShieldedIncentiveClaims": "0x3C4Eb0F92c030C8D62246470210Ff4e7896F9214",
+    "ShieldedEcosystemRouter": "0x8911F99A0A86264b6979298D46015251094f6b4b",
+    "AegisTimelockController": "0xFC1078b104Be6d0cC596D6E9BfA0dC3b27B95B53",
+    "PublicLiquidityPool_SONIC": "0x0e3B48E373281b47c8E3c9541f798C1d7655e74E",
+    "PublicLiquidityPool_USDC": "0x4727D2BD9ec67E9235cc64030231984caF669037",
+    "PublicLiquidityPool_USDT": "0xCe42f9109a436A405C4a3a8371AF24e0E9979d19",
+    "PublicLiquidityPool_WETH": "0x95247A6F9D1CEa6F1701d71d1DEFCE6EeBB66ab4",
+    "LiquidityMiningGauge_USDC_retired": "0xf1D44Fa3D55aDf249c109bf8a9bd84b6A58EEA3c",
+    "LiquidityMiningGauge_SONIC_retired": "0x7a128D784675b7070f7828DB6c67206c9dEcc44A",
+    "AegisCanonicalSwapRouter": "0xCDcC839F656D4891eEdD01F2A5c42769B126f021"
+  },
+  "circuits": [
+    {
+      "circuitType": "aggregator",
+      "circomSourceFile": "aggregator.circom",
+      "circomSourceSha256": "6edb5e46759205dc88b20fc0d33ca2ee597b99b7aa544722aa601e6f06c8bcfb",
+      "onChainVerifierAddress": "0x11F2BC50B9Bd5E185e65e9b7Bd18202ab0de0bB1",
+      "verificationKeyHash": "0x0d31664a09f3590f9340f7c37017e17fa4cf58bff31d43f707140e419d0ee165",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/aggregator/aggregator_js/aggregator.wasm",
+        "zkeyPath": "build/circuits/aggregator/aggregator_final.zkey",
+        "wasmSha256": "cce769d3652f9d2760bf4faac27665492f4260e2b15d9841ada7b8ffab3d5de6",
+        "zkeySha256": "7d7e393304a1360054a824f9540eb09531a4e72e73389e1a979dc5f239a1667c"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "analytics",
+      "circomSourceFile": "analytics.circom",
+      "circomSourceSha256": "52eb06adb8fa756f94b41770fd45a2ab60fbf03227bf67426b6221b88b935a62",
+      "onChainVerifierAddress": "0x3Df01A6c31DBba8aa3AC8Eb9e200A867Fc0ea710",
+      "verificationKeyHash": "0xe144d383a74870995f2650b0c38924f313f1b80746c33c255740716049c84ef8",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/analytics/analytics_js/analytics.wasm",
+        "zkeyPath": "build/circuits/analytics/analytics_final.zkey",
+        "wasmSha256": "0af7734daeb4681e0fe972c23a58fd6579e4124203059c64d947416c3f4b6e79",
+        "zkeySha256": "1ed6284d67426d1a958694381cc4d1ad26c4a4f63c1471d95baced10fb394c17"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "auction",
+      "circomSourceFile": "auction.circom",
+      "circomSourceSha256": "f3f5a7bfb62df26bc1d1fe89d1ecd1f5d3c7123af2add17fe475e0b68f25ad41",
+      "onChainVerifierAddress": "0x4210e33B0ce2568603582602fD7f114Ed54e08B5",
+      "verificationKeyHash": "0xe5fd5112c58bec2e8d1b357e90df9ac7d4b76bd525df6c7a2de144451f2989f8",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/auction/auction_js/auction.wasm",
+        "zkeyPath": "build/circuits/auction/auction_final.zkey",
+        "wasmSha256": "e96241c6658513a5e85563c41af13c22be10a642fb49c1305dd8f0dfa8645ab5",
+        "zkeySha256": "762ad6e9ab2e9dec797067ac3f77eab1dddbd076ee99cd6891f66b806f1c6615"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "auction-claim",
+      "circomSourceFile": "auction-claim.circom",
+      "circomSourceSha256": "7d553a79810ae43d16ce043bcf80d0e63c4197a401a375ec5f71d05b7462036e",
+      "onChainVerifierAddress": "0x5CB0e698f6Ec65612F51F747b4Cf16794096aCF3",
+      "verificationKeyHash": "0x692f8092d98814f701d0440e2a5b528ea58ea6eb0417ac297b4067577e62e3ff",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/auction-claim/auction-claim_js/auction-claim.wasm",
+        "zkeyPath": "build/circuits/auction-claim/auction-claim_final.zkey",
+        "wasmSha256": "dd43c2d2707cfdb2f4b8c1507bc0adb63362d54768fe3fe2381f1c57bbb66d9b",
+        "zkeySha256": "72a2e6a2e6850afc3b9bafc0b32c636d730a7ccfb92c2afcd29f046c49ec8c09"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "batch",
+      "circomSourceFile": "batch.circom",
+      "circomSourceSha256": "acb65dbd0babbc1f338415833a2e57b9b5fd363c51e971df262f41e01050e3ed",
+      "onChainVerifierAddress": "0xf3305B309C98716eEC49b8bD7B352fc9ACb61286",
+      "verificationKeyHash": "0x4f53510dee6aecceffe6b07301565fed26d546405f9d846bfd0e469a1644ad53",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/batch/batch_js/batch.wasm",
+        "zkeyPath": "build/circuits/batch/batch_final.zkey",
+        "wasmSha256": "2534b8297e14b505146ef9a0224e2f16810c184d8b5ab4ac09210b4312d4cf22",
+        "zkeySha256": "4636e2606d9a44191140351e2b7372abe77a9344926dbc072629d54b9eef9917"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "bonding-curve-purchase",
+      "circomSourceFile": "bonding-curve-purchase.circom",
+      "circomSourceSha256": "eb5e46a0cbc47a9f6e87041c7443ee9e8741b4da1a58eac8f57c7b274b4b74fa",
+      "onChainVerifierAddress": "0x1915DBB5644AaD62CeDc94F0F7D26AAF3d217dd6",
+      "verificationKeyHash": "0x720e57100b298915e6f29383eb4d922d9f3b76f372eaafd1c883aebdc14cafc9",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/bonding-curve-purchase/bonding-curve-purchase_js/bonding-curve-purchase.wasm",
+        "zkeyPath": "build/circuits/bonding-curve-purchase/bonding-curve-purchase_final.zkey",
+        "wasmSha256": "961ed488458a26141d1b3def6acd25fce95d8cc24ff127ccf5198c81c3e2091e",
+        "zkeySha256": "9b2fd59981d5fc30356e0803c864e42932315c8536adf0534f614ac787c53297"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "bonding-curve-sell",
+      "circomSourceFile": "bonding-curve-sell.circom",
+      "circomSourceSha256": "48e89c660710aded546a53e50068995f55b9436e1162342ed1fcc808dd5c7a6b",
+      "onChainVerifierAddress": "0x9c0bFAD0BDd9897172900d8028310A748E8FcC76",
+      "verificationKeyHash": "0x9690117d377bae4f93d50486568d43ee8f04b44658270a8db36fd23bf5eccb95",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/bonding-curve-sell/bonding-curve-sell_js/bonding-curve-sell.wasm",
+        "zkeyPath": "build/circuits/bonding-curve-sell/bonding-curve-sell_final.zkey",
+        "wasmSha256": "b6098f79ce48a1a6826ffa3438742386c4335d47ae4d3afd20fad96b1667d171",
+        "zkeySha256": "c52fc6dfd5912d11f04b8d3879c35ef4669b101c012774626d3931e86f0745db"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "bridge",
+      "circomSourceFile": "bridge.circom",
+      "circomSourceSha256": "eee13ef165504b9f998631b2dddd2e52009d962635d28ccbe90c1a66b8965e95",
+      "onChainVerifierAddress": "0x5D29b04A1Cbf02199a9B02D090aeA2bBeca732a4",
+      "verificationKeyHash": "0xa535bc8a71f09b3efb156ab761414824327788f3ca1264a05d1d3e56e1e39c82",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/bridge/bridge_js/bridge.wasm",
+        "zkeyPath": "build/circuits/bridge/bridge_transfer_final.zkey",
+        "wasmSha256": "f4aef086380d7390df33aad99b028bc8bb83ca7e45a3b5d36c6a882cfa425eea",
+        "zkeySha256": "3224329f166987c25f84ebb99912c6419f223ddd9d265eac2e58d9f0b956a5cd"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "credit-profile",
+      "circomSourceFile": "credit-profile.circom",
+      "circomSourceSha256": "20d41744e8e2cd29dd31a83e51ed0d4c77aba48af4f3148aa9a20b61d70ac506",
+      "onChainVerifierAddress": "0xd294A9EF9273027018EfCA8A4687580309F3E352",
+      "verificationKeyHash": "0x14c8e7fe4bb80a41669dcec7ef662b99af066a892a93ec28a0d255e0bc45dad5",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/credit-profile/credit-profile_js/credit-profile.wasm",
+        "zkeyPath": "build/circuits/credit-profile/credit-profile_final.zkey",
+        "wasmSha256": "8d346af700bfc36ee9c7177ffeaa5ffdda4e97edde4845ac9d79443e534abb7f",
+        "zkeySha256": "7588a6cacc7a31109094015374895b4e2922d2556d8658f242146cdf6f5ca88d"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "crowdfunding",
+      "circomSourceFile": "crowdfunding.circom",
+      "circomSourceSha256": "10f311aadaab0865f9923225d00c690feb67914798ebd01f2a4d265c73f63fd0",
+      "onChainVerifierAddress": "0xd71D74B805532d8C0081AdB0664A98655acb3B7E",
+      "verificationKeyHash": "0x79c54549ecd21e126b61ba77f47c83c32bea2c803a1eb2f0817a179b97416929",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/crowdfunding/crowdfunding_js/crowdfunding.wasm",
+        "zkeyPath": "build/circuits/crowdfunding/crowdfunding_final.zkey",
+        "wasmSha256": "128c74ddef1e1af31b8e18ad96cd22efafd3cd954781e98e7aabf85796582ed0",
+        "zkeySha256": "295b51771322be4e344400d24c48b742aa8360b27fd9844cda8b217d86ea951b"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "derivative",
+      "circomSourceFile": "derivative.circom",
+      "circomSourceSha256": "9fb041802df777da360027704106ca6304d2c54f4c11813a0b225c7c2da466e7",
+      "onChainVerifierAddress": "0x4A13E06995D0faF5Df4D1d2F46D5EffFd2213b59",
+      "verificationKeyHash": "0x9df9975399132970c5cfe5bb2c0d78a12dbf6e0373150441a6da1ee214f75e34",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/derivative/derivative_js/derivative.wasm",
+        "zkeyPath": "build/circuits/derivative/derivative_final.zkey",
+        "wasmSha256": "e9664d440994b0c33c8da08039ee618863af715088f3dc35dc5b55be9350f7e8",
+        "zkeySha256": "1e9a715d6a140ab5d128aa1dec8434c47fcd3a2964f259442bdeee54c6d0c914"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "farming",
+      "circomSourceFile": "farming.circom",
+      "circomSourceSha256": "98bd926515d27029ab80b89194e6a3639ab69a1f7d39255dbaf7c972efe52a8e",
+      "onChainVerifierAddress": "0x9c68491B699539366DF9B56245E69E49CFDAEd68",
+      "verificationKeyHash": "0x0f3227e8c7af2e83222c9805ae44434a7cae996f01c0681f89c9e90c90662d21",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/farming/farming_js/farming.wasm",
+        "zkeyPath": "build/circuits/farming/farming_final.zkey",
+        "wasmSha256": "496378fdba07cf606c7b534cc0765e7a06be84b89f5640e1cde3dd586d2bac1a",
+        "zkeySha256": "d613440ee5ea5dd5cc728d3dbbd85a5d779328dbee80b465344766c1561dd2f1"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "governance",
+      "circomSourceFile": "governance.circom",
+      "circomSourceSha256": "9c8d8f413015271b2cc22f781fb276d52ae2a1a0fd8bb56a2d4f1cbeeefc695c",
+      "onChainVerifierAddress": "0x7bdcc31DEd0ed93542203D8d033F2DA7fcF3CD2c",
+      "verificationKeyHash": "0x545bda2de2709f3181a732758234f7b7cf10eaf37813a0fba698d8f97c3b278b",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/governance/governance_js/governance.wasm",
+        "zkeyPath": "build/circuits/governance/governance_final.zkey",
+        "wasmSha256": "6c4a62519d7e8f90f7acdc8b7c76c4717a13f6e6c8d3b02a1efd0431baf8cd98",
+        "zkeySha256": "c3b0a3a24a07603c03b4d13bdaf3e9d22d99bf7d283b7100645c113cf5b51638"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "insurance",
+      "circomSourceFile": "insurance.circom",
+      "circomSourceSha256": "42386695858cefed97c9ba6c44cd7980d4ae7313cb0065332dd13deb5ea2d1ee",
+      "onChainVerifierAddress": "0xee2c03EEB2c32e6FcfD02d377AC02C9fB4A8F8B6",
+      "verificationKeyHash": "0xef6e1dee051fd2cfe8bbc25545550efa7d8e32c6bc95781b49f8ee459cba8733",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/insurance/insurance_js/insurance.wasm",
+        "zkeyPath": "build/circuits/insurance/insurance_final.zkey",
+        "wasmSha256": "1984e5576dc8a710e4fa820c423df6b539664d0fc8953fca6339ec89c3cde991",
+        "zkeySha256": "8dfdceb44f173669dae61c2cba8994a466f5f0b662eec27d88002027bf41edb3"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "leaderboard",
+      "circomSourceFile": "leaderboard.circom",
+      "circomSourceSha256": "3e8875b5140e39d9b83dcfc9988139ade61de72a6203134d3a7a3d918bc4b601",
+      "onChainVerifierAddress": "0xC0CF9879444Ac0625A8d7F8f427f7B9BC0ADFF53",
+      "verificationKeyHash": "0x6ffa03b999762f293d53b0f3148360749e70f13997eb29799e2460d7862184f0",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/leaderboard/leaderboard_js/leaderboard.wasm",
+        "zkeyPath": "build/circuits/leaderboard/leaderboard_final.zkey",
+        "wasmSha256": "176d33300078d1e32e22d852c9b7b14f4e8e33de095f20d5d7ada05929c95219",
+        "zkeySha256": "86447bb9f20e505cc665c685c7a1783733c0dc371138da9142dd78faf261a72e"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "lending-liquidate",
+      "circomSourceFile": "lending_liquidate.circom",
+      "circomSourceSha256": "dad03a1d8f9a6dd30506ed09e19d7cb093b953f3a239fc50925941ff22ea3bfa",
+      "onChainVerifierAddress": "0x0c5ADd3fD45Bc7Cd66fc18C1771CF882940534a5",
+      "verificationKeyHash": "0xcc04bf5eea1a6e0d07cf2007df90528060f1b4bdf1fcc81576e988d738a50039",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/lending-liquidate/lending_liquidate_js/lending_liquidate.wasm",
+        "zkeyPath": "build/circuits/lending-liquidate/lending_liquidate_final.zkey",
+        "wasmSha256": "c98745521188221774f57c53855a5ad2d647cd8f5d4b39af1a2967b5195571fa",
+        "zkeySha256": "50e2b4ca0a1ad17562929f951a0bf82268c044008a2f3bd5389b3a5033d0dd87"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "lending-liquidity",
+      "circomSourceFile": "lending_liquidity.circom",
+      "circomSourceSha256": "1b71d622ece46dceffe174e793045fba8f48fea0c3e05e4123af9c3f848b9ed6",
+      "onChainVerifierAddress": "0xb60d5F74394bd8101F71Ac09ac63326B9b42d620",
+      "verificationKeyHash": "0x200ea0fa4043c1323b55ad244b68965b8f1c6bb7fb57f00c846309adebd15fbd",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/lending-liquidity/lending_liquidity_js/lending_liquidity.wasm",
+        "zkeyPath": "build/circuits/lending-liquidity/lending_liquidity_final.zkey",
+        "wasmSha256": "0967a6c7d78d7f634758611a7ca6f19529415461d10ca401ad1f3a6a00014b60",
+        "zkeySha256": "fea97e97cd792e82ea5d1c67ac475d5a736cb3b347c3c355c8264540a53c87d1"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "lending-repay",
+      "circomSourceFile": "lending_repay.circom",
+      "circomSourceSha256": "ccb97be4545b880db99d4df3020b0cf874159c20d8fd8c3dc881b1e2a5305549",
+      "onChainVerifierAddress": "0xFb0723cBBF46aEfA32903a6963eC6194AF3b2B8F",
+      "verificationKeyHash": "0xbd06aa8ad5022f82f4eac289ff5f493d330ee32c5e2b6d8da26a6c024a10aeca",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/lending-repay/lending_repay_js/lending_repay.wasm",
+        "zkeyPath": "build/circuits/lending-repay/lending_repay_final.zkey",
+        "wasmSha256": "854e01055537ec5a213486ef23acf564501ddaecdb165e9938121460ba59bd23",
+        "zkeySha256": "474ba402c99169df347e5b0ba7c1a1ad0e7f1a59d3a65f60174216bfbe83deeb"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "lending-tenor",
+      "circomSourceFile": "lending_tenor.circom",
+      "circomSourceSha256": "8fce558f84c69334466dc1107b5c226a90333857811e5b1fdd008033f6f153af",
+      "onChainVerifierAddress": "0x8F9e250c6609951999465a95098441eD06818701",
+      "verificationKeyHash": "0x9c8118868679ff4e03ffb26f829eca3c3b8a7d155bbbcf9adda90fc98e77fbff",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/lending-tenor/lending_tenor_js/lending_tenor.wasm",
+        "zkeyPath": "build/circuits/lending-tenor/lending_tenor_final.zkey",
+        "wasmSha256": "fa5dce26aa429bddc2642aaa69666fa97218988a164381d39dad0469c164fac7",
+        "zkeySha256": "0e82a394d5b4e6c71f3e9699ef1677a84054699ca6e5126bf7385cbf09e5869b"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "lending-withdraw",
+      "circomSourceFile": "lending_withdraw.circom",
+      "circomSourceSha256": "f3fd61dbc545beb4c49c0ab0fc1313543622884293d11b33545a24442314269d",
+      "onChainVerifierAddress": "0xe1Cf711a29FC363767d191Ceeb60f37b7Fc3D658",
+      "verificationKeyHash": "0xe2a47af486462c9046c0a4fbc9e205abe6c3f32dbfc59f07649a146a22833db9",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/lending-withdraw/lending_withdraw_js/lending_withdraw.wasm",
+        "zkeyPath": "build/circuits/lending-withdraw/lending_withdraw_final.zkey",
+        "wasmSha256": "8ac894510ee4c137c40600f975a132efe324e670b403bbcbd57713867e4cecc3",
+        "zkeySha256": "39583090341a1404ee5919bed7ec67d3ad8068a85794a134df31c81dd7e347f6"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "milestone",
+      "circomSourceFile": "milestone.circom",
+      "circomSourceSha256": "bf7282700346d57e5ff03ae46aec00d6f3106080439284420ad43e38737bbde5",
+      "onChainVerifierAddress": "0x7aacCD1412eC995Bec05b87A47021e36e692aa63",
+      "verificationKeyHash": "0x24374f0b3aa3c06eeb1fd90b171172eb8f1978f5fb7ba5743a6c70ba1800f4a0",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/milestone/milestone_js/milestone.wasm",
+        "zkeyPath": "build/circuits/milestone/milestone_final.zkey",
+        "wasmSha256": "451c0626b84053d770ecaa72a81a9477d0eabd446a6b8bf4f111c419a002fbb3",
+        "zkeySha256": "062089a36ae1f48ddbbbb4670070b55d1bd835daaa2ebc84e101c20976d89689"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "mint-optimized",
+      "circomSourceFile": "mint-optimized.circom",
+      "circomSourceSha256": "307f6974e2695e5dc5888620574e66eadb1418d6b6efa83c71fd0b41f8931d6d",
+      "onChainVerifierAddress": "0x7b71E8E9984f0a676e4B800657d2A3570d99F901",
+      "verificationKeyHash": "0x622d839d7db5f01350cb8542858fd02c9ea142470ab3e4db86a0c04b1c97fc10",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/mint-optimized/mint-optimized_js/mint-optimized.wasm",
+        "zkeyPath": "build/circuits/mint-optimized/mint-optimized_final.zkey",
+        "wasmSha256": "7d71eaeccb183e0d752e7100c7ab1e3b4f9529bdc11c608db896944301d3f09e",
+        "zkeySha256": "ceaf898e2f8b286c3e41944a187a11ba6bcaa523c0b0f11d6dec46f25dbd650f"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "payroll",
+      "circomSourceFile": "payroll.circom",
+      "circomSourceSha256": "a9d88db60ea5b350d3faf13a046fc630fa6b1ac4d6f12d9f5a3b022b8e49644e",
+      "onChainVerifierAddress": "0x3bf94A265B292a6B9086F3499f236cf31898B164",
+      "verificationKeyHash": "0xb9cf1b932aa13f2ba76b98eda932dd2e6f2f8be85efd0b5add8749f9111d13c5",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/payroll/payroll_js/payroll.wasm",
+        "zkeyPath": "build/circuits/payroll/payroll_final.zkey",
+        "wasmSha256": "c07a88cadb94183ee8e46f8102d318657395a95bce6384415850099b4ba8f40c",
+        "zkeySha256": "56f567ac59ee5f6f662661a8aee3bde7c1fb7fd0ec95c27d77ed64924a28241a"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "prediction-market",
+      "circomSourceFile": "prediction-market.circom",
+      "circomSourceSha256": "3684b6e81b1f860a80168b504ea9820e9570052e5c8285c946cbc9e99282f225",
+      "onChainVerifierAddress": "0xB5B8b21F0589a1eb8C7A743dc6747D0743fe567B",
+      "verificationKeyHash": "0xed02e95e7fe7e0b794bbf22d0189bbce2c461e4fd1c9c7fb68c0bf0ace702a64",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/prediction-market/prediction-market_js/prediction-market.wasm",
+        "zkeyPath": "build/circuits/prediction-market/prediction-market_final.zkey",
+        "wasmSha256": "38e86804794430ff57d2336f8d35a607e1afcc5e24919bc2f85c9586dd7d79f3",
+        "zkeySha256": "6de69358c17c134c53e9aa3fc3d7e291ae62e65b672a217a9028a99bc71754e9"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "privacy",
+      "circomSourceFile": "privacy.circom",
+      "circomSourceSha256": "6775f6102719a731b01f80a0c85d8e3994d353b741200f259fe266d85021a36f",
+      "onChainVerifierAddress": "0x2F7bFC57ce6A572F62F809e73EDeD6a21C8544B7",
+      "verificationKeyHash": "0x7b376fe02ca9c6a81f44f03ac4e9bf0be84d44903eda02c95f7fba31655dbc6a",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/privacy/privacy_js/privacy.wasm",
+        "zkeyPath": "build/circuits/privacy/privacy_final.zkey",
+        "wasmSha256": "f513c2d1ab0738e298d8f5d65a98bcd0a5eaf8cbc7941ad24e1f13fe08b75884",
+        "zkeySha256": "e547e9b9565f41cfcef891c66a2d2912630568af83cbb37e10cddff7d160c8d4"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "private-amm",
+      "circomSourceFile": "private-amm.circom",
+      "circomSourceSha256": "0ffd8144c4c29b3cb0c09e727b6db8a6afc54f2f4996a455b560e75fa4eaf932",
+      "onChainVerifierAddress": "0x13Bc0a8b133BA77F460837619a92109b3d76CB33",
+      "verificationKeyHash": "0xf83f5682ea2f260adf98d847da73e71690ec9b850574c18eeb67f031282c2123",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/private-amm/private-amm_js/private-amm.wasm",
+        "zkeyPath": "build/circuits/private-amm/private-amm_final.zkey",
+        "wasmSha256": "ff98daa598a5416b0c6c8651acad40c79afd8e63f9b6b14d52d9922b2184d3c2",
+        "zkeySha256": "75073a61286e548b3fa47e2e71eecb1522eb9e7d3228fdd1e490ec902d5ca16a"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "private-bond",
+      "circomSourceFile": "private-bond.circom",
+      "circomSourceSha256": "63d1f428c0de800e1372fe5d621268dc78508a3ac9943ea4bf3af822a7c9c28f",
+      "onChainVerifierAddress": "0xD410c3118e32de6a739c7e26B76D1352054BdBf4",
+      "verificationKeyHash": "0xaaa92261da83022336be34165ca848e2eedb5236b335ec722f6238072407f8ca",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/private-bond/private-bond_js/private-bond.wasm",
+        "zkeyPath": "build/circuits/private-bond/private-bond_final.zkey",
+        "wasmSha256": "b1c885c8ec5682f1f27d27464eb5deb2e8301af725ac034454cd3c65afab6cf1",
+        "zkeySha256": "05840267a0204b16cf6bf7d5240319f76fa6c9179a641dbc7010ada76f799075"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "private-stable",
+      "circomSourceFile": "private-stable.circom",
+      "circomSourceSha256": "42844e0062daffb6bcc8fbff5e68771a02a97b0bff73c630e5e075077f8e634f",
+      "onChainVerifierAddress": "0xcBB72b24d3C28Ca965fc5b8EEf611Ff8b8ca8970",
+      "verificationKeyHash": "0xb78f72f4d3befab7d25c0c9ed1b5b6897de233f8abab7f919b123223e3b69ac4",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/private-stable/private-stable_js/private-stable.wasm",
+        "zkeyPath": "build/circuits/private-stable/private-stable_final.zkey",
+        "wasmSha256": "056ef097825035c0c950e1a6229832ae1d37238b67a23d408ac755f3c29109b5",
+        "zkeySha256": "981302048161c18d4bb92ed8bd29a72dab36c4fe353004cfaf66ff331c021cfe"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "recursive",
+      "circomSourceFile": "recursive.circom",
+      "circomSourceSha256": "ba5e529000ca940ba56fc6f66959da289ce088fce6f4f5a33b92e9f3ba4e27b4",
+      "onChainVerifierAddress": "0xBCE3a237227b4F188cBB9e8bA079a2c54F8B1002",
+      "verificationKeyHash": "0x729d211f11590f40c32a284bb95af907872b5df843a525e94ac92e23bfbe2623",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/recursive/recursive_js/recursive.wasm",
+        "zkeyPath": "build/circuits/recursive/recursive_final.zkey",
+        "wasmSha256": "a5b9893ea85bda10b1f4d2ba8bf3fc1ccdf03db528cef60e68fb78d76da94fce",
+        "zkeySha256": "a4449927bd93dbf12524c6f574d78f509f9d14909968607168759724a867414d"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "refund",
+      "circomSourceFile": "refund.circom",
+      "circomSourceSha256": "5b007659a1a4c884af7d99a8f95c4b189d99248f49350067a3e353f15db11127",
+      "onChainVerifierAddress": "0xB1CDD92AE04C1e44169b789C8c5d63f21c5e12A9",
+      "verificationKeyHash": "0xea112e657746e63b2964279a626237d28d75a53b6fb5700e592b0075ea9092ae",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/refund/refund_js/refund.wasm",
+        "zkeyPath": "build/circuits/refund/refund_final.zkey",
+        "wasmSha256": "10e2ac8b67b1848f8539b830c65860d659590888e923dbebfc854e0955f2a272",
+        "zkeySha256": "97bed3edfdf0f28e740d27105a6efb8e498abd1880e13231a95bf41598aeac52"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "reward",
+      "circomSourceFile": "reward.circom",
+      "circomSourceSha256": "fb6f3be76c83c0c1b226cf8c75b07aff6a35675521ccc95f9ead28eef76ae388",
+      "onChainVerifierAddress": "0x8fcA39093D98E17266E6CCe888207c23AdC36Ed9",
+      "verificationKeyHash": "0x5f98ee57c0c69aa5d51314bf62e6a5bfbdaa0bd1f378bb1f04f52befc84a5b40",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/reward/reward_js/reward.wasm",
+        "zkeyPath": "build/circuits/reward/reward_final.zkey",
+        "wasmSha256": "69c2b8327d1f8ddcbbdef01c2ecdc3d9c1803f16054719616decd0b65b3cda6f",
+        "zkeySha256": "3ea8f2c588a7e400344d0d60594d1c12576a1203062cc3c30d4bcbfef261cf81"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "savings",
+      "circomSourceFile": "savings.circom",
+      "circomSourceSha256": "b47f19af7c4ae44f59c00491afa85dc5946ae325d7db93c5d00b3ea8f6f866cc",
+      "onChainVerifierAddress": "0xf044651F415256aE033aE04bC6B633FF313e7773",
+      "verificationKeyHash": "0x9256af8bf941eea9e692f55e1fc2b464276d434a287c3d43f3015e01170ccf88",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/savings/savings_js/savings.wasm",
+        "zkeyPath": "build/circuits/savings/savings_final.zkey",
+        "wasmSha256": "62812143ca957116145cf0821ed958784efe735e5b90ed232e434797bf3872ed",
+        "zkeySha256": "9552ffad785875056f8e1271583eec0b788afbc7f9bc4f4069a2d56844ab07e6"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "selective-disclosure",
+      "circomSourceFile": "selective-disclosure.circom",
+      "circomSourceSha256": "15fbdcc12b3253775b046e5cd69f02740083973421a993322e2b1fe9715ba59b",
+      "onChainVerifierAddress": "0xd61AAC1435e5db7D2c708F872e1bED9B92E72510",
+      "verificationKeyHash": "0xa9c91d75c5766ebd896b42f1c7a1b020478be05de12e9f0c7442d86040f74a44",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/selective-disclosure/selective-disclosure_js/selective-disclosure.wasm",
+        "zkeyPath": "build/circuits/selective-disclosure/selective-disclosure_final.zkey",
+        "wasmSha256": "380e0ea2031d8fd597b14768c3368472d5a92d9a9ca7ee5a4708e0ae51cb01ef",
+        "zkeySha256": "fa2391b41bbb70ba8c8efae9b898fa20bea3d9a8498696a948a294d0dfa53efe"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "shielded-transfer",
+      "circomSourceFile": "shielded-transfer.circom",
+      "circomSourceSha256": "c7f342e445aeba5788f4d74222096f8c486ed12f15e6d0cac439363abc8d94c6",
+      "onChainVerifierAddress": "0x68b3628eACb91d56888CF3Fa96a6629e9cE50665",
+      "verificationKeyHash": "0x44b509ea6f9e42a525be785ec10e05a293722898a089cbabdd129f079ae06052",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/shielded-transfer/shielded-transfer_js/shielded-transfer.wasm",
+        "zkeyPath": "build/circuits/shielded-transfer/shielded-transfer_final.zkey",
+        "wasmSha256": "d0d446ceee49d4c7d2023a5d45a1374aad99555f0a95795b8073b7c99cb11d77",
+        "zkeySha256": "d46d54e9ea8252d45ef674e549cd9598b344b8b1cad02ab73df0e2497400e4e0"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "staking",
+      "circomSourceFile": "staking.circom",
+      "circomSourceSha256": "d1ee117622110d8aa6dbcf1653f87adbcfbbb9f63bf9a4d04d6167be947666db",
+      "onChainVerifierAddress": "0x6554b1d204474A79FAAFfe2dec0D3b430dbF7Be7",
+      "verificationKeyHash": "0x1289a80c0bdbb832405ef0664f22ca6f73fc0e12ff9f46ca2d302402db0cdaf3",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/staking/staking_js/staking.wasm",
+        "zkeyPath": "build/circuits/staking/staking_final.zkey",
+        "wasmSha256": "113ec05615252f6efab099f014df62ae29b8b2e9887dfdfe3635284435fb3cfc",
+        "zkeySha256": "99403f7cab9d82157eff2680577bc4a501e19023d81dd1c6fc1cb666b2d8159e"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "stealth-address",
+      "circomSourceFile": "stealth-address.circom",
+      "circomSourceSha256": "42712eb5d10e5eca5466c4bc6d49c4feb5e91a4fdfe9d4f979fecfe4b11d84da",
+      "onChainVerifierAddress": "0x2fD3Ee88691B5760D18489B3245B31053FD37977",
+      "verificationKeyHash": "0x531a589ed76e743d5992c9ed95377d9c82b63f80da088518e2f3a1b74d8d229b",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/stealth-address/stealth-address_js/stealth-address.wasm",
+        "zkeyPath": "build/circuits/stealth-address/stealth-address_final.zkey",
+        "wasmSha256": "dc04eb8723e37018dfea726b787d5e118d90e00cdedc7ef042e113cd7c8f165e",
+        "zkeySha256": "9f4c5ec87bea205e6d5da4cdb2713b3c18442be76b6dd0c8c671727a9a430d50"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "sybil-protection",
+      "circomSourceFile": "sybil-protection.circom",
+      "circomSourceSha256": "d406d15dc141802d6a0dcefa7a791a14480453183156ef986299d3fa8ddf4ddd",
+      "onChainVerifierAddress": "0xB70f947145ffBF961B83001deAAF27F25c1de9B9",
+      "verificationKeyHash": "0x6c9d1ef0d4ed898b77c47c163335f5fbea7485bdb535fdcf467e3c304673c89f",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/sybil-protection/sybil-protection_js/sybil-protection.wasm",
+        "zkeyPath": "build/circuits/sybil-protection/sybil-protection_final.zkey",
+        "wasmSha256": "4d81f26b32068b4f8082b47792925de8951b398b95a554664eacc1168786c078",
+        "zkeySha256": "64e4c13ef9d4040b002ed36f55a57241263360e311b8994ab2be6fa926fdecb0"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "tokendistribution",
+      "circomSourceFile": "tokendistribution.circom",
+      "circomSourceSha256": "1681b9240e0597e6976f947070d7b767e1ae0cf59c624d62086e53b8f8babee7",
+      "onChainVerifierAddress": "0x624E170cC9C410417C951aaCDd627b021f2E74D5",
+      "verificationKeyHash": "0xf4447a7f7144d5ddb8bd8aa28883346c396674e0dccdd4b0d161a2bff0e4d33f",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/tokendistribution/tokendistribution_js/tokendistribution.wasm",
+        "zkeyPath": "build/circuits/tokendistribution/tokendistribution_final.zkey",
+        "wasmSha256": "efac5e4f98fc24fc76c2fafec623b1882b57b8b60fcd1422bb0d6cd4c05de2f1",
+        "zkeySha256": "482c77f477d1071023abaf730db9f09431e572f36ab5d88c0f0afa87070a2374"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "transfer-commitment-action",
+      "circomSourceFile": "transfer-commitment-action.circom",
+      "circomSourceSha256": "8cf59497685ebbc269acf41ecd4ba2073a99449f6398811ebff34ce96e14e635",
+      "onChainVerifierAddress": "0xC97a33cd024CF149cE514Dc2aD4FaA06EAF659e7",
+      "verificationKeyHash": "0x0887f3e2b7bc4da6a5c0ee5e0b692266b65ec2aa9168927350df18fcb32c08fd",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/transfer-commitment-action/transfer-commitment-action_js/transfer-commitment-action.wasm",
+        "zkeyPath": "build/circuits/transfer-commitment-action/transfer-commitment-action_final.zkey",
+        "wasmSha256": "583da328181e38c1ece9d5a8f33edd2f2757cde29c4f5eda1fe0e2c9372328ce",
+        "zkeySha256": "940d96d3ba7d1d5979a9324fdafbf6ee25aac648a6d1cf65d1e0ff46d8138ac4"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "transfer-commitment-internal",
+      "circomSourceFile": "transfer-commitment-internal.circom",
+      "circomSourceSha256": "007467b37a7d263e37f30888a7ab1911e9bba36de60ba678d8f9cfc18b297d0e",
+      "onChainVerifierAddress": "0x6Bc65e2E655Bc0cC5e5ce04BC2EeF8425985BfB1",
+      "verificationKeyHash": "0xc8e65485573679f21abf5a1b89d856c2e99ad8da04d2e29543faa64223ec3670",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/transfer-commitment-internal/transfer-commitment-internal_js/transfer-commitment-internal.wasm",
+        "zkeyPath": "build/circuits/transfer-commitment-internal/transfer-commitment-internal_final.zkey",
+        "wasmSha256": "4a59e82aa48008ca7aefdd0dd23af1786f99e2e625e8d30217c7c771e634eabe",
+        "zkeySha256": "70b52d2b29f86975dde8f0c73d2884f4b4ce18e66344813e7141a53b0ace819c"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "transfer-optimized",
+      "circomSourceFile": "transfer-optimized.circom",
+      "circomSourceSha256": "ef5aab706bd65837362c786af0f677759f66c4e1e998c18a1c0882dd1a027d5e",
+      "onChainVerifierAddress": "0x08f4aCa9841EDFd7D682781737FDEEd80BB85A45",
+      "verificationKeyHash": "0x28ab789b664b74605d4f8a12ec541ca6a5094c932ad258908f0a2ea374dd6209",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/transfer-optimized/transfer-optimized_js/transfer-optimized.wasm",
+        "zkeyPath": "build/circuits/transfer-optimized/transfer-optimized_final.zkey",
+        "wasmSha256": "e805b87a86b188c1144622c96ac861fc4203096499d1700ed845af7a20bf7d07",
+        "zkeySha256": "750a7025a0a1c8e526b5eb6efbfa7def8635ab3f691636ad7443d26ac5048f64"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "transfer-to-pool",
+      "circomSourceFile": "transfer-to-pool.circom",
+      "circomSourceSha256": "6a82a0ce23e3561d33fed9f881bd948e98ae52f264eab4a0311afc7766c2fb04",
+      "onChainVerifierAddress": "0x41Dc309a3f64c5c7fbe36728174593597793B30a",
+      "verificationKeyHash": "0x50d1403a58914e378fdca80bdc3ff65ae1276d3350f8ab1312f0441f63e7fa14",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/transfer-to-pool/transfer-to-pool_js/transfer-to-pool.wasm",
+        "zkeyPath": "build/circuits/transfer-to-pool/transfer-to-pool_final.zkey",
+        "wasmSha256": "c056ac55513e7208a66b23c758b54de5c1a48d2c78ea275df5ed4808f2992dff",
+        "zkeySha256": "3c9e3311f2c3c194163efa4e6e6296ecfac3a3474bdee8751ecb8b9e2a554e07"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "transfer-unshield",
+      "circomSourceFile": "transfer-unshield.circom",
+      "circomSourceSha256": "dbf3701b550e877aa0e4c2ce227c552da53439f7b927c686eeb52c4e9bfe0248",
+      "onChainVerifierAddress": "0x70F0FD3ae7656508ece974E3d976A30F20F03F4E",
+      "verificationKeyHash": "0xe59836819218bd8d1e077a747537e3ed222a188d34a0e8cc7470eef27eaf366f",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/transfer-unshield/transfer-unshield_js/transfer-unshield.wasm",
+        "zkeyPath": "build/circuits/transfer-unshield/transfer-unshield_final.zkey",
+        "wasmSha256": "28c20677153008cc52db958bc5df5804806ed2ce728b508f165155faeddd53a6",
+        "zkeySha256": "177eeb06f6dcc1ce6971447d3af5b331835e61cccbcf25862ccb7ff073161ed1"
+      },
+      "zkeyMatchesStagedVk": true
+    },
+    {
+      "circuitType": "treasury-shield",
+      "circomSourceFile": "treasury-shield.circom",
+      "circomSourceSha256": "0443cfda9b97578f8ef2dff18f827c6642c4359ef884e3b15c8a3182fa5e8da7",
+      "onChainVerifierAddress": "0xFAdBF5d46BC9f67880359B9330aF058A36005Db1",
+      "verificationKeyHash": "0x666cedb136a98a16c6bf064b5a04d5229a7737db02cacc6834c434ec15098c51",
+      "localGroth16Artifacts": {
+        "wasmPath": "build/circuits/treasury-shield/treasury-shield_js/treasury-shield.wasm",
+        "zkeyPath": "build/circuits/treasury-shield/treasury-shield_final.zkey",
+        "wasmSha256": "fcb497ecad0966f92cde8d31f0b479797ab0d70d7cf9bd4c9ac0dd13edd559d5",
+        "zkeySha256": "8bd4301bc4202fffc5c2d0dcf1a8da606211fc9d72f98ccfbe35705cb1bf3184"
+      },
+      "zkeyMatchesStagedVk": true
+    }
+  ]
+}

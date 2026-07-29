@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="5795pt" height="1032pt"
+ viewBox="0.00 0.00 5795.00 1032.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 1017.4)">
+<title>ZKCircuitArchitecture</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-1017.4 5780.23,-1017.4 5780.23,14.4 -14.4,14.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2882.91" y="-986.4" font-family="Helvetica,sans-Serif" font-size="14.00">Aegis ZK · 35 factory types → witness → Groth16 → VerifierFactory → consumers (Sonic)</text>
+<g id="clust1" class="cluster">
+<title>cluster_user</title>
+<polygon fill="#f3f8ff" stroke="#dbeafe" points="8,-303.4 8,-829.4 124,-829.4 124,-303.4 8,-303.4"/>
+<text xml:space="preserve" text-anchor="middle" x="66" y="-812.8" font-family="Helvetica,sans-Serif" font-size="14.00">Client layer</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_ft_ags</title>
+<polygon fill="#fffbeb" stroke="#fef3c7" points="2506,-283.8 2506,-424.6 2838,-424.6 2838,-283.8 2506,-283.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2672" y="-408" font-family="Helvetica,sans-Serif" font-size="14.00">Types 1–2, 31–35 — AGS / PrivateTokenContract</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_ft_lending</title>
+<polygon fill="#fffbeb" stroke="#fef3c7" points="132,-293.4 132,-415 383,-415 383,-293.4 132,-293.4"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-398.4" font-family="Helvetica,sans-Serif" font-size="14.00">Types 21–25 — lending (split circuits)</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_ft_gov_x</title>
+<polygon fill="#fffbeb" stroke="#fef3c7" points="391,-298.2 391,-410.2 759,-410.2 759,-298.2 391,-298.2"/>
+<text xml:space="preserve" text-anchor="middle" x="575" y="-393.6" font-family="Helvetica,sans-Serif" font-size="14.00">Types 3–6 — governance · privacy · bridge · derivative</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_ft_cf</title>
+<polygon fill="#fffbeb" stroke="#fef3c7" points="767,-298.2 767,-410.2 1191,-410.2 1191,-298.2 767,-298.2"/>
+<text xml:space="preserve" text-anchor="middle" x="979" y="-393.6" font-family="Helvetica,sans-Serif" font-size="14.00">Types 7–10 — crowdfunding · milestones · refunds · distribution</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_ft_tge</title>
+<polygon fill="#fffbeb" stroke="#fef9c3" points="1199,-303 1199,-405.4 1466,-405.4 1466,-303 1199,-303"/>
+<text xml:space="preserve" text-anchor="middle" x="1332.5" y="-388.8" font-family="Helvetica,sans-Serif" font-size="14.00">Types 11–13 — Dutch TGE + sybil caps</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_ft_defi</title>
+<polygon fill="#fffbeb" stroke="#fef3c7" points="1474,-279 1474,-429.4 1984,-429.4 1984,-279 1474,-279"/>
+<text xml:space="preserve" text-anchor="middle" x="1729" y="-412.8" font-family="Helvetica,sans-Serif" font-size="14.00">Types 14–20, 26 — analytics · rewards · AMM · insurance · staking · farming</text>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_ft_bond</title>
+<polygon fill="#fffbeb" stroke="#fef3c7" points="1992,-303.4 1992,-405 2200,-405 2200,-303.4 1992,-303.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2096" y="-388.4" font-family="Helvetica,sans-Serif" font-size="14.00">Types 27–28 — bonding curve</text>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_ft_future</title>
+<polygon fill="#f9fafb" stroke="#e5e7eb" points="2208,-303.4 2208,-405 2470,-405 2470,-303.4 2208,-303.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2339" y="-388.4" font-family="Helvetica,sans-Serif" font-size="14.00">Types 29–30 — ceremony / future slots</text>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_proof</title>
+<polygon fill="#f4fff9" stroke="#dcfce7" points="1895,-8 1895,-260 2011,-260 2011,-8 1895,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="1953" y="-243.4" font-family="Helvetica,sans-Serif" font-size="14.00">Proving pipeline</text>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_factory</title>
+<polygon fill="#fff5f5" stroke="#fee2e2" points="5616,-587 5616,-970.2 5754,-970.2 5754,-587 5616,-587"/>
+<text xml:space="preserve" text-anchor="middle" x="5685" y="-953.6" font-family="Helvetica,sans-Serif" font-size="14.00">On&#45;chain registry</text>
+</g>
+<g id="clust12" class="cluster">
+<title>cluster_consumers</title>
+<polygon fill="#fff9fa" stroke="#ffe4e6" points="2846,-295.8 2846,-690.8 5596,-690.8 5596,-295.8 2846,-295.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4221" y="-674.2" font-family="Helvetica,sans-Serif" font-size="14.00">Major ZK consumers (non&#45;exhaustive helpers omitted)</text>
+</g>
+<g id="clust13" class="cluster">
+<title>cluster_external</title>
+<polygon fill="#f8fafc" stroke="#f1f5f9" points="1952,-448.4 1952,-550 2316,-550 2316,-448.4 1952,-448.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2134" y="-533.4" font-family="Helvetica,sans-Serif" font-size="14.00">Artifacts &amp; external</text>
+</g>
+<g id="node1" class="node">
+<title>User</title>
+<polygon fill="#bfdbfe" stroke="black" points="103.76,-771.8 28.24,-771.8 28.24,-735.8 103.76,-735.8 103.76,-771.8"/>
+<text xml:space="preserve" text-anchor="middle" x="66" y="-756.5" font-family="Helvetica,sans-Serif" font-size="9.00">User</text>
+<text xml:space="preserve" text-anchor="middle" x="66" y="-745.7" font-family="Helvetica,sans-Serif" font-size="9.00">(private inputs)</text>
+</g>
+<g id="node2" class="node">
+<title>Wallet</title>
+<polygon fill="#bfdbfe" stroke="black" points="93,-631 39,-631 39,-595 93,-595 93,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="66" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">Wallet</text>
+</g>
+<g id="edge1" class="edge">
+<title>User&#45;&gt;Wallet</title>
+<path fill="none" stroke="black" d="M66,-735.5C66,-712.21 66,-670.45 66,-642.49"/>
+<polygon fill="black" stroke="black" points="69.5,-642.59 66,-632.59 62.5,-642.59 69.5,-642.59"/>
+</g>
+<g id="node3" class="node">
+<title>Frontend</title>
+<polygon fill="#bfdbfe" stroke="black" points="116.27,-492.4 15.73,-492.4 15.73,-456.4 116.27,-456.4 116.27,-492.4"/>
+<text xml:space="preserve" text-anchor="middle" x="66" y="-477.1" font-family="Helvetica,sans-Serif" font-size="9.00">frontend / CLI /</text>
+<text xml:space="preserve" text-anchor="middle" x="66" y="-466.3" font-family="Helvetica,sans-Serif" font-size="9.00">sovereign wasm host</text>
+</g>
+<g id="edge2" class="edge">
+<title>Wallet&#45;&gt;Frontend</title>
+<path fill="none" stroke="black" d="M66,-594.7C66,-571.81 66,-531.17 66,-503.76"/>
+<polygon fill="black" stroke="black" points="69.5,-504.07 66,-494.07 62.5,-504.07 69.5,-504.07"/>
+</g>
+<g id="node4" class="node">
+<title>WitnessBuilder</title>
+<polygon fill="#bfdbfe" stroke="black" points="112.76,-347.4 35.24,-347.4 35.24,-311.4 112.76,-311.4 112.76,-347.4"/>
+<text xml:space="preserve" text-anchor="middle" x="74" y="-332.1" font-family="Helvetica,sans-Serif" font-size="9.00">Witness builder</text>
+<text xml:space="preserve" text-anchor="middle" x="74" y="-321.3" font-family="Helvetica,sans-Serif" font-size="9.00">(snarkjs)</text>
+</g>
+<g id="edge3" class="edge">
+<title>Frontend&#45;&gt;WitnessBuilder</title>
+<path fill="none" stroke="black" d="M66.96,-456.15C68.31,-432.1 70.77,-388.19 72.39,-359.14"/>
+<polygon fill="black" stroke="black" points="75.88,-359.4 72.95,-349.22 68.89,-359.01 75.88,-359.4"/>
+</g>
+<g id="node42" class="node">
+<title>PrivacyEntryRouter</title>
+<polygon fill="#d1fae5" stroke="black" points="3472.52,-633.2 3373.48,-633.2 3373.48,-592.8 3472.52,-592.8 3472.52,-633.2"/>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-621.1" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#065f46">PrivacyEntryRouter</text>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#065f46">(relay only;</text>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-599.5" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#065f46">ZK verified on token)</text>
+</g>
+<g id="edge41" class="edge">
+<title>Frontend&#45;&gt;PrivacyEntryRouter</title>
+<path fill="none" stroke="#059669" stroke-dasharray="5,2" d="M116.44,-478.94C332.65,-493.96 1202.71,-552.58 1918.64,-574.8 1998.9,-577.29 3285.37,-570.68 3364,-587 3366.48,-587.51 3368.98,-588.13 3371.49,-588.84"/>
+<polygon fill="#059669" stroke="#059669" points="3370.37,-592.16 3380.96,-591.92 3372.53,-585.5 3370.37,-592.16"/>
+<text xml:space="preserve" text-anchor="middle" x="1957.32" y="-562.2" font-family="Times,serif" font-size="14.00">optional relay</text>
+</g>
+<g id="node13" class="node">
+<title>ProofGenerator</title>
+<polygon fill="#bbf7d0" stroke="black" points="1988.88,-202.4 1903.12,-202.4 1903.12,-166.4 1988.88,-166.4 1988.88,-202.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-187.1" font-family="Helvetica,sans-Serif" font-size="9.00">Proof generator</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-176.3" font-family="Helvetica,sans-Serif" font-size="9.00">(wasm + witness)</text>
+</g>
+<g id="edge4" class="edge">
+<title>WitnessBuilder&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="black" d="M87.53,-310.9C97.4,-299.59 111.82,-285.77 128,-279 294.25,-209.45 1607.43,-189.53 1891.81,-186.02"/>
+<polygon fill="black" stroke="black" points="1891.56,-189.52 1901.52,-185.9 1891.48,-182.52 1891.56,-189.52"/>
+</g>
+<g id="node5" class="node">
+<title>ft_ags</title>
+<polygon fill="#fde68a" stroke="black" points="2634.12,-367 2515.88,-367 2515.88,-291.8 2634.12,-291.8 2634.12,-367"/>
+<text xml:space="preserve" text-anchor="middle" x="2575" y="-355.8" font-family="Helvetica,sans-Serif" font-size="8.00">mint&#45;optimized</text>
+<text xml:space="preserve" text-anchor="middle" x="2575" y="-346.2" font-family="Helvetica,sans-Serif" font-size="8.00">transfer&#45;optimized</text>
+<text xml:space="preserve" text-anchor="middle" x="2575" y="-336.6" font-family="Helvetica,sans-Serif" font-size="8.00">transfer&#45;unshield</text>
+<text xml:space="preserve" text-anchor="middle" x="2575" y="-327" font-family="Helvetica,sans-Serif" font-size="8.00">shielded&#45;transfer</text>
+<text xml:space="preserve" text-anchor="middle" x="2575" y="-317.4" font-family="Helvetica,sans-Serif" font-size="8.00">transfer&#45;to&#45;pool</text>
+<text xml:space="preserve" text-anchor="middle" x="2575" y="-307.8" font-family="Helvetica,sans-Serif" font-size="8.00">transfer&#45;commitment&#45;internal</text>
+<text xml:space="preserve" text-anchor="middle" x="2575" y="-298.2" font-family="Helvetica,sans-Serif" font-size="8.00">transfer&#45;commitment&#45;action</text>
+</g>
+<g id="edge5" class="edge">
+<title>ft_ags&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M2538.27,-291.49C2527.4,-282.47 2514.92,-273.76 2502,-268 2412.63,-228.16 2122.11,-200.05 2000.41,-189.74"/>
+<polygon fill="#b45309" stroke="#b45309" points="2000.94,-186.27 1990.68,-188.93 2000.35,-193.25 2000.94,-186.27"/>
+</g>
+<g id="node6" class="node">
+<title>ft_lend</title>
+<polygon fill="#fde68a" stroke="black" points="375.02,-357.4 298.98,-357.4 298.98,-301.4 375.02,-301.4 375.02,-357.4"/>
+<text xml:space="preserve" text-anchor="middle" x="337" y="-346.2" font-family="Helvetica,sans-Serif" font-size="8.00">lending&#45;tenor</text>
+<text xml:space="preserve" text-anchor="middle" x="337" y="-336.6" font-family="Helvetica,sans-Serif" font-size="8.00">lending&#45;liquidity</text>
+<text xml:space="preserve" text-anchor="middle" x="337" y="-327" font-family="Helvetica,sans-Serif" font-size="8.00">lending&#45;repay</text>
+<text xml:space="preserve" text-anchor="middle" x="337" y="-317.4" font-family="Helvetica,sans-Serif" font-size="8.00">lending&#45;withdraw</text>
+<text xml:space="preserve" text-anchor="middle" x="337" y="-307.8" font-family="Helvetica,sans-Serif" font-size="8.00">lending&#45;liquidate</text>
+</g>
+<g id="edge6" class="edge">
+<title>ft_lend&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M357.9,-301C365.99,-292.43 375.97,-283.92 387,-279 526.69,-216.67 1631.45,-191.5 1891.37,-186.41"/>
+<polygon fill="#b45309" stroke="#b45309" points="1891.31,-189.91 1901.24,-186.22 1891.17,-182.91 1891.31,-189.91"/>
+</g>
+<g id="node7" class="node">
+<title>ft_gov</title>
+<polygon fill="#fde68a" stroke="black" points="750.9,-352.6 693.1,-352.6 693.1,-306.2 750.9,-306.2 750.9,-352.6"/>
+<text xml:space="preserve" text-anchor="middle" x="722" y="-341.4" font-family="Helvetica,sans-Serif" font-size="8.00">governance</text>
+<text xml:space="preserve" text-anchor="middle" x="722" y="-331.8" font-family="Helvetica,sans-Serif" font-size="8.00">privacy</text>
+<text xml:space="preserve" text-anchor="middle" x="722" y="-322.2" font-family="Helvetica,sans-Serif" font-size="8.00">bridge</text>
+<text xml:space="preserve" text-anchor="middle" x="722" y="-312.6" font-family="Helvetica,sans-Serif" font-size="8.00">derivative</text>
+</g>
+<g id="edge7" class="edge">
+<title>ft_gov&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M734.9,-305.83C741.87,-295.84 751.42,-285 763,-279 864.01,-226.6 1671.79,-194.93 1891.18,-187.24"/>
+<polygon fill="#b45309" stroke="#b45309" points="1891.3,-190.74 1901.17,-186.89 1891.06,-183.74 1891.3,-190.74"/>
+</g>
+<g id="node8" class="node">
+<title>ft_cf</title>
+<polygon fill="#fde68a" stroke="black" points="1183.13,-352.6 1108.87,-352.6 1108.87,-306.2 1183.13,-306.2 1183.13,-352.6"/>
+<text xml:space="preserve" text-anchor="middle" x="1146" y="-341.4" font-family="Helvetica,sans-Serif" font-size="8.00">crowdfunding</text>
+<text xml:space="preserve" text-anchor="middle" x="1146" y="-331.8" font-family="Helvetica,sans-Serif" font-size="8.00">milestone</text>
+<text xml:space="preserve" text-anchor="middle" x="1146" y="-322.2" font-family="Helvetica,sans-Serif" font-size="8.00">refund</text>
+<text xml:space="preserve" text-anchor="middle" x="1146" y="-312.6" font-family="Helvetica,sans-Serif" font-size="8.00">tokendistribution</text>
+</g>
+<g id="edge8" class="edge">
+<title>ft_cf&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M1162.65,-305.78C1171.18,-295.9 1182.42,-285.18 1195,-279 1318.12,-218.5 1740.04,-194.42 1891.4,-187.6"/>
+<polygon fill="#b45309" stroke="#b45309" points="1891.32,-191.11 1901.16,-187.17 1891.01,-184.12 1891.32,-191.11"/>
+</g>
+<g id="node9" class="node">
+<title>ft_tge</title>
+<polygon fill="#fde047" stroke="black" points="1457.9,-347.8 1388.1,-347.8 1388.1,-311 1457.9,-311 1457.9,-347.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1423" y="-336.6" font-family="Helvetica,sans-Serif" font-size="8.00">auction</text>
+<text xml:space="preserve" text-anchor="middle" x="1423" y="-327" font-family="Helvetica,sans-Serif" font-size="8.00">auction&#45;claim</text>
+<text xml:space="preserve" text-anchor="middle" x="1423" y="-317.4" font-family="Helvetica,sans-Serif" font-size="8.00">sybil&#45;protection</text>
+</g>
+<g id="edge9" class="edge">
+<title>ft_tge&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M1435.38,-310.64C1443.87,-299.81 1456.1,-286.64 1470,-279 1608.22,-203.09 1798.89,-188.15 1891.35,-185.6"/>
+<polygon fill="#b45309" stroke="#b45309" points="1891.23,-189.1 1901.14,-185.37 1891.06,-182.11 1891.23,-189.1"/>
+</g>
+<g id="node10" class="node">
+<title>ft_defi</title>
+<polygon fill="#fde68a" stroke="black" points="1976.23,-371.8 1915.77,-371.8 1915.77,-287 1976.23,-287 1976.23,-371.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-360.6" font-family="Helvetica,sans-Serif" font-size="8.00">analytics</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-351" font-family="Helvetica,sans-Serif" font-size="8.00">reward</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-341.4" font-family="Helvetica,sans-Serif" font-size="8.00">leaderboard</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-331.8" font-family="Helvetica,sans-Serif" font-size="8.00">aggregator</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-322.2" font-family="Helvetica,sans-Serif" font-size="8.00">private&#45;amm</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-312.6" font-family="Helvetica,sans-Serif" font-size="8.00">insurance</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-303" font-family="Helvetica,sans-Serif" font-size="8.00">staking</text>
+<text xml:space="preserve" text-anchor="middle" x="1946" y="-293.4" font-family="Helvetica,sans-Serif" font-size="8.00">farming</text>
+</g>
+<g id="edge10" class="edge">
+<title>ft_defi&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M1946,-286.65C1946,-263.36 1946,-234.94 1946,-214.15"/>
+<polygon fill="#b45309" stroke="#b45309" points="1949.5,-214.39 1946,-204.39 1942.5,-214.39 1949.5,-214.39"/>
+</g>
+<g id="node11" class="node">
+<title>ft_bond</title>
+<polygon fill="#fde68a" stroke="black" points="2102.14,-347.4 1999.86,-347.4 1999.86,-311.4 2102.14,-311.4 2102.14,-347.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2051" y="-331.8" font-family="Helvetica,sans-Serif" font-size="8.00">bonding&#45;curve&#45;purchase</text>
+<text xml:space="preserve" text-anchor="middle" x="2051" y="-322.2" font-family="Helvetica,sans-Serif" font-size="8.00">bonding&#45;curve&#45;sell</text>
+</g>
+<g id="edge11" class="edge">
+<title>ft_bond&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M2038.33,-311.15C2020.2,-286.46 1986.69,-240.82 1965.42,-211.84"/>
+<polygon fill="#b45309" stroke="#b45309" points="1968.35,-209.92 1959.61,-203.93 1962.7,-214.06 1968.35,-209.92"/>
+</g>
+<g id="node12" class="node">
+<title>ft_future</title>
+<polygon fill="#e5e7eb" stroke="black" points="2270,-347.4 2216,-347.4 2216,-311.4 2270,-311.4 2270,-347.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2243" y="-331.8" font-family="Helvetica,sans-Serif" font-size="8.00">batch</text>
+<text xml:space="preserve" text-anchor="middle" x="2243" y="-322.2" font-family="Helvetica,sans-Serif" font-size="8.00">recursive</text>
+</g>
+<g id="edge12" class="edge">
+<title>ft_future&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#b45309" d="M2232.96,-311.27C2226,-300.7 2215.87,-287.57 2204,-279 2141.65,-233.99 2055.38,-208.53 2000.13,-195.86"/>
+<polygon fill="#b45309" stroke="#b45309" points="2001.17,-192.51 1990.65,-193.75 1999.65,-199.34 2001.17,-192.51"/>
+</g>
+<g id="node14" class="node">
+<title>Groth16Pipeline</title>
+<polygon fill="#bbf7d0" stroke="black" points="1989.76,-129.4 1906.24,-129.4 1906.24,-93.4 1989.76,-93.4 1989.76,-129.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1948" y="-114.1" font-family="Helvetica,sans-Serif" font-size="9.00">Groth16</text>
+<text xml:space="preserve" text-anchor="middle" x="1948" y="-103.3" font-family="Helvetica,sans-Serif" font-size="9.00">(snarkjs / prover)</text>
+</g>
+<g id="edge13" class="edge">
+<title>ProofGenerator&#45;&gt;Groth16Pipeline</title>
+<path fill="none" stroke="#2563eb" d="M1946.48,-166.21C1946.7,-158.54 1946.96,-149.29 1947.2,-140.64"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="1950.69,-141.04 1947.48,-130.94 1943.7,-140.84 1950.69,-141.04"/>
+</g>
+<g id="node15" class="node">
+<title>Groth16VerifierImpl</title>
+<polygon fill="#86efac" stroke="black" points="1997.02,-56.4 1908.98,-56.4 1908.98,-16 1997.02,-16 1997.02,-56.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1953" y="-44.3" font-family="Helvetica,sans-Serif" font-size="9.00">Groth16Verifier</text>
+<text xml:space="preserve" text-anchor="middle" x="1953" y="-33.5" font-family="Helvetica,sans-Serif" font-size="9.00">per&#45;type bytecode</text>
+<text xml:space="preserve" text-anchor="middle" x="1953" y="-22.7" font-family="Helvetica,sans-Serif" font-size="9.00">at factory slots</text>
+</g>
+<g id="edge14" class="edge">
+<title>Groth16Pipeline&#45;&gt;Groth16VerifierImpl</title>
+<path fill="none" stroke="#2563eb" d="M1949.18,-93.05C1949.7,-85.55 1950.31,-76.55 1950.9,-67.98"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="1954.37,-68.47 1951.56,-58.26 1947.39,-67.99 1954.37,-68.47"/>
+</g>
+<g id="node16" class="node">
+<title>VerifierFactory</title>
+<polygon fill="#fecaca" stroke="black" points="5737.9,-774 5624.1,-774 5624.1,-733.6 5737.9,-733.6 5737.9,-774"/>
+<text xml:space="preserve" text-anchor="middle" x="5681" y="-761.9" font-family="Helvetica,sans-Serif" font-size="9.00">VerifierFactory</text>
+<text xml:space="preserve" text-anchor="middle" x="5681" y="-751.1" font-family="Helvetica,sans-Serif" font-size="9.00">35 type strings</text>
+<text xml:space="preserve" text-anchor="middle" x="5681" y="-740.3" font-family="Helvetica,sans-Serif" font-size="9.00">+ CeremonyVerifier gate</text>
+</g>
+<g id="edge15" class="edge">
+<title>Groth16VerifierImpl&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#2563eb" d="M1997.34,-37.48C2413.31,-40.22 5616,-62.82 5616,-110.4 5616,-614 5616,-614 5616,-614 5616,-649.16 5620.01,-658.99 5635,-690.8 5640.56,-702.59 5648.53,-714.37 5656.28,-724.44"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="5653.33,-726.36 5662.31,-731.98 5658.8,-721.99 5653.33,-726.36"/>
+</g>
+<g id="node17" class="node">
+<title>CeremonyVerifier</title>
+<polygon fill="#fecaca" stroke="black" points="5745.77,-631 5644.23,-631 5644.23,-595 5745.77,-595 5745.77,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="5695" y="-615.7" font-family="Helvetica,sans-Serif" font-size="9.00">CeremonyVerifier</text>
+<text xml:space="preserve" text-anchor="middle" x="5695" y="-604.9" font-family="Helvetica,sans-Serif" font-size="9.00">(finality / deploy gate)</text>
+</g>
+<g id="edge16" class="edge">
+<title>VerifierFactory&#45;&gt;CeremonyVerifier</title>
+<path fill="none" stroke="#7c3aed" stroke-dasharray="1,5" d="M5682.98,-733.21C5685.36,-709.62 5689.37,-669.81 5692.1,-642.74"/>
+<polygon fill="#7c3aed" stroke="#7c3aed" points="5695.58,-643.11 5693.1,-632.81 5688.62,-642.41 5695.58,-643.11"/>
+<text xml:space="preserve" text-anchor="middle" x="5697.99" y="-703" font-family="Times,serif" font-size="14.00">gate</text>
+</g>
+<g id="node19" class="node">
+<title>PrivateTokenContract</title>
+<polygon fill="#fce7f3" stroke="black" points="3474.52,-492.4 3371.48,-492.4 3371.48,-456.4 3474.52,-456.4 3474.52,-492.4"/>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-471.7" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateTokenContract</text>
+</g>
+<g id="edge18" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#dc2626" d="M5623.73,-752.9C5282.32,-753.38 3512.16,-753.95 2970,-715.6 2883.55,-709.48 2833.84,-755.86 2776.58,-690.8 2610.31,-501.84 3167,-478.19 3359.72,-475.59"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="3359.6,-479.09 3369.56,-475.47 3359.52,-472.09 3359.6,-479.09"/>
+<text xml:space="preserve" text-anchor="middle" x="2810.79" y="-610.9" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node20" class="node">
+<title>PrivateGovernance</title>
+<polygon fill="#fce7f3" stroke="black" points="5215.91,-633.2 5086.09,-633.2 5086.09,-592.8 5215.91,-592.8 5215.91,-633.2"/>
+<text xml:space="preserve" text-anchor="middle" x="5151" y="-621.1" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateGovernance</text>
+<text xml:space="preserve" text-anchor="middle" x="5151" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">+ GovernanceProofValidator</text>
+<text xml:space="preserve" text-anchor="middle" x="5151" y="-599.5" font-family="Helvetica,sans-Serif" font-size="9.00">(governance type)</text>
+</g>
+<g id="edge19" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateGovernance</title>
+<path fill="none" stroke="#dc2626" d="M5623.84,-750.33C5527.47,-745.71 5336.88,-734.48 5272.58,-715.6 5231.03,-703.4 5194.6,-667.78 5172.71,-642.16"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="5175.63,-640.2 5166.56,-634.73 5170.24,-644.67 5175.63,-640.2"/>
+<text xml:space="preserve" text-anchor="middle" x="5306.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node22" class="node">
+<title>PrivateLendingContract</title>
+<polygon fill="#fce7f3" stroke="black" points="5344.03,-631 5233.97,-631 5233.97,-595 5344.03,-595 5344.03,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="5289" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateLendingContract</text>
+</g>
+<g id="edge20" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateLendingContract</title>
+<path fill="none" stroke="#dc2626" d="M5623.72,-751.32C5545.25,-748.4 5409.2,-739.9 5366.58,-715.6 5336.99,-698.73 5314.99,-665.56 5302.12,-641.71"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="5305.24,-640.12 5297.55,-632.84 5299.02,-643.33 5305.24,-640.12"/>
+<text xml:space="preserve" text-anchor="middle" x="5400.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node23" class="node">
+<title>PrivateAMMContract</title>
+<polygon fill="#fce7f3" stroke="black" points="5461.51,-631 5362.49,-631 5362.49,-595 5461.51,-595 5461.51,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="5412" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateAMMContract</text>
+</g>
+<g id="edge21" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateAMMContract</title>
+<path fill="none" stroke="#dc2626" d="M5623.66,-749.83C5564.8,-745.69 5478.28,-736.22 5452.58,-715.6 5430.38,-697.79 5420.26,-666.01 5415.69,-642.72"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="5419.15,-642.2 5414.03,-632.93 5412.25,-643.37 5419.15,-642.2"/>
+<text xml:space="preserve" text-anchor="middle" x="5486.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node24" class="node">
+<title>PrivateStakingContract</title>
+<polygon fill="#fce7f3" stroke="black" points="5588.02,-631 5479.98,-631 5479.98,-595 5588.02,-595 5588.02,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="5534" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateStakingContract</text>
+</g>
+<g id="edge22" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateStakingContract</title>
+<path fill="none" stroke="#dc2626" d="M5623.83,-745.66C5587.35,-739.8 5544.86,-730.07 5533.58,-715.6 5517.59,-695.08 5520.17,-664.48 5525.22,-642.22"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="5528.59,-643.17 5527.71,-632.61 5521.82,-641.41 5528.59,-643.17"/>
+<text xml:space="preserve" text-anchor="middle" x="5567.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node25" class="node">
+<title>PrivateYieldFarming</title>
+<polygon fill="#fce7f3" stroke="black" points="2951.52,-631 2854.48,-631 2854.48,-595 2951.52,-595 2951.52,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="2903" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateYieldFarming</text>
+</g>
+<g id="edge23" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateYieldFarming</title>
+<path fill="none" stroke="#dc2626" d="M5623.63,-752.92C5262.22,-753.57 3307.33,-755.22 3044.58,-715.6 3005.85,-709.76 2992.14,-713.2 2960,-690.8 2941.73,-678.06 2926.95,-657.58 2917.03,-640.97"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="2920.22,-639.51 2912.23,-632.55 2914.14,-642.98 2920.22,-639.51"/>
+<text xml:space="preserve" text-anchor="middle" x="3078.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node26" class="node">
+<title>PrivateDerivatives</title>
+<polygon fill="#fce7f3" stroke="black" points="3072.52,-631 2969.48,-631 2969.48,-595 3072.52,-595 3072.52,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="3021" y="-615.7" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateDerivatives</text>
+<text xml:space="preserve" text-anchor="middle" x="3021" y="-604.9" font-family="Helvetica,sans-Serif" font-size="9.00">(live · 6 public inputs)</text>
+</g>
+<g id="edge24" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateDerivatives</title>
+<path fill="none" stroke="#dc2626" d="M5623.74,-752.67C5274.52,-751.79 3438.12,-745.76 3189.58,-715.6 3188.82,-715.51 3082.65,-691.21 3082,-690.8 3062.38,-678.42 3046.37,-657.46 3035.68,-640.56"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="3038.96,-639.22 3030.79,-632.47 3032.96,-642.84 3038.96,-639.22"/>
+<text xml:space="preserve" text-anchor="middle" x="3223.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node27" class="node">
+<title>DecentralizedInsurance</title>
+<polygon fill="#fce7f3" stroke="black" points="3201.28,-631 3090.72,-631 3090.72,-595 3201.28,-595 3201.28,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="3146" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">DecentralizedInsurance</text>
+</g>
+<g id="edge25" class="edge">
+<title>VerifierFactory&#45;&gt;DecentralizedInsurance</title>
+<path fill="none" stroke="#dc2626" d="M5623.72,-753.01C5284.28,-754.1 3543.51,-757.57 3309.58,-715.6 3287.51,-711.64 3283.75,-704.26 3262,-698.8 3239.32,-693.1 3230.36,-702.3 3210,-690.8 3189.28,-679.09 3172.4,-657.9 3161.19,-640.74"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="3164.31,-639.13 3156.05,-632.49 3158.37,-642.83 3164.31,-639.13"/>
+<text xml:space="preserve" text-anchor="middle" x="3343.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node28" class="node">
+<title>DecentralizedPrivacyRewards</title>
+<polygon fill="#fce7f3" stroke="black" points="3355.02,-631 3218.98,-631 3218.98,-595 3355.02,-595 3355.02,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="3287" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">DecentralizedPrivacyRewards</text>
+</g>
+<g id="edge26" class="edge">
+<title>VerifierFactory&#45;&gt;DecentralizedPrivacyRewards</title>
+<path fill="none" stroke="#dc2626" d="M5623.63,-752.62C5328.67,-751.55 3980.76,-745.1 3563.58,-715.6 3474.42,-709.29 3444.34,-729.99 3364,-690.8 3340.3,-679.24 3319.54,-657.44 3305.57,-640.01"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="3308.71,-638.34 3299.83,-632.57 3303.17,-642.62 3308.71,-638.34"/>
+<text xml:space="preserve" text-anchor="middle" x="3597.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node29" class="node">
+<title>CrossChainPrivacyBridge</title>
+<polygon fill="#fce7f3" stroke="black" points="3609.27,-631 3490.73,-631 3490.73,-595 3609.27,-595 3609.27,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="3550" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">CrossChainPrivacyBridge</text>
+</g>
+<g id="edge27" class="edge">
+<title>VerifierFactory&#45;&gt;CrossChainPrivacyBridge</title>
+<path fill="none" stroke="#dc2626" d="M5624.01,-752.53C5350.77,-751.09 4172.92,-743.36 3806.58,-715.6 3722.73,-709.24 3693.39,-730.02 3619,-690.8 3597.06,-679.23 3578.68,-657.73 3566.42,-640.42"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="3569.61,-638.89 3561.1,-632.57 3563.81,-642.81 3569.61,-638.89"/>
+<text xml:space="preserve" text-anchor="middle" x="3840.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node30" class="node">
+<title>TokenDistributionSale</title>
+<polygon fill="#fef9c3" stroke="black" points="3858.02,-631 3753.98,-631 3753.98,-595 3858.02,-595 3858.02,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="3806" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">TokenDistributionSale</text>
+</g>
+<g id="edge28" class="edge">
+<title>VerifierFactory&#45;&gt;TokenDistributionSale</title>
+<path fill="none" stroke="#dc2626" d="M5623.71,-752.61C5341.85,-751.52 4109.16,-745.1 3940.58,-715.6 3906.59,-709.65 3895.24,-710.64 3867,-690.8 3848.42,-677.75 3832.65,-657.46 3821.8,-641.02"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="3824.81,-639.23 3816.51,-632.65 3818.9,-642.97 3824.81,-639.23"/>
+<text xml:space="preserve" text-anchor="middle" x="3974.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node31" class="node">
+<title>AutomatedDutchAuction</title>
+<polygon fill="#fef9c3" stroke="black" points="3989.53,-631 3876.47,-631 3876.47,-595 3989.53,-595 3989.53,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="3933" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">AutomatedDutchAuction</text>
+</g>
+<g id="edge29" class="edge">
+<title>VerifierFactory&#45;&gt;AutomatedDutchAuction</title>
+<path fill="none" stroke="#dc2626" d="M5623.74,-752.47C5355.46,-750.79 4229.41,-742.19 4074.58,-715.6 4039.74,-709.62 4028.4,-710.44 3999,-690.8 3979.33,-677.66 3962.1,-657.11 3950.18,-640.57"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="3953.24,-638.84 3944.66,-632.63 3947.49,-642.84 3953.24,-638.84"/>
+<text xml:space="preserve" text-anchor="middle" x="4108.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node32" class="node">
+<title>TimeLockPurchaseLimits</title>
+<polygon fill="#fef9c3" stroke="black" points="4124.27,-631 4007.73,-631 4007.73,-595 4124.27,-595 4124.27,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4066" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">TimeLockPurchaseLimits</text>
+</g>
+<g id="edge30" class="edge">
+<title>VerifierFactory&#45;&gt;TimeLockPurchaseLimits</title>
+<path fill="none" stroke="#dc2626" d="M5623.71,-752.43C5368.9,-750.64 4344.77,-741.84 4203.58,-715.6 4171.3,-709.6 4161.2,-709.18 4134,-690.8 4114.14,-677.38 4096.37,-656.84 4083.98,-640.38"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4086.93,-638.5 4078.22,-632.47 4081.27,-642.62 4086.93,-638.5"/>
+<text xml:space="preserve" text-anchor="middle" x="4237.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node33" class="node">
+<title>AutomatedBondingCurve</title>
+<polygon fill="#fef9c3" stroke="black" points="4259.28,-631 4142.72,-631 4142.72,-595 4259.28,-595 4259.28,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4201" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">AutomatedBondingCurve</text>
+</g>
+<g id="edge31" class="edge">
+<title>VerifierFactory&#45;&gt;AutomatedBondingCurve</title>
+<path fill="none" stroke="#dc2626" d="M5623.95,-753.02C5380.43,-753.74 4434.74,-754.01 4307.58,-715.6 4268.09,-703.67 4236.03,-666.4 4217.73,-640.49"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4220.77,-638.74 4212.26,-632.44 4214.99,-642.68 4220.77,-638.74"/>
+<text xml:space="preserve" text-anchor="middle" x="4341.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node34" class="node">
+<title>PrivateAnalytics</title>
+<polygon fill="#e0f2fe" stroke="black" points="4357.01,-631 4276.99,-631 4276.99,-595 4357.01,-595 4357.01,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4317" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">PrivateAnalytics</text>
+</g>
+<g id="edge32" class="edge">
+<title>VerifierFactory&#45;&gt;PrivateAnalytics</title>
+<path fill="none" stroke="#dc2626" d="M5623.74,-752.79C5414.07,-752.48 4688.54,-748.97 4459.58,-715.6 4417,-709.39 4400.74,-716.18 4366,-690.8 4349.03,-678.4 4336.47,-658.18 4328.32,-641.6"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4331.6,-640.34 4324.23,-632.72 4325.24,-643.27 4331.6,-640.34"/>
+<text xml:space="preserve" text-anchor="middle" x="4493.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node35" class="node">
+<title>OnChainPrivacyLeaderboard</title>
+<polygon fill="#e0f2fe" stroke="black" points="4507.03,-631 4374.97,-631 4374.97,-595 4507.03,-595 4507.03,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4441" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">OnChainPrivacyLeaderboard</text>
+</g>
+<g id="edge33" class="edge">
+<title>VerifierFactory&#45;&gt;OnChainPrivacyLeaderboard</title>
+<path fill="none" stroke="#dc2626" d="M5623.93,-752.8C5430.08,-752.49 4797.86,-748.89 4597.58,-715.6 4560.2,-709.39 4548.38,-710.48 4516,-690.8 4494.37,-677.65 4474.57,-656.83 4460.76,-640.18"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4463.67,-638.22 4454.68,-632.62 4458.22,-642.61 4463.67,-638.22"/>
+<text xml:space="preserve" text-anchor="middle" x="4631.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node36" class="node">
+<title>HyperOptimizedAggregator</title>
+<polygon fill="#e0f2fe" stroke="black" points="4650.53,-631 4525.47,-631 4525.47,-595 4650.53,-595 4650.53,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4588" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">HyperOptimizedAggregator</text>
+</g>
+<g id="edge34" class="edge">
+<title>VerifierFactory&#45;&gt;HyperOptimizedAggregator</title>
+<path fill="none" stroke="#dc2626" d="M5623.68,-752.17C5427.75,-749.82 4791.94,-740.32 4703.58,-715.6 4661.88,-703.93 4626.65,-666.31 4606.41,-640.27"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4609.37,-638.38 4600.56,-632.49 4603.77,-642.58 4609.37,-638.38"/>
+<text xml:space="preserve" text-anchor="middle" x="4737.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node37" class="node">
+<title>AegisCrowdShield</title>
+<polygon fill="#cffafe" stroke="black" points="4757.77,-631 4668.23,-631 4668.23,-595 4757.77,-595 4757.77,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4713" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">AegisCrowdShield</text>
+</g>
+<g id="edge35" class="edge">
+<title>VerifierFactory&#45;&gt;AegisCrowdShield</title>
+<path fill="none" stroke="#dc2626" d="M5623.68,-752.06C5441.51,-749.49 4883.21,-739.71 4805.58,-715.6 4769.13,-704.28 4742.08,-667.44 4726.92,-641.39"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4729.99,-639.7 4722.07,-632.65 4723.87,-643.1 4729.99,-639.7"/>
+<text xml:space="preserve" text-anchor="middle" x="4839.79" y="-705.1" font-family="Times,serif" font-size="7.00">verifyProof / getVerifier</text>
+</g>
+<g id="node38" class="node">
+<title>MilestoneVerifier</title>
+<polygon fill="#cffafe" stroke="black" points="4858.51,-631 4775.49,-631 4775.49,-595 4858.51,-595 4858.51,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4817" y="-615.7" font-family="Helvetica,sans-Serif" font-size="9.00">MilestoneVerifier</text>
+<text xml:space="preserve" text-anchor="middle" x="4817" y="-604.9" font-family="Helvetica,sans-Serif" font-size="9.00">(milestone VK)</text>
+</g>
+<g id="edge36" class="edge">
+<title>VerifierFactory&#45;&gt;MilestoneVerifier</title>
+<path fill="none" stroke="#dc2626" stroke-dasharray="5,2" d="M5623.7,-752.56C5471.28,-751.49 5058.44,-745.83 4925.82,-715.6 4898.16,-709.29 4888.77,-709 4867,-690.8 4850.98,-677.41 4838.24,-657.56 4829.64,-641.4"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4832.9,-640.1 4825.26,-632.76 4826.66,-643.26 4832.9,-640.1"/>
+<text xml:space="preserve" text-anchor="middle" x="4946.91" y="-705.1" font-family="Times,serif" font-size="7.00">registered VKs</text>
+</g>
+<g id="node39" class="node">
+<title>RefundVerifier</title>
+<polygon fill="#cffafe" stroke="black" points="4949.76,-631 4876.24,-631 4876.24,-595 4949.76,-595 4949.76,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="4913" y="-615.7" font-family="Helvetica,sans-Serif" font-size="9.00">RefundVerifier</text>
+<text xml:space="preserve" text-anchor="middle" x="4913" y="-604.9" font-family="Helvetica,sans-Serif" font-size="9.00">(refund VK)</text>
+</g>
+<g id="edge37" class="edge">
+<title>VerifierFactory&#45;&gt;RefundVerifier</title>
+<path fill="none" stroke="#dc2626" stroke-dasharray="5,2" d="M5624.02,-753.63C5512.26,-754.35 5256.82,-751.47 5045.82,-715.6 5006.26,-708.88 4990.83,-715.24 4959,-690.8 4942.62,-678.22 4930.85,-658.01 4923.32,-641.47"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="4926.7,-640.49 4919.57,-632.65 4920.26,-643.22 4926.7,-640.49"/>
+<text xml:space="preserve" text-anchor="middle" x="5066.91" y="-705.1" font-family="Times,serif" font-size="7.00">registered VKs</text>
+</g>
+<g id="node40" class="node">
+<title>CrowdfundingVerifier</title>
+<polygon fill="#cffafe" stroke="black" points="5068.02,-631 4967.98,-631 4967.98,-595 5068.02,-595 5068.02,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="5018" y="-615.7" font-family="Helvetica,sans-Serif" font-size="9.00">CrowdfundingVerifier</text>
+<text xml:space="preserve" text-anchor="middle" x="5018" y="-604.9" font-family="Helvetica,sans-Serif" font-size="9.00">(crowdfunding VK)</text>
+</g>
+<g id="edge38" class="edge">
+<title>VerifierFactory&#45;&gt;CrowdfundingVerifier</title>
+<path fill="none" stroke="#dc2626" stroke-dasharray="5,2" d="M5623.86,-750.99C5532.27,-747.52 5347.12,-738.17 5191.82,-715.6 5140.15,-708.09 5121.12,-718.72 5077,-690.8 5057.82,-678.66 5042.46,-657.97 5032.23,-641.12"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="5035.32,-639.47 5027.29,-632.55 5029.25,-642.96 5035.32,-639.47"/>
+<text xml:space="preserve" text-anchor="middle" x="5212.91" y="-705.1" font-family="Times,serif" font-size="7.00">registered VKs</text>
+</g>
+<g id="node48" class="node">
+<title>AGSFeeMonetization</title>
+<polygon fill="#ffedd5" stroke="black" points="2397.77,-631 2296.23,-631 2296.23,-595 2397.77,-595 2397.77,-631"/>
+<text xml:space="preserve" text-anchor="middle" x="2347" y="-615.7" font-family="Helvetica,sans-Serif" font-size="9.00">AGSFeeMonetization</text>
+<text xml:space="preserve" text-anchor="middle" x="2347" y="-604.9" font-family="Helvetica,sans-Serif" font-size="9.00">(Sonic FeeM)</text>
+</g>
+<g id="edge45" class="edge">
+<title>VerifierFactory&#45;&gt;AGSFeeMonetization</title>
+<path fill="none" stroke="#ea580c" stroke-dasharray="1,5" d="M5623.65,-752.87C5239.64,-753.24 3048.13,-753.66 2754,-715.6 2629.32,-699.47 2487.71,-658.89 2408.71,-634.17"/>
+<polygon fill="#ea580c" stroke="#ea580c" points="2410.02,-630.92 2399.43,-631.25 2407.92,-637.59 2410.02,-630.92"/>
+</g>
+<g id="node18" class="node">
+<title>RecursiveProofAggregator</title>
+<polygon fill="#e5e7eb" stroke="black" points="5746.03,-912.6 5623.97,-912.6 5623.97,-872.2 5746.03,-872.2 5746.03,-912.6"/>
+<text xml:space="preserve" text-anchor="middle" x="5685" y="-900.5" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#374151">RecursiveProofAggregator</text>
+<text xml:space="preserve" text-anchor="middle" x="5685" y="-889.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#374151">(batch / recursive</text>
+<text xml:space="preserve" text-anchor="middle" x="5685" y="-878.9" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#374151">consumers when wired)</text>
+</g>
+<g id="edge17" class="edge">
+<title>RecursiveProofAggregator&#45;&gt;VerifierFactory</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M5684.43,-871.83C5683.77,-849.31 5682.68,-812.04 5681.9,-785.62"/>
+<polygon fill="#64748b" stroke="#64748b" points="5685.41,-785.74 5681.62,-775.85 5678.41,-785.95 5685.41,-785.74"/>
+<text xml:space="preserve" text-anchor="middle" x="5724.82" y="-841.6" font-family="Times,serif" font-size="14.00">aggregate path</text>
+</g>
+<g id="node43" class="node">
+<title>TransparentTrading</title>
+<polygon fill="#e2e8f0" stroke="black" points="3468.27,-355 3377.73,-355 3377.73,-303.8 3468.27,-303.8 3468.27,-355"/>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-342.9" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#334155">PublicPoolRouter /</text>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-332.1" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#334155">RFQ / limits /</text>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-321.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#334155">escrow</text>
+<text xml:space="preserve" text-anchor="middle" x="3423" y="-310.5" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#334155">(no factory proof)</text>
+</g>
+<g id="edge44" class="edge">
+<title>PrivateTokenContract&#45;&gt;TransparentTrading</title>
+<path fill="none" stroke="#0d9488" stroke-dasharray="5,2" d="M3423,-456.15C3423,-434.08 3423,-395.29 3423,-366.61"/>
+<polygon fill="#0d9488" stroke="#0d9488" points="3426.5,-366.91 3423,-356.91 3419.5,-366.91 3426.5,-366.91"/>
+</g>
+<g id="node21" class="node">
+<title>GovernanceDelegation</title>
+<polygon fill="#fce7f3" stroke="black" points="5211.53,-492.4 5090.47,-492.4 5090.47,-456.4 5211.53,-456.4 5211.53,-492.4"/>
+<text xml:space="preserve" text-anchor="middle" x="5151" y="-477.1" font-family="Helvetica,sans-Serif" font-size="9.00">GovernanceDelegation</text>
+<text xml:space="preserve" text-anchor="middle" x="5151" y="-466.3" font-family="Helvetica,sans-Serif" font-size="9.00">(same governance proofs)</text>
+</g>
+<g id="edge40" class="edge">
+<title>PrivateGovernance&#45;&gt;GovernanceDelegation</title>
+<path fill="none" stroke="#9333ea" stroke-dasharray="5,2" d="M5145.25,-581.16C5143.62,-553.86 5143.98,-514.99 5146.32,-492.77"/>
+<polygon fill="#9333ea" stroke="#9333ea" points="5141.74,-581.21 5145.99,-590.92 5148.72,-580.68 5141.74,-581.21"/>
+</g>
+<g id="edge39" class="edge">
+<title>GovernanceDelegation&#45;&gt;PrivateGovernance</title>
+<path fill="none" stroke="#9333ea" stroke-dasharray="5,2" d="M5155.68,-492.77C5158.02,-514.99 5158.38,-553.86 5156.75,-581.16"/>
+<polygon fill="#9333ea" stroke="#9333ea" points="5153.28,-580.68 5156.01,-590.92 5160.26,-581.21 5153.28,-580.68"/>
+</g>
+<g id="node47" class="node">
+<title>OtherChains</title>
+<polygon fill="#e2e8f0" stroke="black" points="2308.01,-492.4 2233.99,-492.4 2233.99,-456.4 2308.01,-456.4 2308.01,-492.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2271" y="-471.7" font-family="Helvetica,sans-Serif" font-size="9.00">Partner chains</text>
+</g>
+<g id="edge48" class="edge">
+<title>CrossChainPrivacyBridge&#45;&gt;OtherChains</title>
+<path fill="none" stroke="#a855f7" d="M3508.49,-594.55C3499.87,-591.55 3490.74,-588.82 3482,-587 3203.05,-528.99 3125.67,-576.69 2842,-550 2647.84,-531.73 2418.03,-497.99 2319.64,-482.96"/>
+<polygon fill="#a855f7" stroke="#a855f7" points="2320.22,-479.51 2309.8,-481.45 2319.16,-486.43 2320.22,-479.51"/>
+</g>
+<g id="node41" class="node">
+<title>SonicGatewayWrapper</title>
+<polygon fill="#ede9fe" stroke="black" points="3736.27,-633.2 3627.73,-633.2 3627.73,-592.8 3736.27,-592.8 3736.27,-633.2"/>
+<text xml:space="preserve" text-anchor="middle" x="3682" y="-621.1" font-family="Helvetica,sans-Serif" font-size="9.00">SonicGatewayWrapper</text>
+<text xml:space="preserve" text-anchor="middle" x="3682" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00">→ shield() only</text>
+<text xml:space="preserve" text-anchor="middle" x="3682" y="-599.5" font-family="Helvetica,sans-Serif" font-size="9.00">(mint&#45;optimized)</text>
+</g>
+<g id="edge43" class="edge">
+<title>SonicGatewayWrapper&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#db2777" d="M3644.89,-592.43C3597.62,-567.5 3516.07,-524.49 3466.1,-498.13"/>
+<polygon fill="#db2777" stroke="#db2777" points="3467.75,-495.05 3457.28,-493.48 3464.49,-501.24 3467.75,-495.05"/>
+<text xml:space="preserve" text-anchor="middle" x="3616.16" y="-564.3" font-family="Times,serif" font-size="7.00">shield()</text>
+</g>
+<g id="node46" class="node">
+<title>SonicFeeM</title>
+<polygon fill="#ffedd5" stroke="black" points="2216.01,-492.4 2151.99,-492.4 2151.99,-456.4 2216.01,-456.4 2216.01,-492.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2184" y="-471.7" font-family="Helvetica,sans-Serif" font-size="9.00">Sonic FeeM</text>
+</g>
+<g id="edge47" class="edge">
+<title>SonicGatewayWrapper&#45;&gt;SonicFeeM</title>
+<path fill="none" stroke="#f97316" stroke-dasharray="5,2" d="M3637.49,-592.37C3631.05,-590.2 3624.43,-588.3 3618,-587 3542.12,-571.66 2291.1,-590.29 2225,-550 2208.29,-539.81 2197.89,-520.2 2191.75,-503.64"/>
+<polygon fill="#f97316" stroke="#f97316" points="2195.11,-502.64 2188.63,-494.25 2188.47,-504.85 2195.11,-502.64"/>
+</g>
+<g id="edge42" class="edge">
+<title>PrivacyEntryRouter&#45;&gt;PrivateTokenContract</title>
+<path fill="none" stroke="#059669" d="M3423,-592.43C3423,-569.27 3423,-530.52 3423,-504"/>
+<polygon fill="#059669" stroke="#059669" points="3426.5,-504.29 3423,-494.29 3419.5,-504.29 3426.5,-504.29"/>
+</g>
+<g id="node44" class="node">
+<title>TrustedSetup</title>
+<polygon fill="#e2e8f0" stroke="black" points="2035.51,-492.4 1960.49,-492.4 1960.49,-456.4 2035.51,-456.4 2035.51,-492.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1998" y="-477.1" font-family="Helvetica,sans-Serif" font-size="9.00">Trusted setup</text>
+<text xml:space="preserve" text-anchor="middle" x="1998" y="-466.3" font-family="Helvetica,sans-Serif" font-size="9.00">outputs (.zkey)</text>
+</g>
+<g id="edge49" class="edge">
+<title>TrustedSetup&#45;&gt;ft_ags</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M2025.99,-455.94C2032.05,-452.9 2038.58,-450.15 2045,-448.4 2137.06,-423.26 2386.48,-467.42 2474,-429.4 2500.29,-417.98 2523.6,-396.39 2541.19,-376.28"/>
+<polygon fill="#64748b" stroke="#64748b" points="2543.86,-378.55 2547.63,-368.65 2538.51,-374.03 2543.86,-378.55"/>
+</g>
+<g id="edge50" class="edge">
+<title>TrustedSetup&#45;&gt;ft_lend</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M1960.37,-473.46C1724.31,-473.69 455.56,-472.88 387,-429.4 365.68,-415.88 353.08,-390.23 345.86,-368.43"/>
+<polygon fill="#64748b" stroke="#64748b" points="349.23,-367.48 343,-358.91 342.53,-369.5 349.23,-367.48"/>
+</g>
+<g id="edge51" class="edge">
+<title>TrustedSetup&#45;&gt;ft_gov</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M1960.19,-472.61C1755.49,-468.28 788.21,-446.9 763,-429.4 741.66,-414.58 731.4,-386.47 726.48,-363.98"/>
+<polygon fill="#64748b" stroke="#64748b" points="729.95,-363.49 724.65,-354.31 723.08,-364.79 729.95,-363.49"/>
+</g>
+<g id="edge52" class="edge">
+<title>TrustedSetup&#45;&gt;ft_cf</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M1960.18,-473.54C1809.8,-473.8 1259.33,-471.82 1195,-429.4 1172.54,-414.59 1159.98,-386.28 1153.22,-363.71"/>
+<polygon fill="#64748b" stroke="#64748b" points="1156.66,-363.05 1150.66,-354.32 1149.91,-364.89 1156.66,-363.05"/>
+</g>
+<g id="edge53" class="edge">
+<title>TrustedSetup&#45;&gt;ft_tge</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M1960.12,-472.41C1845.88,-469.11 1510.09,-457.14 1470,-429.4 1446.68,-413.27 1434.59,-382.37 1428.55,-359.36"/>
+<polygon fill="#64748b" stroke="#64748b" points="1431.96,-358.58 1426.26,-349.64 1425.15,-360.18 1431.96,-358.58"/>
+</g>
+<g id="edge54" class="edge">
+<title>TrustedSetup&#45;&gt;ft_defi</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M1991.73,-456.15C1985.16,-438.08 1974.51,-408.8 1965.14,-383.03"/>
+<polygon fill="#64748b" stroke="#64748b" points="1968.44,-381.87 1961.74,-373.67 1961.86,-384.27 1968.44,-381.87"/>
+</g>
+<g id="edge55" class="edge">
+<title>TrustedSetup&#45;&gt;ft_bond</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M2004.39,-456.15C2013.39,-431.89 2029.87,-387.4 2040.63,-358.37"/>
+<polygon fill="#64748b" stroke="#64748b" points="2043.86,-359.72 2044.06,-349.13 2037.3,-357.29 2043.86,-359.72"/>
+</g>
+<g id="edge56" class="edge">
+<title>TrustedSetup&#45;&gt;ft_future</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M2026.86,-455.92C2032.7,-453 2038.92,-450.31 2045,-448.4 2078.95,-437.75 2175.83,-451.14 2204,-429.4 2225.92,-412.49 2235.54,-381.44 2239.75,-358.61"/>
+<polygon fill="#64748b" stroke="#64748b" points="2243.16,-359.46 2241.26,-349.04 2236.25,-358.37 2243.16,-359.46"/>
+</g>
+<g id="node45" class="node">
+<title>ProvingKeyStore</title>
+<polygon fill="#e2e8f0" stroke="black" points="2134.02,-492.4 2053.98,-492.4 2053.98,-456.4 2134.02,-456.4 2134.02,-492.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2094" y="-477.1" font-family="Helvetica,sans-Serif" font-size="9.00">Artifact CDN /</text>
+<text xml:space="preserve" text-anchor="middle" x="2094" y="-466.3" font-family="Helvetica,sans-Serif" font-size="9.00">sovereign :8080</text>
+</g>
+<g id="edge58" class="edge">
+<title>ProvingKeyStore&#45;&gt;Frontend</title>
+<path fill="none" stroke="#0891b2" stroke-dasharray="5,2" d="M2087.42,-492.68C2080.01,-510.45 2066.16,-536.64 2045,-550 2008.55,-573.02 1991.09,-551.36 1948,-550 1232.46,-527.39 364.36,-488.16 127.95,-477.27"/>
+<polygon fill="#0891b2" stroke="#0891b2" points="128.18,-473.78 118.03,-476.82 127.86,-480.77 128.18,-473.78"/>
+<text xml:space="preserve" text-anchor="middle" x="2018" y="-562.2" font-family="Times,serif" font-size="14.00">mirror</text>
+</g>
+<g id="edge57" class="edge">
+<title>ProvingKeyStore&#45;&gt;ProofGenerator</title>
+<path fill="none" stroke="#0891b2" d="M2123.27,-456.01C2129.58,-452.96 2136.36,-450.2 2143,-448.4 2178.56,-438.77 2448.71,-456.18 2474,-429.4 2496.95,-405.1 2495.47,-304.61 2474,-279 2413.89,-207.29 2122.63,-190.49 2000.29,-186.58"/>
+<polygon fill="#0891b2" stroke="#0891b2" points="2000.61,-183.08 1990.5,-186.28 2000.39,-190.08 2000.61,-183.08"/>
+</g>
+<g id="edge46" class="edge">
+<title>AGSFeeMonetization&#45;&gt;SonicFeeM</title>
+<path fill="none" stroke="#f97316" d="M2295.92,-610.24C2204.01,-606.54 2018.47,-596.46 1999,-574.8 1994.01,-569.25 1993.87,-563.42 1999,-558 2010.01,-546.36 2129.44,-558.54 2143,-550 2159.56,-539.57 2169.96,-519.97 2176.14,-503.47"/>
+<polygon fill="#f97316" stroke="#f97316" points="2179.41,-504.73 2179.29,-494.14 2172.78,-502.5 2179.41,-504.73"/>
+</g>
+</g>
+</svg>

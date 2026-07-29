@@ -1,0 +1,12 @@
+{
+  "circuitName": "sybil-protection",
+  "ceremonyId": "aegis-mpc-sybil-protection-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "64e4c13ef9d4040b002ed36f55a57241263360e311b8994ab2be6fa926fdecb0",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028092,
+  "isProduction": true,
+  "beaconHash": "0xa16dc24834754c97228b22150730b3b7af70217aba4dff99ad3437b7a120be21",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_sybil-protection",
+  "source": "run-factory-mpc-local.mjs"
+}

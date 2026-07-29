@@ -1,0 +1,12 @@
+{
+  "circuitName": "transfer-optimized",
+  "ceremonyId": "aegis-mpc-transfer-optimized-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "750a7025a0a1c8e526b5eb6efbfa7def8635ab3f691636ad7443d26ac5048f64",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027589,
+  "isProduction": true,
+  "beaconHash": "0xa8c0c19f8062122ab8b1e70f94240e070932b1aba348488e6f32eb7312b24fe1",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-50Z_transfer-optimized",
+  "source": "run-factory-mpc-local.mjs"
+}

@@ -1,0 +1,12 @@
+{
+  "circuitName": "governance",
+  "ceremonyId": "aegis-mpc-governance-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "c3b0a3a24a07603c03b4d13bdaf3e9d22d99bf7d283b7100645c113cf5b51638",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027643,
+  "isProduction": true,
+  "beaconHash": "0x2985385a4b52285d0ff63d60c4353682dc6712b452b69e9c9caef58839daa307",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-50Z_governance",
+  "source": "run-factory-mpc-local.mjs"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "aegis-desktop",
+  "version": "0.3.0",
+  "private": true,
+  "scripts": {
+    "bundle": "node scripts/sync-frontend-bundle.mjs",
+    "circuits:manifest": "node ../shared/scripts/generate-circuit-manifest.mjs",
+    "icons": "tauri icon ../logo.png -o src-tauri/icons",
+    "android:init": "tauri android init",
+    "android:patch": "node scripts/patch-android-build.mjs",
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "npm run bundle && tauri build",
+    "build:desktop": "tauri build",
+    "build:android": "tauri android build",
+    "build:ios": "tauri ios build",
+    "android:dev": "tauri android dev",
+    "ios:dev": "tauri ios dev"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0"
+  }
+}

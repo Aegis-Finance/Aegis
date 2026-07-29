@@ -1,0 +1,12 @@
+{
+  "circuitName": "bonding-curve-sell",
+  "ceremonyId": "aegis-mpc-bonding-curve-sell-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "c52fc6dfd5912d11f04b8d3879c35ef4669b101c012774626d3931e86f0745db",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028601,
+  "isProduction": true,
+  "beaconHash": "0x4574acd9723c7604616c95f2e31f9a21d1db79018675929bc67aff2aa700a707",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-52Z_bonding-curve-sell",
+  "source": "run-factory-mpc-local.mjs"
+}

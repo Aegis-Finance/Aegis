@@ -1,0 +1,12 @@
+{
+  "circuitName": "transfer-unshield",
+  "ceremonyId": "aegis-mpc-transfer-unshield-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "177eeb06f6dcc1ce6971447d3af5b331835e61cccbcf25862ccb7ff073161ed1",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028624,
+  "isProduction": true,
+  "beaconHash": "0x7ecd2c6be4680351a63776356a8b23a0870fa86babbfe1fc15672cbefedec7ec",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-52Z_transfer-unshield",
+  "source": "run-factory-mpc-local.mjs"
+}

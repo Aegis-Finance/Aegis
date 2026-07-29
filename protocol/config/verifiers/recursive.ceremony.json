@@ -1,0 +1,12 @@
+{
+  "circuitName": "recursive",
+  "ceremonyId": "aegis-mpc-recursive-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "a4449927bd93dbf12524c6f574d78f509f9d14909968607168759724a867414d",
+  "powersOfTauHash": "08808fcce1da2ac428fef4641373fa118001d59495f79073c856c16d2dab369e",
+  "setupTimestamp": 1783029029,
+  "isProduction": true,
+  "beaconHash": "0x29d93f052141448cda8e7bdfc4f7bb7b20b0b1c0291157061934bfb27c16c18a",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-52Z_recursive",
+  "source": "run-factory-mpc-local.mjs"
+}

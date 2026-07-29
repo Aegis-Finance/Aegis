@@ -1,0 +1,12 @@
+{
+  "circuitName": "insurance",
+  "ceremonyId": "aegis-mpc-insurance-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "8dfdceb44f173669dae61c2cba8994a466f5f0b662eec27d88002027bf41edb3",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028389,
+  "isProduction": true,
+  "beaconHash": "0x8d25cdeefe67e1e76784c1043e27a8693f2ddea3f04c6fc72269ea2cdc5c08e4",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_insurance",
+  "source": "run-factory-mpc-local.mjs"
+}

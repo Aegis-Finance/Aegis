@@ -1,0 +1,10 @@
+bundle/
+circuits/
+desktop/bundle/
+desktop/release/
+desktop/src-tauri/target/
+node_modules/
+**/gen/android/local.properties
+**/gen/android/.gradle/
+**/gen/android/build/
+**/gen/android/app/build/

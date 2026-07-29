@@ -1,0 +1,55 @@
+name: Client build
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "clients/**"
+      - ".github/workflows/client-build.yml"
+  pull_request:
+    paths:
+      - "clients/**"
+      - ".github/workflows/client-build.yml"
+
+jobs:
+  build-web-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: clients/web-application/package-lock.json
+      - name: Configure env
+        working-directory: clients/web-application
+        run: |
+          if [ -f .env.example ]; then cp .env.example .env
+          elif [ -f env.example ]; then cp env.example .env
+          elif [ -f ENV_EXAMPLE.txt ]; then cp ENV_EXAMPLE.txt .env
+          else echo "missing env example" && exit 1
+          fi
+      - name: Install and build
+        working-directory: clients/web-application
+        run: npm ci && npm run build
+
+  build-token-sale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: clients/token-sale/package-lock.json
+      - name: Configure env
+        working-directory: clients/token-sale
+        run: |
+          if [ -f .env.example ]; then cp .env.example .env
+          elif [ -f env.example ]; then cp env.example .env
+          elif [ -f ENV_EXAMPLE.txt ]; then cp ENV_EXAMPLE.txt .env
+          else echo "missing env example" && exit 1
+          fi
+      - name: Install and build
+        working-directory: clients/token-sale
+        run: npm ci && npm run build

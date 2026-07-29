@@ -1,0 +1,115 @@
+name: Release Installers
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-tauri:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: windows-latest
+            args: "--target x86_64-pc-windows-msvc"
+          - platform: ubuntu-22.04
+            args: ""
+          - platform: macos-latest
+            args: ""
+
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - name: Checkout sovereign node
+        uses: actions/checkout@v4
+
+      - name: Checkout web application
+        uses: actions/checkout@v4
+        with:
+          repository: Aegis-Finance/aegis-web-application
+          path: web-application
+          ref: main
+
+      - name: Setup Node (web application)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web-application/package-lock.json
+
+      - name: Build web application
+        working-directory: web-application
+        run: |
+          npm ci
+          npm run build
+
+      - name: Setup Node (desktop)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: desktop/package-lock.json
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Linux system dependencies
+        if: matrix.platform == 'ubuntu-22.04'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libappindicator3-dev \
+            librsvg2-dev \
+            patchelf
+
+      - name: Install desktop dependencies
+        working-directory: desktop
+        run: npm ci
+
+      - name: Bundle web UI into desktop
+        working-directory: desktop
+        env:
+          AEGIS_FRONTEND_DIST: ${{ github.workspace }}/web-application/dist
+        run: npm run bundle
+
+      - name: Build and upload platform installers
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AEGIS_FRONTEND_DIST: ${{ github.workspace }}/web-application/dist
+        with:
+          projectPath: desktop
+          tagName: ${{ github.ref_name }}
+          releaseName: Aegis Sovereign Node ${{ github.ref_name }}
+          releaseBody: |
+            Pre-built Aegis desktop app for Sonic - local RPC, on-device circuits, full dApp UI.
+            Verify SHA256SUMS.txt before installing.
+          args: ${{ matrix.args }}
+
+  release-checksums:
+    needs: build-tauri
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p assets
+          gh release download "${{ github.ref_name }}" \
+            --repo "${{ github.repository }}" \
+            --dir assets
+          (cd assets && sha256sum * > ../SHA256SUMS.txt)
+          cat SHA256SUMS.txt
+
+      - name: Attach checksum manifest
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: SHA256SUMS.txt

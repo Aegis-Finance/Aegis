@@ -1,0 +1,15 @@
+{
+  "name": "Aegis DAO — Token distribution",
+  "short_name": "Aegis TGE",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07080c",
+  "theme_color": "#007aff",
+  "orientation": "portrait-primary",
+  "icons": [],
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "/",
+    "use_cache": true
+  }
+}

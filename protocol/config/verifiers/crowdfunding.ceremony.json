@@ -1,0 +1,12 @@
+{
+  "circuitName": "crowdfunding",
+  "ceremonyId": "aegis-mpc-crowdfunding-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "295b51771322be4e344400d24c48b742aa8360b27fd9844cda8b217d86ea951b",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027859,
+  "isProduction": true,
+  "beaconHash": "0x63cdf3771ddb933ff3903e0174634b508f4d315af1102ad8e5a7e8c49f6a09e0",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-50Z_crowdfunding",
+  "source": "run-factory-mpc-local.mjs"
+}

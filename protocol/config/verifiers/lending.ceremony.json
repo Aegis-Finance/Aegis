@@ -1,0 +1,10 @@
+{
+  "circuitName": "lending",
+  "ceremonyId": "aegis-mainnet-trusted-setup-v1",
+  "participantCount": 12,
+  "transcriptHash": "6b94ee5cc1faacb045d7f5dbb164837f269b96c654312e1f8ba8365032913856",
+  "powersOfTauHash": "e970efa7774da80101e0ac336d083ef3339855c98112539338d706b2b89ac694",
+  "setupTimestamp": 1763302000,
+  "isProduction": true,
+  "source": "deployment-config.prod.json"
+}

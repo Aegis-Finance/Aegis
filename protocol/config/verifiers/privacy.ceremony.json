@@ -1,0 +1,12 @@
+{
+  "circuitName": "privacy",
+  "ceremonyId": "aegis-mpc-privacy-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "e547e9b9565f41cfcef891c66a2d2912630568af83cbb37e10cddff7d160c8d4",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027805,
+  "isProduction": true,
+  "beaconHash": "0x0b85d89e735963f032bb0903e55c6eedee4351291a4e4e586c6760e1db3c5912",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-50Z_privacy",
+  "source": "run-factory-mpc-local.mjs"
+}

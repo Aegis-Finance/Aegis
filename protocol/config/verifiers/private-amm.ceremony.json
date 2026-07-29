@@ -1,0 +1,12 @@
+{
+  "circuitName": "private-amm",
+  "ceremonyId": "aegis-mpc-private-amm-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "75073a61286e548b3fa47e2e71eecb1522eb9e7d3228fdd1e490ec902d5ca16a",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028335,
+  "isProduction": true,
+  "beaconHash": "0x6cc9bf6f214e9afd294a09ecb0dcf623cbce3923d12c9db14150667bb133345b",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_private-amm",
+  "source": "run-factory-mpc-local.mjs"
+}

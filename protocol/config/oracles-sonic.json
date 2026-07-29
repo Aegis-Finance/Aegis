@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "network": "sonic",
+  "description": "Oracle adapter deploy list for Wave H. Set feedAddress to a live Sonic mainnet feed before mainnet deploy; leave enabled=false to skip.",
+  "adapters": [
+    {
+      "key": "ChainlinkAdapter_wS",
+      "contract": "ChainlinkAdapter",
+      "asset": "wS",
+      "enabled": false,
+      "feedAddress": "0x0000000000000000000000000000000000000000",
+      "note": "Set Sonic Chainlink wS/USD feed when available on docs.soniclabs.com"
+    },
+    {
+      "key": "ChainlinkAdapter_USDC",
+      "contract": "ChainlinkAdapter",
+      "asset": "USDC",
+      "enabled": false,
+      "feedAddress": "0x0000000000000000000000000000000000000000",
+      "note": "Set Sonic Chainlink USDC/USD feed when available"
+    },
+    {
+      "key": "PythAdapter_wS",
+      "contract": "PythAdapter",
+      "asset": "wS",
+      "enabled": false,
+      "feedAddress": "0x0000000000000000000000000000000000000000",
+      "note": "Pyth price feed contract on Sonic if used"
+    }
+  ],
+  "aggregator": {
+    "contract": "MultiOracleAggregator",
+    "adminIsDeployer": true
+  }
+}

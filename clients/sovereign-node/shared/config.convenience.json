@@ -1,0 +1,39 @@
+{
+  "rpc": {
+    "listen": "127.0.0.1",
+    "port": 8547,
+    "upstreams": [
+      "http://127.0.0.1:8545",
+      "https://rpc.soniclabs.com",
+      "https://rpc.testnet.soniclabs.com"
+    ],
+    "timeoutMs": 15000
+  },
+  "circuits": {
+    "listen": "127.0.0.1",
+    "port": 8080,
+    "root": "./circuits",
+    "integrity": {
+      "enabled": false,
+      "sha256": {}
+    }
+  },
+  "security": {
+    "profile": "convenience",
+    "allowPublicRpcUpstreams": true,
+    "requireLoopbackBind": true,
+    "maxRpcBodyBytes": 921600,
+    "redactUpstreamErrors": false,
+    "minLogLevel": "info"
+  },
+  "gateways": {
+    "arweave": [
+      "https://arweave.net",
+      "https://ar-io.net"
+    ],
+    "ipfs": [
+      "https://ipfs.io/ipfs",
+      "https://cloudflare-ipfs.com/ipfs"
+    ]
+  }
+}

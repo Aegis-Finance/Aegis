@@ -1,0 +1,12 @@
+{
+  "circuitName": "milestone",
+  "ceremonyId": "aegis-mpc-milestone-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "062089a36ae1f48ddbbbb4670070b55d1bd835daaa2ebc84e101c20976d89689",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027913,
+  "isProduction": true,
+  "beaconHash": "0x9412db5b0578a5dcf0b5ebcf88ee253cd92c6ae6f10dd9b8af637e1954cf917c",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_milestone",
+  "source": "run-factory-mpc-local.mjs"
+}

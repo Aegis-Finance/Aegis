@@ -1,0 +1,12 @@
+{
+  "circuitName": "mint-optimized",
+  "ceremonyId": "aegis-mpc-mint-optimized-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "ceaf898e2f8b286c3e41944a187a11ba6bcaa523c0b0f11d6dec46f25dbd650f",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027524,
+  "isProduction": true,
+  "beaconHash": "0x87e21c8344477f56ad8a05ec46e8b7287d59a2459212367297cc5fe2a13575ae",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-50Z_mint-optimized",
+  "source": "run-factory-mpc-local.mjs"
+}

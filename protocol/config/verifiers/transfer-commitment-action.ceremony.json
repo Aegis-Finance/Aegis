@@ -1,0 +1,12 @@
+{
+  "circuitName": "transfer-commitment-action",
+  "ceremonyId": "aegis-mpc-transfer-commitment-action-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "940d96d3ba7d1d5979a9324fdafbf6ee25aac648a6d1cf65d1e0ff46d8138ac4",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783029130,
+  "isProduction": true,
+  "beaconHash": "0xfeb88dd0c6b82469efd70717f3e62221317f0101e1ee826154b8d30539937a41",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-52Z_transfer-commitment-action",
+  "source": "run-factory-mpc-local.mjs"
+}

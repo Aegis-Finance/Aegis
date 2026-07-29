@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "frontend-bundle",
+    "frontendHash": "690e71348543fe80806825805c05eda3d770531bbf71324cd1ababa48f5a5982",
+    "source": "frontend-token-distribution/dist/manifest.hash.json",
+    "generated_at": "2025-11-10T07:48:54.610Z",
+    "notes": "SHA-256 of the 30-day token distribution microsite bundle (Arweave deployment hash must match)."
+  },
+  {
+    "version": "v2025.11.07",
+    "platform": "linux-x86_64",
+    "network": "sonic-mainnet",
+    "url": "https://arweave.net/DChmouyowqg5q3fY_9Wqu1KqYpQ9cLojZWBeZMYpQKk",
+    "sha256": "5a0f4c12f49d36c81a23619fd05581df9d5d2217b6ebac5bdb2a7f4b2d935e40",
+    "signature": "0x1a4f2b7ffaf1d77c0fb294143b8c82f842b255589d96dc3fb9f89e1ce6f7c622b0b62a5226c34ef92b5f1c168e22f8cf432ee6f93a0dc3efa6b828b37e2f9d1c",
+    "released_at": "2025-11-07T15:00:00Z",
+    "notes": "Compiled from Sonic Labs node deployment guide; includes full RPC + WS support."
+  },
+  {
+    "version": "v2025.11.07",
+    "platform": "linux-arm64",
+    "network": "sonic-mainnet",
+    "url": "https://arweave.net/K4eP9P6N0nwh3s6SSOQmYj7JzbevJYpHTlTdbfwd0VY",
+    "sha256": "9f05d7bb64b615036f060d4dbd8681cda1b894f5ea315011725f0ce0e63f610c",
+    "signature": "0x4f7b6dbe0c6a5f3772d59881cdadf96c4a8f3e6d5c3188fbb16f47db30dc1217f61da86986dd68b8c1cf8305b22d8bc9c3cfdd822a9a0b1b38e3b019c9eb1b4c",
+    "released_at": "2025-11-07T15:00:00Z",
+    "notes": "Optimised for ARM servers / SBCs."
+  },
+  {
+    "version": "v2025.11.07",
+    "platform": "macos-universal",
+    "network": "sonic-testnet",
+    "url": "https://arweave.net/3NfX5lYJcI6C2G13Eo6o6vQ4V9FJ1L6ShhZ3j1i5nAE",
+    "sha256": "2c61f2efb0cdd368d1825ae7e65b183eb7c1b995b86d687ffac6095ba5c84533",
+    "signature": "0x8f1d3b5c17360aebf74693109897d7e753a61cf3a8c6293bd2e7d1db56ea805f5f3f79a2c0d0bad42b32ddf5101b2d9d62cde9bb5897976c3b21f7fa9ce6c52b",
+    "released_at": "2025-11-07T15:05:00Z",
+    "notes": "Universal build for Apple Silicon & Intel, defaults to Sonic testnet chain ID 14601."
+  },
+  {
+    "version": "v2025.11.07",
+    "platform": "windows-x86_64",
+    "network": "sonic-testnet",
+    "url": "https://arweave.net/CQYV9NPIoNfDHTW1tQYDfYqSXlZlG1T1Mqb3XWAdJqw",
+    "sha256": "a8c270fb4bf4f05672f28488af6f2a1cc79250a2113214dbf7131cdcb3e50204",
+    "signature": "0x2bd4801dfe92b07a12245da98337fc3e0b0510d4c44672775caa7578719e8268412de3f3d5470296b54a4eda515a749b3c9dc6fa5a788cb4a4b8a7f1c5c3ef6a",
+    "released_at": "2025-11-07T15:10:00Z",
+    "notes": "Includes installer that registers Sonic service on Windows with local RPC bound to 127.0.0.1:8545."
+  }
+]
+

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Canonical Uniswap v3 deployment on Sonic mainnet (chain 146). Recognized by Uniswap governance / GFX Labs deploy — verify before prod. Sonic testnet (14601) has no entry here on purpose: `sonic-chain-pack.json` sets `sonicTestnet.uniswapV3` to null until you record a stable testnet v3 deploy (see docs/defi/UNISWAP_V3_TGE_ALIGNMENT.md).",
+  "references": [
+    "https://gov.uniswap.org/t/official-uniswap-v3-deployments-list/24323",
+    "https://vote.uniswapfoundation.org/proposals/76"
+  ],
+  "sonicMainnet": {
+    "chainId": 146,
+    "v3CoreFactory": "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+    "nonfungiblePositionManager": "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+    "swapRouter02": "0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455",
+    "quoterV2": "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
+    "permit2": "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+    "multicall": "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435"
+  }
+}

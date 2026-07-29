@@ -1,0 +1,12 @@
+{
+  "circuitName": "staking",
+  "ceremonyId": "aegis-mpc-staking-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "99403f7cab9d82157eff2680577bc4a501e19023d81dd1c6fc1cb666b2d8159e",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028442,
+  "isProduction": true,
+  "beaconHash": "0xd516f114bce1d87a021d5a9cfba086ec18a781388b6fee4a9377e4121cbe6409",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_staking",
+  "source": "run-factory-mpc-local.mjs"
+}

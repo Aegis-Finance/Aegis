@@ -1,0 +1,79 @@
+{
+  "name": "Aegis Token List",
+  "timestamp": "2026-07-02T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 2,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 146,
+      "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+      "name": "Aegis",
+      "symbol": "AGS",
+      "decimals": 18,
+      "tags": [
+        "governance",
+        "defi"
+      ]
+    },
+    {
+      "chainId": 146,
+      "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "Wrapped Sonic",
+      "symbol": "wS",
+      "decimals": 18,
+      "tags": [
+        "sonic-official",
+        "wrapped-gas"
+      ]
+    },
+    {
+      "chainId": 146,
+      "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "tags": [
+        "sonic-official",
+        "stablecoin"
+      ]
+    },
+    {
+      "chainId": 146,
+      "address": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "tags": [
+        "sonic-official",
+        "stablecoin",
+        "bridged"
+      ]
+    },
+    {
+      "chainId": 146,
+      "address": "0xe715cbA7B5cCb33790ceBFF1436809d36cb17E57",
+      "name": "Euro Coin",
+      "symbol": "EURC",
+      "decimals": 6,
+      "tags": [
+        "sonic-official",
+        "stablecoin",
+        "bridged"
+      ]
+    },
+    {
+      "chainId": 146,
+      "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18,
+      "tags": [
+        "sonic-official",
+        "bridged"
+      ]
+    }
+  ]
+}

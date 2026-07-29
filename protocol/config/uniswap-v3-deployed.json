@@ -1,0 +1,17 @@
+{
+  "sonicTestnet": {
+    "chainId": 14601,
+    "wrappedNative": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+    "nonfungiblePositionManager": "0x4DeEE38c6F1f4Ebe3567b259E5e51A1C2A059F35",
+    "v3CoreFactory": "0x5456DCeB2874044C1a7233149C11C9559600beA3",
+    "positionDescriptor": "0x2874eabBE1bA233d6F8b4b7D9b13Aa6e4D9BF871",
+    "updatedAt": "2026-06-16T05:44:50.106Z"
+  },
+  "sonic": {
+    "chainId": 14601,
+    "wrappedNative": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+    "nonfungiblePositionManager": "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+    "v3CoreFactory": "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+    "updatedAt": "2026-06-22T12:51:44.556Z"
+  }
+}

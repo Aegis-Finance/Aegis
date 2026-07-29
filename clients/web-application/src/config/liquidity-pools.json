@@ -1,0 +1,117 @@
+{
+  "sonicTestnet": [
+    {
+      "tokenSymbol": "S (native)",
+      "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "lpName": "AGS-S LP",
+      "lpSymbol": "AGS-S-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": true
+    },
+    {
+      "tokenSymbol": "wS (wrapped)",
+      "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "lpName": "AGS-wS LP",
+      "lpSymbol": "AGS-wS-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    },
+    {
+      "tokenSymbol": "USDC",
+      "tokenAddress": "0x0BA304580ee7c9a980CF72e55f5Ed2E9fd30Bc51",
+      "lpName": "AGS-USDC LP",
+      "lpSymbol": "AGS-USDC-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    },
+    {
+      "tokenSymbol": "USDT",
+      "tokenAddress": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+      "lpName": "AGS-USDT LP",
+      "lpSymbol": "AGS-USDT-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    },
+    {
+      "tokenSymbol": "WETH",
+      "tokenAddress": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "lpName": "AGS-WETH LP",
+      "lpSymbol": "AGS-WETH-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    }
+  ],
+  "sonic": [
+    {
+      "tokenSymbol": "S (native)",
+      "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "lpName": "AGS-S LP",
+      "lpSymbol": "AGS-S-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": true
+    },
+    {
+      "tokenSymbol": "wS (wrapped)",
+      "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "lpName": "AGS-wS LP",
+      "lpSymbol": "AGS-wS-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    },
+    {
+      "tokenSymbol": "USDC",
+      "tokenAddress": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "lpName": "AGS-USDC LP",
+      "lpSymbol": "AGS-USDC-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    },
+    {
+      "tokenSymbol": "EURC",
+      "tokenAddress": "0xe715cbA7B5cCb33790ceBFF1436809d36cb17E57",
+      "lpName": "AGS-EURC LP",
+      "lpSymbol": "AGS-EURC-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    },
+    {
+      "tokenSymbol": "USDT",
+      "tokenAddress": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+      "lpName": "AGS-USDT LP",
+      "lpSymbol": "AGS-USDT-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    },
+    {
+      "tokenSymbol": "WETH",
+      "tokenAddress": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "lpName": "AGS-WETH LP",
+      "lpSymbol": "AGS-WETH-LP",
+      "initialAgs": "0",
+      "initialToken": "0",
+      "enabled": true,
+      "useNative": false
+    }
+  ]
+}
+

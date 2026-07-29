@@ -1,0 +1,12 @@
+{
+  "circuitName": "bridge",
+  "ceremonyId": "aegis-mpc-bridge-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "3224329f166987c25f84ebb99912c6419f223ddd9d265eac2e58d9f0b956a5cd",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783027698,
+  "isProduction": true,
+  "beaconHash": "0x0a6501a6441c85bb9e96b4544548a23d9e6ba3d8b1dbe98c715fb7faa58dc10d",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-50Z_bridge",
+  "source": "run-factory-mpc-local.mjs"
+}

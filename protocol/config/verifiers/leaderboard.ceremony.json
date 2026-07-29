@@ -1,0 +1,12 @@
+{
+  "circuitName": "leaderboard",
+  "ceremonyId": "aegis-mpc-leaderboard-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "86447bb9f20e505cc665c685c7a1783733c0dc371138da9142dd78faf261a72e",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028250,
+  "isProduction": true,
+  "beaconHash": "0xb8a23e18740fc37bc5232409addb91d1e95dffcf45a96d12c8517af2254d050d",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_leaderboard",
+  "source": "run-factory-mpc-local.mjs"
+}

@@ -1,0 +1,193 @@
+{
+  "generatedAt": "2026-07-06T00:07:19.051Z",
+  "circuits": {
+    "aggregator": {
+      "wasm": "/circuits/aggregator/aggregator.wasm",
+      "zkey": "/circuits/aggregator/aggregator_final.zkey"
+    },
+    "analytics": {
+      "wasm": "/circuits/analytics/analytics.wasm",
+      "zkey": "/circuits/analytics/analytics_final.zkey"
+    },
+    "auction": {
+      "wasm": "/circuits/auction/auction.wasm",
+      "zkey": "/circuits/auction/auction_final.zkey"
+    },
+    "auction-claim": {
+      "wasm": "/circuits/auction-claim/auction-claim.wasm",
+      "zkey": "/circuits/auction-claim/auction-claim_final.zkey"
+    },
+    "batch": {
+      "wasm": "/circuits/batch/batch.wasm",
+      "zkey": "/circuits/batch/batch_final.zkey"
+    },
+    "bonding-curve-purchase": {
+      "wasm": "/circuits/bonding-curve-purchase/bonding-curve-purchase.wasm",
+      "zkey": "/circuits/bonding-curve-purchase/bonding-curve-purchase_final.zkey"
+    },
+    "bonding-curve-sell": {
+      "wasm": "/circuits/bonding-curve-sell/bonding-curve-sell.wasm",
+      "zkey": "/circuits/bonding-curve-sell/bonding-curve-sell_final.zkey"
+    },
+    "bridge": {
+      "wasm": "/circuits/bridge/bridge_transfer.wasm",
+      "zkey": "/circuits/bridge/bridge_transfer_final.zkey"
+    },
+    "credit-profile": {
+      "wasm": "/circuits/credit-profile/credit-profile.wasm",
+      "zkey": "/circuits/credit-profile/credit-profile_final.zkey"
+    },
+    "crowdfunding": {
+      "wasm": "/circuits/crowdfunding/crowdfunding.wasm",
+      "zkey": "/circuits/crowdfunding/crowdfunding_final.zkey"
+    },
+    "derivative": {
+      "wasm": "/circuits/derivative/derivative.wasm",
+      "zkey": "/circuits/derivative/derivative_final.zkey"
+    },
+    "farming": {
+      "wasm": "/circuits/farming/farming.wasm",
+      "zkey": "/circuits/farming/farming_final.zkey"
+    },
+    "governance": {
+      "wasm": "/circuits/governance/governance.wasm",
+      "zkey": "/circuits/governance/governance_final.zkey"
+    },
+    "insurance": {
+      "wasm": "/circuits/insurance/insurance.wasm",
+      "zkey": "/circuits/insurance/insurance_final.zkey"
+    },
+    "leaderboard": {
+      "wasm": "/circuits/leaderboard/leaderboard.wasm",
+      "zkey": "/circuits/leaderboard/leaderboard_final.zkey"
+    },
+    "lending": {
+      "wasm": "/circuits/lending/lending.wasm",
+      "zkey": "/circuits/lending/lending_final.zkey"
+    },
+    "lending-liquidate": {
+      "wasm": "/circuits/lending-liquidate/lending_liquidate.wasm",
+      "zkey": "/circuits/lending-liquidate/lending_liquidate_final.zkey"
+    },
+    "lending-liquidity": {
+      "wasm": "/circuits/lending-liquidity/lending_liquidity.wasm",
+      "zkey": "/circuits/lending-liquidity/lending_liquidity_final.zkey"
+    },
+    "lending-repay": {
+      "wasm": "/circuits/lending-repay/lending_repay.wasm",
+      "zkey": "/circuits/lending-repay/lending_repay_final.zkey"
+    },
+    "lending-tenor": {
+      "wasm": "/circuits/lending-tenor/lending_tenor.wasm",
+      "zkey": "/circuits/lending-tenor/lending_tenor_final.zkey"
+    },
+    "lending-withdraw": {
+      "wasm": "/circuits/lending-withdraw/lending_withdraw.wasm",
+      "zkey": "/circuits/lending-withdraw/lending_withdraw_final.zkey"
+    },
+    "milestone": {
+      "wasm": "/circuits/milestone/milestone.wasm",
+      "zkey": "/circuits/milestone/milestone_final.zkey"
+    },
+    "mint-optimized": {
+      "wasm": "/circuits/mint-optimized/mint-optimized.wasm",
+      "zkey": "/circuits/mint-optimized/mint-optimized_final.zkey"
+    },
+    "payroll": {
+      "wasm": "/circuits/payroll/payroll.wasm",
+      "zkey": "/circuits/payroll/payroll_final.zkey"
+    },
+    "prediction-market": {
+      "wasm": "/circuits/prediction-market/prediction-market.wasm",
+      "zkey": "/circuits/prediction-market/prediction-market_final.zkey"
+    },
+    "privacy": {
+      "wasm": "/circuits/privacy/privacy.wasm",
+      "zkey": "/circuits/privacy/privacy_final.zkey"
+    },
+    "private-amm": {
+      "wasm": "/circuits/private-amm/private-amm.wasm",
+      "zkey": "/circuits/private-amm/private-amm_final.zkey"
+    },
+    "private-bond": {
+      "wasm": "/circuits/private-bond/private-bond.wasm",
+      "zkey": "/circuits/private-bond/private-bond_final.zkey"
+    },
+    "private-stable": {
+      "wasm": "/circuits/private-stable/private-stable.wasm",
+      "zkey": "/circuits/private-stable/private-stable_final.zkey"
+    },
+    "recursive": {
+      "wasm": "/circuits/recursive/recursive.wasm",
+      "zkey": "/circuits/recursive/recursive_final.zkey"
+    },
+    "refund": {
+      "wasm": "/circuits/refund/refund.wasm",
+      "zkey": "/circuits/refund/refund_final.zkey"
+    },
+    "reward": {
+      "wasm": "/circuits/reward/reward.wasm",
+      "zkey": "/circuits/reward/reward_final.zkey"
+    },
+    "savings": {
+      "wasm": "/circuits/savings/savings.wasm",
+      "zkey": "/circuits/savings/savings_final.zkey"
+    },
+    "selective-disclosure": {
+      "wasm": "/circuits/selective-disclosure/selective-disclosure.wasm",
+      "zkey": "/circuits/selective-disclosure/selective-disclosure_final.zkey"
+    },
+    "shielded-transfer": {
+      "wasm": "/circuits/shielded-transfer/shielded-transfer.wasm",
+      "zkey": "/circuits/shielded-transfer/shielded-transfer_final.zkey"
+    },
+    "staking": {
+      "wasm": "/circuits/staking/staking.wasm",
+      "zkey": "/circuits/staking/staking_final.zkey"
+    },
+    "stealth-address": {
+      "wasm": "/circuits/stealth-address/stealth-address.wasm",
+      "zkey": "/circuits/stealth-address/stealth-address_final.zkey"
+    },
+    "swap": {
+      "wasm": "/circuits/swap/swap.wasm",
+      "zkey": "/circuits/swap/swap_final.zkey"
+    },
+    "sybil-protection": {
+      "wasm": "/circuits/sybil-protection/sybil-protection.wasm",
+      "zkey": "/circuits/sybil-protection/sybil-protection_final.zkey"
+    },
+    "tokendistribution": {
+      "wasm": "/circuits/tokendistribution/tokendistribution.wasm",
+      "zkey": "/circuits/tokendistribution/tokendistribution_final.zkey"
+    },
+    "transfer": {
+      "wasm": "/circuits/transfer/transfer.wasm",
+      "zkey": "/circuits/transfer/transfer_final.zkey"
+    },
+    "transfer-commitment-action": {
+      "wasm": "/circuits/transfer-commitment-action/transfer-commitment-action.wasm",
+      "zkey": "/circuits/transfer-commitment-action/transfer-commitment-action_final.zkey"
+    },
+    "transfer-commitment-internal": {
+      "wasm": "/circuits/transfer-commitment-internal/transfer-commitment-internal.wasm",
+      "zkey": "/circuits/transfer-commitment-internal/transfer-commitment-internal_final.zkey"
+    },
+    "transfer-optimized": {
+      "wasm": "/circuits/transfer-optimized/transfer-optimized.wasm",
+      "zkey": "/circuits/transfer-optimized/transfer-optimized_final.zkey"
+    },
+    "transfer-to-pool": {
+      "wasm": "/circuits/transfer-to-pool/transfer-to-pool.wasm",
+      "zkey": "/circuits/transfer-to-pool/transfer-to-pool_final.zkey"
+    },
+    "transfer-unshield": {
+      "wasm": "/circuits/transfer-unshield/transfer-unshield.wasm",
+      "zkey": "/circuits/transfer-unshield/transfer-unshield_final.zkey"
+    },
+    "treasury-shield": {
+      "wasm": "/circuits/treasury-shield/treasury-shield.wasm",
+      "zkey": "/circuits/treasury-shield/treasury-shield_final.zkey"
+    }
+  }
+}

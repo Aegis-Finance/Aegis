@@ -1,0 +1,27 @@
+[
+  {
+    "label": "ethereum-mainnet",
+    "chainId": 1,
+    "rpcUrl": "https://mainnet.infura.io/v3/9d5c85e8a73147ca8120d5c44d56ce47"
+  },
+  {
+    "label": "arbitrum-one",
+    "chainId": 42161,
+    "rpcUrl": "https://arb1.arbitrum.io/rpc"
+  },
+  {
+    "label": "base-mainnet",
+    "chainId": 8453,
+    "rpcUrl": "https://mainnet.base.org"
+  },
+  {
+    "label": "polygon-mainnet",
+    "chainId": 137,
+    "rpcUrl": "https://polygon-rpc.com"
+  },
+  {
+    "label": "sonic-mainnet",
+    "chainId": 146,
+    "rpcUrl": "https://rpc.soniclabs.com"
+  }
+]

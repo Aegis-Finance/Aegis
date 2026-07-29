@@ -1,0 +1,12 @@
+{
+  "circuitName": "reward",
+  "ceremonyId": "aegis-mpc-reward-2026-07-02",
+  "participantCount": 12,
+  "transcriptHash": "3ea8f2c588a7e400344d0d60594d1c12576a1203062cc3c30d4bcbfef261cf81",
+  "powersOfTauHash": "54071be4689aa067dffb76e13040b33a646385a0a34a5f17ebdf429bfb20d34d",
+  "setupTimestamp": 1783028197,
+  "isProduction": true,
+  "beaconHash": "0xefa658d6ec01b74389170dc0f6067496d815da79c4e0faeb9496319b21686786",
+  "mpcBundle": "ceremony\\production-mpc\\2026-07-02_21-24-51Z_reward",
+  "source": "run-factory-mpc-local.mjs"
+}

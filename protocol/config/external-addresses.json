@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "description": "Network-specific external contract addresses for automated deployment",
+    "note": "Populate each network with actual deployed addresses before running master deployment",
+    "lastUpdated": "2025-11-07T00:00:00Z"
+  },
+  "sonicTestnet": {
+    "S_TOKEN_ADDRESS": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+    "TREASURY_WALLET": "0x796f2c442959533D16e69AE898079020f361C907"
+  },
+  "sonic": {
+    "S_TOKEN_ADDRESS": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+    "TREASURY_WALLET": "0x796f2c442959533D16e69AE898079020f361C907"
+  }
+}
+

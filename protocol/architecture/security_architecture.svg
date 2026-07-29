@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="6024pt" height="810pt"
+ viewBox="0.00 0.00 6024.00 810.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 795.6)">
+<title>SecurityArchitecture</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-795.6 6009.41,-795.6 6009.41,14.4 -14.4,14.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2997.51" y="-764.6" font-family="Helvetica,sans-Serif" font-size="14.00">Aegis security posture · ZK + governance + oracles + trading / partner surface</text>
+<g id="clust1" class="cluster">
+<title>cluster_threats</title>
+<polygon fill="#fee2e2" stroke="#fee2e2" points="2206,-638.8 2206,-748.4 4772,-748.4 4772,-638.8 2206,-638.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3489" y="-731.8" font-family="Helvetica,sans-Serif" font-size="14.00">Threat Landscape</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_zk_security</title>
+<polygon fill="#dbeafe" stroke="#dbeafe" points="8,-8 8,-320.4 193,-320.4 193,-8 8,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="100.5" y="-303.8" font-family="Helvetica,sans-Serif" font-size="14.00">Zero&#45;Knowledge Security</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_access_control</title>
+<polygon fill="#dcfce7" stroke="#dcfce7" points="506,-8 506,-579.6 905,-579.6 905,-8 506,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="705.5" y="-563" font-family="Helvetica,sans-Serif" font-size="14.00">Access &amp; Execution Control</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_contract_security</title>
+<polygon fill="#fef3c7" stroke="#fef3c7" points="913,-89.6 913,-601.6 2127,-601.6 2127,-89.6 913,-89.6"/>
+<text xml:space="preserve" text-anchor="middle" x="1520" y="-585" font-family="Helvetica,sans-Serif" font-size="14.00">Smart Contract Security</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_oracle_security</title>
+<polygon fill="#fee2e2" stroke="#fee2e2" points="5419,-8 5419,-191.2 5655,-191.2 5655,-8 5419,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="5537" y="-174.6" font-family="Helvetica,sans-Serif" font-size="14.00">Oracle &amp; Market Security</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_governance_security</title>
+<polygon fill="#fce7f3" stroke="#fce7f3" points="4819,-374.4 4819,-579.6 5206,-579.6 5206,-374.4 4819,-374.4"/>
+<text xml:space="preserve" text-anchor="middle" x="5012.5" y="-563" font-family="Helvetica,sans-Serif" font-size="14.00">Governance Security</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_monitoring</title>
+<polygon fill="#fee2e2" stroke="#fee2e2" points="3493,-8 3493,-579.6 3655,-579.6 3655,-8 3493,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="3574" y="-563" font-family="Helvetica,sans-Serif" font-size="14.00">Monitoring &amp; Response</text>
+</g>
+<g id="node1" class="node">
+<title>DoubleSpending</title>
+<polygon fill="#ef4444" stroke="black" points="3899.36,-686.8 3806.64,-686.8 3806.64,-650.8 3899.36,-650.8 3899.36,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3853" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Double Spending</text>
+<text xml:space="preserve" text-anchor="middle" x="3853" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Attacks</text>
+</g>
+<g id="node25" class="node">
+<title>ZKProofSystem</title>
+<polygon fill="#bfdbfe" stroke="black" points="184.73,-133.6 119.27,-133.6 119.27,-97.6 184.73,-97.6 184.73,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="152" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">ZK Proof</text>
+<text xml:space="preserve" text-anchor="middle" x="152" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">Verification</text>
+</g>
+<g id="edge1" class="edge">
+<title>DoubleSpending&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3880.8,-650.39C3889.51,-645.77 3899.37,-641.37 3909,-638.8 3958.65,-625.56 4092.03,-647.2 4140,-628.8 4157.75,-621.99 4163.92,-618.3 4173,-601.6 4190.65,-569.16 4216.9,-462.72 4191,-436.4 4169.08,-414.13 3097.05,-424.01 3066.32,-418.4 3009.48,-408.02 2999.58,-390.15 2944,-374.4 2938.02,-372.71 2731.18,-329.05 2725,-328.4 2709.19,-326.73 448.66,-328.54 435,-320.4 394.31,-296.14 420.65,-256.82 384,-226.8 363.12,-209.69 350.92,-219.16 326,-208.8 277.94,-188.81 225.5,-159.99 190.89,-139.91"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="192.98,-137.07 182.58,-135.05 189.44,-143.12 192.98,-137.07"/>
+<text xml:space="preserve" text-anchor="middle" x="3081.66" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node26" class="node">
+<title>NullifierSystem</title>
+<polygon fill="#bfdbfe" stroke="black" points="101,-133.6 47,-133.6 47,-97.6 101,-97.6 101,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="74" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">Nullifier</text>
+<text xml:space="preserve" text-anchor="middle" x="74" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">System</text>
+</g>
+<g id="edge2" class="edge">
+<title>DoubleSpending&#45;&gt;NullifierSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3882.13,-650.36C3890.55,-645.97 3899.93,-641.7 3909,-638.8 3939.36,-629.11 3950.3,-640.34 3980,-628.8 3994.07,-623.34 3993.82,-614.77 4008,-609.6 4024.99,-603.4 4074.43,-612.32 4089,-601.6 4120.85,-578.18 4182.75,-464.55 4155,-436.4 4130.71,-411.75 2938.67,-436.72 2909.32,-418.4 2890.71,-406.79 2905.33,-386.44 2887,-374.4 2887,-374.4 2131,-328.4 2131,-328.4 2082.39,-326.81 427.3,-331.74 380,-320.4 290.01,-298.82 279.25,-262.82 194,-226.8 156.65,-211.02 137.9,-220.62 110,-191.2 97.74,-178.27 88.92,-160.39 83.07,-145.37"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="86.41,-144.31 79.74,-136.08 79.83,-146.68 86.41,-144.31"/>
+<text xml:space="preserve" text-anchor="middle" x="2924.66" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node27" class="node">
+<title>CommitmentScheme</title>
+<polygon fill="#bfdbfe" stroke="black" points="185.34,-262.8 112.66,-262.8 112.66,-226.8 185.34,-226.8 185.34,-262.8"/>
+<text xml:space="preserve" text-anchor="middle" x="149" y="-247.8" font-family="Helvetica,sans-Serif" font-size="10.00">Commitment</text>
+<text xml:space="preserve" text-anchor="middle" x="149" y="-235.8" font-family="Helvetica,sans-Serif" font-size="10.00">Scheme</text>
+</g>
+<g id="edge3" class="edge">
+<title>DoubleSpending&#45;&gt;CommitmentScheme</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3825.74,-650.33C3817.19,-645.72 3807.49,-641.32 3798,-638.8 3735.04,-622.07 3569.49,-638.04 3505,-628.8 3470.94,-623.92 3464.11,-614.11 3430,-609.6 3412.26,-607.25 2800.17,-612.52 2786,-601.6 2735.76,-562.86 2797.37,-503.85 2748,-464 2664,-396.2 2370.89,-440.01 2263,-436.4 2213.33,-434.74 517.79,-441.9 474,-418.4 431.42,-395.55 455.25,-351.85 413,-328.4 372.17,-305.74 244.18,-342.43 203,-320.4 184.03,-310.26 170.09,-290.17 161.12,-273.4"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="164.48,-272.28 156.89,-264.88 158.21,-275.4 164.48,-272.28"/>
+<text xml:space="preserve" text-anchor="middle" x="2729.42" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node2" class="node">
+<title>FrontRunning</title>
+<polygon fill="#ef4444" stroke="black" points="4000.35,-686.8 3917.65,-686.8 3917.65,-650.8 4000.35,-650.8 4000.35,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3959" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">MEV &amp;</text>
+<text xml:space="preserve" text-anchor="middle" x="3959" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Order Leakage</text>
+</g>
+<g id="edge4" class="edge">
+<title>FrontRunning&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3984.16,-650.44C3992.09,-645.82 4001.1,-641.41 4010,-638.8 4030.18,-632.89 4182.27,-641.54 4199,-628.8 4270.37,-574.45 4322.91,-500.35 4260,-436.4 4238.78,-414.83 3200.09,-426.66 3170.99,-418.4 3134.18,-407.96 3133.46,-386 3097,-374.4 3043.89,-357.5 3027.02,-373.28 2972,-364.4 2905.6,-353.68 2891.77,-336.57 2825,-328.4 2808.79,-326.42 486.99,-328.82 473,-320.4 432.59,-296.08 460.18,-255.81 423,-226.8 396.99,-206.51 382.1,-219.78 351,-208.8 295.7,-189.27 234.91,-159.87 195.25,-139.54"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="197.02,-136.52 186.53,-135.04 193.81,-142.74 197.02,-136.52"/>
+<text xml:space="preserve" text-anchor="middle" x="3186.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge5" class="edge">
+<title>FrontRunning&#45;&gt;CommitmentScheme</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3934.14,-650.44C3926.15,-645.77 3917.03,-641.32 3908,-638.8 3827.7,-616.42 3614.81,-644.82 3533,-628.8 3509.23,-624.15 3505.8,-614.09 3482,-609.6 3464.47,-606.3 2854.83,-611.51 2840,-601.6 2770.3,-555.03 2827.46,-465.92 2749,-436.4 2690.58,-414.42 556.84,-448.22 502,-418.4 481.42,-407.21 486.13,-393.79 473,-374.4 459.04,-353.78 462.88,-340.3 441,-328.4 417.76,-315.75 226.36,-332.83 203,-320.4 184.01,-310.3 170.07,-290.21 161.11,-273.42"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="164.46,-272.31 156.88,-264.91 158.19,-275.42 164.46,-272.31"/>
+<text xml:space="preserve" text-anchor="middle" x="2782.17" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node47" class="node">
+<title>FlashLoanDetection</title>
+<polygon fill="#fde68a" stroke="black" points="2119.11,-262.8 1998.89,-262.8 1998.89,-226.8 2119.11,-226.8 2119.11,-262.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2059" y="-247.8" font-family="Helvetica,sans-Serif" font-size="10.00">Flash Loan Detection</text>
+<text xml:space="preserve" text-anchor="middle" x="2059" y="-235.8" font-family="Helvetica,sans-Serif" font-size="10.00">(&gt;10% reserve change)</text>
+</g>
+<g id="edge22" class="edge">
+<title>FrontRunning&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3984.43,-650.32C3992.3,-645.76 4001.21,-641.4 4010,-638.8 4046.29,-628.06 4144.99,-643.17 4180,-628.8 4196.96,-621.84 4203.17,-618.17 4211,-601.6 4242.38,-535.18 4267.38,-488.9 4216,-436.4 4183.7,-403.4 3429.77,-429.7 3385,-418.4 3343.37,-407.89 3339.13,-389.67 3299,-374.4 3223.03,-345.49 3202.58,-339.03 3122,-328.4 3094.51,-324.77 2149.19,-331.98 2124,-320.4 2102.8,-310.65 2085.8,-290.25 2074.51,-273.24"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2077.63,-271.63 2069.36,-265.01 2071.7,-275.35 2077.63,-271.63"/>
+<text xml:space="preserve" text-anchor="middle" x="4239.65" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node49" class="node">
+<title>PriceImpactProtection</title>
+<polygon fill="#fde68a" stroke="black" points="2118.69,-418.4 1999.31,-418.4 1999.31,-382.4 2118.69,-382.4 2118.69,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2059" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">Price Impact Protection</text>
+<text xml:space="preserve" text-anchor="middle" x="2059" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">(max 50% per swap)</text>
+</g>
+<g id="edge23" class="edge">
+<title>FrontRunning&#45;&gt;PriceImpactProtection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3933.87,-650.32C3925.95,-645.7 3916.92,-641.31 3908,-638.8 3840.58,-619.82 3659.56,-650.59 3593,-628.8 3578.66,-624.1 3579.33,-614.31 3565,-609.6 3540.39,-601.51 3352.75,-617.1 3331.99,-601.6 3280.32,-563.03 3336.95,-503.52 3286,-464 3245.56,-432.63 2476.01,-427.84 2292,-418.4 2237.9,-415.63 2176.83,-411.12 2130.78,-407.44"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2131.18,-403.96 2120.93,-406.65 2130.61,-410.94 2131.18,-403.96"/>
+<text xml:space="preserve" text-anchor="middle" x="3347.99" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node60" class="node">
+<title>PrivateVoting</title>
+<polygon fill="#fbcfe8" stroke="black" points="4881,-522 4827,-522 4827,-486 4881,-486 4881,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="4854" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">Private</text>
+<text xml:space="preserve" text-anchor="middle" x="4854" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Voting</text>
+</g>
+<g id="edge6" class="edge">
+<title>FrontRunning&#45;&gt;PrivateVoting</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3984.13,-650.31C3992.05,-645.69 4001.08,-641.31 4010,-638.8 4080.21,-619.09 4265.72,-638.47 4338,-628.8 4519.43,-604.53 4730.06,-543.36 4815.28,-517.19"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="4816.14,-520.58 4824.66,-514.29 4814.08,-513.89 4816.14,-520.58"/>
+<text xml:space="preserve" text-anchor="middle" x="4468.58" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node3" class="node">
+<title>GovernanceAttacks</title>
+<polygon fill="#ef4444" stroke="black" points="4431.24,-686.8 4360.76,-686.8 4360.76,-650.8 4431.24,-650.8 4431.24,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4396" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Governance</text>
+<text xml:space="preserve" text-anchor="middle" x="4396" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Capture</text>
+</g>
+<g id="node30" class="node">
+<title>MultiSigWallet</title>
+<polygon fill="#bbf7d0" stroke="black" points="896.62,-133.6 813.38,-133.6 813.38,-97.6 896.62,-97.6 896.62,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="855" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">Governance</text>
+<text xml:space="preserve" text-anchor="middle" x="855" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">Safe (multi&#45;sig)</text>
+</g>
+<g id="edge7" class="edge">
+<title>GovernanceAttacks&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4418.78,-650.35C4425.6,-645.91 4433.32,-641.6 4441,-638.8 4473.83,-626.82 4487.8,-644.56 4519,-628.8 4533.93,-621.26 4536.79,-616.17 4545,-601.6 4582.2,-535.6 4608.41,-509.07 4587,-436.4 4577.73,-404.94 4575.38,-390.83 4547,-374.4 4528.32,-363.59 4374.38,-367.34 4353,-364.4 4280.79,-354.49 4265.4,-336.79 4193,-328.4 4169.66,-325.69 3368.23,-330.47 3347,-320.4 3298.07,-297.2 3317.01,-251.85 3269,-226.8 3205.52,-193.68 3019.52,-202.41 2948,-199.2 2933.85,-198.57 921.6,-197.66 909,-191.2 889.86,-181.38 875.93,-161.28 867.01,-144.42"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="870.35,-143.28 862.8,-135.84 864.07,-146.36 870.35,-143.28"/>
+<text xml:space="preserve" text-anchor="middle" x="4596.93" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node32" class="node">
+<title>TimelockController</title>
+<polygon fill="#bbf7d0" stroke="black" points="896.67,-52 837.33,-52 837.33,-16 896.67,-16 896.67,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="867" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Timelock</text>
+<text xml:space="preserve" text-anchor="middle" x="867" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">Controller</text>
+</g>
+<g id="edge8" class="edge">
+<title>GovernanceAttacks&#45;&gt;TimelockController</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4417.67,-650.4C4424.7,-645.72 4432.82,-641.28 4441,-638.8 4504.78,-619.48 5594.01,-649.83 5640,-601.6 5682.2,-557.34 5679.73,-510.49 5640,-464 5597.76,-414.57 5412.78,-438.67 5351,-418.4 5310.58,-405.14 5306.79,-386.46 5266,-374.4 5222.03,-361.4 5208.73,-370.72 5163.32,-364.4 5074.59,-352.05 5054.15,-337.19 4965,-328.4 4756.2,-307.82 4702.03,-338.42 4493,-320.4 4453,-316.95 3818.07,-218.05 3779,-208.8 3765.38,-205.58 3762.8,-201.53 3749,-199.2 3677.54,-187.15 3494.57,-202.56 3423,-191.2 3267.24,-166.47 3238.62,-115.21 3083,-89.6 2842.96,-50.1 2779.17,-76.91 2536,-70 1887.83,-51.59 1097.81,-38.63 908.97,-35.65"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="909.08,-32.15 899.03,-35.49 908.97,-39.15 909.08,-32.15"/>
+<text xml:space="preserve" text-anchor="middle" x="5178.66" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node37" class="node">
+<title>LiquidityAllocatorGuard</title>
+<polygon fill="#bbf7d0" stroke="black" points="896.52,-418.4 765.48,-418.4 765.48,-382.4 896.52,-382.4 896.52,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="831" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">TreasuryLiquidityAllocator</text>
+<text xml:space="preserve" text-anchor="middle" x="831" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">(governance gated)</text>
+</g>
+<g id="edge9" class="edge">
+<title>GovernanceAttacks&#45;&gt;LiquidityAllocatorGuard</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4371.98,-650.48C4365.4,-646.25 4358.11,-642.02 4351,-638.8 4308.05,-619.33 4295.67,-616.33 4249,-609.6 4234.54,-607.52 3208.85,-610.56 3197.32,-601.6 3147.36,-562.81 3209.44,-504.67 3161,-464 3154,-458.12 2842.13,-436.83 2833,-436.4 2619.45,-426.43 1121.45,-442.29 909,-418.4 908.88,-418.39 908.75,-418.37 908.63,-418.36"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="909.28,-414.92 898.9,-417.02 908.33,-421.85 909.28,-414.92"/>
+<text xml:space="preserve" text-anchor="middle" x="3212.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node61" class="node">
+<title>QuorumRequirements</title>
+<polygon fill="#fbcfe8" stroke="black" points="5036.73,-522 4971.27,-522 4971.27,-486 5036.73,-486 5036.73,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="5004" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">Quorum &amp;</text>
+<text xml:space="preserve" text-anchor="middle" x="5004" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Thresholds</text>
+</g>
+<g id="edge10" class="edge">
+<title>GovernanceAttacks&#45;&gt;QuorumRequirements</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4417.68,-650.45C4424.72,-645.78 4432.83,-641.32 4441,-638.8 4480.83,-626.5 4776.96,-643.4 4816,-628.8 4828.57,-624.1 4826.84,-614.54 4839.32,-609.6 4864.72,-599.54 4939.65,-617.32 4962,-601.6 4983.99,-586.14 4994.57,-556.59 4999.6,-534.23"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5003.03,-534.93 5001.5,-524.44 4996.16,-533.59 5003.03,-534.93"/>
+<text xml:space="preserve" text-anchor="middle" x="4854.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node62" class="node">
+<title>VotingDelays</title>
+<polygon fill="#fbcfe8" stroke="black" points="4953,-522 4899,-522 4899,-486 4953,-486 4953,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="4926" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">Voting</text>
+<text xml:space="preserve" text-anchor="middle" x="4926" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Delays</text>
+</g>
+<g id="edge11" class="edge">
+<title>GovernanceAttacks&#45;&gt;VotingDelays</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4417.69,-650.47C4424.73,-645.8 4432.84,-641.34 4441,-638.8 4509.14,-617.59 4695.21,-653.94 4762,-628.8 4774.56,-624.07 4772.86,-614.61 4785.32,-609.6 4806.96,-600.89 4871.36,-615.63 4890,-601.6 4911.02,-585.78 4919.77,-556.29 4923.41,-534.03"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="4926.85,-534.71 4924.7,-524.34 4919.91,-533.79 4926.85,-534.71"/>
+<text xml:space="preserve" text-anchor="middle" x="4800.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node63" class="node">
+<title>ProposalValidation</title>
+<polygon fill="#fbcfe8" stroke="black" points="5119.96,-418.4 5060.04,-418.4 5060.04,-382.4 5119.96,-382.4 5119.96,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="5090" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">Proposal</text>
+<text xml:space="preserve" text-anchor="middle" x="5090" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">Validation</text>
+</g>
+<g id="edge12" class="edge">
+<title>GovernanceAttacks&#45;&gt;ProposalValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4417.68,-650.43C4424.72,-645.76 4432.83,-641.31 4441,-638.8 4486.58,-624.81 4823.26,-638.2 4870,-628.8 4892.93,-624.19 4896.06,-614.16 4919,-609.6 4930.42,-607.33 5329.85,-609.91 5338,-601.6 5380.83,-557.95 5358.19,-521.73 5338,-464 5332.82,-449.19 5329.79,-443.88 5316,-436.4 5245.9,-398.39 5212.85,-435.67 5132.06,-418.5"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5132.93,-415.11 5122.39,-416.19 5131.31,-421.92 5132.93,-415.11"/>
+<text xml:space="preserve" text-anchor="middle" x="5377.69" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node4" class="node">
+<title>ReentrancyAttacks</title>
+<polygon fill="#ef4444" stroke="black" points="4168.57,-686.8 4101.43,-686.8 4101.43,-650.8 4168.57,-650.8 4168.57,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4135" y="-665.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Reentrancy</text>
+</g>
+<g id="node39" class="node">
+<title>ReentrancyGuard</title>
+<polygon fill="#fde68a" stroke="black" points="1728.57,-418.4 1661.43,-418.4 1661.43,-382.4 1728.57,-382.4 1728.57,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1695" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">Reentrancy</text>
+<text xml:space="preserve" text-anchor="middle" x="1695" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">Guard</text>
+</g>
+<g id="edge13" class="edge">
+<title>ReentrancyAttacks&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4158.51,-650.48C4164.42,-646.44 4170.83,-642.29 4177,-638.8 4186.34,-633.51 4193.19,-637.83 4199,-628.8 4203.62,-621.63 4205.01,-615.66 4199,-609.6 4187.89,-598.41 3075.78,-611.27 3063.32,-601.6 3013.35,-562.83 3074.26,-506.04 3027,-464 3010.73,-449.53 2854.7,-438.12 2833,-436.4 2714.89,-427.06 1901.89,-441.36 1740.58,-418.07"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1741.46,-414.67 1731.02,-416.45 1740.29,-421.57 1741.46,-414.67"/>
+<text xml:space="preserve" text-anchor="middle" x="3078.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node41" class="node">
+<title>StateValidation</title>
+<polygon fill="#fde68a" stroke="black" points="1980.96,-262.8 1921.04,-262.8 1921.04,-226.8 1980.96,-226.8 1980.96,-262.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1951" y="-247.8" font-family="Helvetica,sans-Serif" font-size="10.00">State</text>
+<text xml:space="preserve" text-anchor="middle" x="1951" y="-235.8" font-family="Helvetica,sans-Serif" font-size="10.00">Validation</text>
+</g>
+<g id="edge14" class="edge">
+<title>ReentrancyAttacks&#45;&gt;StateValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4155.12,-650.56C4161.68,-645.89 4169.28,-641.41 4177,-638.8 4198.81,-631.42 4368.12,-645.47 4384,-628.8 4402.75,-609.12 4546.4,-602.02 4380,-436.4 4360.7,-417.19 3426.6,-424.2 3400,-418.4 3352.16,-407.97 3346.07,-387.89 3299,-374.4 3165.1,-336.03 3127.87,-339.21 2989,-328.4 2975.17,-327.32 2001.84,-327.64 1990,-320.4 1973.64,-310.4 1963.81,-291.07 1958.11,-274.59"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1961.54,-273.83 1955.27,-265.29 1954.84,-275.88 1961.54,-273.83"/>
+<text xml:space="preserve" text-anchor="middle" x="4402.8" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node44" class="node">
+<title>SafeNativeTransfer</title>
+<polygon fill="#fde68a" stroke="black" points="2118.97,-522 2009.03,-522 2009.03,-486 2118.97,-486 2118.97,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="2064" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">Safe Native</text>
+<text xml:space="preserve" text-anchor="middle" x="2064" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Transfer (sendValue)</text>
+</g>
+<g id="edge15" class="edge">
+<title>ReentrancyAttacks&#45;&gt;SafeNativeTransfer</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4150.69,-650.49C4160.38,-637.71 4169.04,-620.68 4158,-609.6 4148.08,-599.64 2145.49,-608.06 2133,-601.6 2105.28,-587.27 2086.21,-556.09 2075.26,-533.02"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2078.54,-531.77 2071.26,-524.07 2072.15,-534.63 2078.54,-531.77"/>
+<text xml:space="preserve" text-anchor="middle" x="4179.17" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge24" class="edge">
+<title>ReentrancyAttacks&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4155.13,-650.59C4161.69,-645.92 4169.29,-641.43 4177,-638.8 4196.59,-632.11 4348.76,-643.82 4363,-628.8 4423.02,-565.47 4406.88,-463.67 4324,-436.4 4228.89,-405.1 3518.64,-448.04 3423,-418.4 3388.97,-407.85 3388.17,-389.71 3356,-374.4 3294.95,-345.35 3277.78,-338.99 3211,-328.4 3181.18,-323.67 2151.44,-333.01 2124,-320.4 2102.8,-310.66 2085.8,-290.26 2074.51,-273.25"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2077.63,-271.64 2069.36,-265.02 2071.7,-275.35 2077.63,-271.64"/>
+<text xml:space="preserve" text-anchor="middle" x="4360.58" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">monitors</text>
+</g>
+<g id="node48" class="node">
+<title>KInvariantMonitoring</title>
+<polygon fill="#fde68a" stroke="black" points="2118.91,-133.6 2005.09,-133.6 2005.09,-97.6 2118.91,-97.6 2118.91,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="2062" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">K&#45;Invariant Monitoring</text>
+<text xml:space="preserve" text-anchor="middle" x="2062" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">(0.1% alert, 2% limit)</text>
+</g>
+<g id="edge25" class="edge">
+<title>ReentrancyAttacks&#45;&gt;KInvariantMonitoring</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4155.11,-650.53C4161.67,-645.86 4169.27,-641.39 4177,-638.8 4227.62,-621.86 4367.61,-649.05 4417,-628.8 4517.06,-587.78 4499.61,-513.02 4596,-464 4633.67,-444.84 4715.27,-467.81 4687,-436.4 4661.49,-408.05 4552.46,-430.61 4516.32,-418.4 4480.68,-406.36 4478.95,-388.34 4444,-374.4 4432.76,-369.91 4243.03,-329.74 4231,-328.4 4208.69,-325.91 3441.5,-333.11 3423,-320.4 3375.24,-287.6 3422.82,-231.92 3375,-199.2 3346.39,-179.62 2158.51,-205.66 2127,-191.2 2105.8,-181.47 2088.8,-161.07 2077.51,-144.06"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2080.63,-142.44 2072.35,-135.82 2074.69,-146.16 2080.63,-142.44"/>
+<text xml:space="preserve" text-anchor="middle" x="4531.66" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">monitors</text>
+</g>
+<g id="node5" class="node">
+<title>OracleManipulation</title>
+<polygon fill="#ef4444" stroke="black" points="4764.35,-686.8 4691.65,-686.8 4691.65,-650.8 4764.35,-650.8 4764.35,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4728" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Oracle</text>
+<text xml:space="preserve" text-anchor="middle" x="4728" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Manipulation</text>
+</g>
+<g id="node50" class="node">
+<title>OracleValidation</title>
+<polygon fill="#fde68a" stroke="black" points="1981.29,-418.4 1824.71,-418.4 1824.71,-382.4 1981.29,-382.4 1981.29,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1903" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">Oracle Validation</text>
+<text xml:space="preserve" text-anchor="middle" x="1903" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">(TWAP, multi&#45;oracle, staleness)</text>
+</g>
+<g id="edge16" class="edge">
+<title>OracleManipulation&#45;&gt;OracleValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4764.55,-666.33C4848.59,-662.58 5049.91,-651.32 5070,-628.8 5075.68,-622.43 5076.02,-615.65 5070,-609.6 5054.2,-593.72 3474.2,-615.94 3456.99,-601.6 3409.17,-561.77 3477.66,-505.19 3431,-464 3357.22,-398.87 3087.33,-440.35 2989,-436.4 2770.93,-427.63 2229.72,-441.3 1993.66,-418.62"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1994.04,-415.14 1983.74,-417.62 1993.33,-422.1 1994.04,-415.14"/>
+<text xml:space="preserve" text-anchor="middle" x="3472.99" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node55" class="node">
+<title>ChainlinkOracles</title>
+<polygon fill="#fecaca" stroke="black" points="5484.57,-133.6 5427.43,-133.6 5427.43,-97.6 5484.57,-97.6 5484.57,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="5456" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">Chainlink</text>
+<text xml:space="preserve" text-anchor="middle" x="5456" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">Oracles</text>
+</g>
+<g id="edge17" class="edge">
+<title>OracleManipulation&#45;&gt;ChainlinkOracles</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4764.82,-668.04C4963.18,-669.14 5897.16,-672.01 5939,-628.8 5989.95,-576.18 5969.83,-530.44 5939,-464 5913.03,-408.05 5883.96,-409.16 5833,-374.4 5691.52,-277.9 5613.62,-313.76 5494,-191.2 5481.22,-178.1 5471.82,-159.84 5465.56,-144.67"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5469,-143.86 5462.15,-135.78 5462.47,-146.37 5469,-143.86"/>
+<text xml:space="preserve" text-anchor="middle" x="5921.15" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node56" class="node">
+<title>PriceValidation</title>
+<polygon fill="#fecaca" stroke="black" points="5563.96,-52 5504.04,-52 5504.04,-16 5563.96,-16 5563.96,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="5534" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Price</text>
+<text xml:space="preserve" text-anchor="middle" x="5534" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">Validation</text>
+</g>
+<g id="edge18" class="edge">
+<title>OracleManipulation&#45;&gt;PriceValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4764.58,-667.71C4952.59,-667.1 5803.14,-662.5 5847,-628.8 5939.45,-557.76 5948.75,-484.71 5911,-374.4 5855.57,-212.44 5821.26,-158.96 5675,-70 5637.17,-46.99 5619.57,-64.2 5577,-52 5576.48,-51.85 5575.96,-51.7 5575.43,-51.54"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5576.89,-48.34 5566.29,-48.49 5574.67,-54.98 5576.89,-48.34"/>
+<text xml:space="preserve" text-anchor="middle" x="5923.08" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node57" class="node">
+<title>OracleAggregation</title>
+<polygon fill="#fecaca" stroke="black" points="5646.97,-133.6 5577.03,-133.6 5577.03,-97.6 5646.97,-97.6 5646.97,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="5612" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">Oracle</text>
+<text xml:space="preserve" text-anchor="middle" x="5612" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">Aggregation</text>
+</g>
+<g id="edge19" class="edge">
+<title>OracleManipulation&#45;&gt;OracleAggregation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4764.67,-667.91C4951.2,-668.28 5787.39,-667.77 5825,-628.8 5875.86,-576.1 5844.96,-534.47 5825,-464 5821.07,-450.14 5819.71,-444.79 5808,-436.4 5778.72,-415.43 5756.24,-441.94 5728.99,-418.4 5645.2,-346.02 5621.09,-206.26 5614.42,-145.73"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5617.91,-145.45 5613.43,-135.85 5610.95,-146.15 5617.91,-145.45"/>
+<text xml:space="preserve" text-anchor="middle" x="5744.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node58" class="node">
+<title>CircuitBreakers</title>
+<polygon fill="#fecaca" stroke="black" points="5559.01,-133.6 5502.99,-133.6 5502.99,-97.6 5559.01,-97.6 5559.01,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="5531" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">Circuit</text>
+<text xml:space="preserve" text-anchor="middle" x="5531" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">Breakers</text>
+</g>
+<g id="edge20" class="edge">
+<title>OracleManipulation&#45;&gt;CircuitBreakers</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4764.67,-667.95C4955.12,-668.58 5823.98,-669.19 5863,-628.8 5913.89,-576.13 5897.03,-528.86 5863,-464 5846.43,-432.42 5822.5,-443.31 5796.99,-418.4 5779.69,-401.51 5781.04,-392.49 5765,-374.4 5685.7,-284.92 5639.5,-287.03 5568,-191.2 5557.43,-177.03 5548.51,-159.37 5542.08,-144.79"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5545.42,-143.69 5538.3,-135.84 5538.97,-146.41 5545.42,-143.69"/>
+<text xml:space="preserve" text-anchor="middle" x="5812.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node59" class="node">
+<title>StalenessChecks</title>
+<polygon fill="#fecaca" stroke="black" points="5645.96,-52 5586.04,-52 5586.04,-16 5645.96,-16 5645.96,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="5616" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Staleness</text>
+<text xml:space="preserve" text-anchor="middle" x="5616" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">Checks</text>
+</g>
+<g id="edge21" class="edge">
+<title>OracleManipulation&#45;&gt;StalenessChecks</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4764.71,-667.53C4956.39,-665.97 5835.32,-657.32 5885,-628.8 5941.4,-596.42 5963,-570.03 5963,-505 5963,-505 5963,-505 5963,-114.6 5963,-52.7 5750.59,-38.93 5658.14,-35.87"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5658.41,-32.38 5648.3,-35.58 5658.2,-39.38 5658.41,-32.38"/>
+<text xml:space="preserve" text-anchor="middle" x="5979.01" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node6" class="node">
+<title>PrivacyBreaches</title>
+<polygon fill="#ef4444" stroke="black" points="2860.63,-686.8 2767.37,-686.8 2767.37,-650.8 2860.63,-650.8 2860.63,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2814" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Privacy</text>
+<text xml:space="preserve" text-anchor="middle" x="2814" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Deanonymisation</text>
+</g>
+<g id="edge26" class="edge">
+<title>PrivacyBreaches&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2802.4,-650.5C2795.29,-637.55 2789.39,-620.3 2800,-609.6 2816.79,-592.65 3641.41,-617.73 3659,-601.6 3713.34,-551.78 3725.72,-488.94 3674,-436.4 3651.89,-413.93 2567.72,-432.06 2539.32,-418.4 2516.47,-407.41 2525.55,-386 2503,-374.4 2474.68,-359.82 2391.65,-367.99 2360,-364.4 2257.63,-352.8 2233.7,-336.65 2131,-328.4 2105.4,-326.34 305.55,-330.64 282,-320.4 229.64,-297.63 239.61,-261.16 194,-226.8 180.03,-216.28 168.67,-223.38 159,-208.8 146.77,-190.37 145.68,-165.06 147.28,-145.62"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="150.73,-146.27 148.39,-135.93 143.77,-145.47 150.73,-146.27"/>
+<text xml:space="preserve" text-anchor="middle" x="2554.66" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge27" class="edge">
+<title>PrivacyBreaches&#45;&gt;CommitmentScheme</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2787.04,-650.42C2778.42,-645.75 2768.61,-641.3 2759,-638.8 2736.14,-632.86 2351.86,-644.25 2334,-628.8 2277.8,-580.2 2356.89,-518.12 2306,-464 2305.86,-463.85 2188.21,-436.43 2188,-436.4 2139.68,-430.57 477.6,-443.65 436,-418.4 397.25,-394.88 426.36,-352.56 388,-328.4 353.18,-306.47 239.24,-339.9 203,-320.4 184.17,-310.27 170.28,-290.37 161.31,-273.67"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="164.67,-272.57 157.06,-265.19 158.41,-275.7 164.67,-272.57"/>
+<text xml:space="preserve" text-anchor="middle" x="2243.63" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node28" class="node">
+<title>TrustedSetup</title>
+<polygon fill="#bfdbfe" stroke="black" points="94.41,-262.8 15.59,-262.8 15.59,-226.8 94.41,-226.8 94.41,-262.8"/>
+<text xml:space="preserve" text-anchor="middle" x="55" y="-247.8" font-family="Helvetica,sans-Serif" font-size="10.00">Trusted Setup</text>
+<text xml:space="preserve" text-anchor="middle" x="55" y="-235.8" font-family="Helvetica,sans-Serif" font-size="10.00">Ceremony</text>
+</g>
+<g id="edge28" class="edge">
+<title>PrivacyBreaches&#45;&gt;TrustedSetup</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2787.04,-650.42C2778.42,-645.74 2768.61,-641.29 2759,-638.8 2711.24,-626.41 2361.61,-645.01 2315,-628.8 2230.64,-599.45 2267.8,-522.14 2200,-464 2183.12,-449.53 2173.91,-454.4 2153.32,-446 2143.32,-441.92 2141.56,-438.63 2131,-436.4 1943.69,-396.8 596.97,-449.12 408,-418.4 267.88,-395.62 216.95,-406.39 104,-320.4 88.13,-308.31 75.83,-289.52 67.52,-273.81"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="70.71,-272.37 63.12,-264.97 64.44,-275.48 70.71,-272.37"/>
+<text xml:space="preserve" text-anchor="middle" x="2168.66" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node53" class="node">
+<title>ClientPrivacyProgram</title>
+<polygon fill="#fde68a" stroke="black" points="1256.76,-544 1121.24,-544 1121.24,-464 1256.76,-464 1256.76,-544"/>
+<text xml:space="preserve" text-anchor="middle" x="1189" y="-531" font-family="Helvetica,sans-Serif" font-size="10.00">Phase D+ client ops:</text>
+<text xml:space="preserve" text-anchor="middle" x="1189" y="-519" font-family="Helvetica,sans-Serif" font-size="10.00">CSP · translate gate ·</text>
+<text xml:space="preserve" text-anchor="middle" x="1189" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">storage disclosure ·</text>
+<text xml:space="preserve" text-anchor="middle" x="1189" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">optional passphrase vault</text>
+<text xml:space="preserve" text-anchor="middle" x="1189" y="-483" font-family="Helvetica,sans-Serif" font-size="10.00">(chain visibility unchanged;</text>
+<text xml:space="preserve" text-anchor="middle" x="1189" y="-471" font-family="Helvetica,sans-Serif" font-size="10.00">see docs/ops/)</text>
+</g>
+<g id="edge92" class="edge">
+<title>PrivacyBreaches&#45;&gt;ClientPrivacyProgram</title>
+<path fill="none" stroke="#64748b" stroke-dasharray="5,2" d="M2787.05,-650.37C2778.43,-645.69 2768.62,-641.26 2759,-638.8 2722.67,-629.52 2119.23,-642.15 2084.19,-628.8 2072,-624.16 2074.2,-614.21 2062,-609.6 2020.64,-593.95 1305.75,-620.99 1266,-601.6 1244.99,-591.35 1227.91,-572.31 1215.23,-553.84"/>
+<polygon fill="#64748b" stroke="#64748b" points="1218.21,-552.01 1209.82,-545.54 1212.35,-555.83 1218.21,-552.01"/>
+<text xml:space="preserve" text-anchor="middle" x="2103.1" y="-621.6" font-family="Helvetica,sans-Serif" font-size="8.00">orthogonal</text>
+<text xml:space="preserve" text-anchor="middle" x="2103.1" y="-612" font-family="Helvetica,sans-Serif" font-size="8.00">axis</text>
+</g>
+<g id="node7" class="node">
+<title>CrossChainAttacks</title>
+<polygon fill="#ef4444" stroke="black" points="4083.18,-686.8 4018.82,-686.8 4018.82,-650.8 4083.18,-650.8 4083.18,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4051" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Bridge / L2</text>
+<text xml:space="preserve" text-anchor="middle" x="4051" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Attacks</text>
+</g>
+<g id="edge29" class="edge">
+<title>CrossChainAttacks&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4071.05,-650.38C4077.36,-645.83 4084.62,-641.46 4092,-638.8 4169.69,-610.85 4231.21,-672.21 4274,-601.6 4312.07,-538.79 4329.47,-488.79 4278,-436.4 4258.24,-416.28 3289.71,-427.41 3262.99,-418.4 3231.66,-407.83 3234.16,-385.46 3203,-374.4 3160.44,-359.29 3044.07,-374.29 3000,-364.4 2959.17,-355.24 2954.03,-336.62 2913,-328.4 2896.58,-325.11 515.96,-329.65 502,-320.4 464.29,-295.41 496.99,-255.48 462,-226.8 431.8,-202.04 413.32,-220.28 376,-208.8 341.19,-198.09 250.97,-159.68 196.23,-135.94"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="197.64,-132.74 187.07,-131.96 194.85,-139.16 197.64,-132.74"/>
+<text xml:space="preserve" text-anchor="middle" x="3278.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge30" class="edge">
+<title>CrossChainAttacks&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4070.57,-650.51C4076.97,-645.84 4084.4,-641.37 4092,-638.8 4120.22,-629.24 4334.31,-643.9 4360,-628.8 4433.86,-585.39 4388.99,-511.94 4460,-464 4501.78,-435.8 4603.62,-473.96 4570,-436.4 4545.84,-409.41 4437.7,-439.12 4407.99,-418.4 4390.06,-405.89 4404.04,-386.74 4386,-374.4 4366.11,-360.79 4301.88,-367.66 4278,-364.4 4188.95,-352.25 4168.48,-336.9 4079,-328.4 4057.71,-326.38 3329.02,-327.93 3309,-320.4 3249.24,-297.91 3259.17,-250.8 3200,-226.8 3106.95,-189.06 2849.36,-202.49 2749,-199.2 2736.23,-198.78 920.37,-197.04 909,-191.2 889.86,-181.38 875.93,-161.28 867.01,-144.41"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="870.35,-143.28 862.81,-135.84 864.07,-146.36 870.35,-143.28"/>
+<text xml:space="preserve" text-anchor="middle" x="4423.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge31" class="edge">
+<title>CrossChainAttacks&#45;&gt;TimelockController</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4070.55,-650.45C4076.95,-645.78 4084.39,-641.33 4092,-638.8 4133.88,-624.9 4444.93,-630.93 4489,-628.8 4608.72,-623.02 4638.25,-614.62 4758,-609.6 4766.87,-609.23 5390.76,-607.92 5397,-601.6 5439.97,-558.09 5430.36,-515.25 5397,-464 5369.69,-422.04 5339.09,-440.16 5294,-418.4 5256.04,-400.08 5250.74,-385.21 5210,-374.4 5150.46,-358.61 4994.47,-368.19 4932.99,-364.4 4749.09,-353.07 4704.01,-337.68 4520,-328.4 4487.98,-326.78 3974.01,-328.54 3943,-320.4 3834.27,-291.85 3829.58,-228.29 3721,-199.2 3684.93,-189.54 3422.19,-194.62 3385,-191.2 3101.7,-165.18 3036.23,-116.35 2753,-89.6 2377.55,-54.14 1151.75,-38.3 908.99,-35.47"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="909.08,-31.97 899.04,-35.35 909,-38.97 909.08,-31.97"/>
+<text xml:space="preserve" text-anchor="middle" x="4948.99" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node34" class="node">
+<title>TreasurySelfCustody</title>
+<polygon fill="#bbf7d0" stroke="black" points="896.97,-522 787.03,-522 787.03,-486 896.97,-486 896.97,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="842" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">GovernanceTreasury</text>
+<text xml:space="preserve" text-anchor="middle" x="842" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Self&#45;Custody</text>
+</g>
+<g id="edge32" class="edge">
+<title>CrossChainAttacks&#45;&gt;TreasurySelfCustody</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4076.75,-650.46C4087.12,-642.87 4097.28,-634.43 4100,-628.8 4103.71,-621.11 4106.03,-615.64 4100,-609.6 4084.35,-593.91 928.62,-611.9 909,-601.6 881.64,-587.23 863.2,-556.07 852.71,-533"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="856.04,-531.89 848.9,-524.07 849.6,-534.64 856.04,-531.89"/>
+<text xml:space="preserve" text-anchor="middle" x="4119.71" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node38" class="node">
+<title>MessagingAdapterAllowlist</title>
+<polygon fill="#bbf7d0" stroke="black" points="768.65,-522 615.35,-522 615.35,-486 768.65,-486 768.65,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="692" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">MessagingAdapterAllowlist</text>
+<text xml:space="preserve" text-anchor="middle" x="692" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">(governance&#45;curated adapters)</text>
+</g>
+<g id="edge75" class="edge">
+<title>CrossChainAttacks&#45;&gt;MessagingAdapterAllowlist</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.2" d="M4030.42,-650.34C4023.96,-645.79 4016.53,-641.42 4009,-638.8 3823.5,-574.18 3764.31,-616.37 3568,-609.6 3548.64,-608.93 795.67,-609.56 778,-601.6 746.57,-587.45 721.92,-555.54 707.21,-532.25"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.2" points="710.27,-530.56 702.1,-523.81 704.28,-534.18 710.27,-530.56"/>
+<text xml:space="preserve" text-anchor="middle" x="4013.16" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">reduces adapter risk</text>
+</g>
+<g id="node8" class="node">
+<title>ConfigPoisoning</title>
+<polygon fill="#ef4444" stroke="black" points="3426.24,-686.8 3355.76,-686.8 3355.76,-650.8 3426.24,-650.8 3426.24,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3391" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Config / Env</text>
+<text xml:space="preserve" text-anchor="middle" x="3391" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Poisoning</text>
+</g>
+<g id="node43" class="node">
+<title>DeterministicConfig</title>
+<polygon fill="#fde68a" stroke="black" points="1991.41,-522 1862.59,-522 1862.59,-486 1991.41,-486 1991.41,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="1927" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">ExternalAddressResolver</text>
+<text xml:space="preserve" text-anchor="middle" x="1927" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">(Deterministic Config)</text>
+</g>
+<g id="edge33" class="edge">
+<title>ConfigPoisoning&#45;&gt;DeterministicConfig</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3369.31,-650.46C3362.28,-645.79 3354.17,-641.33 3346,-638.8 3309.58,-627.5 3040.95,-632.38 3002.99,-628.8 2949.22,-623.74 2936.82,-614.12 2883,-609.6 2858.56,-607.55 2021.91,-612.63 2000,-601.6 1971.57,-587.29 1951.23,-556.11 1939.36,-533.03"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1942.52,-531.51 1935,-524.05 1936.22,-534.57 1942.52,-531.51"/>
+<text xml:space="preserve" text-anchor="middle" x="3018.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge34" class="edge">
+<title>ConfigPoisoning&#45;&gt;ProposalValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3414.48,-650.56C3420.92,-646.33 3428.05,-642.08 3435,-638.8 3474.96,-619.97 3486.33,-616.27 3530,-609.6 3541.51,-607.84 5198.58,-609.64 5207,-601.6 5233.59,-576.22 5238.17,-464.93 5215,-436.4 5192.49,-408.7 5170.36,-426.51 5131.77,-418.4"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5133.04,-415.12 5122.48,-415.92 5131.23,-421.88 5133.04,-415.12"/>
+<text xml:space="preserve" text-anchor="middle" x="5245.96" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node66" class="node">
+<title>RealTimeMonitoring</title>
+<polygon fill="#fed7aa" stroke="black" points="3645.34,-522 3582.66,-522 3582.66,-486 3645.34,-486 3645.34,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="3614" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">Realtime</text>
+<text xml:space="preserve" text-anchor="middle" x="3614" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Monitoring</text>
+</g>
+<g id="edge35" class="edge">
+<title>ConfigPoisoning&#45;&gt;RealTimeMonitoring</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3368.24,-650.31C3361.42,-645.87 3353.69,-641.58 3346,-638.8 3328.52,-632.5 3275.32,-642.7 3262.99,-628.8 3257.33,-622.42 3257.06,-615.74 3262.99,-609.6 3271.71,-600.56 3477.18,-605.87 3489,-601.6 3529.48,-586.97 3567.31,-553.97 3590.52,-530.63"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="3592.76,-533.35 3597.2,-523.73 3587.73,-528.48 3592.76,-533.35"/>
+<text xml:space="preserve" text-anchor="middle" x="3278.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node9" class="node">
+<title>FeeMAbuse</title>
+<polygon fill="#ef4444" stroke="black" points="3337.4,-686.8 3258.6,-686.8 3258.6,-650.8 3337.4,-650.8 3337.4,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3298" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">FeeM Reward</text>
+<text xml:space="preserve" text-anchor="middle" x="3298" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Hijacking</text>
+</g>
+<g id="edge36" class="edge">
+<title>FeeMAbuse&#45;&gt;TreasurySelfCustody</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3274.2,-650.43C3266.53,-645.76 3257.74,-641.31 3249,-638.8 3206.05,-626.47 2891.64,-630.48 2846.99,-628.8 2677.57,-622.42 2635.48,-614.3 2466,-609.6 2444.38,-609 928.13,-611.68 909,-601.6 881.66,-587.2 863.22,-556.04 852.72,-532.98"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="856.05,-531.88 848.9,-524.06 849.62,-534.63 856.05,-531.88"/>
+<text xml:space="preserve" text-anchor="middle" x="2862.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node36" class="node">
+<title>FeeMGovernanceExtension</title>
+<polygon fill="#bbf7d0" stroke="black" points="794.2,-364.4 679.8,-364.4 679.8,-328.4 794.2,-328.4 794.2,-364.4"/>
+<text xml:space="preserve" text-anchor="middle" x="737" y="-349.4" font-family="Helvetica,sans-Serif" font-size="10.00">FeeMonetization</text>
+<text xml:space="preserve" text-anchor="middle" x="737" y="-337.4" font-family="Helvetica,sans-Serif" font-size="10.00">GovernanceExtension</text>
+</g>
+<g id="edge37" class="edge">
+<title>FeeMAbuse&#45;&gt;FeeMGovernanceExtension</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3273.91,-650.4C3266.3,-645.79 3257.62,-641.38 3249,-638.8 3226.19,-631.98 3051.43,-646.02 3035,-628.8 3029.11,-622.63 3029.09,-615.76 3035,-609.6 3049.86,-594.11 3213.14,-617.09 3228,-601.6 3249.17,-579.54 3248.82,-486.39 3228,-464 3170.34,-402 2932.53,-441.27 2848,-436.4 2660.14,-425.58 2612.31,-436.35 2425,-418.4 2293.48,-405.8 2262.72,-384.71 2131,-374.4 1986.66,-363.1 972.11,-378.3 828,-364.4 820.95,-363.72 813.62,-362.77 806.33,-361.66"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="807.07,-358.24 796.64,-360.08 805.95,-365.15 807.07,-358.24"/>
+<text xml:space="preserve" text-anchor="middle" x="3259.75" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node67" class="node">
+<title>AnomalyDetection</title>
+<polygon fill="#fed7aa" stroke="black" points="3643.12,-418.4 3584.88,-418.4 3584.88,-382.4 3643.12,-382.4 3643.12,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="3614" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">Anomaly</text>
+<text xml:space="preserve" text-anchor="middle" x="3614" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">Detection</text>
+</g>
+<g id="edge38" class="edge">
+<title>FeeMAbuse&#45;&gt;AnomalyDetection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3292.19,-650.34C3289.07,-637.31 3287.71,-620.03 3298,-609.6 3310.04,-597.4 3898.09,-604.38 3915,-601.6 4111.33,-569.37 4145.9,-503.06 4340.99,-464 4364.71,-459.25 4541.61,-463.8 4558,-446 4560.89,-442.86 4560.96,-439.47 4558,-436.4 4550.05,-428.15 3836.45,-407.63 3655.4,-402.55"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="3655.75,-399.06 3645.65,-402.28 3655.55,-406.06 3655.75,-399.06"/>
+<text xml:space="preserve" text-anchor="middle" x="4356.99" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node10" class="node">
+<title>CrowdfundingAttacks</title>
+<polygon fill="#ef4444" stroke="black" points="2955.85,-686.8 2878.15,-686.8 2878.15,-650.8 2955.85,-650.8 2955.85,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2917" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Crowdfunding</text>
+<text xml:space="preserve" text-anchor="middle" x="2917" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Attacks</text>
+</g>
+<g id="edge39" class="edge">
+<title>CrowdfundingAttacks&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2892.42,-650.6C2885.42,-646.27 2877.62,-641.96 2870,-638.8 2852.28,-631.45 2839.89,-643.86 2828,-628.8 2822.71,-622.1 2821.99,-615.66 2828,-609.6 2844.99,-592.45 3678.9,-617.57 3697,-601.6 3752.5,-552.63 3769.92,-489.15 3718,-436.4 3674.13,-391.82 2645.35,-451.55 2592.32,-418.4 2573.72,-406.78 2588.36,-386.38 2570,-374.4 2553.04,-363.33 2407.98,-367.72 2388,-364.4 2329.7,-354.72 2318.52,-336.6 2260,-328.4 2233.33,-324.66 345.01,-332.59 321,-320.4 274.92,-297 294.74,-255.86 252,-226.8 226.15,-209.22 206.92,-230.06 184,-208.8 166.41,-192.48 158.49,-166.01 154.92,-145.6"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="158.42,-145.32 153.52,-135.92 151.49,-146.32 158.42,-145.32"/>
+<text xml:space="preserve" text-anchor="middle" x="2607.66" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node33" class="node">
+<title>EmergencyPause</title>
+<polygon fill="#bbf7d0" stroke="black" points="896.69,-262.8 777.31,-262.8 777.31,-226.8 896.69,-226.8 896.69,-262.8"/>
+<text xml:space="preserve" text-anchor="middle" x="837" y="-247.8" font-family="Helvetica,sans-Serif" font-size="10.00">Governance&#45;Controlled</text>
+<text xml:space="preserve" text-anchor="middle" x="837" y="-235.8" font-family="Helvetica,sans-Serif" font-size="10.00">Emergency Pause</text>
+</g>
+<g id="edge40" class="edge">
+<title>CrowdfundingAttacks&#45;&gt;EmergencyPause</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2916.58,-650.52C2917.28,-637.03 2920.71,-619.06 2933,-609.6 2951.27,-595.54 3745.48,-616.58 3763,-601.6 3791.25,-577.45 3815.06,-462.9 3789,-436.4 3768.04,-415.09 2742,-425.65 2713,-418.4 2671.35,-407.99 2667.6,-388.37 2627,-374.4 2601.43,-365.6 2414.91,-331.04 2388,-328.4 2367.56,-326.39 927.89,-328.48 909,-320.4 886.31,-310.69 867.28,-289.99 854.49,-272.85"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="857.56,-271.14 848.92,-265.01 851.86,-275.19 857.56,-271.14"/>
+<text xml:space="preserve" text-anchor="middle" x="3810.32" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge41" class="edge">
+<title>CrowdfundingAttacks&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2894.26,-650.44C2886.9,-645.76 2878.46,-641.31 2870,-638.8 2826.53,-625.89 2506.67,-636.6 2462,-628.8 2424.31,-622.21 2407.42,-628.61 2380.32,-601.6 2334.61,-556.05 2378.45,-510.77 2334,-464 2310.96,-439.76 2296.74,-443.2 2264,-436.4 2038.78,-389.6 1969.3,-463.57 1740.66,-418.42"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1741.52,-415.03 1731.02,-416.46 1740.12,-421.89 1741.52,-415.03"/>
+<text xml:space="preserve" text-anchor="middle" x="2395.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node45" class="node">
+<title>FormalVerification</title>
+<polygon fill="#fde68a" stroke="black" points="1558.96,-526 1439.04,-526 1439.04,-482 1558.96,-482 1558.96,-526"/>
+<text xml:space="preserve" text-anchor="middle" x="1499" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">Certora / formal specs</text>
+<text xml:space="preserve" text-anchor="middle" x="1499" y="-501" font-family="Helvetica,sans-Serif" font-size="10.00">(targeted modules;</text>
+<text xml:space="preserve" text-anchor="middle" x="1499" y="-489" font-family="Helvetica,sans-Serif" font-size="10.00">see formal&#45;verification/)</text>
+</g>
+<g id="edge42" class="edge">
+<title>CrowdfundingAttacks&#45;&gt;FormalVerification</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2894.27,-650.38C2886.92,-645.71 2878.47,-641.27 2870,-638.8 2795.03,-616.96 2243.44,-646.19 2167.32,-628.8 2147.58,-624.29 2145.74,-614.11 2126,-609.6 2095.78,-602.69 1595.46,-615.98 1568,-601.6 1541.92,-587.94 1523.46,-559.44 1512.23,-536.92"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1515.48,-535.6 1508.07,-528.04 1509.15,-538.58 1515.48,-535.6"/>
+<text xml:space="preserve" text-anchor="middle" x="2182.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node46" class="node">
+<title>PenetrationTests</title>
+<polygon fill="#fde68a" stroke="black" points="1693.02,-526 1576.98,-526 1576.98,-482 1693.02,-482 1693.02,-526"/>
+<text xml:space="preserve" text-anchor="middle" x="1635" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">Penetration exercises</text>
+<text xml:space="preserve" text-anchor="middle" x="1635" y="-501" font-family="Helvetica,sans-Serif" font-size="10.00">(ad&#45;hoc scripts;</text>
+<text xml:space="preserve" text-anchor="middle" x="1635" y="-489" font-family="Helvetica,sans-Serif" font-size="10.00">scope varies by sprint)</text>
+</g>
+<g id="edge43" class="edge">
+<title>CrowdfundingAttacks&#45;&gt;PenetrationTests</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2894.27,-650.39C2886.92,-645.71 2878.47,-641.27 2870,-638.8 2801.13,-618.68 2291.39,-654.28 2224.32,-628.8 2212.08,-624.15 2214.23,-614.25 2202,-609.6 2176.03,-599.73 1726.51,-614.68 1702,-601.6 1676.28,-587.87 1658.4,-559.38 1647.62,-536.88"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1650.93,-535.7 1643.63,-528.02 1644.54,-538.58 1650.93,-535.7"/>
+<text xml:space="preserve" text-anchor="middle" x="2239.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node11" class="node">
+<title>FlashLoanAttacks</title>
+<polygon fill="#ef4444" stroke="black" points="4251.74,-686.8 4186.26,-686.8 4186.26,-650.8 4251.74,-650.8 4251.74,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4219" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Flash Loan</text>
+<text xml:space="preserve" text-anchor="middle" x="4219" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Attacks</text>
+</g>
+<g id="edge44" class="edge">
+<title>FlashLoanAttacks&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4239.12,-650.57C4245.68,-645.9 4253.28,-641.42 4261,-638.8 4282.28,-631.58 4444.11,-640.97 4463,-628.8 4534.91,-582.46 4532.84,-475.99 4457,-436.4 4409.32,-411.51 3541.14,-431.61 3489,-418.4 3447.76,-407.95 3442.73,-391.98 3404,-374.4 3353.12,-351.3 3341.86,-338.99 3287,-328.4 3255.28,-322.28 2153.36,-333.88 2124,-320.4 2102.8,-310.66 2085.8,-290.26 2074.51,-273.25"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2077.63,-271.64 2069.36,-265.02 2071.7,-275.35 2077.63,-271.64"/>
+<text xml:space="preserve" text-anchor="middle" x="4487.03" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge45" class="edge">
+<title>FlashLoanAttacks&#45;&gt;KInvariantMonitoring</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4239.11,-650.54C4245.67,-645.87 4253.27,-641.4 4261,-638.8 4308.86,-622.72 4439.05,-641.2 4488,-628.8 4514.82,-622.01 4521.35,-617.49 4544,-601.6 4639.6,-534.53 4772.8,-439.73 4676,-374.4 4653.42,-359.16 4457.74,-369.63 4431,-364.4 4384.64,-355.33 4377.5,-336.73 4331,-328.4 4307.21,-324.14 3480.99,-333.99 3461,-320.4 3410.1,-285.79 3451.08,-222.23 3394,-199.2 3361.36,-186.03 2158.99,-205.88 2127,-191.2 2105.8,-181.47 2088.8,-161.07 2077.51,-144.06"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2080.63,-142.44 2072.35,-135.82 2074.69,-146.16 2080.63,-142.44"/>
+<text xml:space="preserve" text-anchor="middle" x="4724.22" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge46" class="edge">
+<title>FlashLoanAttacks&#45;&gt;PriceImpactProtection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4240.67,-650.32C4246.93,-645.99 4253.97,-641.75 4261,-638.8 4282.7,-629.7 4298.01,-646.94 4313,-628.8 4318.43,-622.22 4319.01,-615.66 4313,-609.6 4295.15,-591.59 3420.33,-617.16 3400.32,-601.6 3350.38,-562.78 3412.24,-504.91 3364,-464 3264.24,-379.4 3201.57,-444.05 3071,-436.4 2725.28,-416.15 2637.92,-435.01 2292,-418.4 2237.89,-415.8 2176.82,-411.29 2130.78,-407.56"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2131.17,-404.08 2120.92,-406.76 2130.6,-411.06 2131.17,-404.08"/>
+<text xml:space="preserve" text-anchor="middle" x="3415.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node12" class="node">
+<title>KInvariantManipulation</title>
+<polygon fill="#ef4444" stroke="black" points="4342.35,-686.8 4269.65,-686.8 4269.65,-650.8 4342.35,-650.8 4342.35,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4306" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">K&#45;Invariant</text>
+<text xml:space="preserve" text-anchor="middle" x="4306" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Manipulation</text>
+</g>
+<g id="node40" class="node">
+<title>InputValidation</title>
+<polygon fill="#fde68a" stroke="black" points="1806.96,-418.4 1747.04,-418.4 1747.04,-382.4 1806.96,-382.4 1806.96,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1777" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">Input</text>
+<text xml:space="preserve" text-anchor="middle" x="1777" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">Validation</text>
+</g>
+<g id="edge47" class="edge">
+<title>KInvariantManipulation&#45;&gt;InputValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4286.34,-650.5C4268.94,-636.41 4242.16,-617.6 4215,-609.6 4200.55,-605.34 3142.22,-610.84 3130.32,-601.6 3080.35,-562.82 3141.29,-506.01 3094,-464 3085.78,-456.7 2908.96,-437.26 2898,-436.4 2781.29,-427.25 1977.54,-443.04 1818.73,-418.07"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1819.83,-414.71 1809.36,-416.33 1818.55,-421.59 1819.83,-414.71"/>
+<text xml:space="preserve" text-anchor="middle" x="3145.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge48" class="edge">
+<title>KInvariantManipulation&#45;&gt;StateValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4328.76,-650.38C4335.85,-645.83 4343.93,-641.45 4352,-638.8 4423.41,-615.32 4487.73,-670.84 4517,-601.6 4545.65,-533.82 4566.54,-478.23 4506,-436.4 4459.51,-404.28 3544.62,-428.41 3489,-418.4 3431.03,-407.97 3420.76,-390.11 3364,-374.4 3265.63,-347.17 3240.51,-339.03 3139,-328.4 3123.13,-326.74 2003.62,-328.71 1990,-320.4 1973.64,-310.41 1963.8,-291.08 1958.1,-274.59"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1961.53,-273.84 1955.27,-265.3 1954.84,-275.88 1961.53,-273.84"/>
+<text xml:space="preserve" text-anchor="middle" x="4532.77" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge49" class="edge">
+<title>KInvariantManipulation&#45;&gt;KInvariantMonitoring</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4328.74,-650.31C4335.82,-645.76 4343.91,-641.4 4352,-638.8 4387.39,-627.42 4484.71,-643.16 4519,-628.8 4658.24,-570.51 4848.87,-482.97 4744,-374.4 4732.88,-362.88 4471.37,-368.88 4456,-364.4 4425.78,-355.58 4425.33,-336.83 4395,-328.4 4370.75,-321.66 3509.48,-335.03 3489,-320.4 3453.11,-294.76 3482.8,-261.84 3456,-226.8 3442.88,-209.64 3436.6,-205.69 3416,-199.2 3381.85,-188.44 2159.54,-206.13 2127,-191.2 2105.8,-181.47 2088.8,-161.07 2077.51,-144.06"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2080.63,-142.44 2072.35,-135.82 2074.69,-146.16 2080.63,-142.44"/>
+<text xml:space="preserve" text-anchor="middle" x="4786.54" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node13" class="node">
+<title>PriceManipulation</title>
+<polygon fill="#ef4444" stroke="black" points="3240.35,-686.8 3167.65,-686.8 3167.65,-650.8 3240.35,-650.8 3240.35,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3204" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Price</text>
+<text xml:space="preserve" text-anchor="middle" x="3204" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Manipulation</text>
+</g>
+<g id="edge50" class="edge">
+<title>PriceManipulation&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3178.17,-650.35C3171.98,-646.4 3165.33,-642.33 3159,-638.8 3149.97,-633.77 3143.52,-637.54 3138,-628.8 3133.44,-621.58 3132,-615.67 3138,-609.6 3152.44,-595.01 3860.73,-614.12 3877,-601.6 3927.27,-562.9 3874.43,-512.78 3915,-464 3928.12,-448.23 3966.35,-451.06 3952,-436.4 3918.76,-402.45 3137.48,-443.27 3097,-418.4 3058.37,-394.67 3087.65,-352.09 3049,-328.4 3028.96,-316.12 2649.44,-322.16 2626,-320.4 2447.31,-307 2238.75,-275.41 2131.26,-257.95"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2132.13,-254.54 2121.69,-256.38 2131,-261.45 2132.13,-254.54"/>
+<text xml:space="preserve" text-anchor="middle" x="3970.52" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge51" class="edge">
+<title>PriceManipulation&#45;&gt;PriceImpactProtection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3182.33,-650.42C3175.29,-645.74 3167.18,-641.29 3159,-638.8 3131.89,-630.53 2668.84,-649.03 2649,-628.8 2641.49,-621.15 2592.51,-526.51 2649.32,-464 2676.9,-433.65 2805.45,-476.38 2833,-446 2835.87,-442.84 2835.95,-439.48 2833,-436.4 2816.21,-418.91 2421.22,-419.51 2397,-418.4 2305.23,-414.2 2199.47,-408.79 2131.04,-405.21"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2131.42,-401.73 2121.25,-404.7 2131.05,-408.72 2131.42,-401.73"/>
+<text xml:space="preserve" text-anchor="middle" x="2664.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge52" class="edge">
+<title>PriceManipulation&#45;&gt;OracleValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3182.3,-650.52C3175.26,-645.85 3167.15,-641.38 3159,-638.8 3105.77,-621.98 2960.98,-646.38 2908,-628.8 2893.68,-624.05 2893.29,-616.75 2880,-609.6 2871.68,-605.13 2866.21,-608.98 2860.32,-601.6 2813.85,-543.47 2889.24,-485.14 2833,-436.4 2816.27,-421.9 2098.66,-420.97 1993.48,-417.94"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1993.9,-414.46 1983.75,-417.49 1993.57,-421.45 1993.9,-414.46"/>
+<text xml:space="preserve" text-anchor="middle" x="2875.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node14" class="node">
+<title>LiquidityDrain</title>
+<polygon fill="#ef4444" stroke="black" points="3150,-686.8 3096,-686.8 3096,-650.8 3150,-650.8 3150,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3123" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Liquidity</text>
+<text xml:space="preserve" text-anchor="middle" x="3123" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Drain</text>
+</g>
+<g id="edge53" class="edge">
+<title>LiquidityDrain&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3106.15,-650.45C3100.54,-645.78 3093.94,-641.33 3087,-638.8 3035.2,-619.94 2645.27,-638.48 2591,-628.8 2554.57,-622.3 2537.2,-628.98 2512.32,-601.6 2469.99,-555.04 2523.83,-508.16 2479,-464 2439.4,-424.99 2412.15,-443.37 2357,-436.4 2224.07,-419.59 1890.98,-444.72 1740.74,-418.31"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1741.5,-414.89 1731.02,-416.45 1740.18,-421.77 1741.5,-414.89"/>
+<text xml:space="preserve" text-anchor="middle" x="2527.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge54" class="edge">
+<title>LiquidityDrain&#45;&gt;InputValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3106.15,-650.46C3100.54,-645.79 3093.94,-641.33 3087,-638.8 3039.81,-621.57 2683.41,-642.21 2635,-628.8 2611.49,-622.29 2603.12,-620.19 2587.32,-601.6 2535.4,-540.54 2586.35,-472.92 2515,-436.4 2448.47,-402.35 1933.34,-432.73 1818.93,-417.9"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1819.82,-414.5 1809.37,-416.27 1818.64,-421.4 1819.82,-414.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2602.66" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge55" class="edge">
+<title>LiquidityDrain&#45;&gt;StateValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3119.67,-650.56C3118.21,-637.3 3118.86,-619.59 3130,-609.6 3144.62,-596.48 3821.37,-613.49 3837,-601.6 3837.9,-600.92 3881.84,-447.11 3882,-446 3882.6,-441.78 3884.98,-439.45 3882,-436.4 3850.41,-404.1 3111.66,-433.28 3069,-418.4 3038.45,-407.75 3041.03,-386.44 3011,-374.4 2843.26,-307.17 2787.36,-339.81 2607,-328.4 2589.89,-327.32 2004.6,-329.37 1990,-320.4 1973.67,-310.36 1963.83,-291.03 1958.13,-274.56"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1961.56,-273.81 1955.29,-265.27 1954.86,-275.86 1961.56,-273.81"/>
+<text xml:space="preserve" text-anchor="middle" x="3898.81" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node15" class="node">
+<title>RFQLimitSpoofing</title>
+<polygon fill="#ef4444" stroke="black" points="3660.57,-686.8 3563.43,-686.8 3563.43,-650.8 3660.57,-650.8 3660.57,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3612" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">RFQ / Signed limit</text>
+<text xml:space="preserve" text-anchor="middle" x="3612" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Spoofing &amp; replay</text>
+</g>
+<g id="edge56" class="edge">
+<title>RFQLimitSpoofing&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3641.56,-650.44C3650.43,-645.95 3660.38,-641.59 3670,-638.8 3793.56,-602.96 3829.88,-621.32 3958,-609.6 3968.88,-608.6 4048.6,-609.63 4056,-601.6 4105.78,-547.6 4107.17,-484.88 4052,-436.4 4027.02,-414.45 2886.99,-427.45 2854.99,-418.4 2818.17,-407.98 2817.03,-387.27 2781,-374.4 2651.9,-328.28 2612.68,-338.91 2476,-328.4 2461.6,-327.29 409.49,-327.64 397,-320.4 355.46,-296.3 382.49,-254.14 343,-226.8 302.63,-198.85 277,-232.5 234,-208.8 206.24,-193.5 183.17,-165.07 168.65,-143.81"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="171.61,-141.96 163.2,-135.52 165.76,-145.8 171.61,-141.96"/>
+<text xml:space="preserve" text-anchor="middle" x="2870.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge57" class="edge">
+<title>RFQLimitSpoofing&#45;&gt;InputValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3583.68,-650.33C3574.82,-645.71 3564.78,-641.32 3555,-638.8 3490.4,-622.17 3320.85,-639.44 3255,-628.8 3225.26,-623.99 3219.75,-614.34 3190,-609.6 3174.8,-607.18 2924.56,-611.76 2912.99,-601.6 2866.45,-560.74 2928.11,-513.58 2891,-464 2873.89,-441.15 2860.79,-442.93 2833,-436.4 2616.62,-385.52 2055.89,-463.81 1818.99,-418.35"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1819.85,-414.95 1809.35,-416.37 1818.44,-421.81 1819.85,-414.95"/>
+<text xml:space="preserve" text-anchor="middle" x="2928.99" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge58" class="edge">
+<title>RFQLimitSpoofing&#45;&gt;StateValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3640.85,-650.34C3649.87,-645.72 3660.07,-641.33 3670,-638.8 3731.41,-623.16 3894.81,-648.62 3955,-628.8 3969.33,-624.08 3968.75,-614.57 3983,-609.6 3994.99,-605.42 4087.93,-610.49 4097,-601.6 4149.61,-550.01 4162.52,-489.08 4111,-436.4 4079.84,-404.53 3350.35,-435.02 3309,-418.4 3282.15,-407.61 3287.52,-385.99 3261,-374.4 3236.28,-363.59 3166.86,-366.97 3140,-364.4 2993.14,-350.32 2957.28,-337.13 2810,-328.4 2798.63,-327.73 1999.71,-326.35 1990,-320.4 1973.65,-310.39 1963.82,-291.05 1958.11,-274.58"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1961.55,-273.83 1955.28,-265.28 1954.85,-275.87 1961.55,-273.83"/>
+<text xml:space="preserve" text-anchor="middle" x="4134.77" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node51" class="node">
+<title>EIP712OrderBinding</title>
+<polygon fill="#fde68a" stroke="black" points="1420.76,-538 1275.24,-538 1275.24,-470 1420.76,-470 1420.76,-538"/>
+<text xml:space="preserve" text-anchor="middle" x="1348" y="-525" font-family="Helvetica,sans-Serif" font-size="10.00">EIP&#45;712 intents +</text>
+<text xml:space="preserve" text-anchor="middle" x="1348" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">SignedLimitOrderRegistry /</text>
+<text xml:space="preserve" text-anchor="middle" x="1348" y="-501" font-family="Helvetica,sans-Serif" font-size="10.00">RFQIntentSettlement /</text>
+<text xml:space="preserve" text-anchor="middle" x="1348" y="-489" font-family="Helvetica,sans-Serif" font-size="10.00">PrivacyEntryRouter /</text>
+<text xml:space="preserve" text-anchor="middle" x="1348" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">AegisExecutionRelay nonces</text>
+</g>
+<g id="edge59" class="edge">
+<title>RFQLimitSpoofing&#45;&gt;EIP712OrderBinding</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3583.99,-650.43C3575.05,-645.76 3564.9,-641.31 3555,-638.8 3512.22,-627.97 3201.93,-632.88 3157.99,-628.8 3104.65,-623.85 3092.39,-614.01 3039,-609.6 3016.73,-607.76 1450.26,-611.04 1430,-601.6 1405.95,-590.39 1386.36,-568.3 1372.36,-548.07"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1375.34,-546.23 1366.92,-539.81 1369.5,-550.08 1375.34,-546.23"/>
+<text xml:space="preserve" text-anchor="middle" x="3173.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node16" class="node">
+<title>EscrowSettlementAbuse</title>
+<polygon fill="#ef4444" stroke="black" points="3078.18,-686.8 2973.82,-686.8 2973.82,-650.8 3078.18,-650.8 3078.18,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3026" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Transparent escrow</text>
+<text xml:space="preserve" text-anchor="middle" x="3026" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">abuse</text>
+</g>
+<g id="edge60" class="edge">
+<title>EscrowSettlementAbuse&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2995.9,-650.4C2986.33,-645.73 2975.5,-641.28 2965,-638.8 2913.63,-626.64 2540.55,-644.02 2490,-628.8 2468.34,-622.28 2460.34,-619.86 2446.99,-601.6 2409.68,-550.57 2455.97,-508.43 2411,-464 2374.84,-428.27 2350.35,-443.39 2300,-436.4 2179.74,-419.71 1878.09,-442.39 1740.54,-418.27"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1741.5,-414.89 1731.02,-416.44 1740.18,-421.77 1741.5,-414.89"/>
+<text xml:space="preserve" text-anchor="middle" x="2462.99" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge61" class="edge">
+<title>EscrowSettlementAbuse&#45;&gt;StateValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3037.72,-650.4C3048.25,-636.46 3065.08,-617.9 3085,-609.6 3103.36,-601.95 3785.28,-613.78 3801,-601.6 3815.97,-590 3856.27,-449.92 3843,-436.4 3805.79,-398.49 2936.32,-438.12 2887,-418.4 2860.13,-407.66 2865.42,-386.21 2839,-374.4 2648.98,-289.51 2580.75,-340.8 2373,-328.4 2351.76,-327.13 2008.09,-331.61 1990,-320.4 1973.71,-310.3 1963.87,-290.97 1958.15,-274.51"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1961.59,-273.77 1955.31,-265.24 1954.9,-275.83 1961.59,-273.77"/>
+<text xml:space="preserve" text-anchor="middle" x="3861.58" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node54" class="node">
+<title>EscrowAccessInvariant</title>
+<polygon fill="#fde68a" stroke="black" points="1844.63,-522 1711.37,-522 1711.37,-486 1844.63,-486 1844.63,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="1778" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">TransparentEscrowOrders</text>
+<text xml:space="preserve" text-anchor="middle" x="1778" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">role + state checks</text>
+</g>
+<g id="edge62" class="edge">
+<title>EscrowSettlementAbuse&#45;&gt;EscrowAccessInvariant</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2995.9,-650.39C2986.33,-645.71 2975.5,-641.27 2965,-638.8 2907.13,-625.17 2489.32,-632.68 2429.99,-628.8 2353.68,-623.81 2335.31,-614.63 2259,-609.6 2236.54,-608.12 1874.15,-611.63 1854,-601.6 1824.94,-587.13 1803.59,-555.75 1791.03,-532.67"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1794.25,-531.27 1786.56,-523.99 1788.03,-534.48 1794.25,-531.27"/>
+<text xml:space="preserve" text-anchor="middle" x="2445.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node17" class="node">
+<title>DynamicSinkHijack</title>
+<polygon fill="#ef4444" stroke="black" points="4566.3,-686.8 4449.7,-686.8 4449.7,-650.8 4566.3,-650.8 4566.3,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4508" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">DAO dynamic revenue</text>
+<text xml:space="preserve" text-anchor="middle" x="4508" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">sink hijack</text>
+</g>
+<g id="edge63" class="edge">
+<title>DynamicSinkHijack&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4542.12,-650.34C4552.71,-645.73 4564.6,-641.33 4576,-638.8 4592.17,-635.21 4862.48,-640.71 4874,-628.8 4879.93,-622.67 4879.61,-616.03 4874,-609.6 4865.3,-599.64 4826.78,-607.63 4815,-601.6 4715.14,-550.45 4708.36,-508.36 4641.32,-418.4 4627.84,-400.31 4635.27,-386.13 4616,-374.4 4594.62,-361.39 4415.58,-369.1 4391,-364.4 4342.96,-355.22 4335.2,-336.73 4287,-328.4 4263.24,-324.29 3441.32,-329.53 3419,-320.4 3363.55,-297.71 3376.14,-252.45 3322,-226.8 3227.36,-181.96 3192.53,-205.54 3088,-199.2 3072.9,-198.28 922.46,-198.11 909,-191.2 889.86,-181.38 875.93,-161.28 867.01,-144.42"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="870.35,-143.28 862.8,-135.84 864.07,-146.36 870.35,-143.28"/>
+<text xml:space="preserve" text-anchor="middle" x="4656.66" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge64" class="edge">
+<title>DynamicSinkHijack&#45;&gt;TimelockController</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4541.74,-650.34C4552.41,-645.66 4564.45,-641.23 4576,-638.8 4622.43,-629.03 5382.64,-631.76 5430,-628.8 5483.35,-625.46 5633.4,-641.48 5669,-601.6 5709.73,-555.98 5702.61,-515.09 5669,-464 5633.2,-409.58 5490.83,-447.41 5399,-418.4 5361.78,-406.64 5358.42,-390.8 5323,-374.4 5267.77,-348.82 5253.61,-340.73 5194,-328.4 5140.79,-317.39 5126.14,-325.09 5072,-320.4 4684.99,-286.88 4590.33,-256.37 4203,-226.8 4026,-213.29 3978.4,-241.92 3804,-208.8 3791.08,-206.35 3788.95,-201.53 3776,-199.2 3707.08,-186.81 3528.78,-208.79 3461,-191.2 3366.79,-166.75 3361.02,-114.78 3267,-89.6 3061.19,-34.48 3000.97,-76.3 2788,-70 2034.42,-47.72 1114.1,-37.5 908.87,-35.41"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="909.08,-31.91 899.04,-35.31 909.01,-38.91 909.08,-31.91"/>
+<text xml:space="preserve" text-anchor="middle" x="5316.29" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge65" class="edge">
+<title>DynamicSinkHijack&#45;&gt;ProposalValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4541.75,-650.4C4552.43,-645.72 4564.46,-641.28 4576,-638.8 4666.15,-619.43 5342.5,-669.38 5405,-601.6 5455.17,-547.19 5449.11,-471.59 5384,-436.4 5336.85,-410.92 5200.82,-429.55 5131.96,-418.17"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5132.89,-414.79 5122.39,-416.21 5131.48,-421.65 5132.89,-414.79"/>
+<text xml:space="preserve" text-anchor="middle" x="5453.67" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node64" class="node">
+<title>ExecutionTimelock</title>
+<polygon fill="#fbcfe8" stroke="black" points="5197.96,-418.4 5138.04,-418.4 5138.04,-382.4 5197.96,-382.4 5197.96,-418.4"/>
+<text xml:space="preserve" text-anchor="middle" x="5168" y="-403.4" font-family="Helvetica,sans-Serif" font-size="10.00">Execution</text>
+<text xml:space="preserve" text-anchor="middle" x="5168" y="-391.4" font-family="Helvetica,sans-Serif" font-size="10.00">Timelock</text>
+</g>
+<g id="edge66" class="edge">
+<title>DynamicSinkHijack&#45;&gt;ExecutionTimelock</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4541.74,-650.34C4552.42,-645.67 4564.45,-641.24 4576,-638.8 4662,-620.66 5279.87,-640.36 5367,-628.8 5415.21,-622.4 5443.19,-640.03 5473,-601.6 5510.49,-553.28 5507.16,-514.73 5473,-464 5454.78,-436.94 5436.47,-444.98 5405,-436.4 5386.61,-431.39 5273.07,-415.61 5210.05,-407.05"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5210.65,-403.6 5200.27,-405.73 5209.71,-410.54 5210.65,-403.6"/>
+<text xml:space="preserve" text-anchor="middle" x="5515.22" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node65" class="node">
+<title>DaoRevenueRouterGovernance</title>
+<polygon fill="#fbcfe8" stroke="black" points="5197.64,-522 5054.36,-522 5054.36,-486 5197.64,-486 5197.64,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="5126" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">DaoDynamicRevenueRouter</text>
+<text xml:space="preserve" text-anchor="middle" x="5126" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">(governed sink set)</text>
+</g>
+<g id="edge67" class="edge">
+<title>DynamicSinkHijack&#45;&gt;DaoRevenueRouterGovernance</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4541.76,-650.43C4552.43,-645.75 4564.46,-641.3 4576,-638.8 4665.72,-619.33 4899.71,-650.15 4989,-628.8 5016.3,-622.27 5023.86,-618.86 5046,-601.6 5071.12,-582.02 5093.66,-553.27 5108.36,-532.23"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5111.18,-534.29 5113.92,-524.06 5105.4,-530.35 5111.18,-534.29"/>
+<text xml:space="preserve" text-anchor="middle" x="5050.6" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node18" class="node">
+<title>GaugeBondMisconfig</title>
+<polygon fill="#ef4444" stroke="black" points="4673.41,-686.8 4584.59,-686.8 4584.59,-650.8 4673.41,-650.8 4673.41,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="4629" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Gauge / bond</text>
+<text xml:space="preserve" text-anchor="middle" x="4629" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">misconfiguration</text>
+</g>
+<g id="edge68" class="edge">
+<title>GaugeBondMisconfig&#45;&gt;TimelockController</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4655.41,-650.34C4663.88,-645.66 4673.52,-641.23 4683,-638.8 4740.1,-624.15 5687.96,-647.08 5744,-628.8 5815.46,-605.49 5828.67,-522.92 5782,-464 5721.94,-388.19 5436.84,-420.86 5358.32,-364.4 5343.03,-353.41 5351.73,-338.74 5336,-328.4 5079.21,-159.54 4957.92,-256.25 4652,-226.8 4377.44,-200.37 4307.71,-207.37 4032,-199.2 4016.92,-198.75 3503.02,-196.77 3489,-191.2 3426.84,-166.52 3439.65,-115.52 3378,-89.6 3231.52,-28.01 3179.81,-75.65 3021,-70 2169.91,-39.73 1128.7,-35.62 908.93,-35.08"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="909.2,-31.58 899.19,-35.06 909.18,-38.58 909.2,-31.58"/>
+<text xml:space="preserve" text-anchor="middle" x="5373.66" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge69" class="edge">
+<title>GaugeBondMisconfig&#45;&gt;QuorumRequirements</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4655.74,-650.37C4664.14,-645.76 4673.66,-641.36 4683,-638.8 4734.48,-624.7 4872.42,-645.86 4923,-628.8 4943.02,-622.05 4948.61,-617.95 4962,-601.6 4978.38,-581.58 4989.49,-554.2 4996.14,-533.69"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="4999.45,-534.85 4999.01,-524.26 4992.75,-532.81 4999.45,-534.85"/>
+<text xml:space="preserve" text-anchor="middle" x="4970.07" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge70" class="edge">
+<title>GaugeBondMisconfig&#45;&gt;ProposalValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4655.42,-650.36C4663.88,-645.68 4673.52,-641.25 4683,-638.8 4768.86,-616.63 5393.25,-641.55 5481,-628.8 5524.89,-622.42 5550.26,-636.97 5577,-601.6 5613.88,-552.82 5615.57,-511.46 5577,-464 5539.2,-417.48 5504.42,-444.26 5445,-436.4 5309.36,-418.46 5268.08,-449.25 5132.01,-418.56"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5132.9,-415.17 5122.37,-416.3 5131.31,-421.99 5132.9,-415.17"/>
+<text xml:space="preserve" text-anchor="middle" x="5620.63" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge71" class="edge">
+<title>GaugeBondMisconfig&#45;&gt;ExecutionTimelock</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M4655.42,-650.34C4663.88,-645.66 4673.52,-641.23 4683,-638.8 4696.95,-635.22 5709.86,-639.03 5720,-628.8 5744.3,-604.26 5794.89,-581.07 5640,-464 5596.34,-431 5574,-445.26 5520,-436.4 5408.98,-418.19 5276.6,-408.12 5210.28,-403.86"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="5210.62,-400.38 5200.42,-403.25 5210.18,-407.36 5210.62,-400.38"/>
+<text xml:space="preserve" text-anchor="middle" x="5763.01" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node19" class="node">
+<title>MessagingAdapterSpoof</title>
+<polygon fill="#ef4444" stroke="black" points="2334.24,-686.8 2213.76,-686.8 2213.76,-650.8 2334.24,-650.8 2334.24,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2274" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Cross&#45;chain messaging</text>
+<text xml:space="preserve" text-anchor="middle" x="2274" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">adapter spoofing</text>
+</g>
+<g id="edge72" class="edge">
+<title>MessagingAdapterSpoof&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2213.57,-666.57C2103.26,-663.29 1884.27,-651.47 1926,-609.6 1937.25,-598.31 4206.14,-607.36 4221,-601.6 4305.97,-568.68 4289.72,-500.99 4373,-464 4446.57,-431.33 4606.26,-495.86 4552,-436.4 4537.21,-420.19 4376.97,-421.98 4355.32,-418.4 4186.93,-390.55 4151.36,-349.49 3982,-328.4 3942.8,-323.52 3309.21,-330.4 3271,-320.4 3187.18,-298.46 3183.43,-250.16 3100,-226.8 2969.12,-190.16 2624.87,-202.61 2489,-199.2 2467.06,-198.65 928.52,-201.23 909,-191.2 889.87,-181.37 875.93,-161.27 867.01,-144.41"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="870.36,-143.27 862.81,-135.84 864.07,-146.36 870.36,-143.27"/>
+<text xml:space="preserve" text-anchor="middle" x="4370.66" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node31" class="node">
+<title>RoleBasedAccess</title>
+<polygon fill="#bbf7d0" stroke="black" points="597.62,-522 514.38,-522 514.38,-486 597.62,-486 597.62,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="556" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">Role&#45;Based</text>
+<text xml:space="preserve" text-anchor="middle" x="556" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Access Control</text>
+</g>
+<g id="edge73" class="edge">
+<title>MessagingAdapterSpoof&#45;&gt;RoleBasedAccess</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2213.6,-667.41C1969.08,-665.67 1051.98,-657.33 763.32,-628.8 692.7,-621.82 663.24,-643.53 606,-601.6 583.63,-585.22 570.48,-555.85 563.32,-533.79"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="566.75,-533.03 560.55,-524.44 560.04,-535.02 566.75,-533.03"/>
+<text xml:space="preserve" text-anchor="middle" x="778.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge74" class="edge">
+<title>MessagingAdapterSpoof&#45;&gt;MessagingAdapterAllowlist</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2213.4,-667.33C2034.9,-665.63 1495.6,-658.24 1049.32,-628.8 1045.54,-628.55 781.37,-603.32 778,-601.6 747.61,-586.1 723,-554.97 708.01,-532.22"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="711.07,-530.51 702.77,-523.93 705.16,-534.26 711.07,-530.51"/>
+<text xml:space="preserve" text-anchor="middle" x="1064.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node20" class="node">
+<title>TgePegMisread</title>
+<polygon fill="#ef4444" stroke="black" points="3788.96,-686.8 3679.04,-686.8 3679.04,-650.8 3788.96,-650.8 3788.96,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3734" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">TGE ERC&#45;20 peg</text>
+<text xml:space="preserve" text-anchor="middle" x="3734" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">UI / operator misread</text>
+</g>
+<g id="edge76" class="edge">
+<title>TgePegMisread&#45;&gt;DeterministicConfig</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.2" d="M3701.96,-650.43C3692,-645.82 3680.79,-641.4 3670,-638.8 3624.36,-627.81 3505.77,-632.64 3458.99,-628.8 3385.85,-622.79 3368.24,-614.1 3295,-609.6 3277.05,-608.5 2016.08,-609.66 2000,-601.6 1971.42,-587.26 1951.03,-555.86 1939.19,-532.73"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.2" points="1942.37,-531.26 1934.86,-523.79 1936.07,-534.31 1942.37,-531.26"/>
+<text xml:space="preserve" text-anchor="middle" x="3474.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge77" class="edge">
+<title>TgePegMisread&#45;&gt;ProposalValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.2" d="M3766.01,-650.31C3775.97,-645.69 3787.18,-641.3 3798,-638.8 3872.08,-621.66 4064.48,-637.63 4140,-628.8 4181.92,-623.9 4191.03,-614.05 4233,-609.6 4247.32,-608.08 5259.85,-611.82 5270,-601.6 5313.08,-558.19 5290.19,-521.73 5270,-464 5264.82,-449.19 5261.58,-444.25 5248,-436.4 5204.67,-411.36 5183.25,-430.38 5131.52,-418.47"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.2" points="5132.7,-415.16 5122.13,-416 5130.92,-421.93 5132.7,-415.16"/>
+<text xml:space="preserve" text-anchor="middle" x="5310.46" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge78" class="edge">
+<title>TgePegMisread&#45;&gt;RealTimeMonitoring</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.2" d="M3701.61,-650.35C3691.73,-645.79 3680.66,-641.43 3670,-638.8 3651.41,-634.22 3511.13,-642.72 3497.99,-628.8 3480.4,-610.16 3540.35,-559.64 3580.54,-529.21"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.2" points="3582.4,-532.18 3588.32,-523.39 3578.21,-526.58 3582.4,-532.18"/>
+<text xml:space="preserve" text-anchor="middle" x="3513.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node21" class="node">
+<title>DutchAuctionAbuse</title>
+<polygon fill="#ef4444" stroke="black" points="3545.52,-686.8 3444.48,-686.8 3444.48,-650.8 3545.52,-650.8 3545.52,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3495" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Dutch sale timing /</text>
+<text xml:space="preserve" text-anchor="middle" x="3495" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">flash&#45;loan pressure</text>
+</g>
+<g id="edge79" class="edge">
+<title>DutchAuctionAbuse&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3500.25,-650.39C3505.42,-636.65 3514.78,-618.37 3530,-609.6 3554.12,-595.7 4011.22,-621.19 4031,-601.6 4057.09,-575.76 4060.78,-462.55 4035,-436.4 4009.92,-410.96 2784.14,-424.8 2748.99,-418.4 2692.28,-408.08 2682.82,-388.77 2627,-374.4 2501.05,-341.97 2467.64,-338.92 2338,-328.4 2324.3,-327.29 371.02,-327.06 359,-320.4 315.99,-296.56 340.54,-254.64 300,-226.8 266.02,-203.46 242.88,-232.29 209,-208.8 186.66,-193.31 171.38,-165.95 162.31,-145.04"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="165.59,-143.82 158.59,-135.87 159.11,-146.45 165.59,-143.82"/>
+<text xml:space="preserve" text-anchor="middle" x="2764.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge80" class="edge">
+<title>DutchAuctionAbuse&#45;&gt;InputValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3465.41,-650.44C3456,-645.77 3445.34,-641.32 3435,-638.8 3354.65,-619.26 3141.65,-654.34 3063,-628.8 3048.65,-624.14 3049.33,-614.32 3035,-609.6 2987.05,-593.81 2853.91,-622.57 2807.99,-601.6 2732.01,-566.9 2753.08,-504.44 2680,-464 2622.98,-432.45 2600.79,-443.37 2536,-436.4 2380.52,-419.67 1990.7,-451.5 1819.01,-418.36"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1819.86,-414.96 1809.35,-416.35 1818.43,-421.82 1819.86,-414.96"/>
+<text xml:space="preserve" text-anchor="middle" x="2823.99" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge81" class="edge">
+<title>DutchAuctionAbuse&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3484.27,-650.48C3477.75,-637.52 3472.51,-620.26 3483,-609.6 3502.88,-589.41 3973.12,-621.79 3993,-601.6 4044.52,-549.27 4044.1,-486.06 3990,-436.4 3957.78,-406.82 3243.57,-434.72 3203,-418.4 3176.15,-407.6 3178.4,-391.43 3155,-374.4 3121.53,-350.04 3113.93,-339.33 3074,-328.4 3025.98,-315.26 2675.65,-324.1 2626,-320.4 2447.3,-307.09 2238.75,-275.47 2131.26,-257.97"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2132.13,-254.57 2121.69,-256.41 2131,-261.47 2132.13,-254.57"/>
+<text xml:space="preserve" text-anchor="middle" x="4015.38" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge82" class="edge">
+<title>DutchAuctionAbuse&#45;&gt;PriceImpactProtection</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M3465.1,-650.3C3455.77,-645.68 3445.23,-641.3 3435,-638.8 3360.06,-620.5 3161.35,-652.7 3088,-628.8 3073.65,-624.13 3074.11,-614.94 3060,-609.6 3032.77,-599.3 3017.53,-620.03 2994.99,-601.6 2945.07,-560.79 2995.85,-508.31 2949,-464 2915.19,-432.03 2893.99,-443.51 2848,-436.4 2649.75,-405.76 2597.4,-427.44 2397,-418.4 2305.22,-414.26 2199.46,-408.84 2131.04,-405.24"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="2131.42,-401.76 2121.25,-404.72 2131.05,-408.75 2131.42,-401.76"/>
+<text xml:space="preserve" text-anchor="middle" x="3010.99" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node22" class="node">
+<title>RelayerIntentAbuse</title>
+<polygon fill="#ef4444" stroke="black" points="2749.64,-686.8 2616.36,-686.8 2616.36,-650.8 2749.64,-650.8 2749.64,-686.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2683" y="-671.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Privacy entry relay</text>
+<text xml:space="preserve" text-anchor="middle" x="2683" y="-659.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">replay / grief / wrong chain</text>
+</g>
+<g id="edge83" class="edge">
+<title>RelayerIntentAbuse&#45;&gt;RoleBasedAccess</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2646.02,-650.45C2634.14,-645.71 2620.75,-641.22 2608,-638.8 2526.29,-623.27 1190.9,-651.84 1110.99,-628.8 1095.42,-624.31 1095.54,-614.17 1080,-609.6 1054.73,-602.18 628.38,-615.48 606,-601.6 582.17,-586.82 569.16,-556.68 562.44,-533.98"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="565.82,-533.08 559.87,-524.32 559.06,-534.89 565.82,-533.08"/>
+<text xml:space="preserve" text-anchor="middle" x="1126.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge84" class="edge">
+<title>RelayerIntentAbuse&#45;&gt;InputValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2645.21,-650.35C2633.52,-645.74 2620.45,-641.34 2608,-638.8 2591.71,-635.48 2321.77,-639.44 2309,-628.8 2241.76,-572.77 2334.06,-492.64 2267,-436.4 2230.64,-405.9 1903.01,-427.05 1819.12,-417.76"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1819.81,-414.33 1809.38,-416.21 1818.71,-421.24 1819.81,-414.33"/>
+<text xml:space="preserve" text-anchor="middle" x="2308.94" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge85" class="edge">
+<title>RelayerIntentAbuse&#45;&gt;StateValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2709.09,-650.49C2731.97,-636.4 2766.69,-617.59 2800,-609.6 2811.6,-606.82 3650.21,-609.66 3659,-601.6 3713.34,-551.78 3725.64,-489.02 3674,-436.4 3655.3,-417.34 2738.9,-424.9 2713,-418.4 2671.36,-407.95 2668.23,-386.37 2627,-374.4 2413.54,-312.44 2350.65,-345.01 2129,-328.4 2113.57,-327.24 2003,-328.79 1990,-320.4 1973.9,-310 1964.06,-290.68 1958.29,-274.3"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1961.73,-273.59 1955.41,-265.09 1955.05,-275.68 1961.73,-273.59"/>
+<text xml:space="preserve" text-anchor="middle" x="3697.8" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="edge86" class="edge">
+<title>RelayerIntentAbuse&#45;&gt;EIP712OrderBinding</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2645.62,-650.38C2633.84,-645.7 2620.6,-641.27 2608,-638.8 2544.96,-626.47 2090.18,-651.22 2029.99,-628.8 2017.51,-624.15 2019.48,-614.23 2007,-609.6 1976.94,-598.46 1459,-615.27 1430,-601.6 1406.17,-590.37 1386.69,-568.5 1372.7,-548.41"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1375.71,-546.61 1367.26,-540.21 1369.87,-550.47 1375.71,-546.61"/>
+<text xml:space="preserve" text-anchor="middle" x="2045.99" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates</text>
+</g>
+<g id="node23" class="node">
+<title>ExecutionRelayAbuse</title>
+<polygon fill="#ef4444" stroke="black" points="2469.59,-690.8 2352.41,-690.8 2352.41,-646.8 2469.59,-646.8 2469.59,-690.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2411" y="-677.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Execution relay</text>
+<text xml:space="preserve" text-anchor="middle" x="2411" y="-665.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">unauthorized selector /</text>
+<text xml:space="preserve" text-anchor="middle" x="2411" y="-653.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">impersonation</text>
+</g>
+<g id="edge87" class="edge">
+<title>ExecutionRelayAbuse&#45;&gt;RoleBasedAccess</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2367.93,-646.44C2359.83,-643.29 2351.29,-640.52 2343,-638.8 2301.48,-630.17 856.03,-643.68 816.32,-628.8 804.06,-624.21 806.17,-614.41 794,-609.6 774.56,-601.91 623.63,-612.84 606,-601.6 582.36,-586.52 569.32,-556.43 562.54,-533.82"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="565.93,-532.95 559.94,-524.21 559.17,-534.78 565.93,-532.95"/>
+<text xml:space="preserve" text-anchor="middle" x="831.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge88" class="edge">
+<title>ExecutionRelayAbuse&#45;&gt;InputValidation</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2366.76,-646.32C2359,-643.31 2350.88,-640.62 2343,-638.8 2322.19,-633.98 2165.71,-644.29 2151,-628.8 2091.22,-565.82 2244.89,-499.28 2185,-436.4 2158.46,-408.53 1892.49,-425.32 1819.25,-417.71"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1819.81,-414.26 1809.39,-416.17 1818.73,-421.17 1819.81,-414.26"/>
+<text xml:space="preserve" text-anchor="middle" x="2214.47" y="-501.6" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="edge89" class="edge">
+<title>ExecutionRelayAbuse&#45;&gt;EIP712OrderBinding</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2367.54,-646.4C2359.55,-643.3 2351.15,-640.56 2343,-638.8 2243.76,-617.37 1520.85,-646.93 1430,-601.6 1406.43,-589.84 1386.96,-567.94 1372.92,-547.96"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1375.94,-546.17 1367.46,-539.82 1370.12,-550.07 1375.94,-546.17"/>
+<text xml:space="preserve" text-anchor="middle" x="1825.39" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node52" class="node">
+<title>ExecutionRelayAllowlist</title>
+<polygon fill="#fde68a" stroke="black" points="1103.25,-526 992.75,-526 992.75,-482 1103.25,-482 1103.25,-526"/>
+<text xml:space="preserve" text-anchor="middle" x="1048" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">AegisExecutionRelay</text>
+<text xml:space="preserve" text-anchor="middle" x="1048" y="-501" font-family="Helvetica,sans-Serif" font-size="10.00">selector allowlist +</text>
+<text xml:space="preserve" text-anchor="middle" x="1048" y="-489" font-family="Helvetica,sans-Serif" font-size="10.00">owner&#45;gated updates</text>
+</g>
+<g id="edge90" class="edge">
+<title>ExecutionRelayAbuse&#45;&gt;ExecutionRelayAllowlist</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2367.56,-646.32C2359.57,-643.23 2351.16,-640.51 2343,-638.8 2293.27,-628.35 1479.08,-631.26 1428.32,-628.8 1393.08,-627.09 1142.33,-619.61 1112,-601.6 1087.55,-587.08 1070.58,-559.14 1060.3,-537.03"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1063.58,-535.81 1056.37,-528.04 1057.17,-538.61 1063.58,-535.81"/>
+<text xml:space="preserve" text-anchor="middle" x="1443.66" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">prevents</text>
+</g>
+<g id="node24" class="node">
+<title>BrowserSideExfil</title>
+<polygon fill="#ef4444" stroke="black" points="2598.8,-690.8 2487.2,-690.8 2487.2,-646.8 2598.8,-646.8 2598.8,-690.8"/>
+<text xml:space="preserve" text-anchor="middle" x="2543" y="-677.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Browser / device</text>
+<text xml:space="preserve" text-anchor="middle" x="2543" y="-665.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">localStorage · XSS ·</text>
+<text xml:space="preserve" text-anchor="middle" x="2543" y="-653.8" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">extensions (off&#45;chain)</text>
+</g>
+<g id="edge91" class="edge">
+<title>BrowserSideExfil&#45;&gt;ClientPrivacyProgram</title>
+<path fill="none" stroke="#16a34a" stroke-width="1.4" d="M2502.2,-646.38C2494.67,-643.28 2486.73,-640.55 2479,-638.8 2420.75,-625.65 2001.02,-635.2 1941.65,-628.8 1898.11,-624.11 1888.55,-614.19 1845,-609.6 1829,-607.91 1280.44,-608.68 1266,-601.6 1245.2,-591.4 1228.25,-572.62 1215.6,-554.3"/>
+<polygon fill="#16a34a" stroke="#16a34a" stroke-width="1.4" points="1218.57,-552.46 1210.17,-546.01 1212.72,-556.3 1218.57,-552.46"/>
+<text xml:space="preserve" text-anchor="middle" x="1972.32" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">mitigates (partial)</text>
+</g>
+<g id="node29" class="node">
+<title>ProofAggregation</title>
+<polygon fill="#bfdbfe" stroke="black" points="159.97,-52 90.03,-52 90.03,-16 159.97,-16 159.97,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="125" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Proof</text>
+<text xml:space="preserve" text-anchor="middle" x="125" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">Aggregation</text>
+</g>
+<g id="edge93" class="edge">
+<title>ZKProofSystem&#45;&gt;ProofAggregation</title>
+<path fill="none" stroke="black" d="M146.14,-97.33C142.74,-87.31 138.39,-74.46 134.51,-63.04"/>
+<polygon fill="black" stroke="black" points="137.86,-62.02 131.33,-53.67 131.23,-64.27 137.86,-62.02"/>
+<text xml:space="preserve" text-anchor="middle" x="170.13" y="-72.4" font-family="Helvetica,sans-Serif" font-size="8.00">batch verification</text>
+</g>
+<g id="edge95" class="edge">
+<title>CommitmentScheme&#45;&gt;NullifierSystem</title>
+<path fill="none" stroke="black" d="M112.2,-229.85C109.1,-228.78 106,-227.75 103,-226.8 73.38,-217.4 54.37,-233.44 35.43,-208.8 20.19,-188.97 34.34,-162.23 49.62,-142.66"/>
+<polygon fill="black" stroke="black" points="52.19,-145.04 55.89,-135.12 46.8,-140.57 52.19,-145.04"/>
+<text xml:space="preserve" text-anchor="middle" x="45.21" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">feeds</text>
+</g>
+<g id="edge94" class="edge">
+<title>TrustedSetup&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="black" d="M74.3,-226.46C87.72,-214.2 104.21,-198.66 110,-191.2 121.3,-176.65 131.5,-158.71 139.02,-144.06"/>
+<polygon fill="black" stroke="black" points="141.99,-145.95 143.32,-135.44 135.73,-142.82 141.99,-145.95"/>
+<text xml:space="preserve" text-anchor="middle" x="116.73" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">enables</text>
+</g>
+<g id="edge96" class="edge">
+<title>MultiSigWallet&#45;&gt;TimelockController</title>
+<path fill="none" stroke="black" d="M857.6,-97.33C859.1,-87.42 861.01,-74.73 862.72,-63.39"/>
+<polygon fill="black" stroke="black" points="866.15,-64.14 864.18,-53.73 859.22,-63.1 866.15,-64.14"/>
+<text xml:space="preserve" text-anchor="middle" x="877.06" y="-72.4" font-family="Helvetica,sans-Serif" font-size="8.00">enforces</text>
+</g>
+<g id="edge97" class="edge">
+<title>RoleBasedAccess&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="black" d="M559.38,-485.59C566.27,-452.94 584.03,-381.05 615.86,-328.4 666.92,-243.96 762.52,-174.58 816.09,-140.12"/>
+<polygon fill="black" stroke="black" points="817.73,-143.22 824.3,-134.91 813.98,-137.31 817.73,-143.22"/>
+<text xml:space="preserve" text-anchor="middle" x="643.43" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">assigns owners</text>
+</g>
+<g id="edge98" class="edge">
+<title>RoleBasedAccess&#45;&gt;LiquidityAllocatorGuard</title>
+<path fill="none" stroke="#22c55e" d="M573.46,-485.55C582.44,-477.64 594,-468.97 606,-464 666.41,-438.99 689.9,-466.46 752,-446 767.38,-440.93 783.14,-432.74 796.51,-424.76"/>
+<polygon fill="#22c55e" stroke="#22c55e" points="798.27,-427.78 804.92,-419.54 794.58,-421.83 798.27,-427.78"/>
+<text xml:space="preserve" text-anchor="middle" x="798.04" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">enforces role</text>
+</g>
+<g id="edge143" class="edge">
+<title>EmergencyPause&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#dc2626" d="M776.99,-229.08C772.27,-228.21 767.57,-227.43 763,-226.8 601.22,-204.43 555.28,-244.82 395.98,-208.8 385.18,-206.36 383.29,-203.27 373,-199.2 311.9,-175.03 240.6,-148.72 195.88,-132.44"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="197.12,-129.17 186.52,-129.04 194.73,-135.75 197.12,-129.17"/>
+<text xml:space="preserve" text-anchor="middle" x="409.99" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00" fill="#dc2626">can halt</text>
+</g>
+<g id="edge99" class="edge">
+<title>EmergencyPause&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="#dc2626" d="M839.47,-226.38C842.43,-205.45 847.44,-170.03 850.97,-145.1"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="854.42,-145.7 852.35,-135.31 847.49,-144.72 854.42,-145.7"/>
+<text xml:space="preserve" text-anchor="middle" x="854.16" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00" fill="#dc2626">trigger</text>
+</g>
+<g id="node35" class="node">
+<title>GovernanceTreasury</title>
+<polygon fill="#bbf7d0" stroke="black" points="642.35,-133.6 529.65,-133.6 529.65,-97.6 642.35,-97.6 642.35,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="586" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">Governance Treasury</text>
+<text xml:space="preserve" text-anchor="middle" x="586" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">(on&#45;chain vault)</text>
+</g>
+<g id="edge144" class="edge">
+<title>EmergencyPause&#45;&gt;GovernanceTreasury</title>
+<path fill="none" stroke="#dc2626" d="M802.63,-226.38C757.88,-203.7 679.59,-164.03 630.39,-139.1"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="632.21,-136.1 621.71,-134.7 629.05,-142.34 632.21,-136.1"/>
+<text xml:space="preserve" text-anchor="middle" x="776.84" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00" fill="#dc2626">can halt</text>
+</g>
+<g id="edge145" class="edge">
+<title>EmergencyPause&#45;&gt;ChainlinkOracles</title>
+<path fill="none" stroke="#dc2626" d="M896.93,-228.58C900.99,-227.88 905.05,-227.27 909,-226.8 1066.88,-207.91 3612.07,-213.65 3771,-208.8 4428.62,-188.75 5229.12,-132.93 5415.78,-119.52"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="5415.94,-123.02 5425.67,-118.81 5415.44,-116.04 5415.94,-123.02"/>
+<text xml:space="preserve" text-anchor="middle" x="4014.36" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00" fill="#dc2626">can halt</text>
+</g>
+<g id="edge100" class="edge">
+<title>TreasurySelfCustody&#45;&gt;FeeMGovernanceExtension</title>
+<path fill="none" stroke="#6366f1" d="M817.37,-485.67C805.84,-478.17 791.65,-469.8 778,-464 748.95,-451.66 728.59,-470.98 709.31,-446 693.28,-425.22 704.94,-395.62 717.69,-374.28"/>
+<polygon fill="#6366f1" stroke="#6366f1" points="720.48,-376.42 722.91,-366.11 714.58,-372.65 720.48,-376.42"/>
+<text xml:space="preserve" text-anchor="middle" x="728.66" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">vault attest</text>
+</g>
+<g id="edge101" class="edge">
+<title>TreasurySelfCustody&#45;&gt;LiquidityAllocatorGuard</title>
+<path fill="none" stroke="#6366f1" d="M840.13,-485.76C838.48,-470.51 836.04,-447.95 834.1,-430"/>
+<polygon fill="#6366f1" stroke="#6366f1" points="837.59,-429.79 833.04,-420.22 830.63,-430.54 837.59,-429.79"/>
+<text xml:space="preserve" text-anchor="middle" x="862.2" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">liquidity budget</text>
+</g>
+<g id="edge102" class="edge">
+<title>FeeMGovernanceExtension&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="#6366f1" d="M731.39,-328C724.69,-304.04 716.15,-260.09 731.09,-226.8 747.93,-189.28 784.56,-159.32 813.65,-140.17"/>
+<polygon fill="#6366f1" stroke="#6366f1" points="815.36,-143.23 821.91,-134.9 811.6,-137.32 815.36,-143.23"/>
+<text xml:space="preserve" text-anchor="middle" x="749.54" y="-242.4" font-family="Helvetica,sans-Serif" font-size="8.00">authorises</text>
+</g>
+<g id="edge103" class="edge">
+<title>LiquidityAllocatorGuard&#45;&gt;EmergencyPause</title>
+<path fill="none" stroke="#dc2626" d="M831.68,-382.08C832.7,-355.92 834.65,-306.04 835.88,-274.43"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="839.36,-274.94 836.26,-264.81 832.37,-274.66 839.36,-274.94"/>
+<text xml:space="preserve" text-anchor="middle" x="859.66" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00" fill="#dc2626">pause seeding</text>
+</g>
+<g id="edge108" class="edge">
+<title>ReentrancyGuard&#45;&gt;StateValidation</title>
+<path fill="none" stroke="black" d="M1716.29,-381.99C1735.2,-366.93 1763.88,-345.01 1790.54,-328.4 1829.89,-303.88 1877.37,-280.11 1910.42,-264.41"/>
+<polygon fill="black" stroke="black" points="1911.7,-267.68 1919.25,-260.25 1908.71,-261.35 1911.7,-267.68"/>
+<text xml:space="preserve" text-anchor="middle" x="1802.77" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">guards</text>
+</g>
+<g id="edge147" class="edge">
+<title>InputValidation&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#2563eb" d="M1799.49,-382.14C1804.66,-379.01 1810.32,-376.17 1816,-374.4 1831.66,-369.52 2099.6,-376.19 2111,-364.4 2122.12,-352.9 2122.12,-339.9 2111,-328.4 2101.76,-318.85 1885.23,-321.27 1871.98,-320.4 1442.88,-292.39 1338.01,-256.07 909,-226.8 807.6,-219.88 551.9,-227.48 452,-208.8 439.07,-206.38 436.52,-203.25 424,-199.2 343.99,-173.34 250,-145.32 196.07,-129.46"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="197.23,-126.15 186.65,-126.69 195.26,-132.87 197.23,-126.15"/>
+<text xml:space="preserve" text-anchor="middle" x="1891.99" y="-242.4" font-family="Helvetica,sans-Serif" font-size="8.00">valid inputs</text>
+</g>
+<g id="edge107" class="edge">
+<title>InputValidation&#45;&gt;StateValidation</title>
+<path fill="none" stroke="black" d="M1796.62,-382.08C1827.43,-354.88 1887.28,-302.05 1922.73,-270.76"/>
+<polygon fill="black" stroke="black" points="1924.87,-273.54 1930.05,-264.3 1920.24,-268.29 1924.87,-273.54"/>
+<text xml:space="preserve" text-anchor="middle" x="1863.37" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">feeds</text>
+</g>
+<g id="edge148" class="edge">
+<title>StateValidation&#45;&gt;NullifierSystem</title>
+<path fill="none" stroke="#2563eb" d="M1920.78,-243.15C1698.86,-238.4 329.72,-209.07 324.54,-208.8 300.65,-207.56 129.72,-204.73 110,-191.2 94.39,-180.49 85.32,-161.07 80.18,-144.73"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="83.67,-144.22 77.63,-135.51 76.93,-146.09 83.67,-144.22"/>
+<text xml:space="preserve" text-anchor="middle" x="346.77" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">state checks</text>
+</g>
+<g id="node42" class="node">
+<title>GasOptimization</title>
+<polygon fill="#fde68a" stroke="black" points="975,-522 921,-522 921,-486 975,-486 975,-522"/>
+<text xml:space="preserve" text-anchor="middle" x="948" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">Gas</text>
+<text xml:space="preserve" text-anchor="middle" x="948" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">Safety</text>
+</g>
+<g id="edge106" class="edge">
+<title>DeterministicConfig&#45;&gt;InputValidation</title>
+<path fill="none" stroke="black" d="M1955.92,-485.58C1975.14,-471.87 1994.4,-452.47 1980,-436.4 1957.39,-411.18 1866.83,-425.25 1818.4,-417.94"/>
+<polygon fill="black" stroke="black" points="1819.33,-414.56 1808.83,-415.97 1817.91,-421.41 1819.33,-414.56"/>
+<text xml:space="preserve" text-anchor="middle" x="2015.78" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">known addresses</text>
+</g>
+<g id="edge109" class="edge">
+<title>SafeNativeTransfer&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="#2563eb" d="M2041.61,-485.64C2029.89,-477.55 2014.89,-468.69 2000,-464 1939.25,-444.87 1765.97,-482.78 1713.98,-446 1708.26,-441.95 1704.25,-435.82 1701.45,-429.38"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="1704.8,-428.36 1698.26,-420.02 1698.17,-430.61 1704.8,-428.36"/>
+<text xml:space="preserve" text-anchor="middle" x="1733.99" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">native exits</text>
+</g>
+<g id="edge110" class="edge">
+<title>FormalVerification&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1504.03,-481.68C1508.71,-466.67 1517.22,-447.38 1531.87,-436.4 1568.74,-408.75 1589.05,-428.6 1634,-418.4 1639.08,-417.25 1644.37,-415.94 1649.62,-414.57"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1650.45,-417.97 1659.2,-411.99 1648.63,-411.21 1650.45,-417.97"/>
+<text xml:space="preserve" text-anchor="middle" x="1557.43" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">proven correct</text>
+</g>
+<g id="edge111" class="edge">
+<title>FormalVerification&#45;&gt;InputValidation</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1530.36,-481.59C1541.74,-474.84 1555,-468.08 1568,-464 1608.46,-451.29 1723.76,-471.03 1758,-446 1763.66,-441.86 1767.65,-435.7 1770.45,-429.26"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1773.62,-430.8 1773.55,-420.2 1767,-428.53 1773.62,-430.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1792.22" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">proven correct</text>
+</g>
+<g id="edge112" class="edge">
+<title>FormalVerification&#45;&gt;StateValidation</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1462.93,-481.66C1441.71,-466.88 1416.77,-445.09 1404.87,-418.4 1396.9,-400.54 1392.2,-389.3 1404.87,-374.4 1422.69,-353.42 1445.5,-382.78 1466,-364.4 1478.36,-353.31 1463.69,-339.55 1476,-328.4 1539.48,-270.9 1805.01,-252.55 1908.99,-247.5"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1908.92,-251 1918.74,-247.04 1908.59,-244.01 1908.92,-251"/>
+<text xml:space="preserve" text-anchor="middle" x="1430.43" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">proven correct</text>
+</g>
+<g id="edge113" class="edge">
+<title>FormalVerification&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1491.26,-481.57C1482.66,-453.56 1473,-404.53 1497.87,-374.4 1566.48,-291.26 1628.87,-340.36 1736,-328.4 1764.06,-325.27 1964.31,-332.12 1990,-320.4 2012.01,-310.36 2030.23,-289.68 2042.41,-272.64"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="2045.13,-274.87 2047.85,-264.63 2039.34,-270.94 2045.13,-274.87"/>
+<text xml:space="preserve" text-anchor="middle" x="1523.43" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">proven correct</text>
+</g>
+<g id="edge114" class="edge">
+<title>FormalVerification&#45;&gt;KInvariantMonitoring</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1459.37,-481.54C1443.61,-471.91 1425.95,-459.63 1412,-446 1388.45,-422.99 1377.89,-403.65 1393,-374.4 1445.03,-273.69 1497.77,-273.63 1601,-226.8 1732.69,-167.06 1900.82,-137.41 1993.3,-124.69"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1993.5,-128.19 2002.94,-123.39 1992.56,-121.25 1993.5,-128.19"/>
+<text xml:space="preserve" text-anchor="middle" x="1446.52" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">proven correct</text>
+</g>
+<g id="edge115" class="edge">
+<title>FormalVerification&#45;&gt;PriceImpactProtection</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1529.93,-481.5C1541.37,-474.65 1554.79,-467.86 1568,-464 1710.27,-422.44 1756.3,-478.09 1901,-446 1912.16,-443.52 1914.01,-439.98 1924.87,-436.4 1937.06,-432.37 1962.39,-425.62 1987.8,-419.12"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1988.45,-422.57 1997.27,-416.71 1986.72,-415.78 1988.45,-422.57"/>
+<text xml:space="preserve" text-anchor="middle" x="1950.43" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">proven correct</text>
+</g>
+<g id="edge116" class="edge">
+<title>FormalVerification&#45;&gt;OracleValidation</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1529.96,-481.63C1541.41,-474.79 1554.82,-467.97 1568,-464 1676.36,-431.36 1713.46,-478.04 1822,-446 1837.95,-441.29 1854.26,-433.09 1868.02,-424.99"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1869.75,-428.04 1876.45,-419.83 1866.09,-422.07 1869.75,-428.04"/>
+<text xml:space="preserve" text-anchor="middle" x="1871.13" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">proven correct</text>
+</g>
+<g id="edge117" class="edge">
+<title>PenetrationTests&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1664.19,-481.57C1675.43,-474.55 1688.76,-467.62 1702,-464 1736.46,-454.57 4248.83,-471.35 4274,-446 4277.01,-442.97 4276.92,-439.51 4274,-436.4 4252.28,-413.27 4020.58,-421.5 3989,-418.4 3841.74,-403.95 3806.35,-387.85 3659,-374.4 3569.47,-366.23 3545.07,-382.33 3456.98,-364.4 3411.52,-355.15 3404.6,-336.93 3359,-328.4 3310.06,-319.24 2960.67,-323.8 2911,-320.4 2561.34,-296.44 2477.74,-249.54 2128,-226.8 1944.93,-214.89 657.79,-239.95 477,-208.8 464.04,-206.57 461.56,-203.1 449,-199.2 360.05,-171.61 254.8,-143.36 196.51,-128.1"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="197.47,-124.73 186.91,-125.59 195.7,-131.51 197.47,-124.73"/>
+<text xml:space="preserve" text-anchor="middle" x="3472.99" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">validated</text>
+</g>
+<g id="edge118" class="edge">
+<title>PenetrationTests&#45;&gt;EmergencyPause</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1664.2,-481.59C1675.44,-474.57 1688.76,-467.64 1702,-464 1728.21,-456.8 3639.87,-465.31 3659,-446 3662,-442.97 3661.99,-439.44 3659,-436.4 3635.84,-412.89 2503.71,-422.64 2470.98,-418.4 2305.72,-397 2272.35,-349.1 2107,-328.4 2073.98,-324.27 939.59,-333.51 909,-320.4 886.32,-310.68 867.28,-289.98 854.49,-272.84"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="857.39,-270.88 848.75,-264.75 851.69,-274.94 857.39,-270.88"/>
+<text xml:space="preserve" text-anchor="middle" x="2486.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">validated</text>
+</g>
+<g id="edge119" class="edge">
+<title>PenetrationTests&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1606.5,-481.72C1592.34,-468.5 1580.3,-451.26 1590.98,-436.4 1594.73,-431.17 1623.53,-421.7 1649.88,-413.93"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1650.56,-417.38 1659.19,-411.23 1648.61,-410.66 1650.56,-417.38"/>
+<text xml:space="preserve" text-anchor="middle" x="1606.99" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">validated</text>
+</g>
+<g id="edge120" class="edge">
+<title>PenetrationTests&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1600.85,-481.57C1590.5,-475.51 1578.96,-469.16 1568,-464 1545.38,-453.36 1506.11,-457.81 1519,-436.4 1527.82,-421.75 1538.28,-427.1 1553,-418.4 1583.66,-400.27 1586.23,-385.79 1619.98,-374.4 1680.35,-354.02 1699.82,-372.7 1763,-364.4 1864.89,-351.01 1900.21,-370.38 1990,-320.4 2010.75,-308.85 2028.75,-288.83 2041.16,-272.43"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="2043.69,-274.91 2046.73,-264.76 2038.02,-270.79 2043.69,-274.91"/>
+<text xml:space="preserve" text-anchor="middle" x="1635.99" y="-398" font-family="Helvetica,sans-Serif" font-size="8.00">validated</text>
+</g>
+<g id="edge121" class="edge">
+<title>PenetrationTests&#45;&gt;KInvariantMonitoring</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1601.67,-481.69C1591.15,-475.49 1579.31,-469.04 1568,-464 1544.12,-453.36 1527.4,-467.13 1512,-446 1498.04,-426.85 1535.9,-428.05 1543,-418.4 1554.88,-402.24 1540.66,-390.21 1553,-374.4 1666.16,-229.41 1882.94,-159.12 1993.5,-131.45"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="1994.18,-134.88 2003.06,-129.1 1992.52,-128.09 1994.18,-134.88"/>
+<text xml:space="preserve" text-anchor="middle" x="1608.26" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">validated</text>
+</g>
+<g id="edge122" class="edge">
+<title>PenetrationTests&#45;&gt;PriceImpactProtection</title>
+<path fill="none" stroke="#059669" stroke-width="1.2" d="M1664.61,-481.69C1675.79,-474.77 1688.97,-467.88 1702,-464 1739.22,-452.92 2021.87,-471.67 2051,-446 2055.6,-441.94 2058.14,-436.22 2059.45,-430.22"/>
+<polygon fill="#059669" stroke="#059669" stroke-width="1.2" points="2062.91,-430.82 2060.48,-420.51 2055.95,-430.09 2062.91,-430.82"/>
+<text xml:space="preserve" text-anchor="middle" x="2073.18" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">validated</text>
+</g>
+<g id="edge123" class="edge">
+<title>FlashLoanDetection&#45;&gt;KInvariantMonitoring</title>
+<path fill="none" stroke="black" d="M2059.41,-226.38C2059.9,-205.45 2060.74,-170.03 2061.33,-145.1"/>
+<polygon fill="black" stroke="black" points="2064.82,-145.4 2061.56,-135.32 2057.82,-145.24 2064.82,-145.4"/>
+<text xml:space="preserve" text-anchor="middle" x="2084.2" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">triggers alerts</text>
+</g>
+<g id="node68" class="node">
+<title>AlertSystem</title>
+<polygon fill="#fed7aa" stroke="black" points="3610,-262.8 3556,-262.8 3556,-226.8 3610,-226.8 3610,-262.8"/>
+<text xml:space="preserve" text-anchor="middle" x="3583" y="-241.8" font-family="Helvetica,sans-Serif" font-size="10.00">Alerting</text>
+</g>
+<g id="edge124" class="edge">
+<title>KInvariantMonitoring&#45;&gt;AlertSystem</title>
+<path fill="none" stroke="black" d="M2119.16,-120.31C2295.99,-131.71 2849.85,-166.97 3309,-191.2 3347.88,-193.25 3446.14,-190.16 3484,-199.2 3505.3,-204.29 3527.66,-213.95 3545.73,-222.98"/>
+<polygon fill="black" stroke="black" points="3544,-226.02 3554.49,-227.49 3547.2,-219.8 3544,-226.02"/>
+<text xml:space="preserve" text-anchor="middle" x="3539.22" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">deviation alerts</text>
+</g>
+<g id="edge125" class="edge">
+<title>PriceImpactProtection&#45;&gt;FlashLoanDetection</title>
+<path fill="none" stroke="black" d="M2059,-382.08C2059,-355.92 2059,-306.04 2059,-274.43"/>
+<polygon fill="black" stroke="black" points="2062.5,-274.81 2059,-264.81 2055.5,-274.81 2062.5,-274.81"/>
+<text xml:space="preserve" text-anchor="middle" x="2082.79" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">complements</text>
+</g>
+<g id="edge126" class="edge">
+<title>OracleValidation&#45;&gt;PriceValidation</title>
+<path fill="none" stroke="black" d="M1954.94,-381.96C1966.36,-378.84 1978.49,-376.05 1990,-374.4 2099.55,-358.69 3871.49,-370.38 3982,-364.4 4075.36,-359.35 5592.76,-260.07 5656,-191.2 5692.44,-151.52 5691.71,-112.02 5658,-70 5634.92,-41.23 5612.26,-62.81 5577,-52 5576.35,-51.8 5575.7,-51.6 5575.05,-51.39"/>
+<polygon fill="black" stroke="black" points="5576.35,-48.14 5565.76,-48.17 5574.06,-54.75 5576.35,-48.14"/>
+<text xml:space="preserve" text-anchor="middle" x="5659.76" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">enhances</text>
+</g>
+<g id="edge104" class="edge">
+<title>EIP712OrderBinding&#45;&gt;InputValidation</title>
+<path fill="none" stroke="black" d="M1402.94,-469.52C1426.36,-456.89 1454.5,-443.8 1481.64,-436.4 1588.39,-407.29 1624.79,-443.23 1735.72,-418.38"/>
+<polygon fill="black" stroke="black" points="1736.29,-421.84 1745.21,-416.13 1734.68,-415.03 1736.29,-421.84"/>
+<text xml:space="preserve" text-anchor="middle" x="1500.32" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">typed data</text>
+</g>
+<g id="edge105" class="edge">
+<title>EscrowAccessInvariant&#45;&gt;ReentrancyGuard</title>
+<path fill="none" stroke="black" d="M1747.12,-485.69C1733.52,-478.45 1717.22,-470.28 1702,-464 1677.7,-453.96 1661.15,-467.23 1645.64,-446 1639.51,-437.61 1643.79,-429.6 1651.92,-422.75"/>
+<polygon fill="black" stroke="black" points="1653.68,-425.79 1659.85,-417.18 1649.65,-420.06 1653.68,-425.79"/>
+<text xml:space="preserve" text-anchor="middle" x="1670.32" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">paired checks</text>
+</g>
+<g id="edge127" class="edge">
+<title>ChainlinkOracles&#45;&gt;PriceValidation</title>
+<path fill="none" stroke="black" d="M5472.92,-97.33C5483.55,-86.48 5497.45,-72.3 5509.3,-60.21"/>
+<polygon fill="black" stroke="black" points="5511.55,-62.91 5516.05,-53.32 5506.55,-58.01 5511.55,-62.91"/>
+<text xml:space="preserve" text-anchor="middle" x="5509.46" y="-72.4" font-family="Helvetica,sans-Serif" font-size="8.00">feeds</text>
+</g>
+<g id="edge128" class="edge">
+<title>OracleAggregation&#45;&gt;StalenessChecks</title>
+<path fill="none" stroke="black" d="M5612.87,-97.33C5613.37,-87.42 5614,-74.73 5614.57,-63.39"/>
+<polygon fill="black" stroke="black" points="5618.05,-63.91 5615.06,-53.75 5611.06,-63.56 5618.05,-63.91"/>
+<text xml:space="preserve" text-anchor="middle" x="5634.26" y="-72.4" font-family="Helvetica,sans-Serif" font-size="8.00">aggregates</text>
+</g>
+<g id="edge129" class="edge">
+<title>CircuitBreakers&#45;&gt;PriceValidation</title>
+<path fill="none" stroke="black" d="M5531.65,-97.33C5532.02,-87.42 5532.5,-74.73 5532.93,-63.39"/>
+<polygon fill="black" stroke="black" points="5536.41,-63.88 5533.29,-53.75 5529.42,-63.61 5536.41,-63.88"/>
+<text xml:space="preserve" text-anchor="middle" x="5546.02" y="-72.4" font-family="Helvetica,sans-Serif" font-size="8.00">triggers</text>
+</g>
+<g id="edge130" class="edge">
+<title>PrivateVoting&#45;&gt;ProposalValidation</title>
+<path fill="none" stroke="black" d="M4866.42,-485.9C4872.73,-478.26 4880.97,-469.72 4890,-464 4903.63,-455.37 4994.4,-428.64 5048.86,-413.04"/>
+<polygon fill="black" stroke="black" points="5049.78,-416.42 5058.43,-410.31 5047.85,-409.69 5049.78,-416.42"/>
+<text xml:space="preserve" text-anchor="middle" x="4984.69" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">validates</text>
+</g>
+<g id="edge149" class="edge">
+<title>ProposalValidation&#45;&gt;PrivateVoting</title>
+<path fill="none" stroke="#2563eb" d="M5059.57,-402.85C5008.21,-405.87 4907.24,-414.5 4880.19,-436.4 4868.5,-445.87 4862.01,-461.28 4858.41,-474.9"/>
+<polygon fill="#2563eb" stroke="#2563eb" points="4855.08,-473.74 4856.35,-484.26 4861.92,-475.25 4855.08,-473.74"/>
+<text xml:space="preserve" text-anchor="middle" x="4909.1" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">proposal checks</text>
+</g>
+<g id="edge131" class="edge">
+<title>ExecutionTimelock&#45;&gt;TimelockController</title>
+<path fill="none" stroke="black" d="M5145.53,-382.07C5140.36,-378.94 5134.7,-376.12 5129,-374.4 5068.37,-356.06 4621.4,-375.27 4559,-364.4 4509.98,-355.86 4502.04,-336.8 4453,-328.4 4415.93,-322.05 3810.53,-335.3 3776,-320.4 3707.26,-290.73 3727.54,-229.34 3659,-199.2 3643.13,-192.22 3364.31,-192.14 3347,-191.2 2805.48,-161.66 2672.24,-123.89 2131,-89.6 1650.35,-59.15 1065.8,-40.81 907.93,-36.17"/>
+<polygon fill="black" stroke="black" points="908.49,-32.68 898.4,-35.89 908.29,-39.68 908.49,-32.68"/>
+<text xml:space="preserve" text-anchor="middle" x="3696.3" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">implements</text>
+</g>
+<g id="edge132" class="edge">
+<title>DaoRevenueRouterGovernance&#45;&gt;ProposalValidation</title>
+<path fill="none" stroke="black" d="M5103.6,-485.51C5092.44,-475.34 5080.07,-461.48 5074.08,-446 5071.98,-440.58 5072.26,-434.75 5073.75,-429.16"/>
+<polygon fill="black" stroke="black" points="5076.85,-430.84 5077.28,-420.25 5070.34,-428.26 5076.85,-430.84"/>
+<text xml:space="preserve" text-anchor="middle" x="5096.54" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">sink updates</text>
+</g>
+<g id="edge133" class="edge">
+<title>DaoRevenueRouterGovernance&#45;&gt;ExecutionTimelock</title>
+<path fill="none" stroke="#9333ea" stroke-dasharray="5,2" d="M5133.12,-485.76C5139.52,-470.29 5149.02,-447.3 5156.5,-429.23"/>
+<polygon fill="#9333ea" stroke="#9333ea" points="5159.68,-430.7 5160.26,-420.12 5153.21,-428.02 5159.68,-430.7"/>
+<text xml:space="preserve" text-anchor="middle" x="5181.9" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">governed rollout</text>
+</g>
+<g id="edge134" class="edge">
+<title>RealTimeMonitoring&#45;&gt;ZKProofSystem</title>
+<path fill="none" stroke="black" d="M3645.54,-497.85C3699.67,-489.24 3813.83,-472.07 3911,-464 3939.31,-461.65 4402.27,-466.44 4422,-446 4424.96,-442.93 4424.95,-439.48 4422,-436.4 4406.43,-420.12 4039.29,-421.6 4017,-418.4 3935.91,-406.75 3919.14,-385.74 3838,-374.4 3777.95,-366.01 3624.09,-379.36 3565.32,-364.4 3530.53,-355.54 3527.89,-336.87 3493,-328.4 3433.18,-313.88 3000.11,-327.82 2939,-320.4 2755.6,-298.14 2717.46,-248.55 2534,-226.8 2309.78,-200.22 724.55,-246.91 502,-208.8 489.03,-206.58 486.6,-202.97 474,-199.2 375.62,-169.77 258.45,-141.35 196.13,-126.75"/>
+<polygon fill="black" stroke="black" points="197.16,-123.39 186.62,-124.53 195.57,-130.21 197.16,-123.39"/>
+<text xml:space="preserve" text-anchor="middle" x="3580.66" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">monitors</text>
+</g>
+<g id="edge135" class="edge">
+<title>RealTimeMonitoring&#45;&gt;MultiSigWallet</title>
+<path fill="none" stroke="black" d="M3645.54,-497.81C3699.67,-489.15 3813.81,-471.9 3911,-464 3942.47,-461.44 4457.03,-468.68 4479,-446 4481.97,-442.94 4481.88,-439.55 4479,-436.4 4464.26,-420.24 4304.69,-421.19 4283,-418.4 4164.15,-403.13 4135.62,-391.38 4017,-374.4 3848.6,-350.29 3806.7,-340.32 3637,-328.4 3547.43,-322.11 3321.59,-335.06 3233,-320.4 3097.71,-298.01 3074.12,-250.16 2939,-226.8 2584.93,-165.59 2490.25,-206.51 2131,-199.2 2114.03,-198.85 924.09,-198.97 909,-191.2 889.69,-181.26 875.67,-160.87 866.76,-143.92"/>
+<polygon fill="black" stroke="black" points="870.08,-142.73 862.54,-135.29 863.79,-145.81 870.08,-142.73"/>
+<text xml:space="preserve" text-anchor="middle" x="3962.67" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">monitors</text>
+</g>
+<g id="edge136" class="edge">
+<title>RealTimeMonitoring&#45;&gt;DeterministicConfig</title>
+<path fill="none" stroke="black" d="M3596.65,-522.39C3574.26,-544.63 3532.93,-580.88 3489,-595.2 3410.35,-620.84 2074.56,-631.02 2000,-595.2 1972.98,-582.22 1952.82,-553.82 1940.62,-532.14"/>
+<polygon fill="black" stroke="black" points="1943.78,-530.64 1935.98,-523.47 1937.61,-533.94 1943.78,-530.64"/>
+<text xml:space="preserve" text-anchor="middle" x="3549" y="-616.8" font-family="Helvetica,sans-Serif" font-size="8.00">monitors</text>
+</g>
+<g id="edge137" class="edge">
+<title>RealTimeMonitoring&#45;&gt;ChainlinkOracles</title>
+<path fill="none" stroke="black" d="M3645.52,-497.63C3699.63,-488.69 3813.74,-471.04 3911,-464 4054.97,-453.59 5069.03,-477.03 5210,-446 5296.97,-426.86 5335.62,-432.5 5393,-364.4 5447.17,-300.11 5455.67,-195.33 5456.43,-145.15"/>
+<polygon fill="black" stroke="black" points="5459.92,-145.43 5456.47,-135.41 5452.92,-145.4 5459.92,-145.43"/>
+<text xml:space="preserve" text-anchor="middle" x="5431.76" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">monitors</text>
+</g>
+<g id="edge138" class="edge">
+<title>RealTimeMonitoring&#45;&gt;AnomalyDetection</title>
+<path fill="none" stroke="black" d="M3614,-485.76C3614,-470.51 3614,-447.95 3614,-430"/>
+<polygon fill="black" stroke="black" points="3617.5,-430.23 3614,-420.23 3610.5,-430.23 3617.5,-430.23"/>
+<text xml:space="preserve" text-anchor="middle" x="3629.34" y="-438.8" font-family="Helvetica,sans-Serif" font-size="8.00">monitors</text>
+</g>
+<g id="edge139" class="edge">
+<title>AnomalyDetection&#45;&gt;AlertSystem</title>
+<path fill="none" stroke="black" d="M3610.5,-382.08C3605.22,-355.92 3595.16,-306.04 3588.78,-274.43"/>
+<polygon fill="black" stroke="black" points="3592.24,-273.89 3586.83,-264.78 3585.38,-275.27 3592.24,-273.89"/>
+<text xml:space="preserve" text-anchor="middle" x="3619.85" y="-344" font-family="Helvetica,sans-Serif" font-size="8.00">triggers</text>
+</g>
+<g id="node69" class="node">
+<title>IncidentResponse</title>
+<polygon fill="#fed7aa" stroke="black" points="3645.51,-133.6 3584.49,-133.6 3584.49,-97.6 3645.51,-97.6 3645.51,-133.6"/>
+<text xml:space="preserve" text-anchor="middle" x="3615" y="-118.6" font-family="Helvetica,sans-Serif" font-size="10.00">Incident</text>
+<text xml:space="preserve" text-anchor="middle" x="3615" y="-106.6" font-family="Helvetica,sans-Serif" font-size="10.00">Response</text>
+</g>
+<g id="edge140" class="edge">
+<title>AlertSystem&#45;&gt;IncidentResponse</title>
+<path fill="none" stroke="black" d="M3581.98,-226.72C3581.83,-218.35 3582.15,-208.17 3583.88,-199.2 3587.54,-180.13 3595.21,-159.69 3602.01,-143.92"/>
+<polygon fill="black" stroke="black" points="3605.03,-145.76 3605.91,-135.2 3598.64,-142.9 3605.03,-145.76"/>
+<text xml:space="preserve" text-anchor="middle" x="3597.44" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">initiates</text>
+</g>
+<g id="edge141" class="edge">
+<title>IncidentResponse&#45;&gt;EmergencyPause</title>
+<path fill="none" stroke="black" d="M3645.89,-126.89C3689.87,-143.02 3761.74,-175.85 3729,-208.8 3701.39,-236.58 947.89,-222.15 909,-226.8 908.75,-226.83 908.51,-226.86 908.26,-226.89"/>
+<polygon fill="black" stroke="black" points="907.8,-223.42 898.42,-228.36 908.83,-230.34 907.8,-223.42"/>
+<text xml:space="preserve" text-anchor="middle" x="3750.91" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00">activates</text>
+</g>
+<g id="edge146" class="edge">
+<title>IncidentResponse&#45;&gt;EmergencyPause</title>
+<path fill="none" stroke="#dc2626" d="M3620.49,-134.06C3625.88,-155.04 3630.73,-189.79 3611,-208.8 3583.98,-234.85 946.26,-222.33 909,-226.8 908.75,-226.83 908.51,-226.86 908.26,-226.89"/>
+<polygon fill="#dc2626" stroke="#dc2626" points="907.8,-223.42 898.42,-228.36 908.83,-230.34 907.8,-223.42"/>
+<text xml:space="preserve" text-anchor="middle" x="3632.07" y="-201.6" font-family="Helvetica,sans-Serif" font-size="8.00" fill="#dc2626">activate</text>
+</g>
+<g id="node70" class="node">
+<title>ForensicAnalysis</title>
+<polygon fill="#fed7aa" stroke="black" points="3642.17,-52 3587.83,-52 3587.83,-16 3642.17,-16 3642.17,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="3615" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Forensic</text>
+<text xml:space="preserve" text-anchor="middle" x="3615" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">Analysis</text>
+</g>
+<g id="edge142" class="edge">
+<title>IncidentResponse&#45;&gt;ForensicAnalysis</title>
+<path fill="none" stroke="black" d="M3615,-97.33C3615,-87.52 3615,-75 3615,-63.75"/>
+<polygon fill="black" stroke="black" points="3618.5,-63.75 3615,-53.75 3611.5,-63.75 3618.5,-63.75"/>
+<text xml:space="preserve" text-anchor="middle" x="3630.79" y="-72.4" font-family="Helvetica,sans-Serif" font-size="8.00">activates</text>
+</g>
+</g>
+</svg>

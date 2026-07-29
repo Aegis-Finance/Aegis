@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Per-network Uniswap v3 defaults for deploy orchestration. Canonical mainnet addresses match config/uniswap-v3-sonic.json (Uniswap governance deploy on Sonic 146). Testnet (14601) has no canonical bundle — orchestrator deploys v3 core + periphery when config/uniswap-v3-deployed.json is missing.",
+  "sonic": {
+    "chainId": 146,
+    "v3CoreFactory": "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+    "nonfungiblePositionManager": "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+    "positionDescriptor": null,
+    "useCanonicalPeriphery": true,
+    "source": "https://gov.uniswap.org/t/official-uniswap-v3-deployments-list/24323"
+  },
+  "sonicTestnet": {
+    "chainId": 14601,
+    "deployCoreIfMissing": true,
+    "deployPeripheryIfMissing": true,
+    "useCanonicalPeriphery": false,
+    "source": "Operator-deployed stack; addresses written to config/uniswap-v3-deployed.json"
+  }
+}

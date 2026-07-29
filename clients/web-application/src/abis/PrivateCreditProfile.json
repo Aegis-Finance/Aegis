@@ -1,0 +1,2526 @@
+{
+  "contractName": "PrivateCreditProfile",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "verifierFactory_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ActionTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AirdropAlreadyClaimedForRoot",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AllocationAddressNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AllocationAlreadyCompleted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AllocationMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyJoined",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyRegistered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyRegisteredAsReviewer",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyRevoked",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyVoted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AmountAboveMaximum",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AmountBelowMinimum",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AmountExceedsStake",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AmountMustBeGreaterThanZero",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ArrayLengthMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AssessorNullifierUsed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchAlreadyVerified",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchLimitPerBlockExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchNotPending",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchNotReadyForVerification",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchTooLarge",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchTooSmall",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BatchVerificationFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BondNotActiveOrAlreadySlashed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BondReleaseFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BondStillLocked",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CampaignAlreadyRegistered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CampaignManagementNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CampaignNotEligibleForFeedback",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotCancelProposal",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotComputeInverseOfZero",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotDelegateToSelf",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotDeregisterWithActiveJobs",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotExerciseFutures",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotFinalizeCurrentEpoch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotInvertZeroInFp2",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotRemoveLastOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotStakeZero",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CannotUnstakeZero",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CeremonyNotValidated",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ChildProofNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CircuitBreaker",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CircuitNotCompromised",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CircuitTypeNotSupported",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ClaimExceedsMaxAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ClaimNotApproved",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ClaimNotPending",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ClaimPeriodExpired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CliffExceedsDuration",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CliffNotReached",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CollateralNotLiquidatable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CommitmentAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CommitmentNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CompetitionEnded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CompetitionFull",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CompetitionNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CompetitionNotEnded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CompetitionNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ContractExpired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ContractNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ContractNotExpired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CoverageTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CoverageTooLow",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CreatorProfileDoesNotExist",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CreatorProfileInactive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CreatorProfileRequired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CurrentSeasonNotEnded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DAOVoteNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DAOVoteNotPassed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DailyMiningCapExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DelegateeNotCompliant",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DelegateeSanctioned",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DelegationCooldownActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DelegationRestrictedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DescriptionTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DevelopmentKeyInProduction",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DistributionTooEarly",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmergencyAlreadyExecuted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmergencyModeActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyArray",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyBatchNotAllowed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyCircuitName",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyCircuitType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyDescription",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyTitle",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EndorsementTextTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EnforcedPause",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EpochAlreadyFinalized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EpochNotReady",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EpochTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EscrowAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EscrowDoesNotExist",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EuropeanOptionExerciseRestriction",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ExceedsMaxVerificationsPerBlock",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ExcessiveLiquidation",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ExecutionDelayNotMet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ExpectedPause",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ExpiryTooFar",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ExpiryTooSoon",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FeeMRegistrationFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FeedbackAlreadyProvided",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FeedbackTextTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FullAccessBlock",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FutureEpoch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FutureTimestamp",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FutureTimestampNotAllowed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GasLimitTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GovernanceAlreadySet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GovernanceExecutionFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ImmutableVerifierViolation",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IncidentOutsideCoveragePeriod",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IndexOutOfBounds",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IndividualActionCooldownActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InitialSupplyExceedsMaximum",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientAirdropPool",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientBondAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientCollateral",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientConfirmations",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientEndorsementStake",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientFundingForMilestone",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientGasForBatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientGasForExecution",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientGasSavings",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientIncentiveTransfer",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientInitialLiquidity",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientLiquidity",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientLiquidityMinted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientOracleConfirmations",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientOutputAmounts",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientOwners",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientParticipants",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientPoolFunds",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientPrivacyMiningPool",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientQuorum",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientRepayment",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientReserves",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientRewardBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientRewardPool",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientRewardPoolBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientStakeAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientTokenBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientVestedTokens",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientVoterThreshold",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientVotingPower",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientZKProofRewardPool",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InterestRateTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAllocation",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAmounts",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAssessmentScore",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAustrianMentor",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidBatchSize",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidBeneficiary",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidBondIndex",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCampaignManagerAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCapacity",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCeremonyMetadata",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCeremonyTimestamp",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidClaimAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidClaimId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCommitment",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCompetitionName",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidComplexityScore",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCompressionThreshold",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidContractAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidContractId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCrowdShieldAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCurvePoint",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDashboardAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDeductible",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDeliverableHash",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDescriptionHash",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDistributionConfig",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDuration",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidEmergencyState",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidEmergencyType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidEndorsementText",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidEpoch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidEvidence",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidEvidenceHash",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidFactoryAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidFieldElement",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidGasOptimizationTarget",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidGovernanceAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidGovernanceContract",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidGovernanceParameter",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidIncidentTimestamp",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidInputLength",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidInterval",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidJurisdiction",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidLibertyNickname",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidLoanAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMaxParticipants",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMaxStake",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMerkleProof",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMerkleRoot",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMerkleRootValue",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMetricValue",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMilestoneConfiguration",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMinStake",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMultiSig",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMultiplier",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidNotionalAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidOracleAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidOwnerCount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidOwners",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPolicyId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPoolAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPoolId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPoolReserves",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPremium",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPrice",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPrivacyScore",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPrizePool",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProfileDescription",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProfileName",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProof",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProofCount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProofFormat",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProofHash",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProofLength",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProofType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProposalId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProposalThreshold",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidProposalType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPublicInputs",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPublicInputsLength",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidQuorumThreshold",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRange",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRating",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRecursionDepth",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidReleaseDelay",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRewardConfiguration",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRewardRate",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRiskLevel",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRiskScore",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidSkillName",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidStakeAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidStatus",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidStrikePrice",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidSwapAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTargetAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTargetAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTargets",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidThreshold",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTier",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTokenAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTokenPair",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTotalLiquidity",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidUpdateInterval",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidUserAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidVerificationKey",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidVerifier",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidVerifierAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidVotingPeriod",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidVotingPower",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidWaitTime",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidWeightSum",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidZKProof",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "JobNotProcessing",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "JurisdictionProhibited",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "KInvariantViolated",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LibertyNicknameTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LoanNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LoanNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LockDurationTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LockDurationTooShort",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ManagementAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxRecursionExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MilestoneDeadlinePassed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MilestoneDoesNotExist",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MilestoneNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MilestoneNotApproved",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MilestoneNotFoundInCampaign",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MilestoneNotPending",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MilestoneNotSubmitted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MismatchedArrays",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MultiSigAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MustBeContributorToReview",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoActionsProvided",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoActiveDelegation",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoActiveLibertyCycle",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoAvailableProcessor",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoFundingProvided",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoMoreMilestones",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoOracleSetForAsset",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoPowerToDelegate",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoRewardAvailable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoRewardsAvailable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoRewardsToClaim",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoRewardsToCompound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoSubmissionsProcessedSuccessfully",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoTargetsToExecute",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoTokensAvailable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoTokensToRelease",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoVestingSchedule",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoVotingPower",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotActiveProcessor",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotCampaignCreator",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotContractOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotJobProcessor",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotRegisteredAsReviewer",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotVerifiedBacker",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NullifierAlreadyUsed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NullifierAlreadyUsedInBatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OraclePriceInvalid",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OracleRoundNotComplete",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnableInvalidOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "OwnableUnauthorizedAccount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OwnerAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PeriodTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PeriodTooShort",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PolicyNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolEnded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PositionNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PriceDataIsStale",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PriceDeviationTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PriceNotAvailable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PriceTooStale",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProductionKeyRequired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProductionKeyViolation",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProofAlreadyVerified",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProofExpired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProofNotVerified",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProofTimestampTooFuture",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProofTimestampTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProofVerificationFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProposalAlreadyExecuted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProposalExecutionFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProposalExpired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProposalNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProposalNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProposalNotQueued",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProposalNotSucceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProtocolNotAvailable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RecipientNotCompliant",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RecipientSanctioned",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ReentrancyGuardReentrantCall",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ReputationTrackerNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RequestTimestampTooFarInFuture",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RequestTimestampTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RewardAlreadyClaimed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RewardPeriodNotEnded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SanctionedJurisdiction",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SenderNotCompliant",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SenderSanctioned",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SlashAmountExceedsBond",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SlippageExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SovereignAlreadyRegistered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SovereignNotRegistered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "StringTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "StringTooShort",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SubmissionTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SupplyCapExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetBatchSizeTooLarge",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetBatchSizeTooSmall",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetNotContract",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ThresholdNotMet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TimestampOverflow",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TimestampTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenAlreadySet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenTransferFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TooManyActions",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TooManyTargets",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionAlreadyConfirmed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionAlreadyExecuted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionDeadlineExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionExceedsLimit",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionNotConfirmed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionNotExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransferFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedAccess",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedCaller",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedContract",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedEmergencyType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedGovernanceAccess",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedKeeper",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedOperation",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedOracle",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnstakeDelayNotMet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnstakeNotReady",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnverifiedJurisdictionLimit",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VerifierAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VerifierCallFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VerifierNotAvailable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VerifierNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingAlreadyExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingAlreadyRevoked",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingNotRevocable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingNotStarted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingRevokedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VoteTimestampTooFarInFuture",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VoteTimestampTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VotingPeriodEnded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VotingPeriodNotStarted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VotingStillActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroLiquidity",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "nullifierHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "minScoreRequired",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "passed",
+          "type": "bool"
+        }
+      ],
+      "name": "CreditProofVerified",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "profileCommitment",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "score",
+          "type": "uint256"
+        }
+      ],
+      "name": "CreditScoreUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previous",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "next",
+          "type": "address"
+        }
+      ],
+      "name": "GovernanceUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Paused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "profileCommitment",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "creator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "score",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReputationSyncedToProfile",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previous",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "next",
+          "type": "address"
+        }
+      ],
+      "name": "ReputationTrackerUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previous",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "next",
+          "type": "address"
+        }
+      ],
+      "name": "TimelockControllerUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Unpaused",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "TOKEN",
+      "outputs": [
+        {
+          "internalType": "contract PrivateTokenContract",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "VERIFIER_FACTORY",
+      "outputs": [
+        {
+          "internalType": "contract VerifierFactory",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "creditScoreByCommitment",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "governanceContract",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pauseModule",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "paused",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reputationTracker",
+      "outputs": [
+        {
+          "internalType": "contract ICreatorReputationTracker",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "g",
+          "type": "address"
+        }
+      ],
+      "name": "setGovernance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tracker",
+          "type": "address"
+        }
+      ],
+      "name": "setReputationTracker",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "t",
+          "type": "address"
+        }
+      ],
+      "name": "setTimelockController",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "spentNullifiers",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "profileCommitment",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "creator",
+          "type": "address"
+        }
+      ],
+      "name": "syncCreditFromCreatorReputation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timelockController",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unpauseModule",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[8]",
+          "name": "proof",
+          "type": "uint256[8]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "publicInputs",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "updateCreditScore",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "minScoreRequired",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[8]",
+          "name": "proof",
+          "type": "uint256[8]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "publicInputs",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "verifyCreditForLending",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "passed",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}

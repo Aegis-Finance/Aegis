@@ -1,0 +1,36 @@
+{
+  "rpc": {
+    "listen": "127.0.0.1",
+    "port": 8547,
+    "upstreams": [
+      "http://127.0.0.1:8545"
+    ],
+    "timeoutMs": 15000
+  },
+  "circuits": {
+    "listen": "127.0.0.1",
+    "port": 8080,
+    "root": "./circuits",
+    "integrity": {
+      "enabled": true,
+      "sha256": {}
+    }
+  },
+  "security": {
+    "profile": "operational",
+    "allowPublicRpcUpstreams": false,
+    "requireLoopbackBind": true,
+    "maxRpcBodyBytes": 921600,
+    "redactUpstreamErrors": true,
+    "minLogLevel": "warn"
+  },
+  "gateways": {
+    "arweave": [
+      "https://arweave.net",
+      "https://ar-io.net"
+    ],
+    "ipfs": [
+      "https://ipfs.io/ipfs"
+    ]
+  }
+}

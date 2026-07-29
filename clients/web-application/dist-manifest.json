@@ -1,0 +1,26 @@
+{
+  "manifest": "arweave/paths",
+  "version": "0.1.0",
+  "paths": {
+    "index.html": { "id": "P-_XnNEzqzTYDH5TsZlrLes3moEwVb3TaOVMAYQV-_M" },
+    "assets/react-vendor-DkCQxVxJ.js": { "id": "ZsNdFMwLEnBFDMJqYfre3y9rVWnJktlyzBTuLK45Z-s" },
+    "manifest.hash.json": { "id": "ROQmr2lv84CL7hI-0oaJIyQ_Si6tJeN8iRYUqBYe7r8" },
+    "assets/README.md": { "id": "-bzUs_b2XQDhZ6eoBJFLYFrmEMm3KdjBVDhVR69-6II" },
+    "assets/index-B0jnzRQZ.css": { "id": "no14y2xtyBji2MQwEr8v1VBvKpNY8_XqsRe6FHJ95ok" },
+    "circuits/auction/.gitkeep": { "id": "q7w-UBcluwufphHCNKMBUC37QDwqaPIc-7O1VncbTkQ" },
+    "assets/ethers-vendor-CqkT-ilx.js": { "id": "3w5_FN2h7iBsXh4sMD2xgDYAnQsTSKWs_HySGLIo4mg" },
+    "circuits/auction-claim/.gitkeep": { "id": "1AS2fY4aFRCA-zIwh-5eSOZ2XO9fiCHa4Mb_-xM0yZ8" },
+    "circuits/bridge/.gitkeep": { "id": "COEUaAuZJjNvkWxfrT6IAOMaZF3LbVW7maZOIlfD3eU" },
+    "circuits/crowd/.gitkeep": { "id": "J41lRGzzvlIMupq8IMfZMVG_pqNRrb5JMn4EGFYsc5k" },
+    "circuits/README.md": { "id": "Q_UCFq3-A_P76an9JSFfs9xenjmYsVqjjjmsOAYMicg" },
+    "circuits/auction-claim/claim_final.zkey": { "id": "2www1gGOFQoRziSR7srjDGAX3DAslJsgcroakLoBvgc" },
+    "circuits/auction-claim/claim.wasm": { "id": "ATsZs5C0ZCoh4lKXc9Ad-g4f2drAKlOSSJNvCyAd-Yo" },
+    "tokenlists/aegis.tokenlist.json": { "id": "KZ_av49C20DaUZJP1Ep_QvKjr7kiyqSZlJcdE8tTbFE" },
+    "circuits/auction/auction_final.zkey": { "id": "UqkoRHLVO86l2dbRwzwSG_2pm1b8WoW9HaujUAl8TnA" },
+    "circuits/auction/auction.wasm": { "id": "NqREO25v1t6JV1a-qKSTk3QkJ_u8sGT810nSG4ecrt8" },
+    "circuits/crowd/crowd_final.zkey": { "id": "zaA05ROmX9sC4qUh_pokgI0aHzLuetUYqDy5ecm9ErY" },
+    "assets/index-CjdKDoku.js": { "id": "sNW1CT08U4gtvXp3J9jpWNBcEGW0UuGGSwvIrUrT7fU" },
+    "circuits/crowd/crowd.wasm": { "id": "Hl1ZQqa1Qg5kE4Wli_Zc84xB6X5stg9ypmzDo-OSk4g" }
+  },
+  "index": { "path": "index.html" }
+}

@@ -1,0 +1,52 @@
+name: Protocol CI
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "protocol/**"
+      - ".github/workflows/protocol-ci.yml"
+  pull_request:
+    paths:
+      - "protocol/**"
+      - ".github/workflows/protocol-ci.yml"
+
+concurrency:
+  group: protocol-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: protocol
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: protocol/package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Chain pack
+        run: npm run sync:chain-pack
+
+      - name: Compile
+        env:
+          CONTRACT_SIZER_ON_COMPILE: "1"
+        run: npm run compile
+
+      - name: Solhint
+        run: npm run lint
+
+      - name: Validate circuits config
+        run: npm run circuits:validate
+
+      - name: Test
+        run: npm test

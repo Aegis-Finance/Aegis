@@ -1,0 +1,278 @@
+# =============================================================================
+# Aegis DAO Frontend - Environment Variables
+# =============================================================================
+#
+# REQUIRED: Update these values after deploying contracts to Sonic network
+# Copy this file to .env and fill in the actual contract addresses
+#
+# Omni-chain, privacy (ZK), and RPC trust model: docs/OMNICHAIN_PRIVACY_AND_RPC.md
+# Phase-A privacy defaults (RPC warnings, optional third parties, fingerprinting): docs/PRIVACY_DEFAULTS_AND_FINGERPRINTING.md
+# Operator map (contracts gen-env, NETWORK, gateways, CSP build): docs/STACK_ALIGNMENT.md
+# Maximum-privacy phased program + living status + war-room checklist: docs/AEGIS_HIDDEN_FORT_EXECUTION_PLAN.md
+#
+# -----------------------------------------------------------------------------
+# Operational profile (Aegis native app bundle — local RPC only)
+# -----------------------------------------------------------------------------
+# Build with: FRONTEND_BUILD_PROFILE=operational npm run gen:frontend-env (native app only).
+# Arweave/public users: default gen:frontend-env — VITE_OPERATIONAL_PROFILE=0, Sonic public RPC.
+# VITE_OPERATIONAL_PROFILE=1
+# -----------------------------------------------------------------------------
+# Privacy defaults (optional build flags)
+# -----------------------------------------------------------------------------
+# Google Translate loads third-party scripts from Google — default OFF.
+# When set to 1, the production CSP in index.html (injected by vite.config.ts) allows translate.google.com / translate.googleapis.com.
+# VITE_ENABLE_THIRD_PARTY_TRANSLATE=1
+# Canvas/WebGL/audio device fingerprint for DDoS heuristics — default OFF (session random id only).
+# VITE_ENABLE_CLIENT_FINGERPRINT=1
+#
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Core Contract Addresses
+# -----------------------------------------------------------------------------
+
+# PrivateTokenContract (AEGIS token)
+# Deployed address of the main AEGIS token contract
+VITE_TOKEN_ADDRESS=0x65367b92ec2f2BD4429360B64474514C4Aa4d20c
+
+# PrivateGovernance
+# Deployed address of the governance contract (proposals, voting, execution)
+VITE_GOVERNANCE_ADDRESS=0x96323f12E72Fc0ad8833E03B859A4e37402a7139
+
+# VerifierFactory
+# Deployed address of the ZK verifier factory contract
+VITE_VERIFIER_FACTORY_ADDRESS=0xc1B50C2136Aa2Cc63A20430dD4baC764504A17cA
+
+# Optional: OpenZeppelin timelock (after `npm run deploy:timelock` in Aegis-contracts)
+# VITE_TIMELOCK_CONTROLLER_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: GovernanceCore (extracted module; same deployment graph as Governance)
+# VITE_GOVERNANCE_CORE_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: release manifest (synced by `npm run gen:frontend-env` from Aegis-contracts)
+# VITE_VERIFIER_ARTIFACT_MANIFEST=config/verifier-artifact-manifest.json
+
+# Optional: token distribution / FeeM wiring (when deployed)
+# VITE_AUTOMATED_LIQUIDITY_DEPLOYER_ADDRESS=0x0000000000000000000000000000000000000000
+# VITE_TIME_LOCK_PURCHASE_LIMITS_ADDRESS=0x0000000000000000000000000000000000000000
+# VITE_CEREMONY_VERIFIER_ADDRESS=0x0000000000000000000000000000000000000000
+# VITE_FEEM_GOVERNANCE_EXTENSION_ADDRESS=0x0000000000000000000000000000000000000000
+# VITE_AGS_FEE_MONETIZATION_ADDRESS=0x0000000000000000000000000000000000000000
+
+# -----------------------------------------------------------------------------
+# Module Contract Addresses
+# -----------------------------------------------------------------------------
+
+# PrivateStakingContract
+# Deployed address of the staking contract
+VITE_STAKING_ADDRESS=0x0000000000000000000000000000000000000000
+
+# PrivateLendingContract
+# Deployed address of the lending/borrowing contract
+VITE_LENDING_ADDRESS=0x0000000000000000000000000000000000000000
+
+# DecentralizedInsurance
+# Deployed address of the insurance contract
+VITE_INSURANCE_ADDRESS=0x0000000000000000000000000000000000000000
+
+# AegisCrowdShield
+# Deployed address of the crowdfunding contract
+VITE_CROWDFUNDING_ADDRESS=0x0000000000000000000000000000000000000000
+
+# PrivateYieldFarming
+# Deployed address of the yield farming contract
+VITE_YIELD_FARMING_ADDRESS=0x0000000000000000000000000000000000000000
+
+# OnChainPrivacyLeaderboard
+# Deployed address of the privacy leaderboard contract
+VITE_LEADERBOARD_ADDRESS=0x0000000000000000000000000000000000000000
+
+# GovernanceTreasury
+# Holds treasury allocations and executes timelocked disbursements
+VITE_GOVERNANCE_TREASURY_ADDRESS=0x346690742E1847891cF85c3558c7633b496C4C51
+
+# TreasuryLiquidityAllocator
+# Deploys DAO owned liquidity, enforces reserve caps, timelock gated
+VITE_TREASURYLIQUIDITYALLOCATOR_ADDRESS=0x3681DFaC0a6A439882b76078F69a2D8FBf896a46
+
+# TokenAllocation
+# Controls streaming of allocated tranches (ecosystem, treasury, public)
+VITE_TOKEN_ALLOCATION_ADDRESS=0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38
+
+# SonicGatewayWrapper
+# Deployed address of the Sonic Gateway wrapper contract
+# This contract converts standard tokens bridged via Sonic Gateway to private commitments
+VITE_SONIC_GATEWAY_WRAPPER_ADDRESS=0x0000000000000000000000000000000000000000
+
+# PrivateAMMContract
+# Internal private AMM that mirrors public pools
+VITE_PRIVATEAMMCONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: M2 public-pool router (`AegisPublicPoolRouter` in Aegis-contracts). When set and the
+# selected pool matches the router's pinned (AGS, quote) pair, Swap uses `bestQuote` / `swapExactInputOnBest`.
+# VITE_PUBLIC_POOL_ROUTER_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: M3 starter — fixed-price transparent AGS-for-quote escrow (`TransparentEscrowOrders`).
+# VITE_TRANSPARENT_ESCROW_ORDERS_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: M3+ EIP-712 ERC20 limit orders (`SignedLimitOrderRegistry`).
+# VITE_SIGNED_LIMIT_ORDER_REGISTRY_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: M4 v1 atomic RFQ (`RFQIntentSettlement`).
+# VITE_RFQ_INTENT_SETTLEMENT_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: ZK-gated distribution sale (`TokenDistributionSale` + `tokendistribution` verifier).
+# VITE_TOKEN_DISTRIBUTION_SALE_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: DAO liquidity mining gauge + treasury bond auction (`npm run deploy:incentives-bonds` in Aegis-contracts).
+# VITE_LIQUIDITY_MINING_GAUGE_ADDRESS=0x0000000000000000000000000000000000000000
+# VITE_TREASURY_BOND_AUCTION_ADDRESS=0x0000000000000000000000000000000000000000
+# Optional: governance-gated messaging adapter allowlist (`npm run deploy:messaging-adapter-allowlist` → `gen:frontend-env`).
+# VITE_MESSAGING_ADAPTER_ALLOWLIST_ADDRESS=0x0000000000000000000000000000000000000000
+# (UI: no dedicated page yet — integrators read contract + ../docs/OMNICHAIN_PRIVACY_AND_RPC.md §9.5)
+
+# CrossChainPrivacyBridge
+# Manages private commitments and validator set for cross-chain transfers
+VITE_CROSS_CHAIN_BRIDGE_ADDRESS=0x5198351b89371C06DCC0195664836cAdadf81718
+
+# GovernanceControlledEmergency
+# Circuit breaker controlled via governance for critical shutdowns
+VITE_GOVERNANCE_EMERGENCY_ADDRESS=0x0000000000000000000000000000000000000000
+
+# PoolPriceValidatorEnhanced
+# Enhanced price validator with TWAP, multi-oracle support, and flash loan detection
+# Falls back to PoolPriceValidator if enhanced version not deployed
+VITE_POOL_PRICE_VALIDATOR_ADDRESS=0x0000000000000000000000000000000000000000
+
+# -----------------------------------------------------------------------------
+# TGE Dutch auction (`AutomatedDutchAuction`)
+# -----------------------------------------------------------------------------
+# Not used by this app. Deploy `../frontend-token-distribution/` and set `VITE_AUCTION_ADDRESS` there.
+
+# AutomatedBondingCurve (post-TGE; optional until deployed)
+# VITE_BONDING_CURVE_ADDRESS=0x0000000000000000000000000000000000000000
+
+# Optional: Prover URL (HTTPS helper for mint/shield and transparent exit — POST …/mint/shield/prove, …/transfer/unshield/prove).
+# Wallet transparent exit requires this today (not the legacy `VITE_TRANSFER_*` / `transfer` circuit). On-chain `unshield` uses factory type `transfer-unshield`.
+# If omitted, flows that ship local wasm may still use in-browser proving where implemented.
+# Populate `public/circuits/` first: `cd frontend && npm run copy-circuits` (see docs/ops/ZK_FRONTEND_RELEASE.md).
+# VITE_PROVER_URL=https://prover.yourdomain.com
+
+# Optional: link to sale / claim / economics documentation (token-distribution app)
+# VITE_SALE_DOCS_URL=https://docs.example.com/token-sale
+
+# ZK Circuit Artifacts — see `public/circuits/README.md` (this app does not load TGE auction circuits; those ship with `frontend-token-distribution/`).
+
+# ZK — bonding curve (factory circuits bonding-curve-purchase / bonding-curve-sell)
+# VITE_BONDING_CURVE_PURCHASE_WASM=/circuits/bonding-curve-purchase/bonding_curve_purchase.wasm
+# VITE_BONDING_CURVE_PURCHASE_ZKEY=/circuits/bonding-curve-purchase/bonding_curve_purchase_final.zkey
+# VITE_BONDING_CURVE_SELL_WASM=/circuits/bonding-curve-sell/bonding_curve_sell.wasm
+# VITE_BONDING_CURVE_SELL_ZKEY=/circuits/bonding-curve-sell/bonding_curve_sell_final.zkey
+
+# Bridge (private transfer — filenames match `generate-frontend-env` / `public/circuits/bridge/`)
+# VITE_BRIDGE_TRANSFER_WASM=/circuits/bridge/bridge_transfer.wasm
+# VITE_BRIDGE_TRANSFER_ZKEY=/circuits/bridge/bridge_transfer_final.zkey
+
+# Private AMM (`private-amm` — same circuit used by Swap UI `proveSwap`)
+# VITE_PRIVATE_AMM_WASM=/circuits/private-amm/private-amm.wasm
+# VITE_PRIVATE_AMM_ZKEY=/circuits/private-amm/private-amm_final.zkey
+
+# Token distribution (allowlist + caps; optional until wired in contracts)
+# VITE_TOKENDISTRIBUTION_WASM=/circuits/tokendistribution/tokendistribution.wasm
+# VITE_TOKENDISTRIBUTION_ZKEY=/circuits/tokendistribution/tokendistribution_final.zkey
+
+# Crowdfunding (private) - optional
+# VITE_CROWD_WASM=/circuits/crowd/crowd.wasm
+# VITE_CROWD_ZKEY=/circuits/crowd/crowd_final.zkey
+
+# Private lending — split VerifierFactory types (see `frontend/src/utils/prover.ts`, `Aegis-contracts/contracts/PrivateLendingContract.sol`)
+# VITE_LENDING_TENOR_WASM=/circuits/lending-tenor/lending_tenor.wasm
+# VITE_LENDING_TENOR_ZKEY=/circuits/lending-tenor/lending_tenor_final.zkey
+# VITE_LENDING_LIQUIDITY_WASM=/circuits/lending-liquidity/lending_liquidity.wasm
+# VITE_LENDING_LIQUIDITY_ZKEY=/circuits/lending-liquidity/lending_liquidity_final.zkey
+# VITE_LENDING_REPAY_WASM=/circuits/lending-repay/lending_repay.wasm
+# VITE_LENDING_REPAY_ZKEY=/circuits/lending-repay/lending_repay_final.zkey
+# VITE_LENDING_WITHDRAW_WASM=/circuits/lending-withdraw/lending_withdraw.wasm
+# VITE_LENDING_WITHDRAW_ZKEY=/circuits/lending-withdraw/lending_withdraw_final.zkey
+# VITE_LENDING_LIQUIDATE_WASM=/circuits/lending-liquidate/lending_liquidate.wasm
+# VITE_LENDING_LIQUIDATE_ZKEY=/circuits/lending-liquidate/lending_liquidate_final.zkey
+
+# -----------------------------------------------------------------------------
+# Token Lists (for logos and metadata in UIs)
+# -----------------------------------------------------------------------------
+# Comma-separated list of token list URLs (Arweave/IPFS/HTTPS). Our local default:
+# VITE_TOKENLIST_URLS=/tokenlists/aegis.tokenlist.json
+
+# -----------------------------------------------------------------------------
+# Optional: Public Liquidity Pool Configuration
+# -----------------------------------------------------------------------------
+#
+# Pools are configured using the pattern:
+#   VITE_POOL_<POOL_KEY>_ADDRESS=0x...
+#   VITE_POOL_<POOL_KEY>_TOKEN_ADDRESS=0x...      (optional)
+#   VITE_POOL_<POOL_KEY>_TOKEN_SYMBOL=AGS/S   (optional display label)
+#   VITE_POOL_<POOL_KEY>_LP_SYMBOL=AGS-LP         (optional display label)
+#   VITE_POOL_<POOL_KEY>_USE_NATIVE=true|false
+#
+# Example:
+VITE_POOL_WETH_ADDRESS=0xD7c29aC1E56d2E5720A30890F491E54AE2e5A5aE
+VITE_POOL_WETH_TOKEN_SYMBOL=WETH
+VITE_POOL_WETH_TOKEN_ADDRESS=0x4200000000000000000000000000000000000006
+VITE_POOL_WETH_USE_NATIVE=true
+VITE_POOL_WETH_LP_SYMBOL=AGS-WETH-LP
+
+# -----------------------------------------------------------------------------
+# Optional: Network Configuration
+# -----------------------------------------------------------------------------
+
+# Default network for wallet add/switch + fallbacks (sonicTestnet | sonicMainnet)
+# Production Sonic mainnet: VITE_DEFAULT_NETWORK=sonicMainnet
+# VITE_DEFAULT_NETWORK=sonicTestnet
+
+# Your own or DAO-operated HTTPS JSON-RPC (preferred default read provider when set)
+# VITE_DAO_RPC_URL=https://rpc.yourdao.example.com
+
+# Do NOT put Etherscan API keys in VITE_* — they ship in the public static bundle.
+# Contract verification uses ETHERSCAN_API_KEY in Aegis-contracts (Hardhat), not the browser.
+
+# On-chain analytics + revenue router (see docs/ONCHAIN_ANALYTICS.md)
+# VITE_DAO_REVENUE_ROUTER_ADDRESS=
+# VITE_ANALYTICS_SUB_PRICE_WEI=5000000000000000000
+
+# Custom RPC URL (overrides default network RPC)
+# Leave empty to use network defaults
+# VITE_CUSTOM_RPC_URL=
+
+# Comma-separated extra hostnames allowed for "Custom RPC" (must still be HTTPS).
+# Built-in: *.soniclabs.com and http://127.0.0.1 / localhost only.
+# VITE_TRUSTED_RPC_HOSTS=my-rpc.internal.example.com
+
+# Optional: comma-separated origins (full https:// URL or bare hostname) merged into production CSP `connect-src` at build.
+# Covers APIs not already implied by VITE_DAO_RPC_URL / gateway envs (e.g. internal telemetry you intentionally allow).
+# VITE_CSP_EXTRA_CONNECT=https://metrics.internal.example.com
+
+# -----------------------------------------------------------------------------
+# Optional: Sovereign Node Configuration
+# -----------------------------------------------------------------------------
+#
+# Configure Aegis sovereign nodes for critical operations
+# These nodes provide additional security and redundancy
+# If not configured, the frontend will use standard RPC providers
+#
+# VITE_SOVEREIGN_NODE_1=https://sovereign-node-1.example.com
+# VITE_SOVEREIGN_NODE_2=https://sovereign-node-2.example.com
+# VITE_SOVEREIGN_NODE_3=https://sovereign-node-3.example.com
+#
+# Note: Local node (127.0.0.1:8545) is automatically included if available
+
+# -----------------------------------------------------------------------------
+# Notes
+# -----------------------------------------------------------------------------
+# 
+# 1. All addresses must be valid Ethereum addresses (0x followed by 40 hex chars)
+# 2. Addresses are case-insensitive but should be in checksum format for best practice
+# 3. After deployment, verify all addresses on SonicScan
+# 4. Test with small amounts before using main funds
+#
+# =============================================================================
+

@@ -1,0 +1,14 @@
+{
+  "name": "aegis",
+  "version": "1.0.0",
+  "private": false,
+  "license": "BUSL-1.1",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "protocol:install": "npm ci --prefix protocol",
+    "protocol:compile": "npm run compile --prefix protocol",
+    "protocol:test": "npm test --prefix protocol"
+  }
+}

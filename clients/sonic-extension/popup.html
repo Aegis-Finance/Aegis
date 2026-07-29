@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Resolver</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 12px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050816;
+      color: #f9fafb;
+      min-width: 260px;
+    }
+    h1 {
+      font-size: 14px;
+      margin: 0 0 8px 0;
+    }
+    p {
+      font-size: 11px;
+      margin: 0 0 10px 0;
+      color: #9ca3af;
+    }
+    .input-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    input {
+      flex: 1;
+      padding: 6px 8px;
+      border-radius: 4px;
+      border: 1px solid #4b5563;
+      background: #020617;
+      color: #f9fafb;
+      font-size: 12px;
+    }
+    input:focus {
+      outline: none;
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 1px #38bdf8;
+    }
+    button {
+      padding: 6px 10px;
+      border-radius: 4px;
+      border: none;
+      background: #38bdf8;
+      color: #020617;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    button.secondary {
+      background: #020617;
+      color: #f9fafb;
+      border: 1px solid #4b5563;
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+    .row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .status {
+      font-size: 11px;
+      min-height: 14px;
+    }
+    .status.ok {
+      color: #4ade80;
+    }
+    .status.error {
+      color: #f97373;
+    }
+    .resolved-url {
+      font-size: 10px;
+      color: #9ca3af;
+      word-break: break-all;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Open agscoin.sonic</h1>
+  <p>This extension never sends data anywhere except when you open the dapp.</p>
+  <div class="input-row">
+    <input id="domainInput" type="text" value="agscoin.sonic" spellcheck="false">
+    <button id="openBtn">Open</button>
+  </div>
+  <div class="row">
+    <button id="quickBtn" class="secondary">Open agscoin.sonic</button>
+  </div>
+  <div id="status" class="status"></div>
+  <div id="resolvedUrl" class="resolved-url"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
