@@ -8,7 +8,7 @@ const SONIC_DOCS = 'https://docs.soniclabs.com/'
 const EXPLORER = 'https://sonicscan.org'
 const X_COMMUNITY = 'https://x.com/aegisecosystem'
 const TELEGRAM = 'https://t.me/Aegisecosystem'
-const AUCTION = '0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc'
+const AUCTION = '0x0a1C179317cB821AF838F4EF4bc3B4b7B81F43A4'
 
 type ProductStatus = 'live' | 'ready' | 'progress' | 'soon'
 

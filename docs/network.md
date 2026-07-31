@@ -1,19 +1,19 @@
 # Sonic mainnet
 
-Official Aegis deployment on **Sonic** (chain ID **146**).
+Official Aegis deployment on **Sonic** (chain ID **146**). **AGS v2** (2026-07-31).
 
 | Role | Address |
 |------|---------|
-| **AGS token** | `0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d` |
-| **Governance** | `0x2e3314e1f3438bE821Be3343322DA66C6925F43d` |
-| **Governance treasury** | `0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB` |
-| **Dutch auction** | `0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc` |
-| **Privacy entry router** | `0x1ddc44Cf9543F892F47e57BEdf6d7c6DE0507B2F` |
+| **AGS token** | `0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613` |
+| **Governance** | `0x5732A649e16c8763132E368188Ce409A87e6F93d` |
+| **Governance treasury** | `0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB` |
+| **Dutch auction** (9.5M; not activated) | `0x0a1C179317cB821AF838F4EF4bc3B4b7B81F43A4` |
+| **Liquidity seed vault** | `0x71e748Af11A1Bd0d83F33C77f7AbA77D59796561` |
+| **Public pool factory** | `0x771b829C2Dfa320b2b7E8F934668e0209E83f6D5` |
 | **Verifier factory** | `0x286D8927A7b5De5B23255288191907c74362Ca1C` |
-| **Timelock** (48h) | `0xFC1078b104Be6d0cC596D6E9BfA0dC3b27B95B53` |
 
 **Wallet import:** AGS on Sonic — contract above, 18 decimals, symbol **AGS**.
 
-**Do not use** retired token `0xE38c9797…` from an superseded deploy.
+**Do not use** retired token `0x5125bF73…` or earlier `0xE38c9797…`.
 
 Verify any address on [sonicscan.org](https://sonicscan.org) before sending funds.

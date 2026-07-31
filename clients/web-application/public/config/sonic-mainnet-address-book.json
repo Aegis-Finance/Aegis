@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T04:20:40.613Z",
+  "generatedAt": "2026-07-31T05:35:13.652Z",
   "network": "sonic",
   "chainId": 146,
   "rpcUrl": "https://rpc.soniclabs.com",
@@ -10,7 +10,7 @@
       "ags": {
         "symbol": "AGS",
         "name": "PrivateTokenContract",
-        "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+        "address": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
         "decimals": 18,
         "role": "Canonical shielded ERC-20 — use this everywhere"
       }
@@ -19,13 +19,25 @@
       "agsTokenDeploy1": {
         "label": "RETIRED — PrivateTokenContract deploy #1 (do not use)",
         "address": "0xE38c9797cBfc61C403AC32F29aC8c197b53108C2"
+      },
+      "agsTokenV1": {
+        "label": "RETIRED — AGS v1 PrivateTokenContract (do not use)",
+        "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d"
+      },
+      "dutchAuctionV1Retired": {
+        "label": "RETIRED — AutomatedDutchAuction v1 stranded inventory (do not use)",
+        "address": "0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc"
+      },
+      "dutchAuctionV1Underfunded": {
+        "label": "RETIRED — AutomatedDutchAuction v1 verify redeploy (do not use)",
+        "address": "0x25be2483789d8254D7AF9F94DdA19481885C3B59"
       }
     },
     "bridge": {
       "sonic": [
         {
           "symbol": "AGS",
-          "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+          "address": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
           "enabled": false,
           "settlementRail": null,
           "canonical": true
@@ -101,15 +113,20 @@
     }
   },
   "core": {
-    "PrivateTokenContract": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+    "PrivateTokenContract": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
     "VerifierFactory": "0x286D8927A7b5De5B23255288191907c74362Ca1C",
     "CeremonyVerifier": "0x014ad25D920eFE343898B0F382a32F4739915964",
-    "PrivateGovernance": "0x2e3314e1f3438bE821Be3343322DA66C6925F43d",
-    "GovernanceCore": "0xa9d879265eF247C7690183a135Bf397aF830B1b7",
-    "PrivacyEntryRouter": "0x1ddc44Cf9543F892F47e57BEdf6d7c6DE0507B2F",
-    "AutomatedDutchAuction": "0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc",
-    "StagedCapitalVault": "0xb9CA41Ceb14a7e92587f6B93d78E87eb1770aBf1"
+    "PrivateGovernance": "0x5732A649e16c8763132E368188Ce409A87e6F93d",
+    "GovernanceCore": "0xd1383015522B4a6a795e40a3392f30f86F2114de",
+    "PrivacyEntryRouter": "0xE28A5A749328A2A32F11C9656F4Db5DB001EF9d1",
+    "AutomatedDutchAuction": "0x0a1C179317cB821AF838F4EF4bc3B4b7B81F43A4",
+    "LiquiditySeedVault": "0x71e748Af11A1Bd0d83F33C77f7AbA77D59796561",
+    "PublicLiquidityPoolFactory": "0x771b829C2Dfa320b2b7E8F934668e0209E83f6D5",
+    "GovernanceTreasury": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB",
+    "TokenAllocation": "0x40588b1366dFb61E3A10C7d83fcEb84d6D70B948",
+    "StagedCapitalVault": null
   },
+  "agsVersion": 2,
   "contracts": [
     {
       "name": "ProofLib",
@@ -120,9 +137,12 @@
     },
     {
       "name": "TokenAllocation",
-      "address": "0x60466717612458218636A91149279B2555B8902c",
+      "address": "0x40588b1366dFb61E3A10C7d83fcEb84d6D70B948",
       "category": "contract",
-      "meta": {},
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z",
+        "note": "AGS v2 four-bucket"
+      },
       "hasBytecode": true
     },
     {
@@ -141,37 +161,48 @@
     },
     {
       "name": "PrivateTokenContract",
-      "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+      "address": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
       "category": "contract",
-      "meta": {},
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z",
+        "note": "AGS v2"
+      },
       "hasBytecode": true
     },
     {
       "name": "GovernanceCore",
-      "address": "0xa9d879265eF247C7690183a135Bf397aF830B1b7",
+      "address": "0xd1383015522B4a6a795e40a3392f30f86F2114de",
       "category": "contract",
-      "meta": {},
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z"
+      },
       "hasBytecode": true
     },
     {
       "name": "GovernanceDelegation",
-      "address": "0x6D31ba2A0Bb24Da07140D30Fa40CD9723698a67A",
+      "address": "0xad801287F7B81aA776A9a8924D26126a55578D1b",
       "category": "contract",
-      "meta": {},
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z"
+      },
       "hasBytecode": true
     },
     {
       "name": "GovernanceTreasury",
-      "address": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
+      "address": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB",
       "category": "contract",
-      "meta": {},
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z"
+      },
       "hasBytecode": true
     },
     {
       "name": "PrivateGovernance",
-      "address": "0x2e3314e1f3438bE821Be3343322DA66C6925F43d",
+      "address": "0x5732A649e16c8763132E368188Ce409A87e6F93d",
       "category": "contract",
-      "meta": {},
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z"
+      },
       "hasBytecode": true
     },
     {
@@ -194,149 +225,10 @@
     },
     {
       "name": "TimeLockPurchaseLimits",
-      "address": "0xCbf629c2Ee41Ccc987d5B9de5Afd216603313d88",
+      "address": "0xAdCbAA07Ec4F07470eEF52f8A017daE434af79DE",
       "category": "contract",
       "meta": {
-        "deployedAt": "2026-06-22T12:52:38.751Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "DecentralizedInsurance",
-      "address": "0x1e44eCA8CfB17975B0A54458a7962Fd80399ae83",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:52:41.875Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "DecentralizedPrivacyRewards",
-      "address": "0xCCB6FFE720Ab310ECf11416E5698F2756770f670",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:52:45.742Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PoolPriceValidatorEnhanced",
-      "address": "0x0A336a2e2a0D4e413B8C18A03414582dF43F28a2",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:52:48.895Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_wS",
-      "address": "0xB70aC4bFB530050Dec33773dc4f9D4766BeEaf5e",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:52:52.008Z",
-        "tokenSymbol": "wS (wrapped)",
-        "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
-        "lpName": "AGS-wS LP",
-        "lpSymbol": "AGS-wS-LP",
-        "useNative": false,
-        "feeBps": 30
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_wS.tokenAddress",
-      "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
-      "category": "wired-reference",
-      "parent": "PublicLiquidityPool_wS",
-      "hasBytecode": true
-    },
-    {
-      "name": "AegisPublicPoolRouter",
-      "address": "0x424C60D77fa980111F957A4DE731871B0a32554e",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:52:55.707Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "TreasuryLiquidityAllocator",
-      "address": "0x87E2702C38C0E6a34Aa986Fa037c905e56b82c79",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:02.730Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "TransparentEscrowOrders",
-      "address": "0x9A767ADC596Da8c68e8cC0c18fDE547Cb2488fA3",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:07.164Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "DaoDynamicRevenueRouter",
-      "address": "0x95a5B961770A4883d856293B0E96f19b58c2d260",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:10.904Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateLendingContract",
-      "address": "0x0C63632373d61eCE27eebDA296785545b2Fe947F",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:14.925Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateAMMContract",
-      "address": "0xa9bA318a411Fcbdb5ED30Dc9a5b29BA9838ACeB6",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:18.875Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateStakingContract",
-      "address": "0x202c03378d10c4f329634a37ca94CE52cBC3aF80",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:21.916Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateYieldFarming",
-      "address": "0xDdB0810BC63304573c10022c7BcFf4Bce4B7DCC7",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:25.814Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateDerivatives",
-      "address": "0x6337E449B0E5c7E3456825FE7568E0bB9DeAE730",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:29.754Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "OnChainPrivacyLeaderboard",
-      "address": "0xe750F5A06D3C3C83c434c3ac20C2138cA6947Fb1",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:34.148Z"
+        "deployedAt": "2026-07-31T04:42:43.712Z"
       },
       "hasBytecode": true
     },
@@ -368,24 +260,6 @@
       "hasBytecode": true
     },
     {
-      "name": "CrossChainPrivacyBridge",
-      "address": "0xF99299Ee549866becf4F480Fa691423b90E60fF9",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:50.708Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "SonicGatewayWrapper",
-      "address": "0xe2F157E44433F6d9F0699A823A85d4B00F6CB2F5",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:53:55.180Z"
-      },
-      "hasBytecode": true
-    },
-    {
       "name": "CrowdfundingVerifier",
       "address": "0x312429A2E9DA72C664BF3598dD6d6170ba1515FD",
       "category": "contract",
@@ -400,15 +274,6 @@
       "category": "contract",
       "meta": {
         "deployedAt": "2026-06-22T12:54:03.681Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "AegisCrowdShield",
-      "address": "0x6f34d448C14B083911d77Df7eB4254c1E5FF465a",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:54:06.738Z"
       },
       "hasBytecode": true
     },
@@ -566,63 +431,23 @@
       "hasBytecode": true
     },
     {
-      "name": "SignedLimitOrderRegistry",
-      "address": "0x593153F60078274abDDdA64bB255B4f6A1Ec54F9",
-      "category": "contract",
-      "meta": {},
-      "hasBytecode": true
-    },
-    {
-      "name": "RFQIntentSettlement",
-      "address": "0x6fb8aD8d63b5C5509Df382A20f35d3Dd4417d017",
-      "category": "contract",
-      "meta": {},
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivacyEntryRouter",
-      "address": "0x1ddc44Cf9543F892F47e57BEdf6d7c6DE0507B2F",
-      "category": "contract",
-      "meta": {},
-      "hasBytecode": true
-    },
-    {
-      "name": "MessagingAdapterAllowlist",
-      "address": "0xcc4B1ED054B2e1D0000226d718659667863Af3D6",
-      "category": "contract",
-      "meta": {},
-      "hasBytecode": true
-    },
-    {
-      "name": "StagedCapitalVault",
-      "address": "0xb9CA41Ceb14a7e92587f6B93d78E87eb1770aBf1",
-      "category": "contract",
-      "meta": {},
-      "hasBytecode": true
-    },
-    {
       "name": "AutomatedLiquidityDeployer",
-      "address": "0xDecbdFB10Fb30aB2517fa423444caCDd71B4059B",
+      "address": "0xD26ed05EAB965dB9270c051B4C25F60DeCeC963f",
       "category": "contract",
       "meta": {
-        "agsToken": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+        "deployedAt": "2026-07-31T04:42:43.712Z",
+        "agsToken": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
         "weth9": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
         "npm": "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
         "poolFee": 3000,
-        "excessTokenSink": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
-        "positionRecipient": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
-        "addressSources": {
-          "AGS_TOKEN": "deployments/latest.json → PrivateTokenContract",
-          "UNISWAP_V3_FACTORY": "config/uniswap-v3-deployed.json",
-          "WRAPPED_NATIVE": "config/uniswap-v3-deployed.json",
-          "UNISWAP_V3_NPM": "config/uniswap-v3-deployed.json"
-        }
+        "excessTokenSink": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB",
+        "positionRecipient": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB"
       },
       "hasBytecode": true
     },
     {
       "name": "AutomatedLiquidityDeployer.agsToken",
-      "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+      "address": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
       "category": "wired-reference",
       "parent": "AutomatedLiquidityDeployer",
       "hasBytecode": true
@@ -643,25 +468,25 @@
     },
     {
       "name": "AutomatedLiquidityDeployer.excessTokenSink",
-      "address": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
+      "address": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB",
       "category": "wired-reference",
       "parent": "AutomatedLiquidityDeployer",
       "hasBytecode": true
     },
     {
       "name": "AutomatedLiquidityDeployer.positionRecipient",
-      "address": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
+      "address": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB",
       "category": "wired-reference",
       "parent": "AutomatedLiquidityDeployer",
       "hasBytecode": true
     },
     {
       "name": "AutomatedDutchAuction",
-      "address": "0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc",
+      "address": "0x0a1C179317cB821AF838F4EF4bc3B4b7B81F43A4",
       "category": "contract",
       "meta": {
-        "ecosystemProceedsSink": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
-        "liquidityDeployer": "0xDecbdFB10Fb30aB2517fa423444caCDd71B4059B",
+        "ecosystemProceedsSink": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB",
+        "liquidityDeployer": "0xD26ed05EAB965dB9270c051B4C25F60DeCeC963f",
         "payTokenWs": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
         "payTokenWeth": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
         "payTokenUsdc": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
@@ -674,23 +499,25 @@
         "maxPerAddress": "50000000000000000000000",
         "minPurchase": "100000000000000000000",
         "durationSec": "2592000",
-        "wiredTimeLock": "0xCbf629c2Ee41Ccc987d5B9de5Afd216603313d88",
-        "wiredLiquidityDeployer": "0xDecbdFB10Fb30aB2517fa423444caCDd71B4059B",
-        "wiredAt": "2026-06-22T12:57:21.375Z",
-        "deferredSettlement": false
+        "wiredTimeLock": "0xAdCbAA07Ec4F07470eEF52f8A017daE434af79DE",
+        "wiredLiquidityDeployer": "0xD26ed05EAB965dB9270c051B4C25F60DeCeC963f",
+        "wiredAt": "2026-07-31T04:42:43.712Z",
+        "deferredSettlement": false,
+        "deployedAt": "2026-07-31T04:42:43.712Z",
+        "note": "AGS v2 — 9.5M only; activate only via Step E"
       },
       "hasBytecode": true
     },
     {
       "name": "AutomatedDutchAuction.ecosystemProceedsSink",
-      "address": "0x90FBc45D84e5791B43c37c099f0CD981Fcf42FeB",
+      "address": "0x426fCd0B80BD5E4CE9722c65b02E61A0Bc182fbB",
       "category": "wired-reference",
       "parent": "AutomatedDutchAuction",
       "hasBytecode": true
     },
     {
       "name": "AutomatedDutchAuction.liquidityDeployer",
-      "address": "0xDecbdFB10Fb30aB2517fa423444caCDd71B4059B",
+      "address": "0xD26ed05EAB965dB9270c051B4C25F60DeCeC963f",
       "category": "wired-reference",
       "parent": "AutomatedDutchAuction",
       "hasBytecode": true
@@ -739,274 +566,33 @@
     },
     {
       "name": "AutomatedDutchAuction.wiredTimeLock",
-      "address": "0xCbf629c2Ee41Ccc987d5B9de5Afd216603313d88",
+      "address": "0xAdCbAA07Ec4F07470eEF52f8A017daE434af79DE",
       "category": "wired-reference",
       "parent": "AutomatedDutchAuction",
       "hasBytecode": true
     },
     {
       "name": "AutomatedDutchAuction.wiredLiquidityDeployer",
-      "address": "0xDecbdFB10Fb30aB2517fa423444caCDd71B4059B",
+      "address": "0xD26ed05EAB965dB9270c051B4C25F60DeCeC963f",
       "category": "wired-reference",
       "parent": "AutomatedDutchAuction",
       "hasBytecode": true
     },
     {
       "name": "AutomatedBondingCurve",
-      "address": "0xef7498643e91D56001C720b338FC7C7ab04e2c28",
+      "address": "0xf80A23dc3C4d612F103b9b5530ED1BF0bfb1aA6F",
       "category": "contract",
       "meta": {
-        "deployedAt": "2026-06-22T12:57:48.287Z"
+        "deployedAt": "2026-07-31T04:42:43.712Z"
       },
       "hasBytecode": true
     },
     {
       "name": "PublicSaleContract",
-      "address": "0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc",
-      "category": "contract",
-      "meta": {},
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge",
-      "address": "0xd78C0086b84B9Bf67D924AB3c6bf3b9742eFD176",
+      "address": "0x0a1C179317cB821AF838F4EF4bc3B4b7B81F43A4",
       "category": "contract",
       "meta": {
-        "stakeToken": "0xB70aC4bFB530050Dec33773dc4f9D4766BeEaf5e",
-        "rewardToken": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
-        "deprecated": true,
-        "note": "Legacy wS pool gauge — use LiquidityMiningGauge_USDC / _SONIC"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge.stakeToken",
-      "address": "0xB70aC4bFB530050Dec33773dc4f9D4766BeEaf5e",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge",
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge.rewardToken",
-      "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge",
-      "hasBytecode": true
-    },
-    {
-      "name": "AegisExecutionRelay",
-      "address": "0xFe2F0EE9FAa04490C176730Da77905327383720f",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-07-07T20:27:26.777Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_USDC",
-      "address": "0x754df8b03Ddb0EDCAD0DCfCF030EB935cEb19954",
-      "category": "contract",
-      "meta": {
-        "stakeToken": "0x4727D2BD9ec67E9235cc64030231984caF669037",
-        "rewardToken": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
-        "executionRelay": "0xFe2F0EE9FAa04490C176730Da77905327383720f",
-        "deployedAt": "2026-07-08T01:34:58.648Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_USDC.stakeToken",
-      "address": "0x4727D2BD9ec67E9235cc64030231984caF669037",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge_USDC",
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_USDC.rewardToken",
-      "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge_USDC",
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_USDC.executionRelay",
-      "address": "0xFe2F0EE9FAa04490C176730Da77905327383720f",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge_USDC",
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_SONIC",
-      "address": "0x47ca8423Cfd758363727f98723675faF00C25a50",
-      "category": "contract",
-      "meta": {
-        "stakeToken": "0x0e3B48E373281b47c8E3c9541f798C1d7655e74E",
-        "rewardToken": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
-        "executionRelay": "0xFe2F0EE9FAa04490C176730Da77905327383720f",
-        "deployedAt": "2026-07-08T01:36:14.225Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_SONIC.stakeToken",
-      "address": "0x0e3B48E373281b47c8E3c9541f798C1d7655e74E",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge_SONIC",
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_SONIC.rewardToken",
-      "address": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge_SONIC",
-      "hasBytecode": true
-    },
-    {
-      "name": "LiquidityMiningGauge_SONIC.executionRelay",
-      "address": "0xFe2F0EE9FAa04490C176730Da77905327383720f",
-      "category": "wired-reference",
-      "parent": "LiquidityMiningGauge_SONIC",
-      "hasBytecode": true
-    },
-    {
-      "name": "TreasuryBondAuction",
-      "address": "0x37e3d8FFde6Ec15435E3748D435ec73E5a73fCA2",
-      "category": "contract",
-      "meta": {
-        "quoteToken": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "TreasuryBondAuction.quoteToken",
-      "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
-      "category": "wired-reference",
-      "parent": "TreasuryBondAuction",
-      "hasBytecode": true
-    },
-    {
-      "name": "StealthAddressHub",
-      "address": "0x74b005cCA8129Aab39fDaC06277623CbBA8C4F02",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:58:44.873Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "RelayerMarketplace",
-      "address": "0x85a35B7C1884bc21085c0a1073b2D6102A448A3B",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:58:48.697Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "SelectiveDisclosureHub",
-      "address": "0x9569f53aAd642A58A0343D3fA67C6c730DdC9C5A",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:58:52.395Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivacySavingsVault",
-      "address": "0x6621BdDd8a1bB7b563cC1284C9919d18c77Cea62",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:58:56.098Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "AnonymousPayroll",
-      "address": "0x7898F695C819132df9D4531c554714D31Fc280CC",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:58:59.820Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "ShieldedTreasuryManager",
-      "address": "0x53e88d1D1876eE372e6340bAD18E60f2A1B714B0",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:02.772Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateBondMarket",
-      "address": "0x01b1c8Ec88880936BD430Fa06Ca53F09F6045c39",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:05.734Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivatePredictionMarket",
-      "address": "0x44E6888F53eC004D4abc1947917aE4B6Ed6bEa84",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:08.692Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateStableVault",
-      "address": "0x329a87DfaA3cE11296F0A05bA04C960007CE1dB4",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:12.375Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PrivateCreditProfile",
-      "address": "0x7E7ADd994f0969d447Fb4Af9F5B7167D0b90D11d",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:16.110Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "ShieldedGovernanceTally",
-      "address": "0x4BF32b1ca9912f43B40eA60f5283cBe26ae9850f",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:19.838Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "ShieldedYieldVault",
-      "address": "0xBC52844D54Ffb08490CFbA7aFc3fAcde34414A6A",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:22.816Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "ShieldedIncentiveClaims",
-      "address": "0x3C4Eb0F92c030C8D62246470210Ff4e7896F9214",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:25.777Z"
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "ShieldedEcosystemRouter",
-      "address": "0x8911F99A0A86264b6979298D46015251094f6b4b",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-22T12:59:28.679Z"
+        "note": "alias of AutomatedDutchAuction"
       },
       "hasBytecode": true
     },
@@ -1021,94 +607,6 @@
           "executorOpen": true
         }
       },
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_SONIC",
-      "address": "0x0e3B48E373281b47c8E3c9541f798C1d7655e74E",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-30T11:26:50.407Z",
-        "tokenSymbol": "S (native)",
-        "tokenAddress": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
-        "lpName": "AGS-SONIC LP",
-        "lpSymbol": "AGS-SONIC-LP",
-        "useNative": true,
-        "feeBps": 30
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_SONIC.tokenAddress",
-      "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
-      "category": "wired-reference",
-      "parent": "PublicLiquidityPool_SONIC",
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_USDC",
-      "address": "0x4727D2BD9ec67E9235cc64030231984caF669037",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-30T11:26:54.514Z",
-        "tokenSymbol": "USDC",
-        "tokenAddress": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
-        "lpName": "AGS-USDC LP",
-        "lpSymbol": "AGS-USDC-LP",
-        "useNative": false,
-        "feeBps": 30
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_USDC.tokenAddress",
-      "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
-      "category": "wired-reference",
-      "parent": "PublicLiquidityPool_USDC",
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_USDT",
-      "address": "0xCe42f9109a436A405C4a3a8371AF24e0E9979d19",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-30T11:26:58.390Z",
-        "tokenSymbol": "USDT",
-        "tokenAddress": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
-        "lpName": "AGS-USDT LP",
-        "lpSymbol": "AGS-USDT-LP",
-        "useNative": false,
-        "feeBps": 30
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_USDT.tokenAddress",
-      "address": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
-      "category": "wired-reference",
-      "parent": "PublicLiquidityPool_USDT",
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_WETH",
-      "address": "0x95247A6F9D1CEa6F1701d71d1DEFCE6EeBB66ab4",
-      "category": "contract",
-      "meta": {
-        "deployedAt": "2026-06-30T11:27:02.327Z",
-        "tokenSymbol": "WETH",
-        "tokenAddress": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
-        "lpName": "AGS-WETH LP",
-        "lpSymbol": "AGS-WETH-LP",
-        "useNative": false,
-        "feeBps": 30
-      },
-      "hasBytecode": true
-    },
-    {
-      "name": "PublicLiquidityPool_WETH.tokenAddress",
-      "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
-      "category": "wired-reference",
-      "parent": "PublicLiquidityPool_WETH",
       "hasBytecode": true
     },
     {
@@ -1129,6 +627,24 @@
       "hasBytecode": true
     },
     {
+      "name": "LiquidityMiningGauge_USDC_retired_v2",
+      "address": "0x754df8b03Ddb0EDCAD0DCfCF030EB935cEb19954",
+      "category": "contract",
+      "meta": {
+        "retiredAt": "2026-07-20T15:25:27.480Z",
+        "replacedBy": "0xff232AB7eBCFe259e85B119938Cf883fd72B3658",
+        "reason": "SonicScan bytecode mismatch — redeploy for verification"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "LiquidityMiningGauge_USDC_retired_v2.replacedBy",
+      "address": "0xff232AB7eBCFe259e85B119938Cf883fd72B3658",
+      "category": "wired-reference",
+      "parent": "LiquidityMiningGauge_USDC_retired_v2",
+      "hasBytecode": true
+    },
+    {
       "name": "LiquidityMiningGauge_SONIC_retired",
       "address": "0x7a128D784675b7070f7828DB6c67206c9dEcc44A",
       "category": "contract",
@@ -1146,18 +662,258 @@
       "hasBytecode": true
     },
     {
+      "name": "LiquidityMiningGauge_retired",
+      "address": "0xd78C0086b84B9Bf67D924AB3c6bf3b9742eFD176",
+      "category": "contract",
+      "meta": {
+        "retiredAt": "2026-07-20T15:26:10.721Z",
+        "replacedBy": "0x56686730D47E637128912e18E2ad433c9F2Ab312",
+        "reason": "SonicScan bytecode mismatch — redeploy for verification"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "LiquidityMiningGauge_retired.replacedBy",
+      "address": "0x56686730D47E637128912e18E2ad433c9F2Ab312",
+      "category": "wired-reference",
+      "parent": "LiquidityMiningGauge_retired",
+      "hasBytecode": true
+    },
+    {
+      "name": "TimeLockPurchaseLimits_retired",
+      "address": "0xCbf629c2Ee41Ccc987d5B9de5Afd216603313d88",
+      "category": "contract",
+      "meta": {
+        "retiredAt": "2026-07-20T15:45:14.287Z",
+        "replacedBy": "0x79b6505cf504F6A1a40488eb5f5F6682A92004bc",
+        "reason": "SonicScan bytecode mismatch — redeploy for verification"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "TimeLockPurchaseLimits_retired.replacedBy",
+      "address": "0x79b6505cf504F6A1a40488eb5f5F6682A92004bc",
+      "category": "wired-reference",
+      "parent": "TimeLockPurchaseLimits_retired",
+      "hasBytecode": true
+    },
+    {
+      "name": "AutomatedDutchAuction_retired",
+      "address": "0x6C73b4D56bf3c6C7DE480457f785A5426AC101Cc",
+      "category": "contract",
+      "meta": {
+        "retiredAt": "2026-07-20T15:45:14.287Z",
+        "replacedBy": "0x25be2483789d8254D7AF9F94DdA19481885C3B59",
+        "reason": "SonicScan bytecode mismatch — redeploy for verification",
+        "strandedAgsNote": "10.5M AGS remain on retired auction; no rescue until activate+saleEnd+30d transferUnsoldToTreasury",
+        "strandedAgs": "10500000000000000000000000"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "AutomatedDutchAuction_retired.replacedBy",
+      "address": "0x25be2483789d8254D7AF9F94DdA19481885C3B59",
+      "category": "wired-reference",
+      "parent": "AutomatedDutchAuction_retired",
+      "hasBytecode": true
+    },
+    {
+      "name": "AutomatedBondingCurve_retired",
+      "address": "0xef7498643e91D56001C720b338FC7C7ab04e2c28",
+      "category": "contract",
+      "meta": {
+        "retiredAt": "2026-07-20T15:45:14.287Z",
+        "replacedBy": "0xF569411750f50A03eb51A384Ac7d6FD499500Ec2",
+        "reason": "Immutable dutchAuction pointer — redeployed with new auction"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "AutomatedBondingCurve_retired.replacedBy",
+      "address": "0xF569411750f50A03eb51A384Ac7d6FD499500Ec2",
+      "category": "wired-reference",
+      "parent": "AutomatedBondingCurve_retired",
+      "hasBytecode": true
+    },
+    {
+      "name": "LiquiditySeedVault",
+      "address": "0x71e748Af11A1Bd0d83F33C77f7AbA77D59796561",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PublicLiquidityPoolFactory",
+      "address": "0x771b829C2Dfa320b2b7E8F934668e0209E83f6D5",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T04:42:43.712Z",
+        "defaultFeeBps": 30
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "DecentralizedInsurance",
+      "address": "0xbD528dc0EeF36Ac110bFb70841995a34f1ED3e71",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:06.127Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "DecentralizedPrivacyRewards",
+      "address": "0xc922C21b50e64eFc99A14D5CDC1689838Ce2aB19",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:09.491Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PoolPriceValidatorEnhanced",
+      "address": "0xA28Cde7c994071cCC622196ae508f0599f86194c",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:12.897Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PublicLiquidityPool_wS",
+      "address": "0x9c8502F8a5a21Abcc4a520359c72a722A04CC5f7",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:16.255Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "AegisPublicPoolRouter",
+      "address": "0x62E8630a06b86d07d330cA3aA811737675c06F2d",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:19.529Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "TreasuryLiquidityAllocator",
+      "address": "0x9449987AD30e93a0722604F632A9e0B8Ba3d7D2E",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:26.350Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "TransparentEscrowOrders",
+      "address": "0xB0faD2Ce26D2f8e53070B8EC4c71F295a13fD50b",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:30.401Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "DaoDynamicRevenueRouter",
+      "address": "0x5cdd05411C86B707DB903E7aF6033929088bbf0c",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:34.434Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateLendingContract",
+      "address": "0x18e44dCE6B05fb45410Cf1b305927435B21BF2b7",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:37.969Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateAMMContract",
+      "address": "0x6e7Cc1Cd6b5b4A39714028B4E29fc0200E71c843",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:41.412Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateStakingContract",
+      "address": "0xccdc7ea2130b3F6414871CA310C842830b25Bb32",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:44.710Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateYieldFarming",
+      "address": "0x7B138058573aB10f6239722A4a9ae15c5AD9B15b",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:48.089Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateDerivatives",
+      "address": "0x9BF3B824AE86A659e48197A57b4894fB3c86936f",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:51.567Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "OnChainPrivacyLeaderboard",
+      "address": "0xF7532B6266a81dD3dBB54C75e52a93C8c4130d85",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:55.075Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "CrossChainPrivacyBridge",
+      "address": "0xB6FD8daD13d410aB8152496ecF6e76dD2Caa702E",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:25:58.525Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "SonicGatewayWrapper",
+      "address": "0x6897929f1Da801f8e457D023B18B4625f1Aecc6b",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:01.776Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "AegisCrowdShield",
+      "address": "0x80A8D8E690c50Eb3Fba91d639408D45965F240A0",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:05.955Z"
+      },
+      "hasBytecode": true
+    },
+    {
       "name": "AegisCanonicalSwapRouter",
-      "address": "0xCDcC839F656D4891eEdD01F2A5c42769B126f021",
+      "address": "0x9FE3F03b521E095fC3E011229c57c038CAF04389",
       "category": "contract",
       "meta": {
         "owner": "0x796f2c442959533D16e69AE898079020f361C907",
-        "poolFee": 3000,
-        "nativeQuotePool": "0x0e3B48E373281b47c8E3c9541f798C1d7655e74E",
-        "authorizedOnTokenAt": "2026-07-09T04:15:00.000Z",
-        "executionRelayWiredAt": "2026-07-09T04:15:00.000Z",
-        "authorizeTx": "0x615131936bdd79af4bb67474b35df020493550dde0ce74244dd48a4233f3ed6b",
-        "relayTargetTx": "0x8e51c6c85636f411fabce2cc9534bb1d4bdb8f5855b486934d91998683847697",
-        "relaySelectorTx": "0x1f8202ff8341f87bcf620a566c2a9208d37c941d83017129f4fd4639580555da"
+        "poolFee": 3000
       },
       "hasBytecode": true
     },
@@ -1169,10 +925,199 @@
       "hasBytecode": false
     },
     {
-      "name": "AegisCanonicalSwapRouter.nativeQuotePool",
-      "address": "0x0e3B48E373281b47c8E3c9541f798C1d7655e74E",
+      "name": "StealthAddressHub",
+      "address": "0x9DBcC7E8f2E20746badb8f7bcC29c953b86160Ee",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:33.850Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "RelayerMarketplace",
+      "address": "0xB441297972538C0efE66C2C42b66FfE7BC858152",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:38.451Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "SelectiveDisclosureHub",
+      "address": "0x3a67973A45C97023Ae84c3D6240e746240112eED",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:41.452Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivacySavingsVault",
+      "address": "0x3e1269f8D728c385F4dB2F961357fD3BAe80e94c",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:44.499Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "AnonymousPayroll",
+      "address": "0x01B254993633E47aAEEfAbb58Fc86382f2a1e9D1",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:47.493Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "ShieldedTreasuryManager",
+      "address": "0x1bF14E478DC046Bebf8597599702cDA7e20C7844",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:51.308Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateBondMarket",
+      "address": "0xfeAC32b15CDF87F207e76c75744C1866Ad18b8B1",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:55.061Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivatePredictionMarket",
+      "address": "0xc46C7034303f5030822E389e6Cfdf1dD8A09DA47",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:26:59.603Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateStableVault",
+      "address": "0x63d291bdFDE4025d97b45E7c8C7B915f70dF7736",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:27:03.374Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivateCreditProfile",
+      "address": "0x1bfCeba3e55084fCc429bee1072C1dEE8340bc3e",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:27:07.231Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "ShieldedGovernanceTally",
+      "address": "0x4dBD5e13BBE8CFf02015A1ABF8395f81087aFe5B",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:27:10.266Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "ShieldedYieldVault",
+      "address": "0x9631844A2bC48b2CBA1681380b2C7167CD34634A",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:27:14.056Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "ShieldedIncentiveClaims",
+      "address": "0xC363B8d2D2113F1b914C66Dddc7C79F308e804d4",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:27:17.864Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "ShieldedEcosystemRouter",
+      "address": "0xb94A6FD2F2F18A7d4443764a4d5B7e5C13Face4a",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:27:20.841Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "SignedLimitOrderRegistry",
+      "address": "0x964aCA80c4081E47515b3c116Fe7E7C806F278d8",
+      "category": "contract",
+      "meta": {},
+      "hasBytecode": true
+    },
+    {
+      "name": "RFQIntentSettlement",
+      "address": "0xb1B176D235c3B581Ff3bf80a19D8fE35be6d7F5f",
+      "category": "contract",
+      "meta": {},
+      "hasBytecode": true
+    },
+    {
+      "name": "PrivacyEntryRouter",
+      "address": "0xE28A5A749328A2A32F11C9656F4Db5DB001EF9d1",
+      "category": "contract",
+      "meta": {},
+      "hasBytecode": true
+    },
+    {
+      "name": "AegisExecutionRelay",
+      "address": "0x4BBF1ef59A47fA84b746B312090E1898ae02137a",
+      "category": "contract",
+      "meta": {
+        "deployedAt": "2026-07-31T05:29:54.837Z"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "LiquidityMiningGauge",
+      "address": "0xF7071291df8A03be06D698AaBe1e900b1543b498",
+      "category": "contract",
+      "meta": {
+        "stakeToken": "0x9c8502F8a5a21Abcc4a520359c72a722A04CC5f7",
+        "rewardToken": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "LiquidityMiningGauge.stakeToken",
+      "address": "0x9c8502F8a5a21Abcc4a520359c72a722A04CC5f7",
       "category": "wired-reference",
-      "parent": "AegisCanonicalSwapRouter",
+      "parent": "LiquidityMiningGauge",
+      "hasBytecode": true
+    },
+    {
+      "name": "LiquidityMiningGauge.rewardToken",
+      "address": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
+      "category": "wired-reference",
+      "parent": "LiquidityMiningGauge",
+      "hasBytecode": true
+    },
+    {
+      "name": "TreasuryBondAuction",
+      "address": "0x9f0AA084Ef05BbC384FB71ea25325bD956AD66da",
+      "category": "contract",
+      "meta": {
+        "quoteToken": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38"
+      },
+      "hasBytecode": true
+    },
+    {
+      "name": "TreasuryBondAuction.quoteToken",
+      "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "category": "wired-reference",
+      "parent": "TreasuryBondAuction",
       "hasBytecode": true
     },
     {
@@ -1635,8 +1580,8 @@
     }
   ],
   "summary": {
-    "contractsTotal": 126,
-    "contractsWithBytecode": 125,
+    "contractsTotal": 118,
+    "contractsWithBytecode": 117,
     "verifiersTotal": 44,
     "verifiersWithBytecode": 44,
     "agsCanonicalMatchesBridge": true

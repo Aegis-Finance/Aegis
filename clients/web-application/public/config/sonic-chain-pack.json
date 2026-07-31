@@ -1,4 +1,51 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Merged Sonic chain pack: bridge tokens + Gateway/Multicall/SFC + Uniswap v3 (mainnet). Regenerate via npm run sync:chain-pack.",
+  "meta": {
+    "generatedAt": "2026-07-31T05:10:05.204Z",
+    "sources": {
+      "bridgeTokens": "config/bridge-tokens.json",
+      "sonicInfrastructure": "config/sonic-infrastructure.json",
+      "uniswapV3Sonic": "config/uniswap-v3-sonic.json"
+    },
+    "documentation": {
+      "contractAddresses": "https://docs.soniclabs.com/sonic/build-on-sonic/contract-addresses",
+      "programmaticGateway": "https://docs.soniclabs.com/sonic/build-on-sonic/programmatic-gateway",
+      "integratingStaking": "https://docs.soniclabs.com/sonic/build-on-sonic/integrating-staking",
+      "networkParameters": "https://docs.soniclabs.com/sonic/build-on-sonic/network-parameters",
+      "verifyContracts": "https://docs.soniclabs.com/sonic/build-on-sonic/verify-contracts",
+      "deployContracts": "https://docs.soniclabs.com/sonic/build-on-sonic/deploy-contracts",
+      "sonicGateway": "https://docs.soniclabs.com/sonic/sonic-gateway",
+      "feeMonetization": "https://docs.soniclabs.com/funding/fee-monetization"
+    },
+    "notes": [
+      "Aegis Sonic testnet uses chainId 14601 (see hardhat.config.js, frontend DEFAULT_NETWORK). Some third-party snippets may show a different testnet id; trust SonicScan testnet + eth_getRules on your RPC.",
+      "Programmatic Gateway deposit/claim/proof flow: see documentation.programmaticGateway (same contract set as infrastructure.gateway*).",
+      "SFC staking integration (delegate, rewards, constsAddress): see documentation.integratingStaking.",
+      "Live gas/rules: POST eth_getRules — see documentation.networkParameters.",
+      "Contract verification: Hardhat `sonic` + `sonicTestnet` use Etherscan API V2 URLs in `hardhat.config.js` (see `sonicMainnet.verify` / `sonicTestnet.verify` in generated chain pack)."
+    ],
+    "bridgeTokensFileMeta": {
+      "sonicDoc": "https://docs.soniclabs.com/sonic/build-on-sonic/contract-addresses",
+      "sonicGatewayUserGuide": "https://docs.soniclabs.com/sonic/sonic-gateway",
+      "settlementRailsDoc": "Per-token `settlementRail` in each row is copied into sonic-chain-pack (USDC → circle-cctp-v2; other Gateway assets → sonic-gateway-native). Mirror in frontend/src/config/bridge-tokens.json.",
+      "note": "Official Sonic-tab assets use enabled=true. Any extra ERC-20 you add must be verified on-chain (decimals, Gateway support, oracles).",
+      "requiredAfterDeploy": "CRITICAL: Every AGS row uses tokenAddress 0x0000000000000000000000000000000000000000 as a placeholder. After you deploy PrivateTokenContract, you MUST paste its address into this file, frontend/src/config/bridge-tokens.json, and frontend-token-distribution/src/config/bridge-tokens.json (all AGS rows for sonic and sonicTestnet), then run: node Aegis-contracts/scripts/generate-frontend-env.js and npm run sync:chain-pack (or node scripts/build-sonic-chain-pack.js) and copy sonic-chain-pack to both frontends' public/config/. Until you do, the privacy bridge and AGS conversion will not work."
+    },
+    "dutchAuctionDisplay": {
+      "presaleOnly": true,
+      "scope": "Pre-sale Dutch auction only: `referenceUsdPerUnit` and related UI copy apply **only** during the TGE auction window. After the sale ends they have **no** intended use for AGS valuation, routing, oracles, or treasury math — post-sale pricing is **market-driven** (pools, DEX, external feeds). On-chain optional ERC-20 pay-in uses separate fixed pegs in `AutomatedDutchAuction` (see docs/tokendistribution/DUTCH_AUCTION_S_PRICING.md).",
+      "referenceUsdPerUnit": {
+        "S": 0.02,
+        "wS": 0.02,
+        "USDC": 0.98,
+        "USDT": 0.98,
+        "EURC": 0.98,
+        "WETH": 1000
+      },
+      "note": "Pre-sale / Dutch auction messaging only. Not an on-chain oracle and **not** for use after the auction ends."
+    }
+  },
   "sonicMainnet": {
     "chainId": 146,
     "rpcUrls": [
@@ -8,9 +55,9 @@
     "bridgeTokens": [
       {
         "tokenSymbol": "AGS",
-        "tokenAddress": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+        "tokenAddress": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
         "enabled": false,
-        "description": "Not a Gateway bridge asset — AGS is issued only via the Dutch auction on this site."
+        "description": "AGS v2 canonical PrivateTokenContract — not a Gateway bridge asset; issued via Dutch auction. Retired v1: 0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d"
       },
       {
         "tokenSymbol": "wS",

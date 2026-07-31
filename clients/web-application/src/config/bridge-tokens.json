@@ -53,9 +53,9 @@
   "sonic": [
     {
       "tokenSymbol": "AGS",
-      "tokenAddress": "0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d",
+      "tokenAddress": "0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613",
       "enabled": true,
-      "description": "Canonical PrivateTokenContract (0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d) — synced from deployments/sonic/latest.json. Retired deploy #1: 0xE38c9797cBfc61C403AC32F29aC8c197b53108C2"
+      "description": "Canonical AGS v2 PrivateTokenContract (0x78d4cF93E09680fdbF61AEdDfc8176E14faF3613). Retired v1: 0x5125bF734a95F2Df0ddEf99934dc33fb1d175E3d; deploy #1: 0xE38c9797cBfc61C403AC32F29aC8c197b53108C2"
     },
     {
       "tokenSymbol": "wS",
